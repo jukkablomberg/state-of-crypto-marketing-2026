@@ -1,0 +1,3 @@
+date,claimed_client,is_tracked_firm,health_score,threat_level,source
+2026-06-15,TRON,no,6,medium,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Polymath,no,6,medium,competitor-intelligence/trend-data.json 2026-06-15

@@ -36,6 +36,15 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - **Source:** `./competitor-intelligence/trend-data.json`, `./competitor-intelligence/action-flags.json`, daily HTML snapshots in `./competitor-intelligence/YYYY-MM-DD.html` from April 8, 2026 onward.
 - **What it gives the report:** longitudinal signal — what shifted, when, in which direction. Most one-shot research projects do not have an 18-month panel of agency-side content gravity. This one does.
 
+## Automated daily feeds (added 2026-06-26)
+
+Source classes 1 (job postings) and 2 (agency claims) are produced **deterministically from NorthPoint's existing daily data feeds**, not from web search — web search cannot reliably date-stamp ATS postings or agency claims. `scripts/daily-corpus-sync.py` consumes:
+
+- **`open-positions.json`** — daily ATS API scan (greenhouse/ashby/lever/breezy/workable), URL-verified and dated → per-firm CSVs in `corpus/job-postings/`, mapped to the Stratum 1–4 cohort, dedup by source URL. Proprietary-ATS firms with no API coverage are logged in `corpus/job-postings/_absence.csv` (absence = data).
+- **`trend-data.json`** — daily 18-agency panel with `recentClientsNamed` → `corpus/agency-overlap-matrix.csv` (firm × agency, overlap-flagged) + dated `corpus/agency-claims/<agency>.csv` snapshots.
+
+Classes 3 (regulator), 4 (operator statements), and 5 (layoffs) remain web-search/fetch driven, verified against primary sources. The run is **daily**; the sync script is idempotent. See `scripts/README.md`.
+
 ## Corpus coverage rules
 
 - **If a thing is not publicly visible, it does not go in the report.** No private knowledge, no hearsay, no "an operator told me." Either there is a citation, or the claim is omitted.

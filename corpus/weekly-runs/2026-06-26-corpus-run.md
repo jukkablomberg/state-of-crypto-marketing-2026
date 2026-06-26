@@ -56,4 +56,25 @@ Recorded in `../../findings/longitudinal-2026-06.md`. Core advance this week: th
 - `findings/longitudinal-2026-06.md` updated (two-layer regulatory-pressure read; 1-July deadline)
 
 ## Recommendation for next run (carried forward)
-WebSearch still cannot reliably date-stamp careers-page postings or agency case studies. To move source classes 1 and 2 off zero, the weekly run should use the Chrome MCP to render each tracked firm's ATS board (Greenhouse/Lever/Ashby) and each tracked agency's case-study page, reading posting/publication dates from the DOM. This remains the single gating fix. The **1-July MiCA deadline week** is also the highest-probability window of the cycle for a named-firm marketing-side enforcement action or a tracked-firm CMO public statement — prioritise the regulator and operator classes in the next run.
+WebSearch still cannot reliably date-stamp careers-page postings or agency case studies. The **1-July MiCA deadline week** is the highest-probability window of the cycle for a named-firm marketing-side enforcement action or a tracked-firm CMO public statement — prioritise the regulator and operator classes in the next run.
+
+---
+
+## FRAMEWORK UPGRADE — 2026-06-26 (process fix, per Jukka)
+
+**Problem this fixes:** for three runs source classes 1 (job postings) and 2 (agency claims) sat at zero because the run leaned on WebSearch, which cannot date-stamp ATS postings or agency claims. NorthPoint already runs two daily data feeds that *do* carry that data with dates + URLs. The corpus was ignoring them. Now it consumes them.
+
+**New deterministic producer:** `scripts/daily-corpus-sync.py` (see `scripts/README.md`). Reads two already-running daily feeds and writes citation-anchored corpus output every run, no web-search dependency:
+
+- **Source A — job postings:** `../../../northpoint/sales-funnel/prospects/open-positions.json` (daily ATS API scan across greenhouse/ashby/lever/breezy/workable; URL-verified, dated, seniority-scored). Mapped to the Stratum 1–4 tracked cohort via an alias table; dedup by source URL; per-firm CSV.
+- **Source B — agency intel:** `../../../northpoint/sales-funnel/competitor-intelligence/trend-data.json` (daily 18-agency panel with `recentClientsNamed`). Builds the agency × tracked-firm claim matrix + per-agency dated snapshots.
+
+**Concrete output produced THIS run (2026-06-26):**
+- **Job postings: +3 net-new tracked-firm rows** — Ava Labs (Director of Communications, posted 2026-06-09; Director of Social Media, posted 2026-05-18) and Optimism/OP Labs (Marketing Executive, posted 2026-05-21). All Ashby, URL-verified. Files: `job-postings/ava-labs.csv`, `job-postings/optimism.csv`.
+- **Agency-overlap matrix SEEDED** (`corpus/agency-overlap-matrix.csv`, 8 tracked firms): the first **overlap** is **Sui — claimed by both Coinbound and RZLT** (Theme-3 signal: two agencies on one foundation while Sui builds an in-house marketing org). Single-agency claims logged for Binance (MarketAcross), Bybit + KuCoin (Blockwiz), MetaMask/ConsenSys + OKX (Coinbound), Polygon + Solana (MarketAcross).
+- **Agency-claims snapshots:** 18 dated per-agency files in `corpus/agency-claims/`.
+- **Absence-as-data:** 7 tracked exchanges have **no API coverage** and are logged in `job-postings/_absence.csv` with their careers URLs — Binance, Bybit, KuCoin, HTX, Solana, MetaMask/ConsenSys (all proprietary ATS → need the Chrome supplemental scan) and Aave (Lever slug 404, API-broken). This is the precise, honest residual gap.
+
+**The one remaining gap is now named and bounded:** the proprietary-ATS exchanges (Binance/Bybit/KuCoin/HTX) and Solana/ConsenSys need the existing `chrome-supplemental-scan` lane pointed at `open-positions.json`'s `needs_chrome_fallback` list. Everything else is automated.
+
+**Cadence:** task moved from weekly (Fri 15:00) to **daily** — the script is idempotent (re-running added 0 duplicate rows), so a daily run safely captures new postings/claims the moment the upstream feeds refresh, and each day produces concrete output (new rows, or an explicit dated absence record).
