@@ -61,6 +61,19 @@ AGENCY_PANEL = ["coinbound","lunar-strategy","ninjapromo","marketacross","icoda"
 
 JOB_HEADER = ["date_posted","title","jurisdiction","seniority","source_url","captured_date","notes"]
 
+# Known blockers for proprietary-ATS tracked firms (why a naive render won't close them).
+# Foundation/Getro boards render fine; exchange SPAs are sign-in/API-walled; some are standard
+# ATS behind a wrong/missing slug (upstream lead-generator slug fix, not a browser render).
+CHROME_BLOCKERS = {
+    "Bybit": "Moka SPA, sign-in-walled — needs authed session or Moka API",
+    "Binance": "JS SPA — needs bapi careers endpoint, not naive render",
+    "Kucoin": "MokaHR SPA — needs Moka API/authed session",
+    "HTX": "JS SPA (crm recruitment) — needs API/authed session",
+    "MetaMask / ConsenSys": "Greenhouse-embedded — fix the API slug (boards-api.greenhouse.io/v1/boards/consensys)",
+    "Solana": "Getro board — renders; closeable via Chrome lane",
+    "Aave": "Lever slug 404 — correct the slug upstream",
+}
+
 def norm(s): return re.sub(r"[^a-z0-9. ]","",(s or "").lower()).strip()
 
 def match_tracked(company):
@@ -98,6 +111,22 @@ def read_existing_urls(path):
                 if row.get("source_url"): urls.add(row["source_url"].strip())
     return urls
 
+def append_firm_rows(jp_dir, slug, rows):
+    """rows: list of [date_posted,title,jurisdiction,seniority,source_url,captured_date,notes].
+    Dedups by source_url against the existing file; rewrites cleanly if file is an empty scaffold.
+    Returns number of rows actually added."""
+    path=os.path.join(jp_dir,f"{slug}.csv")
+    existing=read_existing_urls(path)
+    new_rows=[r for r in rows if r[4] and r[4] not in existing]
+    if not new_rows: return 0
+    scaffold = os.path.exists(path) and existing==set()
+    mode="w" if (not os.path.exists(path) or scaffold) else "a"
+    with open(path,mode,newline="") as f:
+        w=csv.writer(f)
+        if mode=="w": w.writerow(JOB_HEADER)
+        for r in new_rows: w.writerow(r)
+    return len(new_rows)
+
 def main():
     ap=argparse.ArgumentParser()
     here=os.path.dirname(os.path.abspath(__file__))
@@ -113,7 +142,8 @@ def main():
     os.makedirs(jp_dir,exist_ok=True); os.makedirs(ac_dir,exist_ok=True)
 
     summary={"job_added":0,"job_firms":set(),"absence_firms":[],"matrix_rows":0,
-             "agency_files":0,"overlaps":[],"src_jobs_date":None,"src_agency_date":None}
+             "agency_files":0,"overlaps":[],"src_jobs_date":None,"src_agency_date":None,
+             "chrome_ingested":0,"chrome_queue_firms":[]}
 
     # ---------- Source A: job postings ----------
     op_path=os.path.join(sales,"prospects","open-positions.json")
@@ -129,44 +159,74 @@ def main():
             if not slug: continue
             by_firm.setdefault(slug,[]).append(j)
         for slug,js in sorted(by_firm.items()):
-            path=os.path.join(jp_dir,f"{slug}.csv")
-            existing=read_existing_urls(path)
-            new_rows=[]
+            rows=[]
             for j in js:
                 url=(j.get("url") or j.get("apply_url") or "").strip()
-                if not url or url in existing: continue
-                existing.add(url)
-                new_rows.append([
+                if not url: continue
+                rows.append([
                     j.get("posted_at") or j.get("first_seen") or "",
-                    j.get("title",""),
-                    j.get("location",""),
+                    j.get("title",""), j.get("location",""),
                     f"{seniority_of(j.get('title',''))} / {func_of(j.get('title',''))}",
                     url, today,
                     f"ATS={j.get('ats','')}; url_verified={j.get('url_verified')}; src=open-positions.json {summary['src_jobs_date']}",
                 ])
-            if new_rows:
-                write_header=not os.path.exists(path) or os.path.getsize(path)<=len(",".join(JOB_HEADER))+3
-                # rewrite cleanly if file is just an empty scaffold
-                scaffold = os.path.exists(path) and read_existing_urls(path)==set()
-                mode="w" if (not os.path.exists(path) or scaffold) else "a"
-                with open(path,mode,newline="") as f:
-                    w=csv.writer(f)
-                    if mode=="w": w.writerow(JOB_HEADER)
-                    for r in new_rows: w.writerow(r)
-                summary["job_added"]+=len(new_rows); summary["job_firms"].add(disp(slug))
-        # absence-as-data: tracked firms in needs_chrome_fallback / fetch_errors
-        absent=[]
+            added=append_firm_rows(jp_dir, slug, rows)
+            if added: summary["job_added"]+=added; summary["job_firms"].add(disp(slug))
+
+        # ---- Source A2: Chrome inbox (proprietary-ATS firms rendered by the Chrome lane) ----
+        # A browser pass writes corpus/job-postings/_chrome-inbox.json: list of
+        # {company,title,location,posted_at,url,ats,source}. We ingest it the same way.
+        inbox_path=os.path.join(jp_dir,"_chrome-inbox.json")
+        ingested_firms=set()
+        if os.path.exists(inbox_path):
+            try: inbox=json.load(open(inbox_path))
+            except Exception: inbox=[]
+            inbox_by_firm={}
+            for it in inbox:
+                slug=match_tracked(it.get("company",""))
+                if slug: inbox_by_firm.setdefault(slug,[]).append(it)
+            for slug,items in sorted(inbox_by_firm.items()):
+                rows=[]
+                for it in items:
+                    url=(it.get("url") or "").strip()
+                    if not url: continue
+                    rows.append([
+                        it.get("posted_at",""), it.get("title",""), it.get("location",""),
+                        f"{seniority_of(it.get('title',''))} / {func_of(it.get('title',''))}",
+                        url, today,
+                        f"ATS={it.get('ats','proprietary')}; via=chrome-lane; src={it.get('source','careers-page')}",
+                    ])
+                added=append_firm_rows(jp_dir, slug, rows)
+                if added:
+                    summary["job_added"]+=added; summary["job_firms"].add(disp(slug))
+                    summary["chrome_ingested"]+=added
+                ingested_firms.add(slug)
+
+        # ---- absence-as-data + Chrome work-queue ----
+        absent=[]; chrome_queue=[]
         for item in op.get("needs_chrome_fallback",[]):
             slug=match_tracked(item.get("company",""))
-            if slug: absent.append((disp(slug),"proprietary-ATS/needs-chrome", item.get("careers_url","")))
+            if not slug: continue
+            status = "ingested" if slug in ingested_firms else "pending-chrome"
+            chrome_queue.append((disp(slug), item.get("ats","proprietary"), item.get("careers_url",""), status))
+            if slug not in ingested_firms:
+                absent.append((disp(slug),"proprietary-ATS/needs-chrome", item.get("careers_url","")))
         for item in op.get("fetch_errors",[]):
             slug=match_tracked(item.get("company",""))
-            if slug: absent.append((disp(slug),"api-fetch-error", item.get("error","")[:120]))
+            if slug and slug not in ingested_firms:
+                absent.append((disp(slug),"api-fetch-error", item.get("error","")[:120]))
+        # write the actionable Chrome work-queue (tracked proprietary firms + what to fetch)
+        if chrome_queue:
+            with open(os.path.join(jp_dir,"_chrome-queue.csv"),"w",newline="") as f:
+                w=csv.writer(f); w.writerow(["firm","ats","careers_url","status","blocker","target_functions","as_of"])
+                for fm,ats,url,st in sorted(set(chrome_queue)):
+                    w.writerow([fm,ats,url,st,CHROME_BLOCKERS.get(fm,""),"brand|growth|PMM|community|comms",today])
+            summary["chrome_queue_firms"]=sorted({c[0] for c in chrome_queue})
         if absent:
             with open(os.path.join(jp_dir,"_absence.csv"),"w",newline="") as f:
                 w=csv.writer(f); w.writerow(["firm","reason","detail","as_of"])
                 for fm,rs,dt in sorted(set(absent)): w.writerow([fm,rs,dt,today])
-            summary["absence_firms"]=sorted({a[0] for a in absent})
+        summary["absence_firms"]=sorted({a[0] for a in absent})
 
     # ---------- Source B: agency intelligence ----------
     td_path=os.path.join(sales,"competitor-intelligence","trend-data.json")
@@ -210,7 +270,9 @@ def main():
     print(f"source A (jobs)   scan_date: {summary['src_jobs_date']}")
     print(f"source B (agency) lastUpdated: {summary['src_agency_date']}")
     print(f"job postings ADDED: {summary['job_added']}  firms: {sorted(summary['job_firms'])}")
-    print(f"tracked firms w/o API coverage (absence=data): {summary['absence_firms']}")
+    print(f"  of which via Chrome inbox: {summary['chrome_ingested']}")
+    print(f"chrome work-queue (proprietary tracked firms): {summary['chrome_queue_firms']}")
+    print(f"tracked firms STILL w/o coverage (absence=data): {summary['absence_firms']}")
     print(f"agency-claims files written: {summary['agency_files']}")
     print(f"agency-overlap-matrix rows: {summary['matrix_rows']}")
     print(f"agency OVERLAPS on tracked firms: {summary['overlaps']}")
