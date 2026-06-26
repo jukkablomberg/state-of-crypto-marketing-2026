@@ -1,0 +1,9 @@
+tracked_firm,claiming_agencies,agency_count,overlap_flag,as_of,source
+Sui,coinbound; rzlt,2,OVERLAP,2026-06-15,competitor-intelligence/trend-data.json
+Binance,marketacross,1,single,2026-06-15,competitor-intelligence/trend-data.json
+Bybit,blockwiz,1,single,2026-06-15,competitor-intelligence/trend-data.json
+Kucoin,blockwiz,1,single,2026-06-15,competitor-intelligence/trend-data.json
+MetaMask / ConsenSys,coinbound,1,single,2026-06-15,competitor-intelligence/trend-data.json
+OKX,coinbound,1,single,2026-06-15,competitor-intelligence/trend-data.json
+Polygon,marketacross,1,single,2026-06-15,competitor-intelligence/trend-data.json
+Solana,marketacross,1,single,2026-06-15,competitor-intelligence/trend-data.json

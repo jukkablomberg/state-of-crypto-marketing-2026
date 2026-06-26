@@ -1,0 +1,4 @@
+date,claimed_client,is_tracked_firm,health_score,threat_level,source
+2026-06-15,Sui,yes,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Internet Computer,no,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Near,no,7,high,competitor-intelligence/trend-data.json 2026-06-15

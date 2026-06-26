@@ -1,0 +1,6 @@
+date,claimed_client,is_tracked_firm,health_score,threat_level,source
+2026-06-15,MetaMask,yes,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Sui,yes,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,eToro,no,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Immutable,no,7,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,OKX,yes,7,high,competitor-intelligence/trend-data.json 2026-06-15

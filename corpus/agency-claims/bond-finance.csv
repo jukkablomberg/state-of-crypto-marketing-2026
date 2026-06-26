@@ -1,0 +1,4 @@
+date,claimed_client,is_tracked_firm,health_score,threat_level,source
+2026-06-15,TrippyLabs,no,8,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Mario Nawfal,no,8,high,competitor-intelligence/trend-data.json 2026-06-15
+2026-06-15,Suede Labs,no,8,high,competitor-intelligence/trend-data.json 2026-06-15
