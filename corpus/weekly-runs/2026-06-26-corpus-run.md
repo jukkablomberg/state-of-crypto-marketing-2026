@@ -78,3 +78,18 @@ WebSearch still cannot reliably date-stamp careers-page postings or agency case 
 **The one remaining gap is now named and bounded:** the proprietary-ATS exchanges (Binance/Bybit/KuCoin/HTX) and Solana/ConsenSys need the existing `chrome-supplemental-scan` lane pointed at `open-positions.json`'s `needs_chrome_fallback` list. Everything else is automated.
 
 **Cadence:** task moved from weekly (Fri 15:00) to **daily** — the script is idempotent (re-running added 0 duplicate rows), so a daily run safely captures new postings/claims the moment the upstream feeds refresh, and each day produces concrete output (new rows, or an explicit dated absence record).
+
+### Chrome-lane wiring (closes the proprietary-ATS gap) — 2026-06-26
+
+Added a decoupled browser-ingestion path so the proprietary-ATS firms (which the API scan can't reach) feed the same corpus schema without coupling the corpus to fragile live rendering:
+
+- `daily-corpus-sync.py` now emits **`job-postings/_chrome-queue.csv`** — an actionable work-queue of the tracked proprietary firms + careers URL + **blocker diagnosis** + status (`pending-chrome` / `ingested`).
+- It ingests **`job-postings/_chrome-inbox.json`** — rows a browser pass drops `{company,title,location,posted_at,url,ats,source}` — into per-firm CSVs with the same URL dedup. Any firm successfully ingested flips to `ingested` and drops out of `_absence.csv`.
+
+**Live Chrome pass run this session (proof + concrete output):**
+- **Solana Foundation — CLOSED.** Board (Getro) renders; captured **3 real, URL-anchored growth roles** (Director, Institutional Growth — NY, ~2026-03; Institutional Growth Lead Japan + Greater China, ~2025-12). Tagged honestly: these are *institutional/BD-flavoured* growth seats, and **Solana Foundation shows no visible brand/PMM/community/regulatory-comms seat — an absence finding for Theme 1/4.** File: `job-postings/solana.csv`.
+- **Bybit / Binance / KuCoin / HTX — NOT closeable by a naive render.** Confirmed live: Bybit is a sign-in-walled Moka SPA (get_page_text empty); ConsenSys is a Greenhouse-embedded SPA showing "No jobs found" by default. These stay in `_chrome-queue.csv` with precise blockers: the exchange SPAs need an authed session / the firm's careers **API endpoint** (Binance bapi, Moka API), and **ConsenSys just needs its Greenhouse slug fixed** (`boards-api.greenhouse.io/v1/boards/consensys`). Aave needs its Lever slug corrected.
+
+**Honest read on the residual:** the real unlock for the four exchanges is **correct ATS API slugs upstream in the lead-generator**, not browser rendering — most "proprietary" firms are on standard ATS behind a wrong/missing slug or an authed SPA. The Chrome lane is proven and right for Getro-style boards (Solana); the exchange APIs are the next, separately-scoped fix. The gap is now **named, bounded, and self-documenting** in `_chrome-queue.csv` rather than a vague "needs chrome" flag.
+
+**Net today after the Chrome lane:** job postings = **+6 tracked-firm rows** (Ava Labs ×2, Optimism ×1 from the API feed; Solana ×3 from the Chrome lane). Absence narrowed from 7 firms to 6 (Solana closed).
