@@ -1,5 +1,5 @@
 firm,date_announced,headcount_change,percentage,source_url,ai_cover_narrative_y_n,notes
-Crypto.com,2026-03,180,-12%,,N,Cyclical-reset narrative; MarketAcross stated PR partner
+Crypto.com,2026-03,180,-12%,https://www.coindesk.com/business/2026/03/19/crypto-com-cuts-12-of-staff-as-it-integrates-ai-into-internal-processes,Y,AI-efficiency rationale (CEO); press reports concentrate cuts in growth + CRM (marketing-adjacent) — source-URL + marketing-impact enrichment 2026-06-27; MarketAcross stated PR partner
 Gemini,2026-Q1,,-30% YTD,,N,Cumulative cuts across Q1
 Algorand,2026-Q1,,-25%,,N,
 Coinbase,2026-05-05,~700,-14%,https://fortune.com/2026/05/05/coinbase-layoffs-14-of-employees-ai-tech-ai-job-anxiety-crypto/,Y,Armstrong memo: surviving org reorg around AI-native pods; mgmt capped 5 layers; every leader an IC; pods may be single-operator
