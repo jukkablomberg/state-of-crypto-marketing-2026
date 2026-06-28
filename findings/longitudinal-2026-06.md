@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-06-27.
+**Last updated:** 2026-06-28.
 
 ## Shift flagged this month
 
@@ -28,6 +28,16 @@ The 06-26 note said to *"watch the 1-July deadline week for the first named-firm
 **Why this is the load-bearing Theme-4 example:** Binance is the largest exchange in the world and a tracked Stratum-1 firm. Its forced EU marketing-cessation (if confirmed) is the cleanest possible demonstration that *marketing going dark in-market is the leading public indicator of CASP authorisation failure* — observable before the service itself winds down. It also stacks two Theme-1 reads at once: Binance hits its biggest EU regulatory cliff with an **interim, non-marketing-origin CMO** (Eowyn Chen, after Conlan's ~06-15 exit). And it hands a Theme-3/competitive read on a plate: **Coinbase and Kraken hold MiCA licences** and keep their EU marketing motion legal on 2 July while Binance's may be forced off — the licence is now a visible marketing-surface advantage, not just a compliance checkbox.
 
 **Verification caveat:** Reuters cites two unnamed sources; Binance denies receiving formal notice. Logged as a *reported, deadline-forced exposure event*, to be re-checked the week of 1 July. If confirmed it graduates to a completed named-firm marketing-cessation instance — the report's lead Theme-4 case.
+
+## Update — 2026-06-28: Binance bid CONFIRMED withdrawn; the NCA-amplification leg; a management-layer-flattening pattern
+
+Three advances this run, all tightening reads already in this note:
+
+**1. The named-firm Theme-4 case graduates from "reported" to "firm-confirmed."** The 06-27 entry logged Binance's Greek MiCA rejection as *reported* (Reuters, two unnamed sources; Binance denied notice). This run, **Binance withdrew the Greek application itself (~2026-06-25, CoinDesk 2026-06-24 + corroboration)** and will seek another EU base. So Binance enters 1 July **with no EU passport**, as an unauthorised CASP for EU-resident services — i.e., squarely inside the ESMA 23-June wind-down whose first step is *cease marketing and solicitation*. The lead Theme-4 example is now anchored to Binance's own act, not a denied leak. (Updated in place in `../corpus/regulator-filings/binance-mica-eu-exit-2026-06.md` — same event-chain, not a new item.)
+
+**2. The "coordinated NCA action" watch item is now on the record (AMF/France).** ESMA set the EU-level rule; the open question was whether NCAs would operationalise it. The **AMF's 23-June statement** does, from the bloc's strictest interpreter, and adds a France-specific clock the EU text lacks: per the AMF's 5-Feb-2026 statement, unauthorised DASPs without a pending CASP application should have had a wind-down plan in place **as of 30 March 2026** — a full quarter before 1 July. So in France the unauthorised-entity marketing/solicitation surface was expected to be going dark months early. The June regulatory picture now reads **three layers, two of them with named timestamps**: placement/channel (FCA→clubs, 02-03 June), entity-permission/solicitation (ESMA 23-June; AMF national amplification with 30-March French clock), and named-firm exposure (Binance). See `../corpus/regulator-filings/amf-mica-transitional-period-end-2026-06.md`.
+
+**3. A second-order Theme-1 pattern: management-layer flattening as the stated layoff rationale.** Two new mid-June perimeter cuts repeat Coinbase's May framing almost verbatim. **Robinhood (-10%, ~290 roles, 2026-06-16)**: CEO Tenev's stated goal is to *"flatten management layers, accelerate product velocity, remain lean and disciplined"* — and he explicitly *declined* the AI-blame framing. **BitGo (-15%, 2026-06-26)**: narrows to five core areas including "AI-powered infrastructure." Neither is a tracked Stratum-1–4 firm and neither is a marketing-team-specific cut — both logged as **perimeter** rows (per Block/MARA precedent). But the *narrative convergence* is a report-grade datapoint: across Coinbase (tracked), Robinhood and BitGo (perimeter), the 2026 cut is publicly justified as **fewer management layers / more IC-weighted org / leaner operating model**, with AI as a contested rather than automatic rationale. For Theme 1 (the shape of the marketing function), this strengthens the read that the surviving crypto marketing org is being re-shaped toward fewer layers and operator-ICs — and that even the AI-cover narrative is now being publicly resisted (Tenev), not just asserted.
 
 ## In-window confirmations (not net-new, but datable ticks)
 - Binance CMO **Rachel Conlan** departure executed ~**2026-06-15**; **Eowyn Chen** interim CMO (captured May; confirms the Theme-1 "non-marketing operator into the CMO seat" read).

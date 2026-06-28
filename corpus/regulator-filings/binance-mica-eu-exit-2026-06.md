@@ -35,3 +35,19 @@ Reuters/Bitcoin Magazine note rivals **Coinbase and Kraken hold MiCA licences** 
 ## Verification status
 
 Reuters report is attributed to two unnamed sources and the rejection was **not yet formally confirmed** as of capture (Binance denies receiving notice). Logged honestly as a *reported, deadline-forced* exposure event, not a completed enforcement action. To be re-checked the week of 1 July for: (a) formal HCMC decision, (b) any Binance EU-market service/marketing restriction notice, (c) NCA coordinated action. If confirmed, this graduates from "exposure-surface" to a completed named-firm marketing-cessation instance — the report's lead Theme-4 example.
+
+---
+
+## UPDATE — 2026-06-28 corpus run: Binance WITHDREW its Greek MiCA bid (~2026-06-25)
+
+The watch item resolved before the 1-July deadline. Per **CoinDesk (2026-06-24)** and corroborating outlets (Cointribune, DailyCoin, FX News Group, 2026-06-24/25), **Binance withdrew its MiCA licence application in Greece on/around 2026-06-25**, ahead of the 1-July deadline, and stated it will instead seek authorisation in another EU member state. Greek, Irish and Latvian regulators had reportedly raised concerns over Binance's past legal issues and corporate structure.
+
+**What this changes for the corpus / Theme 4:**
+- The exposure event is now **firm-confirmed by Binance's own action** (a withdrawal, not just a reported rejection it denied) — materially firmer than the 06-16 Reuters footing. Dedup-relevant: this is the *same* event-chain, updated in place, **not** a second corpus item.
+- **No EU passport in place on 1 July 2026.** Binance enters the deadline as an unauthorised CASP for EU-resident services, putting it squarely under the ESMA 23-June wind-down obligation whose *first enumerated step is to cease marketing and solicitation* to EU residents. The "marketing-cessation-as-leading-public-indicator" read now has its named subject locked for the report.
+- **Still to watch (week of 1 July):** (a) which alternative EU jurisdiction Binance re-files in, and any interim EU-marketing restriction; (b) observable EU paid-media / campaign / onboarding pull-down; (c) NCA coordinated action; (d) whether MiCA-licensed rivals (Coinbase, Kraken) publicly capture the migrating-user marketing surface.
+
+**Added sources:**
+- **CoinDesk, 2026-06-24** — "Binance withdraws Greek MiCA bid but vows to remain in Europe": https://www.coindesk.com/policy/2026/06/24/binance-withdraws-greek-mica-bid-but-vows-to-remain-in-europe
+- **Cointribune, 2026-06-24/25 (corroboration)**: https://www.cointribune.com/en/binance-withdraws-its-mica-license-application-in-greece-and-seeks-an-alternative-in-the-eu/
+- **DailyCoin, 2026-06-24/25 (corroboration, EU-user impact)**: https://dailycoin.com/binance-withdraws-greece-mica-bid-eu-users-may-face-account-changes/
