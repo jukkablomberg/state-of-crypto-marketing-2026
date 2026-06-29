@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-06-28.
+**Last updated:** 2026-06-29.
 
 ## Shift flagged this month
 
@@ -38,6 +38,18 @@ Three advances this run, all tightening reads already in this note:
 **2. The "coordinated NCA action" watch item is now on the record (AMF/France).** ESMA set the EU-level rule; the open question was whether NCAs would operationalise it. The **AMF's 23-June statement** does, from the bloc's strictest interpreter, and adds a France-specific clock the EU text lacks: per the AMF's 5-Feb-2026 statement, unauthorised DASPs without a pending CASP application should have had a wind-down plan in place **as of 30 March 2026** — a full quarter before 1 July. So in France the unauthorised-entity marketing/solicitation surface was expected to be going dark months early. The June regulatory picture now reads **three layers, two of them with named timestamps**: placement/channel (FCA→clubs, 02-03 June), entity-permission/solicitation (ESMA 23-June; AMF national amplification with 30-March French clock), and named-firm exposure (Binance). See `../corpus/regulator-filings/amf-mica-transitional-period-end-2026-06.md`.
 
 **3. A second-order Theme-1 pattern: management-layer flattening as the stated layoff rationale.** Two new mid-June perimeter cuts repeat Coinbase's May framing almost verbatim. **Robinhood (-10%, ~290 roles, 2026-06-16)**: CEO Tenev's stated goal is to *"flatten management layers, accelerate product velocity, remain lean and disciplined"* — and he explicitly *declined* the AI-blame framing. **BitGo (-15%, 2026-06-26)**: narrows to five core areas including "AI-powered infrastructure." Neither is a tracked Stratum-1–4 firm and neither is a marketing-team-specific cut — both logged as **perimeter** rows (per Block/MARA precedent). But the *narrative convergence* is a report-grade datapoint: across Coinbase (tracked), Robinhood and BitGo (perimeter), the 2026 cut is publicly justified as **fewer management layers / more IC-weighted org / leaner operating model**, with AI as a contested rather than automatic rationale. For Theme 1 (the shape of the marketing function), this strengthens the read that the surviving crypto marketing org is being re-shaped toward fewer layers and operator-ICs — and that even the AI-cover narrative is now being publicly resisted (Tenev), not just asserted.
+
+## Update — 2026-06-29: Binance confirms the wind-down begins (its own words); the migrating EU surface is quantified
+
+Two days out from the 1-July deadline, the lead Theme-4 case tightens further — and this time on Binance's *own* public admissions, not third-party reporting. No new corpus item; the Binance regulator entry is updated in place (`../corpus/regulator-filings/binance-mica-eu-exit-2026-06.md`).
+
+**1. "Marketing going dark" stops being inference.** Binance confirmed the Greek withdrawal in writing (X post 2026-06-24) and said it will "take steps before July 1 to remain compliant" while conceding **"some users may be impacted depending on their country and account status"** (Binance blog, via The Defiant 2026-06-24). The firm is itself putting the EU service/onboarding pull-down on the public record pre-deadline — the leading edge of which, under ESMA's 23-June statement, is cessation of marketing and solicitation. The "marketing cessation as the leading public indicator of CASP authorisation failure" sub-section now has the subject conceding the wind-down in its own voice.
+
+**2. The competitive read (Theme 3) is now numeric, with a fresh licensed entrant.** ~83% of EU-active CASPs remain unauthorised at the deadline (ESMA, via The Defiant). On euro-denominated spot specifically, **Kraken already holds 43.3% vs Binance's 18.5%** (CryptoQuant/Cointelegraph) — the licensed Tier-1 out-holds Binance on exactly the surface Binance must vacate. **Ripple just received a preliminary MiCA CASP licence from Luxembourg's CSSF covering the full EEA** — another licensed rival able to advertise/solicit EU-wide on 2 July. The MiCA licence is not a compliance checkbox; it is a marketing-surface land-grab, and the corpus now has the share numbers to show it.
+
+**3. Scope honesty.** Euro pairs are ~1% of Binance's *global* spot volume — so this is not about financial materiality to Binance, it's about Binance being the cleanest *named, public* instance of the report's central read. Logged that way, not over-claimed.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` advanced its scan_date to 2026-06-29 but the underlying postings (dedup-by-URL) were unchanged → sync correctly added 0 job rows (idempotent `as_of` date-stamp refresh only). `trend-data.json` unchanged since 2026-06-15 → agency matrix holds at 8 firms / 1 overlap (Sui). **Classes 4 (operator statements) and 5 (layoffs): 0 net-new** — OKX Europe chief Erald Ghoos's "80% won't survive MiCA" interview (The Block) is a regional-GM statement, not a senior *marketing* operator, so it does not qualify for class 4; no tracked-firm marketing-team contraction surfaced (Kalifowitz's end-June Crypto.com exit already captured).
 
 ## In-window confirmations (not net-new, but datable ticks)
 - Binance CMO **Rachel Conlan** departure executed ~**2026-06-15**; **Eowyn Chen** interim CMO (captured May; confirms the Theme-1 "non-marketing operator into the CMO seat" read).
