@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-06-29.
+**Last updated:** 2026-06-30.
 
 ## Shift flagged this month
 
@@ -50,6 +50,20 @@ Two days out from the 1-July deadline, the lead Theme-4 case tightens further �
 **3. Scope honesty.** Euro pairs are ~1% of Binance's *global* spot volume — so this is not about financial materiality to Binance, it's about Binance being the cleanest *named, public* instance of the report's central read. Logged that way, not over-claimed.
 
 **Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` advanced its scan_date to 2026-06-29 but the underlying postings (dedup-by-URL) were unchanged → sync correctly added 0 job rows (idempotent `as_of` date-stamp refresh only). `trend-data.json` unchanged since 2026-06-15 → agency matrix holds at 8 firms / 1 overlap (Sui). **Classes 4 (operator statements) and 5 (layoffs): 0 net-new** — OKX Europe chief Erald Ghoos's "80% won't survive MiCA" interview (The Block) is a regional-GM statement, not a senior *marketing* operator, so it does not qualify for class 4; no tracked-firm marketing-team contraction surfaced (Kalifowitz's end-June Crypto.com exit already captured).
+
+## Update — 2026-06-30: the capture leg arrives — the symmetric pair is now complete
+
+The deadline-eve run closes the one piece the June corpus was missing. Every prior note had the **cessation** half (Binance/Bybit Global forced to pull EU marketing) but only an *anticipated* **capture** half. As of 2026-06-30 the capture half is on the record — **named firms, dated windows, quantified offers** — so the report's central Theme-3 claim now rests on a *matched pair*, both halves publicly observable and primary-source-anchored. See new corpus file `../corpus/marketing-campaigns/mica-competitive-capture-2026-06.md`.
+
+**1. Licensed Tier-1s are monetising the MiCA licence as an acquisition weapon, in real time.** Three tracked Stratum-1 firms launched EEA-geofenced capture promotions explicitly targeting Binance/Bybit-Global's displaced users: **OKX** — 8% bonus on crypto transfers and cash deposits, capped €20,000, paid over 52 weeks; **Coinbase** — 5% transfer bonus for funds moved before July 13, named markets DE/FR/IT/BE/PL/SE/UK; **Kraken** — €1M prize draw, one entry per euro deposited 22 June–31 July. This is the exact behaviour the 06-27/06-29 notes said the licence advantage would produce — now completed and quantified, not predicted.
+
+**2. The Bybit brand is a two-state gate-stack case (net-new Theme-1/Theme-4 detail).** **Bybit Global** progressively limits EEA access from 1 July, while **Bybit EU remains MiCA-authorised via an Austrian licence** — the same brand simultaneously a displaced entity and a licensed entity. ESMA's own warning (MiCA protection attaches to the *licensed legal entity*, not the brand) makes this a clean illustration that "what is publicly visible" must be read at the entity level, not the brand level. Worth a Theme-1 callout: brand-level marketing legibility can mask entity-level regulatory divergence.
+
+**3. Market-structure quantification.** 244 MiCA CASP licences approved as of 2026-06-29; **Germany leads with 57**; Greece/Hungary/Poland/Portugal/Romania at zero (Greece — Binance's withdrawn base — issuing none is itself a Theme-4 datapoint). Sourced to Crypto Briefing's reporting; the 244/57 counts and the still-pending ESMA non-compliant-CASP register both **held for primary-source ESMA-register verification** (carried from 06-29).
+
+**Synthesis implication:** the report can now state the Theme-3 thesis as a demonstrated symmetry rather than a directional argument — *one regulatory event (1-July transitional-period end) simultaneously darkens the unauthorised incumbent's marketing surface and arms the licensed challengers' acquisition spend, both visible in the public record.* This is the strongest single validation to date of the methodology's "visibility-as-analysis" premise.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date advanced to 2026-06-30, postings unchanged by URL → 0 job rows (idempotent). `trend-data.json` unchanged since 2026-06-15 (16th day) → matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT). **Class 4 (operator statements): 0** — OKX Europe GM Erald Ghoos's "record sign-ups" line is regional-GM colour, not a senior-marketing-operator quote (excluded, consistent with 06-29). **Class 5 (layoffs): 0 net-new** — no tracked-firm marketing-team contraction; BitMEX's head-of-growth removal is a non-tracked firm, not added.
 
 ## In-window confirmations (not net-new, but datable ticks)
 - Binance CMO **Rachel Conlan** departure executed ~**2026-06-15**; **Eowyn Chen** interim CMO (captured May; confirms the Theme-1 "non-marketing operator into the CMO seat" read).
