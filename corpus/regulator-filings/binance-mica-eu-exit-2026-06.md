@@ -74,3 +74,7 @@ Two days from the deadline, the case tightens on Binance's *own* words and the c
 - **Binance corporate blog, 2026-06-16** (HCMC review / EU-user framing): https://www.binance.com/en/blog/regulation/5369321191341949883
 - **Reuters, 2026-06-24** — "Binance vows to stay in Europe despite licence setback" (Gillian Lynch): https://www.reuters.com/business/finance/binance-vows-stay-europe-despite-licence-setback-2026-06-24/
 - **crypto.news, 2026-06-27 (explainer corroboration — July-1 EU service suspension, CZ fit-and-proper)**: https://crypto.news/binance-eu-mica-license-lockout-july-2026-explained/
+
+## UPDATE — 2026-06-30 corpus run: the capture half is now on the record (cross-ref)
+
+Watch item (d) from the 06-29 update — *"whether Kraken/Coinbase/Bitvavo/Ripple visibly capture the migrating EU marketing surface"* — is **closed**. As of 2026-06-30, OKX (8% deposit/transfer bonus, €20k cap, 52 weeks), Coinbase (5% transfer bonus before July 13, named EU markets), and Kraken (€1M prize draw, 22 Jun–31 Jul) are running dated, quantified, EEA-geofenced capture campaigns explicitly targeting Binance's (and Bybit Global's) displaced EU users. Logged as a **separate firm-side marketing-action corpus item**, not folded into this regulator entry: `../marketing-campaigns/mica-competitive-capture-2026-06.md`. The Binance EU-exit event chain and the rivals' capture campaigns are the two halves of one Theme-3 symmetry — cessation here, capture there.
