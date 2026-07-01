@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-06-30.
+**Last updated:** 2026-07-01.
 
 ## Shift flagged this month
 
@@ -71,6 +71,16 @@ The deadline-eve run closes the one piece the June corpus was missing. Every pri
 
 ## Structural signal to watch (marginal, pre-window)
 - **Proof of Talk 2026** (Paris, 2026-06-02/03) launched a **"Crypto Content Council"** of financial journalists and banned paid speaking slots — an industry-governance move on crypto *content credibility*. Not a tracked-firm operator statement; watch whether tracked-firm CMOs publicly align with or distance from editorial-credibility framing as MiCA/FCA enforcement tightens.
+
+## Update — 2026-07-01 (the deadline day): the cessation half is now COMPLETED, not anticipated
+
+The MiCA transitional period the whole June corpus was built toward **ended today.** The Theme-3 symmetry the 06-30 note called "complete" was, on the cessation side, still *anticipated/conceded* — the pull-down had not yet been observed live. As of **1 July 2026 it has executed.**
+
+**The lead Theme-4 example graduates from exposure-surface to completed instance.** On the deadline day, **Binance suspended for EU/EEA residents new sign-ups, new deposits, new orders, and staking/savings** — leaving only consultation and withdrawal/transfer of existing holdings during the orderly exit. This is the corpus's **first completed, observed marketing/solicitation-and-onboarding cessation** by a tracked Stratum-1 firm, matching the ESMA 23-June statement's enumerated ordering (marketing/solicitation first). The report can now state the "marketing going dark is the leading public indicator of CASP authorisation failure" read as a *named, dated, completed* fact, not an inference. Detail + sourcing/honesty note appended in place to `../corpus/regulator-filings/binance-mica-eu-exit-2026-06.md` (2026-07-01 block). Binance withdrew its Greek application and reports intent to re-file in another member state (France reported, not yet formally confirmed).
+
+**Root-cause read for Theme 1:** the authorisation blocker was the owner/manager **fit-and-proper** test (CZ's ~90% ownership + 2023 US guilty plea), not a marketing deficiency — yet the *first publicly visible consequence* still lands on the marketing surface (EU campaigns/onboarding going dark). The marketing function was legible and working; the licence blocker sat above it. This sharpens rather than contradicts the visibility-as-analysis premise.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date advanced to 2026-07-01, postings unchanged by URL → 0 job rows (idempotent `as_of` refresh only; `_absence.csv`/`_chrome-queue.csv` re-stamped). `trend-data.json` unchanged since 2026-06-15 (now 17th day → the agency panel is a standing staleness flag for the July synthesis pass) → matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT). **Class 4 (operator statements): 0 net-new** — no qualifying senior-marketing-operator (CMO/VP/Head-of-Brand/Growth) verbatim quote at a tracked firm in-window; the deadline-day quotes are regional-GM/corporate (excluded, consistent with prior runs). **Class 5 (layoffs): 0 net-new** — no tracked-firm marketing-team contraction with stated rationale (Kalifowitz/Conlan already captured; BitGo/Robinhood/BitMEX are perimeter or non-marketing, already ruled).
 
 ## Open backlog for Theme 4 baseline (pre-window items, material but not weekly net-adds)
 ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factsheet + CONSOB amplification (~2026-01); BaFin "Risks in Focus 2026" (2026-01-28, finfluencer-as-market-risk); AMF unauthorised-entity crypto warnings (2026-04). These should be backfilled into `regulator-filings/` during the July synthesis pass as the Theme-4 regulatory baseline.
