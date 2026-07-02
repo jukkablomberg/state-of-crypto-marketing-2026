@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-01.
+**Last updated:** 2026-07-02.
 
 ## Shift flagged this month
 
@@ -84,3 +84,15 @@ The MiCA transitional period the whole June corpus was built toward **ended toda
 
 ## Open backlog for Theme 4 baseline (pre-window items, material but not weekly net-adds)
 ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factsheet + CONSOB amplification (~2026-01); BaFin "Risks in Focus 2026" (2026-01-28, finfluencer-as-market-risk); AMF unauthorised-entity crypto warnings (2026-04). These should be backfilled into `regulator-filings/` during the July synthesis pass as the Theme-4 regulatory baseline.
+
+## Update — 2026-07-02 (day 1 post-deadline): first class-1 row in weeks + the capture leg gets its primary source
+
+**1. Class 1 produced a real row — and it's a senior brand seat at a wallet firm.** The deterministic sync added **Phantom — "Head of Brand Creative" (Remote-US, Ashby, posted 2026-07-01)** — the first net-new tracked-firm job-posting row since the Solana Chrome-lane captures. Longitudinal read: on the day the EU marketing surface restructures, the hiring signal that *is* publicly legible comes from the US-remote wallet stratum, and it's a Head-of-level **brand** seat (Theme-1: brand investment continuing at wallets while exchange marketing seats churn — Conlan out/interim at Binance, Kalifowitz out at Crypto.com).
+
+**2. The Theme-3 capture leg is now primary-source-anchored (partially).** Kraken's campaign page — first-party, published 2026-06-19 — is captured verbatim (`../corpus/marketing-campaigns/mica-competitive-capture-2026-06.md`, 07-02 block). Two synthesis-grade consequences: (a) **the firm-stated window corrects the press-reported one** (19 June start, not 22 June) — a concrete instance of why the appendix needs firm-page anchors, not press echoes; (b) **the capture campaign is itself compliance-dressed** (risk banner, entity-level CBI/CySEC disclosures, "Staking/Earn is not a regulated financial product") — the licence-as-marketing-weapon thesis extends to the *form* of the promotion. OKX/Coinbase firm pages remain geofenced/uncaptured.
+
+**3. Market-structure counts now conflict in the press (210 vs 244).** Finance Magnates cites ~210 authorisations (~7% of 3,000+ EU-active firms) per the ESMA interim register; Crypto Briefing had 244 on 06-29. The held primary ESMA-register verification is now load-bearing — neither number goes into synthesis unverified.
+
+**4. Day-1 post-deadline regulator silence is itself the datapoint (classes 3/5 absence).** No named marketing-side enforcement action by any NCA (BaFin/AMF/CONSOB/AFM/CySEC) surfaced within 24h of the transitional period ending, and no new tracked-firm marketing layoff. The enforcement wave the ESMA 23-June statement architected ("NCAs may take coordinated action") has not yet produced a named public case — the watch item rolls forward.
+
+**Deterministic feeds:** `open-positions.json` scan_date 2026-07-02, **+1 row (Phantom)**; `trend-data.json` unchanged since 2026-06-15 (**18th day** — agency-panel staleness flag hardens for July synthesis). Matrix holds 8 firms / 1 overlap (Sui). **Class 4: 0 net-new** (Mulvenny quote inside Kraken's campaign ruled non-marketing-operator, logged as campaign copy).

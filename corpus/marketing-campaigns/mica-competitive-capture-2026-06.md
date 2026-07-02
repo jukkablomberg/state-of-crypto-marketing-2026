@@ -43,3 +43,25 @@ This is the cleanest demonstration of the report's central Theme-3 claim: **the 
 ## Verification status
 
 Offer mechanics (percentages, caps, dates, named markets) are reported consistently across Crypto Briefing (06-29) and crypto.news (06-28), both attributing the underlying figures to firm promotions / a Bloomberg-sourced report. Logged as **reported live campaigns** with consistent multi-source figures. Direct firm-page T&C URLs not captured at run time (promo landing pages are EEA-geofenced and often un-fetchable from outside the targeted region) — flagged for Chrome-lane T&C capture if a primary firm URL is needed for the report's appendix. The 244-licence / Germany-57 / five-zero-issuer counts are sourced to Crypto Briefing's reporting ("as of Monday"), not yet cross-checked against the primary ESMA Interim MiCA Register — held for primary-source verification alongside the still-pending ESMA non-compliant-CASP register check (carried from 2026-06-29).
+
+---
+
+## Update — 2026-07-02: Kraken PRIMARY firm-page URL captured (verification-status upgrade)
+
+The 2026-06-30 verification note flagged that no direct firm-page URL had been captured for any of the three campaigns ("promo landing pages are EEA-geofenced"). The **Kraken campaign's primary firm-side source is now captured and fetched in full**:
+
+- **Kraken Blog (first-party, primary), published 2026-06-19 16:41 UTC** — *"MiCA enforcement begins July 1. Switch to one of Europe's longest-standing licensed exchanges."*: https://blog.kraken.com/news/industry-news/europe-mica-switch
+
+**Firm-stated mechanics (verbatim-anchored, supersede press-reported figures for the appendix):**
+- "Enrol in the prize draw, and every €1 you deposit on Kraken during the campaign earns one entry into a €1M prize draw" — enrolment at https://kraken.com/europe-switch is a stated precondition ("in order for your deposits to earn entries, you must first enrol").
+- **Window (firm-stated): "begins on 19 June 2026 at 11:00 UTC and ends on 31 July 2026 at 13:59 UTC."** ⚠️ **Correction to the press-reported window:** Crypto Briefing/crypto.news reported deposits "between June 22 and July 31"; the firm's own page states **19 June** start. Primary source wins — table row above should read 19 June–31 July in the synthesis pass.
+- Eligibility: "only open to eligible customers residing in the European Economic Area (EEA)"; open to "new users switching to Kraken and to existing users adding funds." T&Cs: https://kraken.com/legal/deposit-sweepstakes-terms
+- Positioning copy is licence-led, explicitly enforcement-timed: "From 1 July 2026, MiCA is fully enforced across the EEA, and exchanges operating without authorisation face restrictions on serving EU customers… You can move to an exchange that secured its regulatory standing years ago."
+
+**Named-speaker quote inside the campaign (class-4 ruling: EXCLUDED, logged as campaign copy):** "Since receiving authorisation from the Central Bank of Ireland in June 2025, Kraken has operated fully under the MiCA framework… For our EU customers, that means world-class services backed by the highest regulatory standards." — **Andrew Mulvenny, Kraken Head of Crypto-Asset Service Provider Trading Platform** (2026-06-19, in the campaign post). Not a senior *marketing* operator (CMO/VP Marketing/Head of Brand/Growth) → does not qualify as a class-4 operator statement, consistent with the 06-29/06-30 Ghoos rulings. Captured here as first-party campaign material.
+
+**Theme-3/Theme-4 observation — the capture campaign is itself compliance-dressed.** The page opens with a UK-style risk banner ("Don't invest unless you're prepared to lose all the money you invest…"), carries entity-level disclosures (Payward Ireland/Payward Europe Solutions regulated by the Central Bank of Ireland; derivatives via a CySEC-licensed Cyprus entity), and flags "Staking/Earn is not a regulated financial product." A licensed Tier-1's *aggressive acquisition promotion* now ships wrapped in the exact equal-prominence apparatus MiCA Art. 7 / FCA COBS demand — the licence-as-marketing-weapon thesis extends to the *form* of the marketing, not just its existence.
+
+**Licence-count discrepancy (verification item sharpened):** Finance Magnates ("Europe's Crypto Market After July 1") reports **~210 full MiCA authorisations of 3,000+ EU-active firms (~7%) per ESMA's interim register**, vs Crypto Briefing's **244 as of 06-29**. Conflicting press counts → the held primary-source check against the ESMA Interim MiCA Register is now load-bearing for the report's market-structure numbers; neither count should be used in synthesis until verified. (Finance Magnates: https://www.financemagnates.com/cryptocurrency/regulation/europes-crypto-market-after-july-1-who-stays-who-leaves-and-what-changes-under-mica/)
+
+OKX and Coinbase primary firm-page URLs remain uncaptured (geofenced) — Chrome-lane capture item stands for those two.
