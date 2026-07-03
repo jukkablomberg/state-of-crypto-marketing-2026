@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-02.
+**Last updated:** 2026-07-03.
 
 ## Shift flagged this month
 
@@ -96,3 +96,13 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **4. Day-1 post-deadline regulator silence is itself the datapoint (classes 3/5 absence).** No named marketing-side enforcement action by any NCA (BaFin/AMF/CONSOB/AFM/CySEC) surfaced within 24h of the transitional period ending, and no new tracked-firm marketing layoff. The enforcement wave the ESMA 23-June statement architected ("NCAs may take coordinated action") has not yet produced a named public case — the watch item rolls forward.
 
 **Deterministic feeds:** `open-positions.json` scan_date 2026-07-02, **+1 row (Phantom)**; `trend-data.json` unchanged since 2026-06-15 (**18th day** — agency-panel staleness flag hardens for July synthesis). Matrix holds 8 firms / 1 overlap (Sui). **Class 4: 0 net-new** (Mulvenny quote inside Kraken's campaign ruled non-marketing-operator, logged as campaign copy).
+
+## Update — 2026-07-03 (day 2 post-deadline): the capture panel doubles down + the market-structure numbers settle
+
+**1. The Theme-3 capture panel grows to five firms — and the two newest entries are the most compliance-dressed yet.** Bitpanda (tracked, Tier-1: €25 BTC welcome + 3% transfer cashback, until 07-05, first 500 users, 15 named EU markets, firm PR 06-26) and Bitvavo (non-tracked capture-context: up to 10% APY on net-new deposits, 25 Jun–30 Sep, €10k cap, first-party help-center page) join OKX/Coinbase/Kraken. Bitvavo's promo page *itself* converts headline APY to actual yield ("4% APY equals about 1.1%") and discloses that auto-earn staking/lending is "not regulated under MiCA" — the strongest instance yet of the licence-as-marketing-weapon thesis extending to the **form** of the promotion. Synthesis caution: deposit-bonus/APY-headline mechanics are exactly MiCA Art. 7's target surface — the capture war is creating the next enforcement surface in real time, and the sophisticated entrants know it (hence the pre-dressing).
+
+**2. The 210-vs-244 licence-count conflict resolves to the register.** ESMA Interim MiCA Register (via the Micahub weekly CSV mirror, data as of 2026-06-27): **243 authorised CASPs** (Germany 56), 20 EMT issuers, 0 ART — and **157 non-compliant entities flagged by NCAs**, the corpus's first quantified enforcement-surface number and the closure of the 06-29 held "35+ non-compliant CASPs" item. The ~210 press figure is ruled stale. Register-listing-as-sanction is itself a Theme-4 read: the public non-compliant list brands entities as unauthorised to solicit.
+
+**3. Binance's counter-narrative is on the record (Theme 4).** Lynch's 07-03 CoinDesk interview (primary fetched) gives the firm's own account — "complete application," postponed board meetings, WSJ-reported ESMA advice to disapprove (disputed), ">$300M/year on compliance," "we will be back in the market." The corpus now holds both halves of the lead case: the observed cessation and the firm's public framing of it. Class-4 exclusion maintained (regional head, not a marketing operator).
+
+**4. Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date 2026-07-03, no new URL-verified rows; `trend-data.json` unchanged since 2026-06-15 (**19th day** — agency-panel staleness now certain to overlap the July synthesis start; escalated to Jukka via situation.md). Matrix holds 8 firms / 1 overlap (Sui). **Class 4: 0 net-new qualifying** (Lynch excluded). **Class 5: 0 net-new** (no tracked-firm marketing contraction; tracker holds at 8 rows). **Day-2/3 post-deadline: still no named NCA marketing-side enforcement case** — silence continues to be the datapoint; the 157-entity register list is currently the only public enforcement instrument in motion.
