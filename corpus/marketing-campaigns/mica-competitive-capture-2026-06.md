@@ -65,3 +65,28 @@ The 2026-06-30 verification note flagged that no direct firm-page URL had been c
 **Licence-count discrepancy (verification item sharpened):** Finance Magnates ("Europe's Crypto Market After July 1") reports **~210 full MiCA authorisations of 3,000+ EU-active firms (~7%) per ESMA's interim register**, vs Crypto Briefing's **244 as of 06-29**. Conflicting press counts → the held primary-source check against the ESMA Interim MiCA Register is now load-bearing for the report's market-structure numbers; neither count should be used in synthesis until verified. (Finance Magnates: https://www.financemagnates.com/cryptocurrency/regulation/europes-crypto-market-after-july-1-who-stays-who-leaves-and-what-changes-under-mica/)
 
 OKX and Coinbase primary firm-page URLs remain uncaptured (geofenced) — Chrome-lane capture item stands for those two.
+
+---
+
+## Update — 2026-07-03: capture escalation confirmed (watch item e) + the licence-count discrepancy RESOLVED
+
+### 1. Two new capture campaigns, both firm-side primary-anchored — the escalation the 07-02 run predicted
+
+**Bitpanda (TRACKED, Tier-1) — welcome offer + transfer cashback, firm-issued PR (2026-06-26):**
+- Mechanics (firm-stated): **€25 welcome reward in BTC** (new users; requires KYC + code `JOINBITPANDAGLOBAL` + ≥€100 crypto purchase) **plus 3% cashback in BTC on crypto transferred from a third-party provider** (assets must remain on Bitpanda 30 days; cashback capped at €1,000). Window: **until 5 July 2026, first 500 new users.** Markets named: France, Italy, Germany, Switzerland, Austria, Croatia, Belgium, Romania, Luxembourg, Netherlands, Poland, Hungary, Greece, Spain, Portugal.
+- The transfer-cashback leg is explicitly aimed at "users who already own digital assets elsewhere and want to move them to a regulated European platform" — i.e., the displaced Binance/Bybit-Global pool, two days before the deadline.
+- Licence-led framing again: "authorised by the Austrian Financial Market Authority under MiCAR"; risk footnote "Investing in crypto-assets involves risks, up to total loss."
+- Source (firm-issued press release, published 2026-06-26): https://advertorial.cryptonews.com/press-releases/bitpanda-launches-new-crypto-welcome-offer-with-25-btc-bonus-and-3-cashback/
+
+**Bitvavo (NOT in the tracked cohort — logged as capture-context, not a cohort row) — Deposit Bonus Promotion 2026, first-party help-center page (updated 2026-06-26, fetched in full):**
+- Mechanics (firm-stated): **up to 10% APY bonus on net-new external crypto deposits** (base 4% APY for depositing with auto-earn on; 10% at ≥20× trading turnover), **capped €10,000/user**, window **25 June – 30 September 2026**, payout in euros 14 Oct 2026, opt-in via Campaign Hub; fiat + stablecoins excluded; post-payout 180-day withdrawal hold on the bonus amount.
+- **Compliance-dressing is the most elaborate yet observed:** the promo page itself converts headline APY to actual yield ("4% APY equals about 1.1%… 10% APY equals about 2.7%"), states "Auto-earn uses staking and lending — not regulated under MiCA," names the AFM authorisation (Bitvavo B.V., MiCA CASP), and links the Risk Disclosure. A **promotional bonus simulator with a built-in de-hyping disclosure layer** — the strongest instance of the "licence-as-marketing-weapon extends to the *form* of the promotion" read.
+- Source (first-party): https://support.bitvavo.com/hc/en-us/articles/48015343474449-How-can-I-participate-in-the-Deposit-Bonus-Promotion-2026
+
+**Theme-3 read:** the capture panel is now **five firms** (OKX 8% / Coinbase 5% / Kraken €1M / Bitpanda €25+3% / Bitvavo up-to-10%-APY), all licence-led, all dated within ±10 days of the deadline. Bitvavo's and Bitpanda's entries close 07-02 watch item **(e)** (escalation/new entrants — Bitvavo was named). Ripple/CSSF remains licence-only, no consumer campaign observed. **Synthesis caution for Theme 4:** deposit-bonus/APY-headline mechanics are exactly the promotional surface MiCA Art. 7 equal-prominence scrutiny targets — the capture war is simultaneously creating the next enforcement surface, which is why the most sophisticated entrants ship it pre-dressed.
+
+### 2. Licence-count discrepancy (210 vs 244) — RESOLVED to the register mirror; ~210 ruled stale
+
+The held primary-source check lands: **Micahub mirrors the ESMA Interim MiCA Register weekly, directly from ESMA CSV source files** — as of **2026-06-27: 243 authorised CASPs** (Germany 56, France 26, Netherlands 26, Malta 17, Cyprus 14), **20 EMT issuers, 0 ART issuers**, and — closing the 06-29 held item on the "35+ non-compliant CASPs" list — **157 non-compliant entities flagged by NCAs**. Source: https://micahub.net/mica-register/ (ESMA Interim MiCA Register via Micahub mirror, data as of 2026-06-27).
+- **Ruling:** Crypto Briefing's 244 (06-29) is consistent with the register (243 @ 06-27 + rolling adds); Finance Magnates' ~210 was a stale/earlier snapshot — **use the register-mirror figure, dated, in synthesis; do not cite ~210.**
+- **Honesty note:** Micahub is a *mirror* (near-primary, refreshed Saturdays from ESMA CSVs), not ESMA's own page. For the report appendix, pull the ESMA CSV directly once at synthesis time and cite both. The **157 NCA-flagged non-compliant entities** figure is the first quantified enforcement-surface number in the corpus — the register's non-compliant list is itself the public instrument NCAs are using post-deadline (register-listing as marketing-side sanction: it publicly brands an entity unauthorised to solicit).
