@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-03.
+**Last updated:** 2026-07-04.
 
 ## Shift flagged this month
 
@@ -106,3 +106,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **3. Binance's counter-narrative is on the record (Theme 4).** Lynch's 07-03 CoinDesk interview (primary fetched) gives the firm's own account — "complete application," postponed board meetings, WSJ-reported ESMA advice to disapprove (disputed), ">$300M/year on compliance," "we will be back in the market." The corpus now holds both halves of the lead case: the observed cessation and the firm's public framing of it. Class-4 exclusion maintained (regional head, not a marketing operator).
 
 **4. Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date 2026-07-03, no new URL-verified rows; `trend-data.json` unchanged since 2026-06-15 (**19th day** — agency-panel staleness now certain to overlap the July synthesis start; escalated to Jukka via situation.md). Matrix holds 8 firms / 1 overlap (Sui). **Class 4: 0 net-new qualifying** (Lynch excluded). **Class 5: 0 net-new** (no tracked-firm marketing contraction; tracker holds at 8 rows). **Day-2/3 post-deadline: still no named NCA marketing-side enforcement case** — silence continues to be the datapoint; the 157-entity register list is currently the only public enforcement instrument in motion.
+
+## Update — 2026-07-04 (day 3 post-deadline): the first fully-zero accretion day — and why that itself is a marker
+
+**1. Day-3 regulator silence extends the enforcement-timing datum (Theme 4).** Three days past the transitional-period end, no NCA (BaFin/AMF/CONSOB/AFM/CySEC) and not ESMA has produced a **named, public marketing-side enforcement case**. The only public enforcement instrument in motion remains the interim-register non-compliant list (157 NCA-flagged entities, logged 07-03). Synthesis read hardening: the post-MiCA enforcement wave is opening **register-first, cases-later** — branding entities as unauthorised-to-solicit precedes fining anyone for soliciting. Timing of the first named case is now the single most valuable class-3 capture left in Phase 1.
+
+**2. All six classes net-zero — first time since the deadline.** Deterministic feeds: `open-positions.json` scan_date 2026-07-03, 0 new rows (Phantom 07-02 stands as latest); `trend-data.json` unchanged since 2026-06-15 (**20th day** — escalation to Jukka carried). Matrix 8 firms / 1 overlap (Sui). Class 4: 0 qualifying (Conlan/Kalifowitz/Chen material all previously captured; no post-deadline marketing-operator statement has landed yet). Class 5: tracker holds at 8 rows. Watch items carried unchanged: Binance re-file jurisdiction (France reported-only — firm statement still names no country), OKX/Coinbase primary-page capture (geofenced), ESMA direct CSV pull (synthesis-time).
+
+**3. The news pulse has passed; the accretion vector rotates.** Deadline week produced the corpus's densest stretch (cessation → capture panel → register resolution → counter-narrative). With that pulse spent, the next net-new material most plausibly arrives via: (i) the first named NCA action, (ii) the **Bitpanda 07-05 cap expiry** — extend/lapse is a campaign-performance signal either way, (iii) post-deadline conference/podcast content (the class-4 drought since the May CMO churn is itself a Theme-1 datum: the seats that would be giving post-MiCA statements are sitting empty or interim at Binance and Crypto.com).
