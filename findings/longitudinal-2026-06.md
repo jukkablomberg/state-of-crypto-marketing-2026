@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-04.
+**Last updated:** 2026-07-05.
 
 ## Shift flagged this month
 
@@ -114,3 +114,13 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **2. All six classes net-zero — first time since the deadline.** Deterministic feeds: `open-positions.json` scan_date 2026-07-03, 0 new rows (Phantom 07-02 stands as latest); `trend-data.json` unchanged since 2026-06-15 (**20th day** — escalation to Jukka carried). Matrix 8 firms / 1 overlap (Sui). Class 4: 0 qualifying (Conlan/Kalifowitz/Chen material all previously captured; no post-deadline marketing-operator statement has landed yet). Class 5: tracker holds at 8 rows. Watch items carried unchanged: Binance re-file jurisdiction (France reported-only — firm statement still names no country), OKX/Coinbase primary-page capture (geofenced), ESMA direct CSV pull (synthesis-time).
 
 **3. The news pulse has passed; the accretion vector rotates.** Deadline week produced the corpus's densest stretch (cessation → capture panel → register resolution → counter-narrative). With that pulse spent, the next net-new material most plausibly arrives via: (i) the first named NCA action, (ii) the **Bitpanda 07-05 cap expiry** — extend/lapse is a campaign-performance signal either way, (iii) post-deadline conference/podcast content (the class-4 drought since the May CMO churn is itself a Theme-1 datum: the seats that would be giving post-MiCA statements are sitting empty or interim at Binance and Crypto.com).
+
+## Update — 2026-07-05 (day 4 post-deadline): second consecutive zero-accretion day; the Bitpanda cap comes due
+
+**1. Day-4 regulator silence — the register-first, cases-later read is now a four-day pattern (Theme 4).** Still no named marketing-side NCA enforcement case on the public record four days past the transitional-period end. Two consecutive fully-zero net-new days confirm this is not a search-coverage gap but the actual enforcement posture: NCAs are branding entities via the ESMA non-compliant register (157 flagged) and have not yet opened a named marketing-side action. For the report, the **elapsed time to the first named case is itself the Theme-4 enforcement-timing metric** — worth stating as a dated observation, not just an absence.
+
+**2. The Bitpanda capture offer reaches its stated cap today (07-05) — campaign-lifecycle datum, unresolved.** The tracked €25-BTC + 3%-cashback offer's stated window ("first 500 users / 07-05") closes today with **no public extension signal**. Secondary coverage now shows a **cap discrepancy (500 vs "first 1,000")** — logged as secondary-source ambiguity, not promoted to a finding; the primary T&C page is the arbiter and is the first thing next run should resolve. Whether the offer extends or lapses is a clean campaign-performance signal either way — the first such lifecycle datapoint the capture panel will yield.
+
+**3. Scope-discipline note: a non-capture Bitpanda campaign was surfaced and excluded.** A Bitpanda equities/ETF savings-plan raffle (€100/mo × 3 winners, window 05-27→06-08) is out-of-window and not a MiCA-capture campaign — reviewed and excluded from `marketing-campaigns/`, recorded so future runs don't re-surface it. **Class-5 discipline held too:** MANTRA Chain surfaced as a marketing-layoff candidate but verified out (announced 2026-01-14, non-tracked, OM-collapse-driven) — excluded on window + cohort.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date 2026-07-03 (0 new rows); `trend-data.json` unchanged since 2026-06-15 (**21st day** — agency-panel staleness escalation carried; now certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui). Class 4: 0 qualifying (post-deadline conference content surfaced only non-marketing execs — Coinbase Chief Policy Officer, Kraken CEO, Bitpanda CEO). Class 5: tracker holds at 8 rows.
