@@ -56,3 +56,17 @@ Recorded in `../../findings/longitudinal-2026-06.md` (2026-07-05 section; last-u
 
 ## Recommendation for next run
 (a) Binance named re-file jurisdiction (open; France reported-only); (b) **first named post-deadline NCA action** — day-4 silence logged; the ESMA non-compliant register remains the leading indicator; (c) **Bitpanda 07-05 cap outcome** — check whether the €25-BTC offer extended (campaign-performance signal) or closed; resolve the 500-vs-1,000 cap against the primary T&C page; (d) OKX + Coinbase primary firm-page/T&C capture (geofenced — Chrome lane); (e) any sixth capture entrant; (f) agency panel **21 days stale — escalation to Jukka carried** (upstream `trend-data.json` refresh needed before July synthesis); (g) qualifying class-4 statements as post-deadline conference/podcast content lands (Chen interim-CMO surface worth re-checking weekly).
+
+---
+
+## Second-pass verification (same-day re-run, ~afternoon)
+
+A second automated invocation of the corpus-assembly task ran later on 2026-07-05. It is a verification pass over the morning run (record above); **it produced no net-new corpus items and no findings changes.**
+
+- **Classes 1+2 (deterministic):** `daily-corpus-sync.py` re-run → `job postings ADDED: 0`, agency-overlap-matrix 8 rows / 1 OVERLAP (Sui: coinbound+rzlt), 18 agency-claims files idempotent. Source A scan_date still 2026-07-03; Source B lastUpdated still 2026-06-15 (agency panel now **21 days stale** — escalation carried). Working tree clean, no file deltas.
+- **Class 3 (regulator):** re-swept named MiCA marketing-side NCA enforcement (BaFin/AMF/CONSOB/CySEC/AFM/ESMA) → still **no named post-deadline marketing-side action**; hits re-surface only pre-deadline instruments + secondary CASP-list trackers. Day-4 named-enforcement silence holds; register-first/cases-later read unchanged.
+- **Class 4 (operator statements):** CMO / Head-of-Marketing sweep (Coinbase/Kraken/OKX/Bitpanda) → 0 qualifying in-window verbatim statements; only stale/non-marketing-exec material.
+- **Class 5 (layoffs):** July-window re-sweep → only already-captured items (Crypto.com −12% AI-cover, Coinbase −700, BitGo −15% 06-26). Tracker holds at 8 rows.
+- **Bitpanda 07-05 cap (watch item e):** primary press release (cryptonews advertorial / 99bitcoins) re-confirms "first 500 users / until July 5, 2026"; no primary extension signal surfaced this pass. Outcome (extend vs close) checkable from the next daily run. 500-vs-1,000 secondary ambiguity remains unresolved against a primary T&C page.
+
+**Net effect of second pass: 0 net-new across all six classes.** Morning commit `dfd1824` (on origin/main) stands as the day's corpus of record; this stamp is the only same-day delta.
