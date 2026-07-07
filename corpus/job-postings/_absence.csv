@@ -1,8 +1,8 @@
 firm,reason,detail,as_of
-Aave,api-fetch-error,network error fetching https://api.lever.co/v0/postings/aave?mode=json: HTTP Error 404: Not Found,2026-07-05
-Binance,proprietary-ATS/needs-chrome,https://www.binance.com/en/careers/job-openings,2026-07-05
-Binance,proprietary-ATS/needs-chrome,https://www.binance.com/en/careers/job-openings?team=All&location=Dubai,2026-07-05
-Bybit,proprietary-ATS/needs-chrome,https://jobs.bybitglobal.com/social-recruitment/bybit/,2026-07-05
-HTX,proprietary-ATS/needs-chrome,https://www.htx.com/en-us/crm/market-recruitment,2026-07-05
-Kucoin,proprietary-ATS/needs-chrome,https://hire-r1.mokahr.com/social-recruitment/kcareers/100000192,2026-07-05
-MetaMask / ConsenSys,proprietary-ATS/needs-chrome,https://consensys.io/open-roles,2026-07-05
+Aave,api-fetch-error,network error fetching https://api.lever.co/v0/postings/aave?mode=json: HTTP Error 404: Not Found,2026-07-07
+Binance,proprietary-ATS/needs-chrome,https://www.binance.com/en/careers/job-openings,2026-07-07
+Binance,proprietary-ATS/needs-chrome,https://www.binance.com/en/careers/job-openings?team=All&location=Dubai,2026-07-07
+Bybit,proprietary-ATS/needs-chrome,https://jobs.bybitglobal.com/social-recruitment/bybit/,2026-07-07
+HTX,proprietary-ATS/needs-chrome,https://www.htx.com/en-us/crm/market-recruitment,2026-07-07
+Kucoin,proprietary-ATS/needs-chrome,https://hire-r1.mokahr.com/social-recruitment/kcareers/100000192,2026-07-07
+MetaMask / ConsenSys,proprietary-ATS/needs-chrome,https://consensys.io/open-roles,2026-07-07
