@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-07.
+**Last updated:** 2026-07-08.
 
 ## Shift flagged this month
 
@@ -136,3 +136,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **4. Day-6 named-enforcement silence — the register-first, cases-later read is now a six-day pattern (Theme 4).** Still no named marketing-side NCA enforcement case six days past the transitional-period end; the ESMA non-compliant register (157 NCA-flagged entities) remains the only public instrument in motion. Elapsed-time-to-first-named-case continues as the single most valuable class-3 capture left in Phase 1.
 
 **Deterministic feeds (classes 1+2): 0 net-new.** `open-positions.json` scan_date 2026-07-07 (0 new rows; Phantom 07-02 stands as latest class-1 row); `trend-data.json` unchanged since 2026-06-15 (**22nd day** — agency-panel staleness escalation carried; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui). Class 4: 0 qualifying (May CMO-churn all previously captured; no post-deadline marketing-operator statement yet). Class 5: tracker holds at 8 rows (YGG candidate excluded — non-tracked, partner-marketing wind-down not a headcount cut).
+
+## Update — 2026-07-08 (day 7 post-deadline): an integrity catch, not an accretion — the class-1 feed's network-health dependency surfaces
+
+**1. The deterministic class-1 pipeline is only as honest as the upstream feed's network health — and today it failed silently (methodology note).** `open-positions.json` (scan 2026-07-08 04:49 UTC) returned `total_jobs_fetched: 0` with **87 of 87 API firms in `fetch_errors`**, all carrying the same DNS-failure signature (`nodename nor servname provided`). This is a blanket upstream ATS-scanner outage, not a hiring signal. Committing `daily-corpus-sync.py`'s regenerated `_absence.csv` unchecked would have recorded **17 tracked firms as `api-fetch-error`** — firms API-covered in every prior run — injecting a **false mass-absence longitudinal signal** that reads like exchanges de-listing their job boards. The contaminated file was reverted to the honest 07-07 snapshot; `_chrome-queue.csv`'s date re-stamp (outage-independent proprietary list) was kept. **Synthesis implication:** any future "absence spike" in the job-postings corpus must be cross-checked against `open-positions.json`'s `scan_metadata` (a `total_jobs_fetched: 0` + mass `fetch_errors` day is an infra artifact, not data). The absence-as-data rule holds only when the scan reached its hosts.
+
+**2. All web-search classes net-zero; the post-deadline pattern extends by one day.** Day-7 named-enforcement silence (register-first, cases-later; 157 NCA-flagged entities still the only public instrument in motion). Class-4 drought persists (Mayur Gupta recurs as a conference speaker-profile, no in-window verbatim; the empty/interim marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows (no net-new tracked-firm marketing cut; only aggregator round-ups of captured items). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only, no consumer campaign.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **DEGRADED** (upstream outage; absence held at 07-07). `trend-data.json` unchanged since 2026-06-15 (**23rd day** — agency-panel staleness escalation hardened; now certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
