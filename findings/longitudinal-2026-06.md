@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-08.
+**Last updated:** 2026-07-09.
 
 ## Shift flagged this month
 
@@ -144,3 +144,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **2. All web-search classes net-zero; the post-deadline pattern extends by one day.** Day-7 named-enforcement silence (register-first, cases-later; 157 NCA-flagged entities still the only public instrument in motion). Class-4 drought persists (Mayur Gupta recurs as a conference speaker-profile, no in-window verbatim; the empty/interim marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows (no net-new tracked-firm marketing cut; only aggregator round-ups of captured items). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only, no consumer campaign.
 
 **Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **DEGRADED** (upstream outage; absence held at 07-07). `trend-data.json` unchanged since 2026-06-15 (**23rd day** — agency-panel staleness escalation hardened; now certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
+
+## Update — 2026-07-09 (day 8 post-deadline): class-1 integrity recovers — the outage guard behaved correctly
+
+**1. The deterministic class-1 pipeline is back to honest idempotency one day after the blanket outage (methodology confirmation).** Today's `open-positions.json` (scan 2026-07-09 04:22 UTC) fetched **2,469 jobs across 87 API firms** with only **6 fetch-errors** — Wormhole, Aave, Injective, Bitwise, Chainlink, Elliptic — of which only **Aave** is tracked, and its error is the long-standing Lever-`aave` HTTP-404, not a new outage. The 07-08 DNS-failure signature (87/87 firms failing) is gone. This confirms two things: (i) yesterday's zero was a genuine infra artifact and the guard that held it out of the corpus was correct; (ii) today's **0-new-rows is genuine no-new-marketing-roles idempotency**, not another silent outage. The `_absence.csv` regenerated to its honest steady state (Aave Lever-404 + 5 proprietary needs-chrome firms) — the 07-08 contamination did **not** carry forward. **Standing synthesis guard reaffirmed:** any future job-postings "absence spike" must be cross-checked against `scan_metadata` (`total_jobs_fetched` + `fetch_errors` count) before being treated as data — a mass-`fetch_errors` day is infra, not a hiring-freeze signal.
+
+**2. All web-search classes net-zero; the post-deadline patterns extend by one day.** Day-8 named-enforcement silence holds (register-first, cases-later; the AMF blacklist — 16 recent site additions, 38 YTD — and the ESMA non-compliant register remain **unauthorised-entity** instruments, not marketing-side misleading-promotion cases against tracked-cohort firms; no named marketing-side action yet). Class-4 drought persists (conference lineups feature non-marketing execs — Coinbase CPO, Kraken CEO — no qualifying CMO/VP-Marketing verbatim; the interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows (no net-new tracked-firm marketing cut; only aggregator round-ups of captured items). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (feed recovered; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**24th day** — agency-panel staleness escalation hardened; now certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
