@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-09.
+**Last updated:** 2026-07-10.
 
 ## Shift flagged this month
 
@@ -152,3 +152,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **2. All web-search classes net-zero; the post-deadline patterns extend by one day.** Day-8 named-enforcement silence holds (register-first, cases-later; the AMF blacklist — 16 recent site additions, 38 YTD — and the ESMA non-compliant register remain **unauthorised-entity** instruments, not marketing-side misleading-promotion cases against tracked-cohort firms; no named marketing-side action yet). Class-4 drought persists (conference lineups feature non-marketing execs — Coinbase CPO, Kraken CEO — no qualifying CMO/VP-Marketing verbatim; the interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows (no net-new tracked-firm marketing cut; only aggregator round-ups of captured items). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only.
 
 **Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (feed recovered; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**24th day** — agency-panel staleness escalation hardened; now certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
+
+## Update — 2026-07-10 (day 9 post-deadline): clean continuity — no structural shift, the silence deepens
+
+**1. Class-1 healthiest scan since the 07-08 outage — 0 upstream fetch-errors.** `open-positions.json` (scan 2026-07-10) fetched **2,475 jobs across 87 API firms with 0 `fetch_errors`** in `scan_metadata` (yesterday carried 6). The sync's own Aave Lever-`aave` HTTP-404 probe still logs Aave to `_absence.csv` (stable structural gap). Today's 0-new-rows is genuine no-new-marketing-roles idempotency; Phantom Head of Brand Creative (07-02) remains the latest genuine class-1 row. The standing `scan_metadata` cross-check guard holds.
+
+**2. All web-search classes net-zero; the post-deadline patterns extend by a ninth day with no rotation.** Day-9 named-enforcement silence holds — the sweep surfaced only unauthorised-entity/finfluencer-supervision instruments (ESMA wind-down push, AMF unlicensed-operator posture, a **BaFin finfluencer-supervision notice** putting brokers "on notice"), none a named marketing-side misleading-promotion case against a tracked-cohort CASP; register-first, cases-later is now a nine-day pattern. Class-4 drought persists (podcast catalogue features only non-tracked-firm operators — Gate.io/Blocknative/Octant; interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows. Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only. Next campaign-lifecycle checkpoint is **07-13** (OKX + Coinbase windows lapse).
+
+**Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (0 upstream fetch-errors; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**25th day** — agency-panel staleness escalation hardened; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
