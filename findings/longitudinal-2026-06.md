@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-10.
+**Last updated:** 2026-07-11.
 
 ## Shift flagged this month
 
@@ -160,3 +160,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **2. All web-search classes net-zero; the post-deadline patterns extend by a ninth day with no rotation.** Day-9 named-enforcement silence holds — the sweep surfaced only unauthorised-entity/finfluencer-supervision instruments (ESMA wind-down push, AMF unlicensed-operator posture, a **BaFin finfluencer-supervision notice** putting brokers "on notice"), none a named marketing-side misleading-promotion case against a tracked-cohort CASP; register-first, cases-later is now a nine-day pattern. Class-4 drought persists (podcast catalogue features only non-tracked-firm operators — Gate.io/Blocknative/Octant; interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows. Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only. Next campaign-lifecycle checkpoint is **07-13** (OKX + Coinbase windows lapse).
 
 **Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (0 upstream fetch-errors; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**25th day** — agency-panel staleness escalation hardened; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
+
+## Update — 2026-07-11 (day 10 post-deadline): clean continuity holds a second day — no structural shift, two days out from the 07-13 checkpoint
+
+**1. Class-1 healthy-idempotent for a second straight day — 0 upstream fetch-errors.** `open-positions.json` (scan 2026-07-11) fetched **2,304 jobs across 87 API firms with 0 `fetch_errors`** in `scan_metadata` (2,475 yesterday; the 171-job dip is normal daily churn, well inside the healthy band — not an outage signature). The sync's own Aave Lever-`aave` HTTP-404 probe still logs Aave to `_absence.csv` (stable structural gap). Today's 0-new-rows is genuine no-new-marketing-roles idempotency; Phantom Head of Brand Creative (07-02) remains the latest genuine class-1 row. The standing `scan_metadata` cross-check guard holds; two consecutive clean scans (07-10, 07-11) confirm the 07-08 outage was isolated.
+
+**2. All web-search classes net-zero; the post-deadline patterns extend to a tenth day with no rotation.** Day-10 named-enforcement silence holds — the sweep surfaced only wind-down / unauthorised-entity instruments (ESMA orderly-wind-down expectation, AMF unlicensed-operator posture, ESMA/EBA/AMLA coordinated-enforcement-readiness language), none a named marketing-side misleading-promotion case against a tracked-cohort CASP; register-first, cases-later is now a ten-day pattern. Class-4 drought persists (the recurring OKX CMO Rafique profile is a Mar-2025 out-of-window piece; podcast catalogues feature non-marketing hosts — interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum). Class-5 tracker holds at 8 rows (aggregator round-ups of captured cuts only; none names marketing/growth as the affected function). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only. **Next campaign-lifecycle checkpoint is 07-13 (OKX + Coinbase windows lapse) — 2 days out.** New Theme-4 context held (not yet a corpus row, pending a primary-source anchor): a cryptoticker in-window datapoint that ≈70% of withdrawn Binance-EU funds moved to self-custody vs ≈30% to MiCA-regulated entities — a candidate ceiling-of-capture figure for the switch-campaign wave.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (0 upstream fetch-errors; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**26th day** — agency-panel staleness escalation hardened; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
