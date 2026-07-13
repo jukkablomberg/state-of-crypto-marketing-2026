@@ -1,7 +1,7 @@
 # Longitudinal note — June 2026 (for Phase-2 synthesis)
 
 **Status:** working note, updated by the weekly corpus-assembly run. Feeds Theme 1, Theme 4, Theme 5.
-**Last updated:** 2026-07-12.
+**Last updated:** 2026-07-13.
 
 ## Shift flagged this month
 
@@ -178,3 +178,11 @@ ESMA end-of-transitional-period statement (2026-04-17); ESMA finfluencer factshe
 **3. Window-date correction (Theme 4 timeline).** OKX's primary campaign page states the 8% deposit bonus runs **29 Jun – 31 Jul 2026**; only **Coinbase's 5% transfer bonus lapses 07-13**. Prior run records ("OKX + Coinbase windows lapse 07-13") conflated the two. Corrected campaign-lifecycle sequence: **Bitpanda lapsed 07-05 → Coinbase lapses 07-13 (first clean post-Bitpanda datapoint) → OKX + Kraken lapse 07-31.** This matters for the switch-campaign-ceiling read: the capture window stays open through end-July, not mid-July.
 
 **Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** (0 upstream fetch-errors; `_absence.csv` honest at Aave + 5 proprietary). `trend-data.json` unchanged since 2026-06-15 (**27th day** — agency-panel staleness escalation hardened; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
+
+## Update — 2026-07-13 (day 12 post-deadline): first clean post-Bitpanda capture-lifecycle datapoint — Coinbase 5% window lapses
+
+**1. The Coinbase 5% capture campaign reaches its lapse date (Theme-4 lifecycle read).** Today, 07-13, is the confirmed end date of Coinbase's 5%-transfer-bonus campaign aimed at displaced Binance-EU users (Coinbase One–gated, genuine external transfers only; DE/FR/IT/BE/PL/SE/UK). This is the **first *clean* post-Bitpanda (07-05) completed campaign-lifecycle datapoint** in the six-firm MiCA competitive-capture panel, and it confirms the corrected 07-12 sequence: **Bitpanda lapsed 07-05 → Coinbase lapses 07-13 → OKX + Kraken lapse 07-31.** Synthesis implication: the switch-campaign wave is not a single simultaneous burst but a **staggered lifecycle** — the capture window closes firm-by-firm across July, with the two largest incentives (OKX 8%, Kraken €1M draw) running latest, keeping the acquisition pressure on displaced Binance-EU users open through end-July. Recorded as a longitudinal lifecycle event; **not a new capture-panel entrant and not a new marketing-campaigns corpus row** (the panel firm was already captured). Watch for a lapse-vs-quiet-extend confirmation over the next few days.
+
+**2. All web-search classes net-zero; the post-deadline patterns extend to a twelfth day with no rotation.** Day-12 named-enforcement silence holds — the sweep surfaced only wind-down / unauthorised-entity instruments and framework/penalty commentary (ESMA orderly-wind-down expectation, AMF unlicensed-operator sweep, the recurring KuCoin Austrian-FMA ban [Feb-2026, out-of-window entity action]), none a named marketing-side misleading-promotion case against a tracked-cohort CASP; register-first, cases-later is now a twelve-day pattern. Class-4 drought persists — the recurring in-window MiCA-migration commentary is from **OKX Europe CEO Erald Ghoos** (a CEO, not a marketing-function operator; excluded from the class-4 bar); interim/empty marketing seats at Binance and Crypto.com remain a Theme-1 datum. Class-5 tracker holds at 8 rows (aggregator round-ups of captured cuts only; none names marketing/growth as the affected function). Capture panel unchanged at six firms — no 7th entrant; Ripple still licence-only.
+
+**Deterministic feeds (classes 1+2): 0 net-new.** Class 1 **HEALTHY-idempotent** for a fourth straight day (sync clean, 0 rows added; `_absence.csv` honest at Aave Lever-404 + 5 proprietary; four consecutive clean scans 07-10/11/12/13 confirm the 07-08 outage was isolated). `trend-data.json` unchanged since 2026-06-15 (**28th day** — agency-panel staleness escalation hardened; certain to overlap July synthesis). Matrix 8 firms / 1 overlap (Sui).
