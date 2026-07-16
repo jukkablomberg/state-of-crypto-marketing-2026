@@ -61,3 +61,19 @@ Recorded in `../../findings/longitudinal-2026-06.md` (2026-07-16 section; last-u
 
 ## Recommendation for next run
 (a) **Class-1 feed healthy** — resume trusting `open-positions.json` absence data; keep the `scan_metadata` cross-check as a standing guard. (b) First named post-deadline NCA marketing-side action — day-15 silence logged; watch for the transition from register/blacklist/coordinated-readiness to a named misleading-promotion case. (c) **OKX 8% + Kraken (07-31)** are the next campaign-lifecycle checkpoints; watch for a 7th capture entrant (Ripple still licence-only). (d) Qualifying class-4 statements as post-deadline conference/podcast content lands — note CEO-level MiCA commentary keeps surfacing but does not meet the marketing-operator bar. (e) **Agency panel 31 days stale — escalation to Jukka carried/hardened** (upstream `trend-data.json` refresh needed inside July synthesis). (f) **Loop cadence** — confirm the daily task is firing after the 07-14/07-15 gap.
+
+---
+
+## Intraday re-run — 2026-07-16 15:07 CEST (scheduled task fired a 2nd time)
+
+The daily task fired again this afternoon after the 09:39 morning run had already completed all six classes and been committed (d7f2a84) + pushed by the Distribution Engineer (origin/main == HEAD). This is a re-fire, not a fresh day. Re-ran the full protocol honestly; result is **net-zero net-new**, confirming idempotency.
+
+**Class 1+2 (sync):** `daily-corpus-sync.py` re-run. Feed advanced — `open-positions.json` `scan_date` now **2026-07-16** (was 2026-07-15 at the morning run; the feed's normal ~1-day arrears caught up through the day). Result unchanged: **0 job postings added**, absence set identical (Aave Lever-404 + 5 proprietary: Binance/Bybit/HTX/KuCoin/MetaMask-ConsenSys), agency panel still 06-15 (`lastUpdated`), 8 overlap rows, one overlap flag (Sui: coinbound + rzlt). `git status` clean after sync — nothing to re-stamp; the morning run already wrote `as_of=2026-07-16` on `_absence.csv` and `_chrome-queue.csv`, so the afternoon sync produced byte-identical output. True idempotency.
+
+**Class 3 (regulator):** afternoon search pass → ESMA wind-down / "cease marketing and solicitation" (captured), AMF unlicensed-operator reminder (captured), up-to-€5M-or-3%-turnover penalty framing (general, not a case). **0 net-new named marketing-side action vs a tracked CASP.** Day-15 enforcement silence holds into the afternoon.
+
+**Class 4 (operator statements):** OKX Europe CEO Ghoos ("~80% won't survive MiCA") and Bybit CEO = CEO-level, excluded (not marketing operators). Binance CMO transition (Rachel Conlan departed ~mid-June; Eowyn Chen interim CMO) is out-of-window and already-known — a Theme-1/Theme-5 leadership-shape datapoint, not a fresh in-window verbatim marketing-comms statement. **0 qualifying class-4 item.**
+
+**Class 5 (layoffs):** same aggregator round-ups (Crypto.com −12% Mar, Gemini −30% — both already in tracker; generalized July "marketing cut first" commentary; an unconfirmed Coinbase-14%-AI-cut mention with no marketing-function-named primary source). **0 net-new tracked-firm marketing-scope layoff.**
+
+**Net effect of re-fire:** no corpus rows added, working tree clean, no new commit required beyond this run-record note. The morning commit remains the canonical 07-16 corpus state. Operational note: the task fired twice today (~09:39 and ~15:07) — combined with the 07-14/07-15 no-fire gap, the scheduler cadence is irregular and warrants a health check (carried watch item (e)).
