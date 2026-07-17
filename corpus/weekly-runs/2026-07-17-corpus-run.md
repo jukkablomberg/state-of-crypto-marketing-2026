@@ -1,0 +1,63 @@
+# Corpus-assembly daily run — 2026-07-17 (day 16 post-deadline)
+
+**Run type:** Phase-1 daily corpus assembly (automated). First run of 2026-07-17; the daily task fired once as of this record. Follows the 07-16 double-fire (09:39 + 15:07 CEST) after the 07-14/07-15 no-fire gap — cadence remains irregular (carried watch item (e)).
+**Methodology:** public-source synthesis only; every entry anchored to a primary/public URL; no guessed URLs; absence of public signal recorded as data (per `../../methodology.md`).
+**Cohort:** Stratum 1–4 tracked firms + 18-agency comparison panel (`../../tracked-firms.md`).
+**Dedup baseline read before searching:** prior runs 2026-07-16 (incl. intraday re-run) back to 2026-06-30; `regulator-filings/` (Binance EU-exit event-chain, ESMA/AMF/FCA filings); `marketing-campaigns/mica-competitive-capture-2026-06.md` (six-firm capture panel); `operator-statements/`; `layoff-tracker/2026-layoff-tracker.csv` (8 marketing-scope + adjacency rows); `agency-overlap-matrix.csv`; `job-postings/*.csv`; `findings/longitudinal-2026-06.md`.
+
+---
+
+## Headline result
+
+**Day 16 post-deadline; all six classes net-zero net-new; class-1 HEALTHY-idempotent with the feed fully current (`open-positions.json` `scan_metadata.scan_date: 2026-07-17` — no arrears today, unlike the 07-16 morning-run one-day lag). The sync added 0 job-posting rows (`firms: []`) and regenerated `_absence.csv` / `_chrome-queue.csv` as `as_of=2026-07-17` date re-stamps only (diff confirms content byte-identical apart from the date). Day-16 named-enforcement silence holds: today's sweep surfaced only framework/deadline material, ESMA wind-down / "cease marketing and solicitation," BaFin/AMF unauthorised-entity warnings, the recurring out-of-window FCA→HTX (Feb-2026) case, and the June-2025 nine-regulator finfluencer week-of-action — none a named marketing-side misleading-promotion enforcement action against a tracked-cohort CASP. Class-4 drought persists (only OKX Europe CEO Ghoos "80% won't survive MiCA" = CEO, excluded; a Gate.io CMO Tatibouet piece = non-cohort + not in-window). Class-5 tracker holds at 8 rows (Coinbase −14%/~700, Gemini −30%/$582M, Kraken ~30%, Crypto.com −12% — all previously captured; none names marketing/growth as the affected function). Capture panel unchanged at six firms; next lifecycle checkpoint OKX 8% + Kraken lapse 07-31. Agency panel now 32 days stale (`trend-data.json` 06-15). The material read remains continuity — the post-deadline patterns extend to a sixteenth day with no structural shift.**
+
+1. **Class-1 feed healthy, current, and clean.** `daily-corpus-sync.py` ran clean on `open-positions.json` (`scan_date: 2026-07-17` — feed current, no arrears), added **0 job-posting rows** (`firms: []`), 0 via Chrome inbox, and regenerated `_absence.csv` / `_chrome-queue.csv` as `as_of=2026-07-17` date re-stamps only (git diff confirms content identical to 07-16 apart from the date). `_absence.csv` honest at **Aave (Lever-404) + 5 proprietary needs-chrome firms** (Binance, Bybit, HTX, KuCoin, MetaMask/ConsenSys). Phantom Head of Brand Creative (07-02) remains the latest genuine class-1 row. Standing `scan_metadata` cross-check guard holds.
+2. **Day-16 named-enforcement silence holds (class 3 absence-as-data).** Sixteen days past the July-1 transitional-period end, still **no named marketing-side NCA enforcement case** (BaFin/AMF/CONSOB/AFM/CySEC/ESMA) on the public record against a tracked-cohort firm. Register-first, cases-later now extends to a sixteen-day pattern.
+3. **Capture panel + campaign-lifecycle unchanged.** No 7th capture-panel entrant; Ripple still licence-only. No lifecycle event in the 07-16→07-17 window; next checkpoint is **OKX 8% + Kraken lapse 07-31**.
+
+---
+
+## Six-class audit trail
+
+### 1. Job postings (deterministic — `scripts/daily-corpus-sync.py`)
+**Net-new: 0 (HEALTHY-idempotent).** Source A `scan_metadata.scan_date` **2026-07-17** (feed current — no one-day arrears today). Printed summary: `job postings ADDED: 0  firms: []`; `of which via Chrome inbox: 0`. `_absence.csv` regenerated honestly to **Aave (Lever-404) + 5 proprietary needs-chrome firms** (Binance, Bybit, HTX, KuCoin, MetaMask/ConsenSys), `as_of=2026-07-17`. `_chrome-queue.csv` idempotent `as_of=2026-07-17` re-stamp (proprietary list unchanged: Binance, Bybit, HTX, KuCoin, MetaMask/ConsenSys pending-chrome; Solana ingested). Deterministic file deltas: `_absence.csv`, `_chrome-queue.csv` (date re-stamps only — `git diff` confirms content byte-identical to 07-16 apart from `as_of`). Genuine no-new-marketing-roles idempotency.
+
+### 2. Agency claims / overlap matrix (deterministic)
+**Net-new: 0.** Source B `trend-data.json` `lastUpdated` **2026-06-15 — 32nd consecutive day unchanged.** Escalation to Jukka stands and hardens: the agency panel is now over a month stale and squarely inside the Phase-2 synthesis window; upstream NorthPoint `trend-data.json` needs a refresh (not fixable from this loop). Matrix idempotent: 8 tracked firms / 1 OVERLAP (Sui — Coinbound + RZLT). 18 per-agency snapshots written (idempotent).
+
+### 3. Regulator (ESMA/BaFin/AMF/CONSOB/AFM/CySEC/FCA/MAS/VARA)
+**Net-new named enforcement entries: 0.** Day-16 post-deadline sweep (named enforcement, misleading-promotion, financial-promotion fine queries across EU NCAs + FCA/MAS/VARA) returned only: ESMA's orderly-wind-down / "cease marketing and solicitation" expectation for unauthorised CASPs; BaFin unauthorised-entity consumer warnings (e.g., Verto, DAO1) and finfluencer-supervision posture; AMF unlicensed-operator blacklist posture; the recurring **FCA→HTX** financial-promotion action (Feb-2026, out-of-window UK case, already captured); and the **June-2025 nine-regulator finfluencer week-of-action** (FCA/ASIC/CSA/HK-SFC/CONSOB/UAE — out-of-window, entity/finfluencer-level, not a tracked-CASP marketing-side case). Also noted (not a case): the standing MiCA administrative-penalty framework (Art. 111 — up to €5M or % of turnover) and BaFin's April-2025 €600k Ethena/USDe coercive fine (an e-money-token issuance action, not a marketing-side case, and out-of-window). None meets the class-3 named-enforcement bar. **Absence-as-data: the post-deadline named-enforcement silence is now sixteen days long** — register-first, cases-later.
+
+### 4. Operator statements (senior marketing operators at tracked firms)
+**Net-new qualifying: 0.** CMO / Head-of-Marketing / Head-of-Brand / Head-of-Growth sweep surfaced only non-qualifying material: the recurring in-window MiCA commentary is from **OKX Europe CEO Erald Ghoos** ("~80% of crypto exchanges won't survive MiCA" — a CEO, not a marketing-function operator; excluded from the class-4 bar); a **Gate.io CMO Marie Tatibouet** growth interview surfaced but Gate.io is **not in the tracked cohort** and the piece is not in-window. No in-window verbatim statement by a qualifying marketing operator at a tracked firm. The class-4 drought since the May CMO churn persists and remains a Theme-1 datum (interim/empty marketing seats at Binance — Conlan→Chen interim — and Crypto.com).
+
+### 5. Layoff tracker (2026 marketing-team contractions)
+**Net-new rows: 0.** July-window searches re-surfaced only captured items via aggregator round-ups (Coinbase −14% / ~700 with AI-native pivot framing; Gemini −30% / ~$582M-loss; Kraken ~30% AI-pivot; Crypto.com −12%; Algorand/OP Labs/PIP Labs/Messari macro-cuts; "5,700+ crypto layoffs in 2026" round-ups) — no net-new marketing-team headcount cut at a tracked firm, and none of the surfaced cuts names marketing/growth as the affected function. Tracker holds at 8 marketing-scope + adjacency rows. *Non-corpus color (candidate, no primary anchor yet):* CoinGecko's H1-2026 hiring analysis reports that across 904 exchange postings, engineering leads (30.4%) and compliance/legal (16.0%) outnumber BD/sales (6.7%) by ~2.4×, framed as "regulatory defense over expansion" — an aggregate, non-tracked-firm hiring-mix datapoint (Theme-1/2 context candidate, not a corpus row).
+
+### 6. Longitudinal shift for synthesis
+Recorded in `../../findings/longitudinal-2026-06.md` (2026-07-17 section; last-updated bumped). No new longitudinal shift this run — clean continuity: class-1 healthy-idempotent with a current feed, day-16 enforcement silence, six-firm capture panel unchanged, class-4 drought. The methodology guard stands: cross-check any future job-postings "absence spike" against `scan_metadata` (`total_jobs_fetched` + `fetch_errors` count) before treating it as data.
+
+---
+
+## Watch items (carried, unchanged except where noted)
+- **(a) Binance re-file jurisdiction** — still France-**reported**-only; firm names no jurisdiction formally; captured in `regulator-filings/binance-mica-eu-exit-2026-06.md`. Unchanged.
+- **(b) First named post-deadline NCA marketing-side action** — day-16 silence logged; ESMA non-compliant register + AMF/BaFin unauthorised-entity instruments remain the leading indicators; no named marketing-side case yet.
+- **(c) Capture panel** — six firms, no 7th entrant this run; Ripple still licence-only. **Lifecycle sequence: Bitpanda lapsed 07-05 → Coinbase lapsed 07-13 → OKX + Kraken lapse 07-31.**
+- **(d) Agency panel staleness** — `trend-data.json` 32 days stale (06-15); escalation to Jukka hardened (well inside Phase-2 synthesis window).
+- **(e) Loop cadence** — 07-14/07-15 no-fire then 07-16 double-fire; if irregularity recurs, the scheduled task itself needs a health check (separate from the corpus).
+- **(f) Friday nomination cadence** — README reads inbound nominations (`hello@northpoint.fi`) every Friday; today is Friday 07-17. No `inbound-nominations.md` exists yet (no nomination has arrived / inbox not reachable from this autonomous loop). Absence logged; create the file when the first qualifying nomination lands.
+
+## Searches / fetches run (audit trail)
+1. `MiCA crypto marketing enforcement action July 2026 BaFin AMF CONSOB CySEC ESMA named CASP misleading promotion fine` → framework/deadline + ESMA wind-down/"cease marketing and solicitation" + BaFin unauthorised-entity warnings (Verto, DAO1) + AMF unlicensed-operator + BaFin Apr-2025 Ethena/USDe €600k (out-of-window, issuance not marketing); 0 net-new named marketing-side case (day-16 silence).
+2. `crypto exchange marketing growth team layoffs July 2026 Coinbase Kraken Gemini headcount cut` → captured items + aggregator round-ups only (Coinbase −14%/~700 AI-native, Gemini −30%/$582M, Kraken ~30%, Crypto.com −12%, Algorand/OP Labs/PIP Labs/Messari); 0 net-new tracked-firm marketing-scope layoff; CoinGecko H1-2026 hiring-mix noted as non-corpus color.
+3. `crypto exchange CMO "head of marketing" "head of brand" "head of growth" interview podcast July 2026 MiCA Coinbase Kraken OKX Bitpanda` → OKX Europe CEO Ghoos (CEO, excluded) + Gate.io CMO Tatibouet (non-cohort, out-of-window) + non-marketing podcast catalogues; 0 qualifying class-4 marketing-operator statement.
+4. `crypto financial promotion enforcement fine misleading advertising exchange July 2026 FCA CONSOB AFM VARA MAS` → FCA crypto-promotions regime material + recurring FCA→HTX (Feb-2026, out-of-window, captured) + June-2025 nine-regulator finfluencer week-of-action (out-of-window, entity-level); 0 net-new named marketing-side EU case.
+
+## Net-new / changed this run
+- `corpus/job-postings/_absence.csv` (honest regeneration, `as_of=2026-07-17` — Aave Lever-404 + 5 proprietary; feed healthy/current)
+- `corpus/job-postings/_chrome-queue.csv` (idempotent `as_of=2026-07-17` re-stamp — proprietary firm list unchanged)
+- `findings/longitudinal-2026-06.md` (2026-07-17 continuity note + last-updated bump)
+- `corpus/weekly-runs/2026-07-17-corpus-run.md` (this record)
+
+## Recommendation for next run
+(a) **Class-1 feed healthy and current** — resume trusting `open-positions.json` absence data; keep the `scan_metadata` cross-check as a standing guard. (b) First named post-deadline NCA marketing-side action — day-16 silence logged; watch for the transition from register/blacklist to a named misleading-promotion case. (c) **OKX 8% + Kraken (07-31)** are the next campaign-lifecycle checkpoints; watch for a 7th capture entrant (Ripple still licence-only). (d) Qualifying class-4 statements as post-deadline conference/podcast content lands — CEO-level MiCA commentary keeps surfacing but does not meet the marketing-operator bar. (e) **Agency panel 32 days stale — escalation to Jukka carried/hardened** (upstream `trend-data.json` refresh needed inside July synthesis). (f) **Loop cadence** — confirm the daily task fires cleanly once per day after the 07-14/07-15 gap + 07-16 double-fire.
