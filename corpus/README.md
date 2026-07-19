@@ -19,9 +19,9 @@ Public-source corpus organised by source class. Every file in this tree is citat
 
 ## Index of currently active files
 
-- `job-postings/` — scaffolds for Bybit, KuCoin, Crypto.com, Bitpanda, Bitstamp ready (Phase 1 priority firms — see SKILL v3 daily file 2026-05-07 for assembly task). Still empty (see weekly-runs note on the date-stamping gating fix).
+- `job-postings/` — per-firm CSVs produced daily by `scripts/daily-corpus-sync.py` from the URL-verified ATS feed (ava-labs, bitpanda, bitstamp, bybit, crypto-com, kucoin, optimism, phantom, solana, **coinbase — added 2026-07-18**). `_absence.csv` carries tracked firms with no API coverage (Aave Lever-404 + 5 proprietary: Binance, Bybit, HTX, KuCoin, MetaMask/ConsenSys) — absence is data. `_chrome-queue.csv` tracks the proprietary-ATS backlog.
 - `layoff-tracker/2026-layoff-tracker.csv` — seeded with Crypto.com (Mar -12%), Gemini (-30% YTD), Algorand (-25%), Coinbase (May 5 -14%), Block (-4,000), MARA (-40)
 - `operator-statements/sport-sponsorship-reset-2026-05.md` — multi-incident sport-sponsorship reset cluster (captured 2026-05-14)
 - `regulator-filings/fca-premier-league-sponsorship-warning-2026-06.md` — FCA→football-club crypto-sponsorship warning (2026-06-02/03)
 - `regulator-filings/esma-mica-transitional-period-end-2026-06.md` — ESMA Public Statement (23 June 2026, ESMA75-113276571-1710): unauthorised CASPs must "cease marketing activities and solicitation" as the MiCA transitional period ends 1 July 2026
-- `weekly-runs/` — dated weekly corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-06-26-corpus-run.md`
+- `weekly-runs/` — dated daily corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-07-18-corpus-run.md`
