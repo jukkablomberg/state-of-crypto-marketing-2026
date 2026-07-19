@@ -74,3 +74,48 @@ Recorded in `../../findings/longitudinal-2026-06.md` (2026-07-19 section; last-u
 
 ## Recommendation for next run
 (a) **Watch for a second Tier-1 senior brand/creative requisition** — today's Coinbase Creative Director row is n=1; a second instance converts it from datapoint to Theme-5 synthesis claim about post-restructure brand rebuilding. (b) First named post-deadline NCA marketing-side action — day-18 silence logged; watch for the transition from register/blacklist to a named misleading-promotion case. (c) **OKX 8% + Kraken (07-31)** are the next campaign-lifecycle checkpoints; watch lapse-vs-extend and for a 7th capture entrant (Ripple still licence-only). (d) **Kraken CGMO Mayur Gupta is the highest-probability next class-4 source** — a dated interview/podcast/stage appearance clears the bar; CEO-level MiCA commentary keeps surfacing but never meets the marketing-operator bar. (e) **Agency panel 34 days stale — escalation to Jukka carried and hardened** (upstream `trend-data.json` refresh needed inside July synthesis; the single highest-value unblock available to this report right now). (f) Friday 07-24 is the next inbound-nomination check.
+
+---
+
+## Intraday re-run — 2026-07-19 15:07 CEST (scheduled task fired a 2nd time)
+
+**Run type:** unscheduled second fire of the daily corpus-assembly task on the same date (morning run committed as `037101d`). Full six-class re-run executed rather than a partial, per the 07-16 intraday precedent. **Result: net-zero net-new across all six classes.** The morning commit `037101d` stays canonical for 2026-07-19.
+
+### 1. Job postings (deterministic)
+**Net-new: 0.** `daily-corpus-sync.py` printed:
+```
+source A (jobs)   scan_date: 2026-07-19
+source B (agency) lastUpdated: 2026-06-15
+job postings ADDED: 0  firms: []
+  of which via Chrome inbox: 0
+```
+Feed **current and healthy**: `scan_date: 2026-07-19`, `total_jobs_fetched: 2296`, `new_count: 0`, **`fetch_errors: 0`** — no fetch-error mass-signature, so the zero is genuine no-new-marketing-roles idempotency, not an outage (standing `scan_metadata` cross-check guard applied and satisfied). `git status` after the sync returned a **clean working tree** — the `_absence.csv` / `_chrome-queue.csv` `as_of=2026-07-19` stamps written this morning are already current, so the sync produced byte-identical output. This independently **re-confirms the morning's Coinbase Creative Director capture was complete**: a third consecutive read of the 07-19 snapshot adds nothing.
+
+### 2. Agency claims / overlap matrix (deterministic)
+**Net-new: 0.** `trend-data.json` `lastUpdated` **2026-06-15 — 34th consecutive day unchanged** (no intraday upstream refresh). 18 per-agency snapshots written (idempotent); matrix idempotent at 8 tracked firms / 1 OVERLAP (Sui — Coinbound + RZLT). Escalation to Jukka carried unchanged and hardening: this is the single highest-value unblock available to the report inside the Phase-2 synthesis window, and it is upstream of this loop.
+
+### 3. Regulator
+**Net-new named enforcement entries: 0.** Afternoon sweep (EU NCA named-action + FCA/MAS/VARA financial-promotion queries) returned only already-captured or out-of-scope material: MiCA Art. 59 / Art. 111 penalty-exposure framing (up to €15M or 5% of annual turnover) and MiCA truth-in-marketing framework commentary; ESMA's coordination-with-NCAs posture post-cutoff; the recurring **FCA→HTX** financial-promotion action (Feb-2026 statement + Warning List — out-of-window UK case, already captured in `regulator-filings/`); and platform-side ad policy (X paid-promotion disclosure 2026, Meta cryptocurrency ad standards) which **is not regulator enforcement** and does not meet the class-3 bar. No named marketing-side misleading-promotion case against a tracked-cohort CASP. **Day-18 named-enforcement silence holds through the afternoon** — register-first, cases-later remains an eighteen-day pattern.
+
+### 4. Operator statements
+**Net-new qualifying: 0 — but with one substantive candidate evaluated and honestly rejected (see below).**
+
+Sweep surfaced: **Haider Rafique (Global CMO, OKX)** — a *qualifying role at a tracked firm* — in a dated, verbatim-bearing trade interview (The Drum, **11 March 2025**, "challenging the image of crypto as the 'wild wild west'", covering the 2023 rebrand → Man City → McLaren sequence). Prior runs (07-16, 07-17) recorded Rafique as "standing profile, no in-window verbatim"; **this run establishes that a dated interview artefact does exist**, which is a correction to that characterisation. It is **not being added to the corpus**, for two stated reasons:
+1. **Verbatim unverified.** `web_fetch` on the article returned an **empty body** (client-rendered/paywalled). The corpus bar is quote + URL + speaker + date + role, and the quote could not be read at source. Adding a paraphrase reconstructed from a search snippet would be fabrication. Not done.
+2. **Window fit is marginal.** March 2025 clears the methodology's December-2024 floor, but sits ~16 months before the report's 2026 post-deadline analytical window; at best it is background/context for Theme 2 (where the marketing dollars go — the sport-sponsorship era), not a post-MiCA-deadline operator statement.
+
+**Logged as a retry candidate:** re-fetch via a JS-rendering path (Chrome) to obtain the verbatim; if it reads as substantive on sponsorship-spend rationale it becomes a **context anchor for the sport-sponsorship-reset cluster** already in `operator-statements/sport-sponsorship-reset-2026-05.md`, alongside the Bybit/Red Bull non-renewal. Also surfaced and excluded: **Kate Rouch** (Coinbase's first CMO — left for OpenAI Dec-2024, stepped down there April 2026; no longer at a tracked firm, statement not about tracked-firm marketing) and **Mayur Gupta** (Kraken CGMO — still profile-only, no in-window dated verbatim; remains the highest-probability next qualifying source, carried from the morning run).
+
+### 5. Layoff tracker
+**Net-new rows: 0.** Afternoon sweep re-surfaced only captured items via aggregator round-ups (Coinbase −14% / ~500–700 with $50–60M restructuring charge; Gemini −30% / up to ~200 roles after a $582M loss; Kraken ~30% with AI-pivot framing; Crypto.com −12%; "5,700+ crypto layoffs in 2026"). **No net-new tracked-firm marketing-team cut, and no Bitpanda layoff signal** (explicitly checked; absence recorded). Tracker holds at **8 rows**. The AI-as-stated-rationale pattern continues to dominate and remains a captured Theme-5 finding, not a new row.
+
+### 6. Longitudinal
+No structural shift this re-run. Continuity note appended to `findings/longitudinal-2026-06.md`. The morning's Coinbase Creative Director row remains the day's material result and stays at **n=1** — watch item (g) unchanged.
+
+### Cadence — watch item (e) hardens again
+**2026-07-19 is now a double-fire day**, the second in four days (07-16 also fired twice, and at the same 15:07 CEST clock time). Full recent pattern: 07-14 no-fire → 07-15 no-fire → **07-16 double-fire** → 07-17 clean → 07-18 no-fire → **07-19 double-fire**. That is **six irregular days out of eight**. The corpus itself is fully protected — the sync is idempotent and the web-search classes dedup against the whole prior corpus, and today's re-run demonstrably cost nothing and added nothing — but the scheduler is not running a daily cadence, it is running an erratic one. Escalated to Jukka as an operational item: **the scheduled task needs a health check**, not the corpus.
+
+### Net-new / changed this re-run
+- `corpus/weekly-runs/2026-07-19-corpus-run.md` (this intraday section)
+- `findings/longitudinal-2026-06.md` (intraday continuity note; class-4 Rafique candidate correction logged)
+- **No corpus data rows added or changed** — working tree was clean after the deterministic sync.
