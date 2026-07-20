@@ -20,8 +20,8 @@ Public-source corpus organised by source class. Every file in this tree is citat
 ## Index of currently active files
 
 - `job-postings/` — per-firm CSVs produced daily by `scripts/daily-corpus-sync.py` from the URL-verified ATS feed (ava-labs, bitpanda, bitstamp, bybit, crypto-com, kucoin, optimism, phantom, solana, **coinbase — added 2026-07-19**). `_absence.csv` carries tracked firms with no API coverage (Aave Lever-404 + 5 proprietary: Binance, Bybit, HTX, KuCoin, MetaMask/ConsenSys) — absence is data. `_chrome-queue.csv` tracks the proprietary-ATS backlog.
-- `layoff-tracker/2026-layoff-tracker.csv` — seeded with Crypto.com (Mar -12%), Gemini (-30% YTD), Algorand (-25%), Coinbase (May 5 -14%), Block (-4,000), MARA (-40)
+- `layoff-tracker/2026-layoff-tracker.csv` — seeded with Crypto.com (Mar -12%), Gemini (-30% YTD), Algorand (-25%), Coinbase (May 5 -14%), Block (-4,000), MARA (-40); + Robinhood (Jun 16 -10%), BitGo (Jun 26 -15%), **Polygon Labs (Jul 16, figures undisclosed — added 2026-07-20; in-cohort Stratum 2, first row whose stated rationale is repositioning/M&A rather than AI)**. 9 rows.
 - `operator-statements/sport-sponsorship-reset-2026-05.md` — multi-incident sport-sponsorship reset cluster (captured 2026-05-14)
 - `regulator-filings/fca-premier-league-sponsorship-warning-2026-06.md` — FCA→football-club crypto-sponsorship warning (2026-06-02/03)
 - `regulator-filings/esma-mica-transitional-period-end-2026-06.md` — ESMA Public Statement (23 June 2026, ESMA75-113276571-1710): unauthorised CASPs must "cease marketing activities and solicitation" as the MiCA transitional period ends 1 July 2026
-- `weekly-runs/` — dated daily corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-07-19-corpus-run.md`
+- `weekly-runs/` — dated daily corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-07-20-corpus-run.md`
