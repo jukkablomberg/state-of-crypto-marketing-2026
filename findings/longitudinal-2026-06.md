@@ -339,3 +339,63 @@ The episode's own published takeaways include *"Why AI amplifies human creativit
 **6. Classes 2 and 5 net-zero.** `trend-data.json` unchanged since 2026-06-15 (**42nd day**) — stable-by-decision per the 07-10 Path-2 ruling, not re-escalated; matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT). Layoff tracker holds at **11**; no new 2026 marketing-team contraction. The Coinbase CPO departure remains **unentered for a second consecutive run** — still no primary source, still conflicting dates. Standing Theme-5 finding restated: across all 11 rows, **not one names marketing as the affected function.**
 
 **Firms checked and still carrying zero in-window operator statements:** Bitpanda (Hörhager/Rival undated, indications 2023), Relai (Bábics profile verified 2021-08-20; CEO Liniger's Oct-2025 MiCA quote excluded by role), OKX (Rafique's Blockworks interview verified **2023-10-23**, out of window; MarketingReport fetch returned an empty body). Each was verified and excluded for a stated reason rather than left as an undifferentiated silence — which is the distinction the absence panel depends on.
+
+---
+
+## 2026-07-27 — run #2 (day 26 post-deadline). The class-3 drought breaks twice, and three absence claims turn out to have been instrumentation artefacts.
+
+*Second run of 2026-07-27. The morning run (record `2026-07-27-corpus-run.md`, commit `3a39fd2`) captured Ferdon and recommended reading NCA sites directly instead of relying on aggregate search. That recommendation was executed and produced two net-new class-3 entries on the first attempt, after 26 consecutive days of framework-only returns.*
+
+**1. Class 3 — a fourth regulator instrument exists, and the report did not have it: the thematic supervisory review.**
+
+**AFM (Netherlands), 2026-04-16** — `../corpus/regulator-filings/afm-casp-advertising-cost-information-review-2026-04.md`. The Dutch NCA examined the advertising and cost information of **33 CASPs** and published quantified defect rates: **14** with significant advertising shortcomings, **19** with significant cost-information shortcomings. Supervisory letters to Dutch firms; **ten international firms referred to their home-state NCAs**. Executive board member **Hanzo van Beusekom**, on the record: *"The period of leniency has ended."*
+
+Chapter 1 currently names three instruments in motion — registers, precedent, perimeter squeeze. This is a fourth, and it sits exactly where the chapter's argument is thinnest: **between register-building and casework**. A supervisor testing live marketing output, publishing defect rates, and issuing pre-enforcement letters is neither a register entry nor a case.
+
+**It does not weaken the headline null.** No firm is named; no sanction is imposed. Day-26 named marketing-side enforcement silence holds. What changes is that the silence can no longer be read as inattention.
+
+**Two further consequences, both material:**
+
+*(i) The Netherlands is a leading-indicator jurisdiction and this corpus was not using it as one.* The AFM's own text dates the end of the **Dutch** transitional period to **30 June 2025** — twelve months ahead of the 1 July 2026 clock the rest of this corpus is organised around. What the AFM does at T+10 months is a defensible forecast of AMF/BaFin/CONSOB/CySEC behaviour in H1-2027. The report can now say what comes next by pointing at a jurisdiction that has already been there, rather than by extrapolating from the FCA's 28-month UK curve alone.
+
+*(ii) A regulator independently documented the marketing chill this corpus has been inferring.* Verbatim from the AFM: *"there were several CASPs that were **hesitant to engage in marketing activities or did not have any marketing communications in the period under review**, due to the necessary mitigation measures after the end of the transitional period on 30 June 2025."* Chapter 1's "empty chairs" and "quiet copy" reads have until now rested entirely on this corpus's own observation of absence. They now have external corroboration from a supervisor with direct market access. **This is the single most valuable sentence added to the corpus this run.**
+
+And the defect the AFM singles out — *"statements referring to 'safe' trading in crypto, without further explanation or clarification of the associated risks"* — is the **same defect class** the report's own Chapter-5 audit sweep found live on public pages. A regulator's own testing independently corroborating the audit's central claim is a materially stronger position than the report held this morning.
+
+**BaFin (Germany), February 2026** — `../corpus/regulator-filings/bafin-risks-in-focus-crypto-finfluencer-2026-02.md`. *Risks in Focus 2026* names cryptoassets + social media as a consumer-risk priority, states that *"Finfluencers – like any other person – are also subject to the market abuse rules of MiCAR"*, and commits to *"a random market screening of selected German-speaking finfluencers on the social media channels YouTube and Instagram."* Quantified from BaFin's 2024 representative survey (n=1,000, 18–45): **48%** of investors exposed to finfluencer content bought cryptoassets vs **13%** not exposed; **50%** vs **13%** for those offered finfluencer chat-group access.
+
+**Correction logged, not silently fixed:** Chapter 1 already asserted BaFin has "a publicly stated finfluencer-supervision posture" **with no primary anchor**. It has one now.
+
+**Theme-3 pairing worth carrying into Phase 2:** the tracked 18-agency panel sells KOL/influencer campaigns as a core product. Europe's largest market now has a supervisor screening that channel, and a Tier-1 operator (Gupta, 2026-05-19) publicly repudiating the KOL-tournament playbook. Regulator and operator arriving at the same channel from opposite directions, both in-window, both already in this corpus.
+
+**Date discipline:** the BaFin chapter page carries **no machine-readable publication date**. 2026-02-18 is secondary (SAFE Frankfurt). Recorded as `[VERIFY]`; **"February 2026" is the safe form to print.** Separately, BaFin's same chapter contains evident numeric errors in passages outside our scope (a Bybit-hack figure of "US$1.4 trillion"; Bitcoin market cap "approximately US$1.8 billion" at 53% of total) — **regulator copy is not automatically citable**; the survey figures are internally consistent with their stated bases and are safe, the market-data passages are not.
+
+**2. Theme 5 — watch item (h) is satisfied, and Chapter 1's layoff sentence was wrong.**
+
+**OP Labs (Optimism, tracked Stratum 2) cut 20 staff (~19.6%) on 2026-03-12** with an explicitly non-AI, non-financial rationale. Primary source: CEO **Jing Wang** on X (`https://x.com/jinglejamOP/status/2031906216277131745`), verbatim: *"This is not about finances… OP Labs is well capitalized with years of runway"*; the cut was to *"narrow our focus"* and *"do fewer things … exceptionally well."* Tracker **11 → 12**.
+
+Chapter 1 currently reads: *"AI-efficiency framing dominated every cut through mid-July, until Polygon Labs (16 July, in-cohort) and Exodus Movement (17 July, perimeter) broke the pattern."* **That is now factually wrong.** OP Labs broke the pattern on **12 March** — four days before Coinbase's cut was even announced. Corrected in the chapter this run.
+
+The revised split, n=4 tracked-firm rows: **AI-efficiency framing at consumer exchanges** (Crypto.com March, Coinbase 05-05); **non-AI framing at infrastructure/protocol firms** (OP Labs 03-12, Polygon Labs 07-16). That is a hypothesis with a plausible mechanism — consumer exchanges have a retail narrative to manage, protocol firms answer to a token market instead — and it is now watch **(h′)**. Test it before the report asserts it.
+
+**A dated contraction→marketing-hire sequence at one tracked firm, from two source classes already in this corpus:** cut **2026-03-12**; **Marketing Executive requisition 2026-05-21** (`../corpus/job-postings/optimism.csv`, Ashby, URL-verified). ~70 days apart. Both legs primary-sourced. **State the sequence; refuse the causal story** — the same discipline applied to Ferdon→Armstrong (07-27 AM) and to Gupta's paid/organic sequence (07-25).
+
+**Standing Theme-5 finding survives and strengthens: across all 12 rows, not one names marketing as the affected function.**
+
+**3. Watch (i) re-scoped — the corpus's read of Kraken's paid build-out was not supported by the record.**
+
+The 20VC *20Growth* episode was located and dated **2025-04-25** — out of window, not entered, consistent with the 07-24 ruling. But its content forces a correction: Gupta describes Kraken having **already** unlocked paid marketing *"three years ago"* and scaled it **$10M → $50M → an undisclosed nine-figure number**, sequencing paid-search/ASA/UAC first, then paid social/display/OLV, then upper funnel, holding **no single channel above 25–30%** of growth. The 80%-organic figure and a nine-figure paid spend are **simultaneous claims from the same speaker**, not a before/after.
+
+**Consequence:** the 07-24 framing of the two 07-23 Director, Paid Marketing reqs as a *"publicly ~80%-organic stack tilting toward paid"* is **not supported**. Kraken has run a scaled paid engine for years; two Director reqs are a build-out of an existing engine. The live question is narrower and more answerable: **why a US + UK pair on the same day** — a jurisdictional split is the obvious hypothesis and would be a **Theme-4** finding, not a Theme-2 one.
+
+**New corpus hazard, logged as watch (o): date the statement, never the write-up.** The Growth.Talent article reproducing those quotes is dated **2026-04-11** — *in*-window — while every quote in it comes from the **2025-04-25** episode. Checking the article's date alone would have laundered out-of-window quotes into the corpus as in-window.
+
+**4. Class 4 — zero net-new, and every exclusion is stated.** Bitpanda (Pötscher's CMO appointment verified **2019**; Hörhager still undated) — **fourth consecutive run with zero in-window operator statements at a firm `tracked-firms.md` flags as "deep MiCA readiness signal expected."** Ledger (CMO Glenn Landauer identified, since Jul-2025; only CEO-level 2026 material located → excluded by role). **Coinbase / Armstrong, 2026-07-27** — in-window, primary-sourced (`https://x.com/brian_armstrong/status/2081504081902780564`), **excluded by role** per the standing Ghoos/Liniger ruling; recorded as a dated **Theme-2 positioning datum** for the intra-firm tension it creates: the CEO who reorganised Coinbase around *"AI-native pods"* on 05-05 publicly rejects **rebranding** as AI on 07-27 (*"It's an 'and,' not an 'or'"*). Reorganise around it internally; refuse to market with it externally. Two dated positions; no claim about intent.
+
+**5. Classes 1 and 2 — full idempotency.** Second sync execution of the same day produced a byte-identical tree: `git status` empty, not even a date re-stamp. `trend-data.json` unchanged at 2026-06-15 (42nd day, stable-by-decision). Matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT).
+
+**6. The method finding, and it is the one that matters most — watch (n).**
+
+Three items entered or re-read this run were **months old and publicly available the whole time**: a tracked-firm layoff (2026-03-12), an NCA marketing-side supervisory review (2026-04-16), and an NCA marketing-channel supervisory programme (~2026-02-18). Twenty-plus daily sweeps queried recent windows and missed all three. This is the **same defect** the 07-25 run corrected in class 4 — where widening the time range immediately produced Gupta, then Ferdon. **Classes 3 and 5 have never had that correction applied.**
+
+**The report's credibility rests disproportionately on absence claims.** Three of them were instrumentation artefacts this morning and are not any more. **Before Phase 2 writes a single "no public signal" sentence, run one full-range (Sep-2025 → present) re-sweep per class, reading NCA and firm sources directly.** Absence is only a finding once the instrument has been shown to be capable of detecting presence.
