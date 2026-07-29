@@ -482,3 +482,85 @@ Five absence claims have been exposed as instrumentation artefacts in two days �
 > **No "no public signal" sentence is written until (i) a full-range Sep-2025→present sweep has been logged for that source class, and (ii) the firm's own published channels have been read.** Absence is a finding only once the instrument has demonstrated it can detect presence — on both axes.
 
 **7. Classes 1 and 2 — quiet and healthy.** Feed healthy (`scan_date` 2026-07-28, 2,123 jobs fetched, 28 after filter, `new_count` 0, 0 URL-verification drops, only Aave among tracked firms erroring). Working-tree change was date re-stamps only. `trend-data.json` unchanged at 2026-06-15 — 43rd day, stable-by-decision, not re-escalated. Matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT). **But see watch (q): the matrix's rows did not change and their meaning did.**
+
+---
+
+# 2026-07-29 — day 28 post-deadline. Watch (p) executed; it found a firm, and broke the class-1 instrument open on the way.
+
+**Run record:** `../corpus/weekly-runs/2026-07-29-corpus-run.md`
+
+**1. The class-1 absence file does not measure the cohort. This is the run's most serious finding.**
+
+`_absence.csv` — the file `methodology.md` designates as *"absence = data"* — is generated from the upstream feed's `needs_chrome_fallback` and `fetch_errors` arrays. A firm the upstream feed **never scans** appears in neither array, so it cannot appear in the absence file. Reconciled against the sync script's own 27-slug `TRACKED` table:
+
+| bucket | count |
+|---|---|
+| has a `job-postings/*.csv` | 11 |
+| recorded in `_absence.csv` | 6 |
+| **SILENT — neither** | **12** |
+
+**Twelve of twenty-seven tracked firms are invisible in both directions**: aptos, arbitrum, **gemini**, **ledger**, **okx**, polygon, rabby, relai, securitize, **sui**, tether, trust-wallet. Two are Tier-1 exchanges. One — **Ledger** — runs a public **Ashby** board (`jobs.ashbyhq.com/ledger`, read off Ledger's own footer), the most API-reachable ATS type in a scan that already covers 35 Ashby boards. There is no technical blocker. The firm is not in the upstream company list.
+
+**So the printed line "tracked firms STILL w/o coverage (absence=data): [6 firms]" has been read for weeks as a cohort statement. It is a statement about the prospecting list's fetch failures.** → `../corpus/job-postings/_absence-cohort-audit.csv`, and watch **(t)**, which supersedes (p) at the top: (p) is a sweep discipline the corpus can execute; (t) is a defect in the deterministic feed that no amount of sweeping fixes.
+
+**No Theme-1 hiring claim and no class-1-derived absence-panel row is safe until this is closed.**
+
+**2. Ledger — recorded at zero across every source class — is one of the most marketing-visible firms in the cohort.**
+
+Found entirely on the firm's own blog, in window: an **NBA jersey-patch partnership** (San Antonio Spurs, 2025-06-25, three-year, global, still live in the site footer via a June-2026 asset), an **X Games League sponsorship carrying a 30-second national TV spot on ESPN and ABC** plus Nippon TV in Japan (2026-07-24), venue build, athlete gifting, a named editorial franchise (*Revenge of the Atoms*), a published brand-vision document, MiCA consumer content, and a self-declared in-house content unit (**"Ledger Studio"**).
+
+**And a named EVP of Marketing the corpus did not know existed.** → **class 4 +1 confirmed:**
+
+> "The Spurs' fanbase is not just an audience—it's a generation shaping what comes next. And they're looking for tools that give them real agency in the digital world." — **Ariel Wengroff, Executive Vice President, Marketing and Communications, Ledger**, 2025-06-25, on ledger.com.
+
+`tracked-firms.md` lists exactly one Ledger individual: *"Pascal Gauthier CEO."* Gauthier is quoted twice on the same page and is **role-excluded**, consistent with Demuth / Armstrong / Ghoos / Liniger. His words are kept as **corporate disclosure**, which is a different object — and one of them is load-bearing: *"The U.S. is Ledger's top market globally."*
+
+**Theme 4, as sequence and nothing more:** across the twelve months into the MiCA deadline, the publicly visible sponsorship and broadcast spend of this **Paris-domiciled** tracked firm lands in **non-EU jurisdictions**. The report states the sequence. It must not imply regulatory avoidance — Ledger sells hardware, not a regulated crypto-asset service, and the corpus has no evidence joining the two facts. The June-2026 collision with the FCA sponsorship warning is a **date coincidence between a UK regulator and a French firm's US/Japan activations** and is recorded as such.
+
+**Bitpanda made watch (p) a hypothesis. Ledger makes it a rule.** Two firms swept properly in two days, two load-bearing findings. The sweep is nowhere near done — Bybit, OKX, Kraken, Coinbase, Crypto.com, Gemini and all of Strata 2 and 4 are unswept.
+
+**3. Watch (q) is confirmed inside the agency matrix's own flagship row.**
+
+`agency-overlap-matrix.csv` flags **exactly one OVERLAP in the entire cohort: `Sui (coinbound, rzlt)`** — the anchor of the report's three-agencies-on-one-firm framing. **Sui's actual brand system was built by Holographik**, a non-crypto-native studio invisible to the 18-agency panel by construction: symbol distillation, colour system, a **custom typeface** (TWK Everett by Weltkern), a derived icon library, governed gradients, deployed *"across products, events, websites and motion."*
+
+Yesterday (q) rested on one instance at a firm with an *empty* matrix row. Today it is demonstrated at the matrix's **most-cited** row, with Ledger (empty row + in-house studio) and Phantom (Bakken & Baeck, 2023, out of window) as second and third instances. The claim hardens:
+
+> **The matrix does not measure agency relationships. It measures presence in the crypto-native segment. At the one firm where it reports the richest structure, the deepest engagement is the one it cannot see.**
+
+**4. Theme 4's aesthetic question becomes an axis with a mechanism.**
+
+Agency-side, **Philipp Thelen** (Art Director, Holographik), 2026-06-15:
+
+> "A lot of crypto brands lean into hyper-volatility, which naturally reinforces ideas of speculation. For Sui, we wanted to position the brand as a trustworthy long-term infrastructure layer … **The visual language needed to say 'reliable stack' and 'data integrity' rather than 'hype.'**"
+
+Against Coinbase CMO **Catherine Ferdon**, ten weeks earlier: *"constant regulatory scrutiny … the first instinct is really to generate like a very sterile brand"*; *"strong gravitational pull towards being beige."*
+
+**The same visual outcome, described by two operators ten weeks apart, through opposite reasoning** — for Ferdon a pull to be resisted, for Thelen a brief executed on purpose. Chapter 5 prints both and lets the tension stand, naming the asymmetry that explains part of it: Coinbase sells a regulated consumer service, a foundation does not, and the audience Thelen de-risks for is institutional.
+
+**The client-side quote is entered QUALIFIED, not confirmed.** Jordan Francis, *Head of Design & Creative*, is flagged twice: **employer unstated in the source** (the client-side reading is strong but circumstantial), and **title not on `methodology.md` §4's list** — the first boundary question about a title *inside* the marketing function, where every prior exclusion removed someone *above* it. Ruling: eligible in function, flagged in title. **Sui's confirmed class-4 count stays at 0** and Phase 2 should report it both ways.
+
+**5. The absence panel needs a third category — and this one corrupts the instrument silently.**
+
+Verified from Bitstamp's own metadata today: the blog is **"The Bitstamp Blog by Robinhood"**, `twitter:site` and `twitter:creator` are both **`@RobinhoodCrypto`**, every post is bylined "Bitstamp by Robinhood", and the legal footer places the **MiCA CASP licence (N00000003, CSSF Luxembourg) with Bitstamp Europe S.A.** So the licence markets under a US parent's brand.
+
+Three categories now, not two:
+
+1. **Present and quiet** — reticence. What the report wants to measure.
+2. **Structurally withdrawn** — Gemini, 2026-02-05 (watch **r**). No EU surface exists to be quiet on.
+3. **Brand-absorbed** — Bitstamp (watch **u**). Surface exists, is active, **and is not searchable under the tracked firm's name.**
+
+Category 3 is the dangerous one: every sweep in this corpus is keyed on *"Bitstamp"*. This is watch (p)'s defect by a different mechanism — not the wrong surface, **the wrong name on the right surface.** The cohort needs a name-alias table for sweeping, exactly as the sync script has one for matching.
+
+**Consequence for Theme 5:** the tracker's **Robinhood** row (2026-06-16, ~290, -10%) is filed *"crypto-adjacent perimeter."* Robinhood has owned a Stratum-1 tracked firm since June 2025. The label is wrong. **Not corrected this run** — no evidence either way that the cuts touched Bitstamp Europe or any marketing function, and the ruling should be deliberate. → watch **(s)**.
+
+**6. Classes 3 and 5 — both null, and the class-3 backlog is now real.**
+
+**Day-28 named marketing-side enforcement silence HOLDS.** Nothing net-new; everything returned was transitional/perimeter material already held. Layoff tracker static at **13 rows**, and the standing finding holds: **across all 13, not one names marketing as the affected function.** Watch (h′) unchanged at n=6, still not safe to print.
+
+**But two class-3 targets — the CNMV direct read and the AFM finfluencer study — were carried a second consecutive run without being worked**, because the class-4 sweep consumed the budget once Ledger opened up. That was the right trade on value and it is recorded as a backlog, not laundered as a null. Next run works them first.
+
+**7. Where the absence claims now stand.**
+
+Six absence claims have been exposed as instrumentation artefacts in three days, and the class-1 absence file itself has been shown not to measure the cohort. **The headline null is still not one of them** — day-28 enforcement silence holds, and every item added this week is pre-enforcement or non-regulatory by construction. Phase 2's precondition tightens by one clause:
+
+> **No "no public signal" sentence is written until (i) the firm's own published channels have been read, (ii) a full-range sweep has been logged for that source class, and (iii) for class 1, watch (t) is closed.** Absence is a finding only once the instrument has demonstrated it can detect presence — on the right surface, in the right window, **under the firm's current name**, and from a feed that actually looks at the firm.

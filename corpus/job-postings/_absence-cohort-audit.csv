@@ -1,0 +1,28 @@
+firm_slug,stratum,class1_status,evidence,known_ats_or_careers_url,audit_date,notes
+aptos,2,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"Tracked in scripts/daily-corpus-sync.py TRACKED table but absent from both the coverage output and the absence output. Invisible in both directions."
+arbitrum,2,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"Aliases arbitrum / arbitrum foundation / offchain labs all present in TRACKED; no upstream scan coverage."
+gemini,1,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"TIER-1 TRACKED EXCHANGE. Note: Gemini exited UK/EU/AU 2026-02-05 (layoff-tracker) — a structural-withdrawal absence (watch r) that the class-1 instrument nonetheless never recorded as an absence at all."
+ledger,3,SILENT,no job-postings CSV and no row in _absence.csv,https://jobs.ashbyhq.com/ledger,2026-07-29,"WORST CASE IN THIS AUDIT. Ledger runs a public ASHBY board — the most API-reachable ATS type in the scan (35 Ashby boards already covered). URL taken from Ledger's own site footer (primary). Not a technical blocker; the firm is simply not in the upstream company list. Ashby API endpoint NOT tested this run (fetch tool provenance restriction) — [VERIFY] reachability before assuming it closes trivially."
+okx,1,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"TIER-1 TRACKED EXCHANGE. tracked-firms.md: 'yes (EU entity); Strong MiCA-relevance'. Not in _chrome-queue.csv either, so not even classified as proprietary-ATS."
+polygon,2,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"Tracked Stratum-2 firm with a 2026-07-16 layoff row in the corpus. Class 5 sees it; class 1 does not."
+rabby,3,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,
+relai,4,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"Added to cohort 2026-05-06 specifically for 'strong public posting velocity in DACH + IT'. That posting velocity has never been captured by class 1."
+securitize,4,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,
+sui,2,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,"tracked-firms.md records '79 open roles per web3.career; three open IC marketing seats' — a manually-observed figure the automated class-1 feed has never reproduced. Also the ONLY OVERLAP row in agency-overlap-matrix.csv."
+tether,4,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,
+trust-wallet,3,SILENT,no job-postings CSV and no row in _absence.csv,,2026-07-29,
+aave,2,ABSENCE-RECORDED,_absence.csv api-fetch-error,https://api.lever.co/v0/postings/aave,2026-07-29,Lever slug 404 — correct behaviour by the instrument.
+binance,1,ABSENCE-RECORDED,_absence.csv proprietary-ATS/needs-chrome,https://www.binance.com/en/careers/job-openings,2026-07-29,Correct behaviour by the instrument.
+bybit,1,COVERED+ABSENCE,job-postings/bybit.csv exists AND _absence.csv row,https://jobs.bybitglobal.com/social-recruitment/bybit/,2026-07-29,Historic CSV plus current proprietary-ATS absence row.
+htx,1,ABSENCE-RECORDED,_absence.csv proprietary-ATS/needs-chrome,https://www.htx.com/en-us/crm/market-recruitment,2026-07-29,Correct behaviour by the instrument.
+kucoin,1,COVERED+ABSENCE,job-postings/kucoin.csv exists AND _absence.csv row,https://hire-r1.mokahr.com/social-recruitment/kcareers/100000192,2026-07-29,Historic CSV plus current proprietary-ATS absence row.
+metamask-consensys,3,ABSENCE-RECORDED,_absence.csv proprietary-ATS/needs-chrome,https://consensys.io/open-roles,2026-07-29,Greenhouse-embedded; slug fix pending upstream.
+ava-labs,2,COVERED,job-postings/ava-labs.csv,,2026-07-29,
+bitpanda,1,COVERED,job-postings/bitpanda.csv,,2026-07-29,
+bitstamp,1,COVERED,job-postings/bitstamp.csv,https://bitstamp.workable.com/,2026-07-29,"Careers URL read from the firm's own footer this run. See marketing-campaigns/bitstamp-robinhood-brand-absorption-2025-2026.md — brand now 'Bitstamp by Robinhood', which defeats name-keyed sweeps."
+coinbase,1,COVERED,job-postings/coinbase.csv,,2026-07-29,
+crypto-com,1,COVERED,job-postings/crypto-com.csv,,2026-07-29,
+kraken,1,COVERED,job-postings/kraken.csv,,2026-07-29,
+optimism,2,COVERED,job-postings/optimism.csv,https://jobs.ashbyhq.com/oplabs,2026-07-29,
+phantom,3,COVERED,job-postings/phantom.csv,,2026-07-29,
+solana,2,COVERED,job-postings/solana.csv,https://jobs.solana.com/companies/solana-foundation-2,2026-07-29,Getro board; in _chrome-queue.csv with status 'ingested'.
