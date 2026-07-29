@@ -399,3 +399,86 @@ The 20VC *20Growth* episode was located and dated **2025-04-25** — out of wind
 Three items entered or re-read this run were **months old and publicly available the whole time**: a tracked-firm layoff (2026-03-12), an NCA marketing-side supervisory review (2026-04-16), and an NCA marketing-channel supervisory programme (~2026-02-18). Twenty-plus daily sweeps queried recent windows and missed all three. This is the **same defect** the 07-25 run corrected in class 4 — where widening the time range immediately produced Gupta, then Ferdon. **Classes 3 and 5 have never had that correction applied.**
 
 **The report's credibility rests disproportionately on absence claims.** Three of them were instrumentation artefacts this morning and are not any more. **Before Phase 2 writes a single "no public signal" sentence, run one full-range (Sep-2025 → present) re-sweep per class, reading NCA and firm sources directly.** Absence is only a finding once the instrument has been shown to be capable of detecting presence.
+
+---
+
+## 2026-07-28 — day 27 post-deadline. Watch (n) executed: the instrument was broken in four places, and two of them were Tier-1 tracked exchanges.
+
+*The 07-27 run-#2 record named the full-range re-sweep of classes 3 and 5 "the highest-priority method item in this corpus." This run executed it. It returned four net-new entries, every one months old, every one at a tracked firm or a named NCA, every one publicly available the entire time. A fifth arrived on an axis nobody had checked at all.*
+
+**1. Class 3 — the regulator chronology now opens fifteen months before the deadline, not two.**
+
+**AFM (Netherlands), 2026-01-21** — `../corpus/regulator-filings/afm-casp-advertising-cost-information-baseline-2025-01.md`. Weeks after MiCAR entered full application, the AFM published a baseline study of CASP advertisements and cost disclosure, built on exploratory fieldwork from 2023 and 2024. Eight defect classes, named and explained. The April-2026 thematic review the corpus captured on 07-27 is the **follow-up to this study**, and the corpus had only ever had the follow-up.
+
+**The finding is the pair, not the document.** Fifteen months apart, at one regulator, on one market, the defects are the same:
+
+| | T0 — 2025-01-21 | T1 — 2026-04-16 |
+|---|---|---|
+| instrument | guidance + published defect classes | thematic supervisory review |
+| measurement | none — qualitative examples | **33 CASPs · 14 advertising · 19 cost** |
+| posture | *"we urge CASPs to apply the guidance"* | *"The period of leniency has ended"* |
+| the defect | *"trading 'safely' in cryptos … it is essential to provide further explanation or context"* | *"statements referring to 'safe' trading in crypto, without further explanation or clarification of the associated risks"* |
+
+This converts the report's "quiet copy" read from an inference about firm behaviour into **a measured non-response to published guidance**. A supervisor said exactly what compliant looked like, waited fifteen months, re-tested, and found a substantial share of the market had not moved. That is a materially harder claim than "regulators are paying attention," and the record now supports it at both ends.
+
+**Captured for Chapter 5 and probably the appendix** — the most operationally usable sentence any NCA has published on this surface, because any reader can test any CASP against it in under a minute:
+
+> "One way of ensuring that the information is in a prominent place is to locate it **one click away from the homepage, or two clicks if using a drop-down menu**."
+
+Also captured: the AFM ruling that *"investing/trading in crypto-assets has/involves risks"* is **"too generic"** to satisfy Art. 66(3), and that the Dutch word *sparen* ("savings") misleads because of its deposit-guarantee connotation — a jurisdiction-specific linguistic defect class the report had no example of.
+
+**2. Class 3 — BaFin's date was wrong by three weeks, and the `[VERIFY]` flag caught it in one run.**
+
+*Risks in Focus 2026* was published **2026-01-28**, not 2026-02-18 — four-point primary verification on bafin.de (on-page field, byline, press-release slug, companion speech slug), plus the release's own statement that the report "was presented on Wednesday in Frankfurt": 28 January 2026 was a Wednesday, 18 February was not. File moved to `../corpus/regulator-filings/bafin-risks-in-focus-crypto-finfluencer-2026-01.md`.
+
+**Root cause, and the rule it produces.** The chapter page carries no machine-readable date, so the 07-27 run fell back to SAFE Frankfurt's write-up — which dates **the presentation event it attended**, not the publication. This is **watch (o) in a second costume**: *date the statement, never the write-up* → **date the document, never an event held about the document.** The flag raised on 07-27 was the right call and it paid off one run later.
+
+**Consequence.** BaFin becomes the **first** NCA in the corpus to name the promotional channel as a 2026 supervisory priority — it opens the sequence rather than sitting mid-way through it. And a datum the 07-27 capture did not have: the 2026 edition is **the first in which BaFin ranks consumer risks at all**, and crypto-plus-social-media is one of exactly three inaugural entries. The 07-27 run established *that* BaFin named the channel; this establishes **how high it was placed**.
+
+**3. Class 5 — two Tier-1 tracked exchanges were missing from a tracker the corpus has been reasoning from.**
+
+**Kraken (Payward), tracked Stratum 1** — cuts executed Thursday **2026-05-14**, reported by Bloomberg 05-15: ~150 staff, ~5% of ~3,000. Tracker 12 → **13**.
+
+**The sourcing distinction is the finding and it must survive into the report.** Bloomberg attributes the AI-efficiency rationale to *"a person familiar with the matter who was not authorized to speak publicly."* **Kraken has made no on-the-record statement of rationale at all.** Every other rationale in this record — Coinbase's memo, Crypto.com's CEO, Gemini's company announcement, Jing Wang's post, Marc Boiron's post, Exodus's SEC Exhibit 99.1 — is owned by the firm that gave it. Kraken's is not. **A firm letting an explanation circulate without owning it is itself a communications decision**, and the report notes it rather than laundering it into the same category as the rest.
+
+This also **corrects an unsourced corpus assertion**: the Polygon Labs row, added 07-20, already claimed *"the AI-efficiency framing that dominates Crypto.com/Coinbase/**Kraken**/Gemini"* when no Kraken row existed and no Kraken source had ever been captured.
+
+**Theme-2 sequence, both legs already in this corpus:** AI-attributed cut **05-14/15** → CGMO Mayur Gupta describes a *"natively AI growth engine"* on **05-19**. **Four days.** It mirrors Coinbase's Ferdon (04-09) → Armstrong (05-05) pairing **in the opposite order** — cut first, operator statement after. State the sequence; refuse the causal story.
+
+**Rejected, and worth recording because it was tempting.** An aggregator claims Kraken's cuts fell on *"customer service, compliance, and trading support."* A Tier-1 exchange cutting **compliance** staff six weeks before the MiCA deadline would have been a strong Theme-4 datum. It appears in no verified source. Not entered.
+
+**4. Class 5 / Theme 4 — Gemini, not Binance, is the first Tier-1 tracked exchange to leave the EU.**
+
+**2026-02-05:** Gemini announced exit from the **United Kingdom, European Union and Australia** together with a **25%** workforce cut. Firm-stated rationale, AI-framed and blunt about the rest:
+
+> "These foreign markets have proven hard to win in for various reasons, and we find ourselves **stretched thin with a level of organizational and operational complexity that drives our cost structure up and slows us down**."
+
+> "**We don't have the demand in these regions to justify them.** The reality is that America has the world's greatest capital markets."
+
+The corpus's Gemini row was **undated, unsourced and flagged non-AI**. All three wrong; all three corrected. And the chapter's structural-exit paragraph led with Binance (June). **Gemini went four months earlier and five months before the deadline** — a Tier-1 exchange concluding the European compliance surface was not worth the revenue behind it, and saying so, before it had to.
+
+**This forces a new category into the absence panel.** A firm that has withdrawn from a market produces no marketing signal in it **for a documented structural reason** — a different object from a firm that is present and quiet. Reading withdrawal as reticence would be a straightforward error, and the panel currently cannot tell them apart. → watch **(r)**.
+
+**5. The method finding, and it is bigger than watch (n) — a fifth item was found on an axis nobody had checked.**
+
+**Bitpanda** has been recorded as producing **zero in-window public marketing signal on four consecutive runs**, each time flagged as remarkable for a firm `tracked-firms.md` marks "deep MiCA readiness signal expected."
+
+**Bitpanda published a global brand campaign on its own blog on 2025-09-25** — *"When crypto, then Bitpanda"*, four languages, TV / out-of-home / digital / social, five football clubs (PSG, Bayern, Milan, Basel, **Arsenal**), Alexander Zverev, creators Melissa Satta and **Caro Daur**, creative by **Serviceplan**, production by **27km**. → `../corpus/marketing-campaigns/bitpanda-when-crypto-then-bitpanda-2025-09.md`
+
+**The 07-25 correction widened the class-4 sweep's *time* axis. Its *surface* axis was never widened.** The sweep reads interviews and podcasts. It does not read firms' own newsrooms — which is where a Tier-1 EU exchange's flagship campaign sat, in public, for ten months. → watch **(p)**, now the highest-priority method item, replacing (n).
+
+Three findings fall straight out of it:
+
+- **Theme 3 — the agency overlap matrix has a blind spot that changes what its rows mean.** Serviceplan and 27km are mainstream European agencies and will never appear in the 18-agency crypto-native panel. Every Theme-3 claim of the form *"N tracked firms have no named agency relationship"* is actually measuring **absence from the crypto-native panel**. Phase 2 must distinguish *no named agency* from *named non-crypto-native agency*. → watch **(q)**.
+- **Theme 4 — a good-practice exemplar, which Chapter 5 was short of.** The page self-labels *"This Promotion"* and warns *"the invested amount may be lost completely"* — exactly the specificity the AFM demanded when it called generic boilerplate "too generic." **Caveat printed, not smoothed:** this is the blog post *about* the campaign; the TV/OOH/social/creator executions are unverified. Do not print "Bitpanda's campaign is compliant."
+- **Theme 4 — two collisions with material already in this corpus.** **Arsenal FC** against the FCA's Premier League sponsorship warning, with Bitpanda stating it is "expanding its UK presence." And **Caro Daur**, a German-language Instagram creator, against BaFin's commitment to screen *"selected German-speaking finfluencers on … YouTube and Instagram"* — the exact configuration a regulator named four months later. **Not an allegation of any breach**; a documented instance.
+
+**Role exclusion held.** The only quoted individual is CEO **Eric Demuth** → not class 4, consistent with Ghoos / Liniger / Armstrong / Gauthier. **Bitpanda's in-window operator-statement count stays at zero for a fifth run** — but the character of that zero has changed decisively, from *"produces no public marketing signal"* (false) to **"ships a fully-resourced multi-market brand campaign and its marketing leadership never speaks publicly about it."** That is a Theme-1 gate-stack-visibility finding, not missing data.
+
+**6. Where the absence claims now stand.**
+
+Five absence claims have been exposed as instrumentation artefacts in two days — three on 07-27, two today. **The headline null is not one of them:** day-27 named marketing-side enforcement silence holds, and every item added this week is pre-enforcement or non-regulatory by construction. But the pattern is unambiguous, and Phase 2 inherits a hard precondition:
+
+> **No "no public signal" sentence is written until (i) a full-range Sep-2025→present sweep has been logged for that source class, and (ii) the firm's own published channels have been read.** Absence is a finding only once the instrument has demonstrated it can detect presence — on both axes.
+
+**7. Classes 1 and 2 — quiet and healthy.** Feed healthy (`scan_date` 2026-07-28, 2,123 jobs fetched, 28 after filter, `new_count` 0, 0 URL-verification drops, only Aave among tracked firms erroring). Working-tree change was date re-stamps only. `trend-data.json` unchanged at 2026-06-15 — 43rd day, stable-by-decision, not re-escalated. Matrix holds at 8 firms / 1 overlap (Sui — Coinbound + RZLT). **But see watch (q): the matrix's rows did not change and their meaning did.**
