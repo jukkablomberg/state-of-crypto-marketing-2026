@@ -564,3 +564,93 @@ Category 3 is the dangerous one: every sweep in this corpus is keyed on *"Bitsta
 Six absence claims have been exposed as instrumentation artefacts in three days, and the class-1 absence file itself has been shown not to measure the cohort. **The headline null is still not one of them** — day-28 enforcement silence holds, and every item added this week is pre-enforcement or non-regulatory by construction. Phase 2's precondition tightens by one clause:
 
 > **No "no public signal" sentence is written until (i) the firm's own published channels have been read, (ii) a full-range sweep has been logged for that source class, and (iii) for class 1, watch (t) is closed.** Absence is a finding only once the instrument has demonstrated it can detect presence — on the right surface, in the right window, **under the firm's current name**, and from a feed that actually looks at the firm.
+
+---
+
+# 2026-07-30 — the audit that falsified yesterday's audit
+
+**Yesterday this file recorded that 12 of 27 tracked firms were invisible to class 1 and diagnosed the cause as a missing upstream company list. That diagnosis was tested today against the scanner's own configuration and it does not survive. The correction matters more than the original finding, because the defect it replaces is subtler and it reaches the report's published methodology.**
+
+## 1. The company-list gap is 4 firms, not 12
+
+Direct read of `prospects/scanner/config.json` (147 companies): **8 of the 12** firms recorded yesterday as "invisible in both directions" are in the scanner config, with correct ATS types and slugs, scanned daily without error — Gemini, **Ledger**, Aptos Labs, Arbitrum Foundation, Polygon Labs, Trust Wallet, Tether and Sui Foundation.
+
+Ledger is the one that stings. Yesterday's audit called it *"the worst case in this audit… the firm is simply not in the upstream company list."* It is in the list, on `ashby` / `ledger` — the exact slug the audit inferred from Ledger's own footer and then assumed was absent.
+
+**The surviving gap is real but small: OKX, Securitize, Rabby, Relai.** OKX is Tier-1 and proprietary-ATS. Securitize sits on a standard greenhouse board already recorded in `prospects-list.txt` — a one-line fix.
+
+**And Gemini falsified the claim in the cleanest way available: by producing a posting.** A firm recorded yesterday as silent returned a URL-verified greenhouse req today. The feed could see it the whole time. There was nothing to report until there was.
+
+## 2. The real defect: class 1 is a flow register presented as a stock register
+
+`daily-corpus-sync.py` writes a row only for roles **open at the moment of a run**, and it did not exist until **2026-06-26**. Anything that opened and closed before that date, or between two runs since, left no trace.
+
+From the scanner's own memory (`state/last-scan.json` → `jobs_seen`):
+
+| firm | slug | qualifying roles | dates | in corpus? |
+|---|---|---|---|---|
+| Trust Wallet | `ashby:trust-wallet` | 2 | 2026-04-29, **2026-06-23** | **no** |
+| Arbitrum Foundation | `lever:arbitrumfoundation` | 1 | 2026-05-08 | **no** |
+| Offchain Labs (→ arbitrum) | `lever:offchainlabs` | 2 | 2026-05-12, **2026-06-10** | **no** |
+
+**Five qualifying marketing roles, at three tracked firms, all inside the report's rolling 12-month window, none of them in the corpus.** Both Arbitrum slugs are in the sync script's alias table, so this is not an alias miss. The Trust Wallet role dated 2026-06-23 was open three days before the sync script existed and still did not survive to the first run.
+
+**This reaches the published methodology.** `methodology.md` §1 promises class 1 captures a *"rolling 12 months ending August 31, 2026."* **It does not, and has not.** `corpus/job-postings/` is an inventory of roles that happened to be open on a day the corpus ran.
+
+> **No Theme-1 claim about hiring volume, hiring velocity, or "this firm did not hire" is safe for any period before 2026-06-26.**
+
+The fix is a backfill, not an engineering project — `jobs_seen` retains ATS job IDs and first-seen dates. But recoverability is **probable, not certain**: `jobs_seen` stores no titles or URLs, so the ATS APIs must be re-queried per ID and closed roles may 404. The first attempt is a test, not a promise.
+
+## 3. A third failure mode, and it is the dangerous one: in-feed, unreachable, silent
+
+**Sui Foundation**'s Ashby slug in the config is **`sui%20foundation`** — a URL-encoded space. It returns no rows *and no fetch error*. Chainlink Labs' bad Ashby slug 404s loudly and lands correctly in `fetch_errors`; Sui's does not.
+
+**Failures that 404 are safe, because the instrument reports them. Failures that return empty are indistinguishable from absence.** That is the generalisable lesson, and it applies well beyond this one slug.
+
+Sui is now degraded on three instruments simultaneously: the **only OVERLAP row** in the agency matrix, the firm whose real brand agency the panel cannot see (watch q, 07-29), and the only BROKEN-SLUG firm in class 1. **It should be the first firm Phase 2 audits end-to-end.**
+
+The cohort audit (`corpus/job-postings/_absence-cohort-audit.csv`) now separates four defects that yesterday's version collapsed into one: **NOT-IN-FEED (4) · FLOW-LOSS (2) · BROKEN-SLUG (1) · TRUE ABSENCE (4)**. Only the last is absence in the methodology's intended sense — the instrument looked and found nothing. Aptos, **Ledger**, Polygon and Tether are genuinely not hiring marketing. Ledger's version of that is the interesting one: a firm found on 07-29 to hold an NBA jersey patch, a national US TV buy, an in-house studio and an EVP of Marketing is **marketing-visible and not hiring marketing, in the same window.**
+
+## 4. Prediction markets surface in two source classes on the same day
+
+Gemini's net-new req is a **"Predictions Partnerships Marketing Lead," New York, 2026-07-29** — the first class-1 capture at Gemini in the corpus's history. Gemini **exited the UK, EU and Australia on 2026-02-05** alongside a 25% cut, redirecting resources to the US business and to **Gemini Predictions**. On 2026-07-27, **Uphold** cut 17% while explicitly retaining **prediction markets** on its consumer roadmap through end-2026.
+
+Three dated artefacts, two source classes, one product category — **the first time classes 1 and 5 have converged on the same thing.** Stated as sequence; the corpus asserts no causation.
+
+It also makes watch (r) more interesting rather than less: the firm filed under *structural withdrawal* is hiring marketing again, in the market it withdrew **to**.
+
+## 5. Class 5 — the standing finding breaks at the perimeter and holds in the cohort
+
+Until today: *"across all 13 rows, not one names marketing as the affected function."*
+
+On **2026-07-28** Gnosis's own X account invited companies hiring across **"engineering, product, design, marketing, developer relations and customer relations"** to contact it for introductions to former employees affected by its July restructuring (own quarterly report, 2026-07-17, following a review of the consumer-facing Gnosis App; headcount undisclosed).
+
+**Three limits, all of which cut against the exciting reading:**
+
+- **Gnosis is perimeter, not cohort.** The tracker-scoped finding breaks; the cohort-scoped one — *no tracked firm has named marketing* — **holds**. Phase 2 must state which it means; the difference is the whole finding.
+- **It is a hiring-referral offer, not a breakdown of cuts.** It establishes marketing staff were among those who left. It does **not** establish how many, what share, or that marketing was hit disproportionately.
+- **Neither primary was captured** — both the X post and the forum report were refused by the fetch tool's provenance rule. The row rests on near-primary reporting that quotes the list verbatim, plus independent corroboration. **`[VERIFY]` is now the corpus's highest-value outstanding item**, because this is the only evidence anywhere in the tracker that touches the report's central question directly.
+
+**Watch (h′) weakens.** It held that consumer exchanges use AI framing (4/4) and infrastructure firms do not (2/2). Today Luno (consumer, −20%) is AI-framed and CEO-stated — consistent. Gnosis (infrastructure) is non-AI — consistent. But **Uphold is consumer-facing and its rationale is explicitly non-AI** (85 roles, −17%, enterprise pivot): the first consumer-side non-AI rationale in the tracker. **n=9 with a counter-example. h′ is further from printable than it was yesterday, not closer.**
+
+## 6. Class 3 — backlog cleared, and the null gets a scope it was missing
+
+Both targets carried since 07-27 were worked. Both resolve as nulls with structure.
+
+**The CNMV read produced a caveat that would otherwise have become an error.** Spain opened its **first crypto-advertising sanctioning file on 31 October 2023** under **CNMV Circular 1/2022** — a *national* regime, not MiCA. Out of window, not entered, recorded as framing only. But it means the report's headline null must be scoped:
+
+> **Zero *MiCA-era* marketing-communications enforcement — not "zero crypto-advertising enforcement."** National crypto-advertising enforcement existed before MiCA, and Spain used it. An informed reader will know that.
+
+Two further structural facts: the sanctions register publishes only *imposed* sanctions (an opened file is invisible until resolved), and **anonymisation is permitted**. So the finding must read *"no publicly registered sanction"*, never *"no enforcement activity."*
+
+**The AFM finfluencer target closes out of window** (2021). Two notes preserved: the AFM's finding was about **inducements** (firms paying finfluencers per acquired customer, breaching the Dutch commission ban), where BaFin's is about **disclosure** — *not the same argument, and they must not be merged*; and the AFM's finfluencer material reflects the **pre-MiCAR perimeter**, so it cannot evidence the AFM's post-MiCAR posture. **The corpus has one NCA on the finfluencer channel in window, not two.**
+
+## 7. Where this leaves the absence discipline
+
+Three days ago the lesson was *sweep the firm's own channels*. Two days ago it was *the absence file is not an absence file*. Today it is narrower and more uncomfortable:
+
+> **An instrument that fails silently is worse than one that fails loudly, and an instrument that only records the present cannot support a claim about the past.**
+
+Yesterday's escalation to Jukka overstated the class-1 problem by a factor of three. **Recording that plainly is the point** — a corpus that can only revise upward is not measuring anything. Phase 2's precondition stands and gains a clause:
+
+> No "no public signal" sentence is written until (i) the firm's own published channels have been read, (ii) a full-range sweep has been logged for that source class, (iii) the instrument has been shown to fail *loudly* rather than silently for that firm, and (iv) for class 1, the claim is scoped to **on or after 2026-06-26** unless the backfill has been run.
