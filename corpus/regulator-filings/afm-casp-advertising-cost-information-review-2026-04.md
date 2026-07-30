@@ -5,8 +5,9 @@
 **Document:** Press release — *"Shortcomings in advertising and cost information for crypto parties"* + accompanying report *"Areas for improvement in information disclosure by CASPs."*
 **Date:** **16 April 2026** — on-page press-release stamp `Press release 16/04/26`, and the URL path segment `/2026/apr/` corroborates. In-window.
 **Primary source URL:** https://www.afm.nl/en/sector/actueel/2026/apr/pb-reclame-informatie-casps
-**Report PDF (primary):** https://www.afm.nl/~/profmedia/files/rapporten/2026/marketing-cost-disclosures-casps.pdf
-**Captured:** 2026-07-27 (run #2). AFM English-language primary page fetched and read verbatim. PDF located and URL recorded; not yet extracted.
+**Report PDF (primary, EN):** https://www.afm.nl/~/profmedia/files/rapporten/2026/marketing-cost-disclosures-casps.pdf
+**Report PDF (primary, NL):** https://www.afm.nl/~/profmedia/files/rapporten/2026/verbeterpunten-voor-de-informatieverstrekking-van-casps.pdf — *"TOEZICHT RAPPORT: Verbeterpunten voor de informatieverstrekking van CASPs."* Added 2026-07-30; the Dutch original sits at a different path from the English version and was not recorded on first capture. **Prefer the NL text where the two differ** — it is the original.
+**Captured:** 2026-07-27 (run #2); re-verified and extended 2026-07-30. AFM English-language primary page fetched and read verbatim on both dates, identical content. PDF URLs located and recorded; **neither PDF extracted yet.**
 
 ---
 
@@ -78,3 +79,24 @@ Cross-reference: `../../findings/00-opening-register-first-cases-later.md` ("the
 - `[VERIFY]` Extract the report PDF (`marketing-cost-disclosures-casps.pdf`, ~360 kB) and record the per-defect breakdown and any good-practice examples; the press release is a summary of it.
 - `[VERIFY]` Locate and capture the **early-2025 predecessor study** to build the two-point series.
 - `[VERIFY]` Whether any of the 33 examined CASPs, or the 10 internationally-referred firms, are in the tracked Stratum 1–4 cohort. The AFM names none; if the report wants a cohort overlap claim it must be sourced elsewhere or stated as unknown.
+
+---
+
+## Closed loose end — the "AFM finfluencer study" target (resolved 2026-07-30)
+
+A separate **AFM finfluencer study** was carried as an open class-3 target for three consecutive runs (07-27 #2, 07-28, 07-29), on the reasoning that it would give the corpus a **second NCA on BaFin's exact channel** (cf. `bafin-risks-in-focus-crypto-finfluencer-2026-01.md` / `-02.md`).
+
+**Resolved: the study exists and is out of window.** It is *"The pitfalls of 'finfluencing' — Exploratory study by the AFM into investor…"* / *"De valkuilen bij 'finfluencen'"*, published **2021**:
+
+- EN: https://www.afm.nl/~/profmedia/files/publicaties/2021/pitfalls-of-finfluencing.pdf
+- NL: https://www.afm.nl/~/profmedia/files/publicaties/2021/valkuilen-bij-finfluencen.pdf
+- Standing theme page: https://www.afm.nl/en/sector/themas/digitalisering/finfluencing
+
+**2021 → excluded** under the methodology's pre-December-2024 rule. **Not entered. Target closed, not carried a fourth time.**
+
+Two substantive notes preserved from the read, because they bear on how the report frames the AFM:
+
+1. The AFM's finfluencer work found **investment firms paying finfluencers per new customer acquired**, which breaches the Dutch commission ban for investment firms — an *inducement/distribution* finding, structurally different from BaFin's *disclosure* framing. Two NCAs on the same channel are **not** making the same argument, and the report should not merge them.
+2. The AFM's own consumer-facing finfluencer material states that **crypto falls largely outside financial supervision** (`afm.nl/nl-nl/consumenten/themas/crypto/buiten-toezicht-afm`). That page reflects the pre-MiCAR perimeter. **Do not cite the 2021 finfluencer study as evidence of the AFM's post-MiCAR posture** — the April-2026 review above is the AFM's in-window instrument and says something different.
+
+**Consequence:** the corpus has **one** NCA (BaFin) on the finfluencer channel in window, not two. Any Phase-2 sentence implying a multi-regulator finfluencer consensus is currently unsupported.
