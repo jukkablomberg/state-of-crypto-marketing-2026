@@ -654,3 +654,54 @@ Three days ago the lesson was *sweep the firm's own channels*. Two days ago it w
 Yesterday's escalation to Jukka overstated the class-1 problem by a factor of three. **Recording that plainly is the point** — a corpus that can only revise upward is not measuring anything. Phase 2's precondition stands and gains a clause:
 
 > No "no public signal" sentence is written until (i) the firm's own published channels have been read, (ii) a full-range sweep has been logged for that source class, (iii) the instrument has been shown to fail *loudly* rather than silently for that firm, and (iv) for class 1, the claim is scoped to **on or after 2026-06-26** unless the backfill has been run.
+
+---
+
+# 2026-08-01 (day 31 post-deadline) — three shifts, and the instrument is now the main source of error
+
+## 1. Campaign compliance is designed at launch and not maintained at teardown
+
+Both MiCA capture campaigns whose windows closed on 31 July were **still publicly live, in the present tense, with working CTAs, on 1 August** — read directly off each firm's own page on the day. Kraken's `/europe-switch` still invites the visitor to *"Switch now and enter our €1M prize draw"* under a standing *"Lottery closes July 31"*; OKX's campaign page still states that a depositor *"**receives** an 8% bonus"* for the 29 June – 31 July window, with a live "Claim your deposit bonus" button and a page last updated 7 July.
+
+Two firms, two mechanics (prize draw vs deposit bonus), two NCAs (CBI Ireland, MFSA Malta), **the same failure mode**. These are the panel's *most* compliance-dressed entrants — the ones earlier runs singled out for shipping elaborate equal-prominence risk apparatus. The apparatus was built at launch. Nothing was built for the end.
+
+> **The corpus asserts no breach and must not.** What it records is that the lifecycle edge, not the disclosure edge, is where both campaigns were loose — and that this is exactly the surface MiCA Art. 7's *fair, clear and not misleading* standard reaches.
+
+**Falsifiable, and cheaply:** Coinbase (lapsed 07-13), Bitpanda (07-05), Bitvavo, Gate are the replication set. One run turns n=2 into n=6. **Carries a hard caveat until then: the reads are as served to a non-EEA fetch. A geofenced EEA visitor may see a closed state.**
+
+**Theme-3 addendum.** OKX has now folded the capture offer into standing promotional infrastructure — a 2026-07-29 "Rewardmaxxing" article markets the 8% MiCA bonus as one stackable component among several EEA programmes, and an August Card campaign was published two days before the capture window shut. **The regulatory event did not create a campaign. It created a channel, and the channel outlives the event.** Earlier runs' "time-boxed acquisition weapon" framing is incomplete.
+
+## 2. The regulated marketing perimeter is wider than MiCA — and the sweep vocabulary was narrower than the perimeter
+
+**ESMA Public Statement ESMA35-243228190-8148 (2026-07-03)** holds that event contracts qualifying as financial instruments fall inside national product-intervention measures *"prohibiting their **marketing**, distribution or sale to retail clients."* It is the most marketing-relevant EU instrument in the entire post-deadline window.
+
+**The corpus did not see it for 29 days**, across ~29 daily runs each recording "class 3: 0 net-new". Diagnosed, not hand-waved: every prior sweep was keyed on **MiCA / crypto-marketing** vocabulary; this instrument speaks **MiFID II product intervention** and its subject noun is *event contracts*. It was invisible to the query, not absent from the record. It was ultimately found **incidentally**, in a related-topics rail on a page fetched for a different purpose.
+
+**Two consequences.** For the report: a firm that has audited only its MiCA Art. 7 surface has not audited its regulated marketing surface. For the method: **watch (w)** — sweep NCA/ESMA news indexes directly, with vocabulary covering product intervention, event contracts, financial promotion, advertising, inducements and gambling-adjacency.
+
+**And the cross-class sequence is the strongest this corpus has assembled** — three legs, three primaries, all already held: Gemini exits UK/EU/AU with a 25% cut and redirects to US + Predictions (2026-02-05) → ESMA fences prediction-market *marketing* to EU retail (2026-07-03) → Gemini opens a **Predictions Partnerships Marketing Lead in New York** (2026-07-29), the only Gemini marketing seat this corpus has ever observed. Sequence, not causation. **The firm that withdrew from the fenced market is hiring marketing for the fenced product, on the other side of the fence.**
+
+## 3. The instrument is now a bigger source of error than the subject
+
+Two runs, four watch items broken **by measurement** and none by new external evidence:
+
+| item | fate |
+|---|---|
+| **(t)** 12 tracked firms missing from the feed | falsified 07-30 — the real gap was 4 |
+| **(t′)** "≥5 roles at 3 firms" lost to flow-vs-stock | **undercounted by 80% — it is 9 roles at 6 slugs, including Coinbase ×2 and Kraken** |
+| **(g)** "Coinbase brand-rebuild signal, n=1 on postings" | **void** — the n was the epoch, not Coinbase |
+| **(e)** "loop cadence good, third clean day" | **falsified** — the 07-31 run did not fire, on the one pre-calendared date |
+
+**And the (t′) decision resolves against the backfill.** `jobs_seen`'s earliest entry anywhere is **2026-04-28**. The deepest recoverable memory in the pipeline is ~3 months against `methodology.md` §1's published **12**. **No backfill can deliver the window.** §1 must be re-scoped to what the instrument can actually evidence — roles observed open between 2026-04-28 and 2026-08-31 — and the backfill run as an improvement from ~2 months of coverage to ~4, not as a repair.
+
+**The general rule this yields, and it should be applied across the whole watch list, not just to (g):**
+
+> **Any finding whose evidence is a class-1 count for a period before 2026-06-26 is measuring the instrument, not the firm.**
+
+The Phase-2 precondition gains a fifth clause. No "no public signal" sentence is written until (i) the firm's own channels have been read, (ii) a full-range sweep is logged for the class, (iii) the instrument fails loudly rather than silently for that firm, (iv) class-1 claims are scoped to on-or-after 2026-06-26 absent backfill, and **(v) the sweep vocabulary for that class has been shown to reach outside its home regime** — because the ESMA miss proves a sweep can run clean for 29 days against a record that contained the answer.
+
+## 4. One thing the run refused, and it matters more than most things it accepted
+
+A search-engine summary asserted that in the July layoff wave *"marketing and sales teams felt the brunt, as many firms scaled back aggressive user-acquisition spend."* The primary article says the opposite of that specificity: Luno's CEO *"did not disclose the number of employees affected **or identify the regions and departments included**."* **The sentence does not exist in the source.**
+
+Accepted on trust it would have become the single most load-bearing false claim in the report — the tracker's entire standing finding turns on whether anyone names marketing, and this would have answered it with an invention. **A search-engine summary is never a source.** It is a pointer to a document that must then be read.
