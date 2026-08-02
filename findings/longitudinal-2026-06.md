@@ -705,3 +705,79 @@ The Phase-2 precondition gains a fifth clause. No "no public signal" sentence is
 A search-engine summary asserted that in the July layoff wave *"marketing and sales teams felt the brunt, as many firms scaled back aggressive user-acquisition spend."* The primary article says the opposite of that specificity: Luno's CEO *"did not disclose the number of employees affected **or identify the regions and departments included**."* **The sentence does not exist in the source.**
 
 Accepted on trust it would have become the single most load-bearing false claim in the report — the tracker's entire standing finding turns on whether anyone names marketing, and this would have answered it with an invention. **A search-engine summary is never a source.** It is a pointer to a document that must then be read.
+
+---
+
+# 2026-08-02 (day 32 post-deadline) — the teardown finding generalises, acquires a control, and the operator-statement surface turns out to be partly bought
+
+## 1. It is not a MiCA-campaign problem. It is a promotional-surface-versus-operational-state problem.
+
+Yesterday's finding was *campaign compliance is designed at launch and not maintained at teardown*, n=2. Today it replicated **3 of 3** at **day 2** after close, by direct first-party fetch: Kraken's `/europe-switch` (*"Switch now and enter our €1M prize draw"*, *"Lottery closes July 31"*), OKX's campaign page (*"From 29 June until 31 July 2026… **receives** an 8% bonus"*, page last updated 7 July and untouched since), and — new — **Bitpanda's** `bya-june-26` (*"Get 5% cashback on your crypto transfer… **Offer valid until 31st July 23:59**"*, three live CTAs).
+
+Two of the three run the lapsed offer on **more than one owned surface**: Kraken's support article still says *"Kraken **is running** a deposit prize draw"*; OKX has a second campaign page dated 22 July.
+
+**And the strongest case is not a campaign at all.** BitMart's own cessation notice (published 2026-07-26 01:40) states registrations stop at 01:30 UTC that day. Served on **the same page**, on 2026-08-02: **"Earn up to $14,000 in rewards — [Register now]"**, linking to `bitmart.com/en-US/register?utm_source=growth-frontend&utm_medium=support-article`. A UTM-tagged, growth-attributed acquisition CTA embedded inside the firm's own wind-down announcement, contradicting it **within one document**. The tracking parameters are the tell: a growth system is serving that CTA, and it is not reading the state of the business.
+
+> **Re-frame before Phase 2.** Not *"MiCA campaigns are not torn down."* Rather: **promotional surfaces are not wired to the operational state of the business.** Four firms, four mechanics (prize draw / deposit bonus / cashback+raffle / evergreen signup reward), four supervisory contexts, one failure mode.
+
+**A second-order defect surfaced by reading two surfaces of the same firm.** Kraken's landing page says entries run *"from June 22 to July 31"*; Kraken's support article says the promotion runs *"from 19 June 2026 at 11:00 UTC"* and adds that **entries only accrue after enrolment** — a material condition absent from the landing page's flat statement that every euro deposited in the window earns an entry. **A three-day discrepancy in the start date of a €1,000,000 consumer prize draw, and a materially different entry condition, between two live pages in one firm's own estate.** This is a worse class of defect than a page left up too long, and it was invisible until two surfaces of the same campaign were read together.
+
+## 2. Bitvavo is a control, and the control identifies the mechanism
+
+Bitvavo's capture campaign runs **25 June → 30 September 2026**, payout 14 October, opt-in via an in-app Campaign Hub, 4% base APY scaling to 10% on trading volume. It is live and correct, because its window has not closed.
+
+> **The campaigns that lapsed keyed their end date to the regulatory event. The campaign that did not lapse keyed its end date to a commercial horizon that outlasts the regulatory event by three months.** A deadline-keyed campaign inherits the deadline's cliff; a period-keyed campaign does not.
+
+That converts a defect observation into a **design** observation, and it is worth more than a fourth confirming case. Bitvavo also carries the correct MiCA hedge in the same copy (*"Staking and lending are not regulated under MiCA…"*) and names its regulator and address. **The panel is not split into careful and careless firms.** Bitpanda ships the best jurisdictional disclosure in the set — two entities, two NCAs, two reward currencies, a free-entry route — **and still lapsed.** The disclosure edge and the lifecycle edge are independent, and only one of them is being engineered.
+
+## 3. Four jurisdictions, one posture — and the regulators state it themselves
+
+Watch (v) swept Germany, Italy and Cyprus on top of France. **4 of 4 replicate. The expected non-replication did not occur.** Every captured post-deadline NCA action is **perimeter** — against entities operating without authorisation — and **not one is a marketing-conduct action against an authorised CASP.**
+
+The decisive artefact is CySEC's, 2026-07-10:
+
+> *"Within the ESMA cooperation framework, **NCAs may, where necessary, take coordinated action against unauthorised CASPs after the transitional period**."*
+
+Plus: authorities are *"currently engaged directly with the relevant entities"* and will *"monitor whether significant unauthorised cross-border service providers wind down without delay."*
+
+**This is no longer absence of evidence.** It is the supervisors describing enforcement in the prospective and conditional mood, ten days into the post-deadline window, scoped explicitly to *unauthorised* entities. The day-N null is positively corroborated rather than merely unfalsified.
+
+**Two marketing-specific findings fell out of the sweep that a MiCA-keyed query would never have surfaced** — which is watch (w)'s argument, restated as evidence:
+
+- **BaFin's identification unit is the marketing artefact.** Its 22.07.2026 warning groups unauthorised platforms by a **shared slogan and near-identical site design**. The regulator is reading creative-and-template reuse as a detection signal.
+- **CONSOB publishes standing guidance on AI-generated marketing creative as a fraud vector** — *"profili contraffatti di figure politiche, personaggi famosi e contenuti generati con sistemi di intelligenza artificiale - come immagini, voci o video"* — with a dedicated factsheet.
+
+**And the structural shape of the post-deadline month is now legible.** Three exchange wind-downs inside it — BitMEX (07-23), BitMart (07-26), plus wallet SecondFI — **none EU-licensed**, alongside four NCAs doing perimeter work and none doing conduct work. **The first post-deadline month produced exchange exits, not marketing enforcement.** Both halves of that sentence are separately sourced.
+
+**Where the null is still vulnerable, and it is one place:** **AFM.** The corpus holds two AFM files on the cost-information/**advertising** axis, both pre-deadline. AFM is the only NCA in the sweep with a documented history of acting on advertising rather than authorisation. **No post-deadline enforcement claim should be printed before AFM is swept.**
+
+## 4. The observable operator-statement surface is partly a paid surface
+
+Class 4 gained its first Binance item in the corpus's history: **Eowyn Chen, Interim CMO, 2026-07-18**, verbatim — *"marketing will be less about driving hype and more about building understanding"*; *"trust is earned through transparency, participation, and community – not through broadcast"*; *"the biggest job for marketers isn't defending crypto. It's creating the language that helps people understand this next era of finance."*
+
+It takes the Theme-1 spine to **n=3 Tier-1 exchanges in ten weeks** — Coinbase/Armstrong (AI-native pods, 05-05), Kraken/Gupta (natively AI growth engine, 05-19), Binance/Chen (07-18). **Coinbase and Kraken name an organisational answer; Chen names an editorial one.** Print the difference; do not flatten it into "everyone is saying the same thing."
+
+It also disclosed something the corpus did not hold: **Binance's long-time CMO Rachel Conlan stepped down in June 2026 — the MiCA deadline month** — and the seat is held on an interim basis. Publisher-stated, `[VERIFY]` against a firm-owned primary before print.
+
+**But the important methodological output is the caveat, not the quotes.** The piece sits in a vertical whose own page furniture sells cover-story placement — an "Advertise" nav item, two *"Get your Cover Story Featured / Get Published"* Calendly CTAs, and a site disclosure that sponsored content may appear. It is filed under `/opinion/` and is not labelled sponsored. There is no evidence this item was paid, **and the corpus cannot tell an earned interview from a purchased one from outside.**
+
+> **A material share of the observable public-statement surface for crypto marketing leaders is a paid-placement surface.** `methodology.md` §4 is a podcast list. It has no rule for branded-content verticals and no field in which to record provenance. **Every class-4 item drawn from trade media inherits this ambiguity.**
+
+This is watch (l)'s fourth costing and the first that is a **quality** defect rather than a **coverage** defect. §4 needs both fixes: widen the inventory, and add an earned-vs-placed provenance field to every class-4 record.
+
+**One silence worth keeping.** The interim CMO of the firm that exited the EU gave a long interview on the future of crypto marketing **17 days after the MiCA deadline** and mentioned **MiCA, the EU and the exit exactly zero times.** A Theme-4 absence with a named speaker and a date on it is the most citable kind there is.
+
+## 5. What the (g)-rule audit did to class 1
+
+Applying the general rule — *any finding whose evidence is a class-1 count for a period before 2026-06-26 is measuring the instrument* — to every populated file:
+
+| bucket | rows |
+|---|---|
+| **Flow** (newly observed open, post-epoch) | **5** — Phantom 07-02, Coinbase 07-18, Kraken ×2 07-24, Gemini 07-30 |
+| **Stock** (captured on epoch day, already open) | **6** — Ava Labs ×2, Optimism, Solana ×3 |
+
+> **Every genuine flow observation class 1 has ever made falls inside a 28-day span in July 2026, and there are five of them.**
+
+Survivors: **(i)** Kraken paid-media build-out — and it strengthens, because the two rows were verified this run to be distinct Ashby requisitions in two markets (US, UK), not a dedup artefact. **(r)** Gemini. The OP Labs 03-12 → 05-21 sequence survives **with a narrowed claim**: the ATS-supplied `date_posted` is sound, but no "only" or "first" qualifier may attach, because roles opened and closed before 06-26 are outside the instrument's memory.
+
+**And a new defect the audit found on its own.** The corpus's only pre-2026 class-1 rows — Solana's two `2025-12-26` entries — carry dates **derived by arithmetic from relative board labels** (*"6+ months"* on a Getro board), are explicitly noted as *approximate*, and sit on the December-2024 exclusion boundary. **Class 1 cannot evidence twelve months, and the deepest rows it does have are inferences.** The §1 re-scope is not merely forced; it is more urgent than yesterday's framing implied.
