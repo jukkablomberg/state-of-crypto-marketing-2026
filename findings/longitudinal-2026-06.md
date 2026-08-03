@@ -781,3 +781,48 @@ Applying the general rule — *any finding whose evidence is a class-1 count for
 Survivors: **(i)** Kraken paid-media build-out — and it strengthens, because the two rows were verified this run to be distinct Ashby requisitions in two markets (US, UK), not a dedup artefact. **(r)** Gemini. The OP Labs 03-12 → 05-21 sequence survives **with a narrowed claim**: the ATS-supplied `date_posted` is sound, but no "only" or "first" qualifier may attach, because roles opened and closed before 06-26 are outside the instrument's memory.
 
 **And a new defect the audit found on its own.** The corpus's only pre-2026 class-1 rows — Solana's two `2025-12-26` entries — carry dates **derived by arithmetic from relative board labels** (*"6+ months"* on a Getro board), are explicitly noted as *approximate*, and sit on the December-2024 exclusion boundary. **Class 1 cannot evidence twelve months, and the deepest rows it does have are inferences.** The §1 re-scope is not merely forced; it is more urgent than yesterday's framing implied.
+
+---
+
+# 2026-08-03 — day 33 post-deadline. Three shifts.
+
+## 1. The null went to its designated falsifier and came back intact — and the method changed
+
+Watch (v) was opened to ask whether *any* NCA produces a named marketing-side enforcement action against an authorised CASP after 1 July 2026. Four jurisdictions had replicated "perimeter, not conduct" by 08-02, and the 08-02 record was explicit that this proved less than it looked, because the one NCA with a published **advertising-conduct** track record — AFM — had not been swept, and was *"the one place a non-replication is actually likely."*
+
+**AFM was swept today, at its own index, and it replicated.**
+
+`https://www.afm.nl/en/sector/actueel` page 1 carries twelve dated items back to 16 April 2026 — the entire post-deadline window plus 76 days. **The last crypto item on it is the 16 April advertising review. 109 days.** AFM published exactly two enforcement instruments in that window, both tagged **"Measure"** on its own index: Euronext Amsterdam (13 May) and Arrowstreet Capital (22 April). Neither is a CASP; neither is marketing-side.
+
+**The methodological shift matters as much as the result.** This is the first time the corpus fetched an NCA's own publication index directly rather than querying a search engine — which is what watch (w) has asked for since it was opened. It produced the cleanest class-3 output the corpus has: a 109-day null read off the regulator's own list, not inferred from what a search engine happened to index. **Every future class-3 sweep should start at the index.**
+
+And CNMV — the other NCA with a bespoke crypto-advertising rule, an advertising-review machine running in the thousands of pieces, and a *published* sanction-file precedent (MIOLO DESARROLLOS, 11 Dec 2023, out of window, entered as context only) — has produced no 2026 case either.
+
+**But the finding must not print as "silence."** AFM's April release states supervisory letters were going to Dutch firms and ten international firms were being referred to their home NCAs. **Neither instrument is public.** The defensible claim is narrower and sharper:
+
+> The post-deadline supervisory response to crypto marketing is running through **non-public channels** — supervisory letters, cross-border referrals, perimeter warnings — and not through named, published conduct cases against authorised firms.
+
+That survives a hostile read at five jurisdictions. "Regulators are doing nothing" does not.
+
+## 2. The teardown finding is not about pages left up. It is about launch scope exceeding teardown scope
+
+Day-3 re-reads: **2/2 still live**, and both re-reads found surfaces neither prior checkpoint knew about.
+
+- **Kraken now has three owned lapsed surfaces**, not two. The new one — `blog.kraken.com/news/industry-news/europe-mica-switch` — was published **19 June 16:41 UTC, modified 16:58 UTC the same day, and never touched again.** Kraken's own category tag on it is **"Promotions."** It still reads *"we're rewarding traders who make the move"* and serves three live enrolment CTAs.
+- **OKX has a second fetched surface and a third identified.** The `/en-eu/` article is the **EEA-locale twin** of the `/en-us/` page captured on 08-02 — a distinct URL, published 12 Jun, **updated 30 Jun**, untouched since close. A `/en-sg/` twin was identified and deliberately not fetched.
+
+Every checkpoint that has looked harder has found more inventory. That reframes the finding for the third time in three days:
+
+> **A campaign ships as N surfaces across owned properties. The teardown, where it happens at all, is scoped to fewer surfaces than the launch was.**
+
+**And it exposes the finding's real weakness, which Phase 2 must state rather than hide: the corpus does not know the denominator.** It can say *at least N surfaces at firm X were live on day D*. It cannot say how many surfaces the campaign had. The 08-09 checkpoint should be designed to measure teardown *rate*, not teardown *fact*.
+
+The Kraken date conflict also moved. Three owned surfaces now state the promotion start: the support article and the blog both say **19 June**; only the campaign landing page says **22 June**. **The outlier is the selling surface.** Two of three also state an enrolment precondition that the landing page omits entirely.
+
+## 3. The geofence caveat got evidence, and the corpus has been sloppy about what a date is
+
+**The geofence.** Every teardown record has carried the qualifier that reads are non-EEA fetches and a geofenced EEA visitor might see a closed state. Today the OKX `/en-eu/` page **detected the fetch's US origin and announced it** — *"Looks like you're in the United States. Switch to the United States site for products available in your region."* — **and served the full EEA-only campaign, present tense, live CTAs, anyway.** The geo-layer fired and did nothing to the offer. The caveat is not discharged; the bar has moved from *"is there a geofence"* to *"does the geofence gate anything."*
+
+**The dates.** The 08-02 run filed `[VERIFY]` on a publisher's claim that Binance CMO Rachel Conlan *"stepped down in June 2026 — the MiCA deadline month."* The corpus already held the answer and it disagrees with itself: an **announcement dated 12 May** (`sport-sponsorship-reset-2026-05.md`) and a **departure dated ~15 June** (`binance-mica-eu-exit-2026-06.md`). Crypto.com's Kalifowitz is the same shape: **announced 5 May, effective 30 June.**
+
+These are reconcilable — announce in May, effective in June — and that is almost certainly what happened. **The problem is that the corpus has been treating the two as interchangeable, and Theme 1's most quotable framing ("three empty chairs inside the deadline window") rests on exactly that elision.** New watch **(aa)**: every personnel and campaign record needs `date_announced` and `date_effective` as separate fields, and no synthesis claim may rest on a date whose type is unrecorded. It is a cheap schema fix now and an expensive retraction after synthesis is written.
