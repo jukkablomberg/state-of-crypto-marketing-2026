@@ -826,3 +826,63 @@ The Kraken date conflict also moved. Three owned surfaces now state the promotio
 **The dates.** The 08-02 run filed `[VERIFY]` on a publisher's claim that Binance CMO Rachel Conlan *"stepped down in June 2026 — the MiCA deadline month."* The corpus already held the answer and it disagrees with itself: an **announcement dated 12 May** (`sport-sponsorship-reset-2026-05.md`) and a **departure dated ~15 June** (`binance-mica-eu-exit-2026-06.md`). Crypto.com's Kalifowitz is the same shape: **announced 5 May, effective 30 June.**
 
 These are reconcilable — announce in May, effective in June — and that is almost certainly what happened. **The problem is that the corpus has been treating the two as interchangeable, and Theme 1's most quotable framing ("three empty chairs inside the deadline window") rests on exactly that elision.** New watch **(aa)**: every personnel and campaign record needs `date_announced` and `date_effective` as separate fields, and no synthesis claim may rest on a date whose type is unrecorded. It is a cheap schema fix now and an expensive retraction after synthesis is written.
+
+---
+
+# 2026-08-05 (day 35) — three shifts
+
+## 1. The teardown finding stopped being about neglect
+
+Four days of checkpoints all had the same escape hatch available to a hostile reader: *nobody looked at those pages*. On 5 August that hatch closed.
+
+`okx.com/en-eu/learn/okx-europe-deposit-bonus-mica-deadline` returned **"Published on Jun 12, 2026 · Updated on Aug 05, 2026"** — an edit stamped the same day it was read — and the page still opened with *"The EU's MiCA deadline **lands** on 1 July 2026, and OKX is making it worth your while to move before then,"* carried the closed 8% offer in the present tense, and served three live acquisition CTAs.
+
+> **Someone maintained that page five days after the campaign closed and thirty-five days after the deadline passed, and did not retire the offer.**
+
+The claim is no longer *promotional surfaces are not torn down*. It is *promotional surfaces are actively maintained while advertising expired offers and elapsed deadlines*. That is a governance finding, and it generalises: the teardown is not being missed, it is not in the workflow.
+
+Three artefacts hardened it the same day:
+
+- **`my.okx.com/en-eu/campaigns/switch-to-okx-deposit-bonus`** states, in its own terms, *"This Promotion will end earlier than originally scheduled and will now close at 12:00 GMT+2 on 28 June 2026"* — and, thirty-eight days later, sells above that text with *"The MiCA deadline **is coming**"* and a live **Join now** button. A page that announces its own cancellation and keeps taking enrolments.
+- **`okx.com/en-sg/learn/mica-deposit-bonus-campaign`** is live at day 5 under an **"OKX Singapore"** masthead — an EEA-only, MFSA-licence-anchored offer syndicated onto a locale the promotion excludes. The 08-03 conditional (*if live, the finding gets materially larger*) is met.
+- **The denominator got a floor.** OKX's own language switchers enumerate the campaign across **≥31 identified surfaces in 15 locales**; four were fetched, four were live. Phase 2 can now say *at least 31 surfaces, 4 re-read, 4 live* — it still cannot say what share was torn down.
+
+**And a Theme-4 artefact fell out of it that is better than the teardown itself.** The `my.okx.com` terms page carries the MiCA statement — *"This crypto-asset marketing communication has not been approved by any competent authority in any Member State"* — and the two `/learn/` surfaces carrying the identical offer and identical CTAs **do not**. Within one campaign at one firm, the compliance layer was applied **per-template, not per-communication.** That is the gate-stack visibility question Theme 1 exists to ask, answered from first-party artefacts with URLs. The corpus records the asymmetry and adjudicates nothing.
+
+## 2. The regulator finding found its structural form — and the deadline vanished from the data
+
+Six jurisdictions are now swept, and ESMA's own index for the first time. The Italian read is the one that changes the wording.
+
+CONSOB's `oscuramenti` register states its own legal bases. One is **art. 36 c.2-*quaterdecies*** TUF (L. 21/2024): *"La Consob può ordinare … la rimozione delle **campagne pubblicitarie**…"* — an explicit power to order the removal of advertising campaigns. The register beneath it holds eighteen dated press releases back to 6 March 2026. **Every one is a site-blocking order against an unauthorised entity. Not one is an advertising-campaign removal.**
+
+The honest qualifier is what makes it a finding rather than an accusation: **c.2-*quaterdecies* is perimeter-scoped by statute.** It reaches advertising *by unauthorised persons*. It is not a conduct power over licensed CASPs. So the claim is structural, not behavioural:
+
+> **The EU marketing-enforcement toolkit, as legislated and as deployed, is perimeter-shaped.** Italy's dedicated advertising-takedown power reaches only unauthorised actors. The Netherlands' quantified advertising review produced supervisory letters and cross-border referrals, none public. Spain's bespoke advertising Circular produced one published sanction file — in 2023, against an unauthorised promoter. Across six jurisdictions the corpus has found **no published instrument aimed at the marketing conduct of an authorised CASP.**
+
+Pair it with the procedural half already drafted on 08-03 — *the response is running through non-public channels* — and print both. Neither survives alone; together they survive a hostile read.
+
+**The second Italian result is quantitative and it kills a tempting claim.** CONSOB publishes a running crypto-attributed counter. Post-deadline (3–24 July, 21 days): **+16**. A comparable pre-deadline stretch (23 April – 7 May, 14 days): **+33**. The largest single jumps in the whole series — +23 on 7 May, +22 on 3 April — are both months *before* 1 July.
+
+> **The MiCA deadline is not visible in the enforcement data.** Any Phase-2 sentence implying the transitional-period end triggered a supervisory surge is falsified for Italy by the regulator's own number.
+
+**ESMA, bounded honestly:** page 1 of its news index covers post-deadline days 9–33 and contains **zero crypto items of any kind**. Days 1–8 are unswept and pagination was not followed. That is a 24-day null, not a 35-day one, and it must be written as the former.
+
+## 3. Theme 2 has a second direction, and the corpus nearly missed it entirely
+
+Theme 2 has been read one way throughout: crypto marketing teams adopting AI tooling, and firms using AI-efficiency language to frame contractions. A CoinDesk piece from **23 April 2026** — in the public record for 104 days, held by this corpus in no file — reads it the other way.
+
+Between November 2024 and December 2025, **six named senior Coinbase marketers moved to OpenAI**, including CMO **Kate Rouch** into the same title. In April 2026 the marketing lead for **Base** moved to **Anthropic**. Policy, design and data-science departures ran alongside.
+
+> The senior layer of the largest US crypto exchange's marketing function did not adopt AI. **It left to work at AI companies.**
+
+Coinbase's on-the-record reply supplied the one hard number: *"The marketing team at Coinbase is **over 150 people**…"* — **the only firm-attributed marketing-function headcount the corpus holds for any tracked firm**, dated twelve days before the 14% reduction and the AI-native-pods memo. It is a floor, not a current figure, and it must be printed as such.
+
+**It was refused as a class-4 statement.** The speaker is an unnamed spokesperson — a communications seat, not a marketing one. That is the second consecutive run in which the most useful sentence found was structurally ineligible under §4, which is now an empirical argument for widening §4 rather than a stylistic complaint.
+
+**Two defects surfaced with it, and both are cheap now and expensive after synthesis.**
+
+**The date schema is worse than watch (aa) assumed.** Every date in the departure table is a **destination start date** taken from LinkedIn, not a departure date from Coinbase. Sarah Russell left Coinbase in **January 2023** and started at OpenAI in **November 2024** — a 22-month gap; Karstens routed through a third employer. Any claim of the form *"N marketing leaders left firm X during window W"* built from destination start dates is **wrong by construction**, and Theme 1 was one pass from making it. Personnel records need four date fields, not two.
+
+**And the sweeps have a systematic bias, now three-for-three.** OP Labs (March event, found July). Kraken (May, found July). Coinbase→OpenAI (April, found August). Each an in-window event at a tracked firm, each reported in a top-tier outlet, each found late and by accident. The instruments are tuned to catch *new* events and are missing *in-window* ones. With Phase 2 ten days out, a full-range re-sweep back to December 2024 is no longer discretionary.
+
+**Postscript, recorded without exemption.** The class-1 feed-health guard failed for the first time today: `open-positions.json` had not been re-scanned for roughly 66 hours, and the sync reported "0 new postings" anyway. That is *unobserved*, not *absent* — **the same defect the corpus spent this run documenting in other firms' estates: a surface reporting a state it has not re-verified.**
