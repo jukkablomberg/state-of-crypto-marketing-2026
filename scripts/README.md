@@ -16,6 +16,22 @@ Deterministic daily producer for source classes **1 (job postings)** and **2 (ag
 - `agency-overlap-matrix.csv` — tracked firm × claiming agencies, with `OVERLAP` flag where >1 agency claims the same firm (Theme 3).
 - `agency-claims/<agency>.csv` — dated per-agency claimed-client snapshot, each client tagged tracked / not-tracked.
 
+### Feed-health guard (added 2026-08-06 — watch bb)
+
+"0 new postings" is ambiguous between **ABSENT** (the scan ran and found nothing) and **UNOBSERVED** (the scan did not run). On 2026-08-05 the upstream ATS scan had been frozen for ~66h and the sync reported 0 new postings anyway — the corpus was one step from publishing an absence claim it had not earned, which is the same defect it documents in other firms' promotional estates.
+
+Every run now prints:
+
+```
+FEED HEALTH: HEALTHY|STALE|UNKNOWN (scanned_at_utc=..., age=..h, fingerprint total_jobs_fetched=...)
+```
+
+- **HEALTHY** — `scanned_at_utc` under 36h old. A zero is a genuine absence and may be written as one.
+- **STALE** — over 36h. The run prints `CLASS-1 ABSENCE CLAIM REFUSED`; the run record must say **"class 1 unobserved"**, never "class 1 produced nothing."
+- **UNKNOWN** — timestamp missing or unparseable. Treated as stale.
+
+`total_jobs_fetched` is carried as a **fingerprint**: if it moves while `new_count` stays 0, the scan genuinely looked. If it is byte-identical to the prior run, the scan did not.
+
 ### Coverage rules honoured
 Tracked-firm cohort only (alias table mirrors `tracked-firms.md`); every row carries a primary source URL; dedup against existing rows; **no fabrication** — only what the upstream feeds contain. Idempotent: re-running the same day adds nothing.
 
