@@ -149,7 +149,26 @@ def main():
     op_path=os.path.join(sales,"prospects","open-positions.json")
     if os.path.exists(op_path):
         op=load_json(op_path)
-        summary["src_jobs_date"]=op.get("scan_metadata",{}).get("scan_date")
+        meta=op.get("scan_metadata",{})
+        summary["src_jobs_date"]=meta.get("scan_date")
+        # ---- FEED-HEALTH GUARD (watch bb, added 2026-08-06) ----
+        # "0 new postings" is ambiguous between ABSENT (feed ran, found nothing)
+        # and UNOBSERVED (feed did not run). Distinguish them, and refuse to let
+        # the run record make an absence claim for class 1 in the stale case.
+        summary["feed_scanned_at"]=meta.get("scanned_at_utc")
+        summary["feed_fingerprint"]=meta.get("total_jobs_fetched")
+        age_h=None
+        try:
+            ts=datetime.datetime.strptime(meta.get("scanned_at_utc",""),"%Y-%m-%dT%H:%M:%SZ")
+            age_h=round((datetime.datetime.utcnow()-ts).total_seconds()/3600.0,1)
+        except Exception:
+            pass
+        summary["feed_age_hours"]=age_h
+        # HEALTHY iff the scan is under 36h old. Anything older means the upstream
+        # ATS scan has skipped at least one daily slot.
+        summary["feed_health"]=("UNKNOWN" if age_h is None
+                                else "HEALTHY" if age_h<=36 else "STALE")
+        summary["absence_claim_permitted"]=(summary["feed_health"]=="HEALTHY")
         roles=[]
         for key in ("new_since_last_scan","still_open_from_prior_scans"):
             roles += op.get(key,[])
@@ -268,6 +287,14 @@ def main():
     print("=== daily-corpus-sync summary ===")
     print(f"date: {today}")
     print(f"source A (jobs)   scan_date: {summary['src_jobs_date']}")
+    print(f"FEED HEALTH: {summary.get('feed_health','UNKNOWN')} "
+          f"(scanned_at_utc={summary.get('feed_scanned_at')}, "
+          f"age={summary.get('feed_age_hours')}h, "
+          f"fingerprint total_jobs_fetched={summary.get('feed_fingerprint')})")
+    if not summary.get("absence_claim_permitted", False):
+        print("  !! CLASS-1 ABSENCE CLAIM REFUSED: upstream ATS scan is stale or "
+              "undatable. A result of 0 new postings today means UNOBSERVED, "
+              "not ABSENT. Do not write an absence claim for class 1.")
     print(f"source B (agency) lastUpdated: {summary['src_agency_date']}")
     print(f"job postings ADDED: {summary['job_added']}  firms: {sorted(summary['job_firms'])}")
     print(f"  of which via Chrome inbox: {summary['chrome_ingested']}")
