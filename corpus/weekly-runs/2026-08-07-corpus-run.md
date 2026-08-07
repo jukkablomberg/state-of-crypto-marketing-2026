@@ -268,3 +268,19 @@ The August sweep surfaced no in-window verbatim statement by a qualifying market
    - **(iii) `methodology.md` §4 needs two changes** — widen the inventory *and* add an earned-vs-placed provenance field. **Five-for-five across five runs.** Today adds a second, distinct gap: **no home for named-marketing-leadership data that is not a quote** (two tracked firms' leaders identified and discarded today).
    - **(iv) The four upstream company-list gaps — OKX (Tier-1), Securitize, Rabby, Relai — unfixed, SEVENTH run.** Sharpened today: **OKX has a January 2026 contraction in the public record and is invisible to class 1 entirely**, while **Relai's CMO was identified by name in a public 2026 list this run.** Needs an owner outside the corpus run.
    - **(v) The Friday nomination promise in `README.md` is unkept and unowned.** The public text says inbound nominations are "read every Friday." **Today is Friday; nothing was read; no intake file has ever existed.** Either assign the mailbox read or amend the README. It is a published commitment, which makes it a different class of debt from the rest of this list.
+
+---
+
+## Postscript — the run's commit was taken by another loop, and that is a corpus-integrity issue, not a nuisance
+
+**What happened, precisely.** This run's five corpus files were written between 15:07 and 15:12. At **15:14**, before the run reached its own commit step, the distribution-engineer's 15-minute sync loop ran `git add -A` and committed all five as **`d52285b distribution-engineer: sync 5 change(s) [2026-08-07 15:14]`** — and pushed it. `git log origin/main..HEAD` was empty when this run reached the commit step: the work was already on `origin/main` under a message that names none of it.
+
+**Why it matters beyond tidiness.** Every prior corpus commit carries a dated, findings-bearing message — *"Corpus 2026-08-06 (day 36 post-deadline): the null acquired a stated reason…"*. Those messages are part of the audit trail: `git log --oneline` is currently a readable chronology of what the corpus learned and when. **A generic "sync 5 change(s)" erases one day from that chronology**, and it will keep doing so on every run whose write window straddles a quarter-hour boundary. Two of the last six commits on this branch are already DE syncs.
+
+**Not corrected by rewriting history.** `d52285b` is pushed. **No history rewrite was attempted** — the content is intact and correct, and rewriting a pushed corpus commit to improve a message is a worse trade than an imperfect log. This postscript plus the findings commit is the repair.
+
+**Also note the race is a data-integrity risk, not only a metadata one.** The DE committed at 15:14 while this run was still writing; `findings/longitudinal-2026-06.md` was appended at 15:15 and missed the sweep. **A run that had been three minutes slower would have had its corpus files committed and pushed mid-write, in a partially-written state, with no marker saying so.** That has not happened yet. It is one scheduling coincidence away.
+
+**→ Escalation, new, added to the list below as (vi):** the DE sync loop must either exclude this repo, or skip any repo with a modification inside the last N minutes, or the corpus run must take a lock the DE respects. **This is the same class of defect the corpus documents in other people's estates: two writers, one surface, no coordination.**
+
+**Working-tree state at run end:** clean apart from the findings append and this postscript, both committed by this run with a dated message and left **ahead of `origin/main`** for the DE to push.
