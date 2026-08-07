@@ -1,0 +1,61 @@
+« THIS FILE IS NOT THE TRACKER. NOTHING HERE IS A CORPUS FACT. »
+« It is a dated cross-reference of ONE public aggregator (CryptoJobsList, https://cryptojobslist.com/crypto-layoffs, fetched 2026-08-07 HTTP 200, page footer 'Updated August 2026') against 2026-layoff-tracker.csv (19 rows at time of writing). »
+« PURPOSE: execute the measurable half of watch (n) — the corpus has never known its own class-5 recall. Now it does. »
+« STANDING RULE HONOURED (Exodus row, 2026-08-01): CryptoJobsList per-firm FIGURES ARE NOT IMPORTED AS CORPUS ROWS. The aggregator is community-submittable ('Submit a layoff') and self-describes as 'public announcements, news and community reports'. Every figure below is AGGREGATOR-REPORTED. »
+« PROMOTION RULE: a NET-NEW-CANDIDATE row may enter 2026-layoff-tracker.csv only after its own primary/near-primary source is fetched and read, exactly as every existing row was. NONE HAVE BEEN. »
+« HEADLINE MEASURE: aggregator lists 54 rows / 50 companies / 7,294+ jobs for 2026. Corpus holds 19. RECALL AGAINST THIS ONE PUBLIC SOURCE = 19/54 = 35%. Six of the 35 unheld rows name TRACKED Stratum 1-2 firms. »
+status,firm,cohort,agg_date,agg_jobs_cut,agg_pct,agg_reason,agg_source_col,corpus_row_date,note
+HELD,Crypto.com,TRACKED S1,2026-03-19,180,-12%,AI pivot,CoinDesk/cnbc+51,2026-03,Aggregator supplies the day-of-month the corpus row already implies via its CoinDesk URL. No action.
+HELD,Gemini,TRACKED S1,2026-02-05,-200,-25%,Market conditions,finance.yahoo/PYMNTS+23,2026-02-05,Matches corpus. Aggregator adds headcount 200 to a corpus row carrying 'undisclosed'. NOT IMPORTED.
+HELD-CONFLICT,Algorand,TRACKED S2,2026-03-18,-50,-25%,Restructuring,SpazioCrypto/yahoo+13,2026-Q1,"HIGH VALUE. The corpus row is the WEAKEST in the tracker: no day-date, no headcount, NO SOURCE URL, ai_cover=N asserted with nothing behind it. Aggregator supplies date 2026-03-18 and headcount 50. [VERIFY] against a primary and repair the corpus row — this is the cheapest quality win in class 5."
+HELD-CONFLICT,Coinbase,TRACKED S1,2026-05-05,-500,-14%,Market conditions,x.com,2026-05-05,"FIGURE CONFLICT. Corpus prints ~700; aggregator says 500. Same date, same 14%. Both cannot be right and the corpus's ~700 is Fortune-derived. [VERIFY] before Phase 2 prints a headcount."
+NET-NEW-CANDIDATE,Coinbase,TRACKED S1,2026-03-05,,-18%,Market conditions,Blockworks,,"*** HIGHEST-VALUE UNHELD ROW. *** A Coinbase contraction TWO MONTHS BEFORE the 05-05 round the corpus treats as Coinbase's 2026 event, and LARGER (18% vs 14%). If real, the corpus's Theme-5 spine is built on the second cut, not the first. [VERIFY] at Blockworks."
+NET-NEW-CANDIDATE,Gemini,TRACKED S1,2026-03-10,,-30%,Market conditions,Coinpedia/Bloomberg+10,,"*** BEARS DIRECTLY ON AN OPEN CORPUS [VERIFY]. *** The Gemini row carries '~-30% YTD [VERIFY]' with no source for the extra ~5pp over the Feb-05 25%. This dates a 30% event to 2026-03-10. Could resolve the reconciliation — or could be the same event re-reported. [VERIFY] at Bloomberg."
+NET-NEW-CANDIDATE,Gemini,TRACKED S1,2026-04-07,-40,-5%,AI pivot,CryptoRank/Analytics Insight+2,,"A THIRD Gemini row. If real the firm contracted three times in Q1-Q2 2026. Weak sourcing column. [VERIFY]."
+NET-NEW-CANDIDATE,Bybit,TRACKED S1,2026-06-23,-15,-20%,Market conditions,NONE,,"*** INTERNALLY INCONSISTENT — DO NOT ENTER, AND SAY WHY. *** -15 jobs at -20% implies a 75-person organisation; Bybit is a top-5 exchange. Source column is EMPTY. This row is either a regional/desk cut mislabelled as firm-wide or an erroneous submission. Recorded as a demonstration that the aggregator carries unvetted rows."
+NET-NEW-CANDIDATE,OKX,TRACKED S1,2026-01-09,-10,-33%,Restructuring,CoinDesk/CryptoRank+4,,"Same arithmetic smell as Bybit (-10 at -33% implies a 30-person unit) but CoinDesk-sourced, so plausibly a named regional/desk cut. OKX is the Tier-1 firm the class-1 instrument cannot see at all (absent from the upstream company list, 7th run). [VERIFY]."
+NET-NEW-CANDIDATE,Polygon,TRACKED S2,2026-01-15,-60,-30%,Acquisition,BeInCrypto/CoinDesk+5,,"The corpus's Polygon Labs row already mentions '60 cut Jan-2026 post-Coinme/Sequence acquisition' AS CONTEXT but never created a row. Aggregator corroborates date and headcount. Cheapest promotion on this list."
+PROBABLE-DOUBLE-COUNT,Optimism,TRACKED S2,2026-03-12,,-20%,Market conditions,yahoo/BeInCrypto+1,2026-03-12,"Same date as the corpus's OP Labs row (20 cut / ~19.6%). The aggregator carries BOTH 'OP Labs' and 'Optimism' on 2026-03-12. Almost certainly one event double-listed — which is itself evidence about aggregator hygiene and about watch (u) (name-keyed sweeps defeated by entity naming)."
+HELD,Polygon Labs,TRACKED S2,2026-07-16,,,Restructuring,The Block/X,2026-07-16,Matches corpus (both undisclosed). No action.
+HELD-CONFLICT,Kraken,TRACKED S1,2026-05-16,-150,-5%,AI pivot,Bloomberg.com,2026-05-15,"One-day date conflict. Corpus dates the Bloomberg report 05-15 and the execution 05-14. Aggregator says 05-16. Corpus is better sourced; no change."
+HELD,OP Labs,TRACKED S2,2026-03-12,-20,-20%,Restructuring,CryptoTimes/Cryptonews+4,2026-03-12,Matches corpus. See PROBABLE-DOUBLE-COUNT above.
+HELD-CONFLICT,FalconX,PERIMETER,2026-07-15,,-10%,Restructuring,Bloomberg,2026-08-03,"*** 19-DAY DATE CONFLICT, SAME OUTLET, SAME PERCENTAGE. *** Corpus dates the Bloomberg report 2026-08-03 (via Cryptonomist relay); aggregator says 2026-07-15. Either two rounds or one round mis-dated by one of the two. The corpus row is already the weakest-provenance row in the tracker (AI-assisted secondary relaying an anonymously-sourced paywalled primary). [VERIFY] — this conflict makes the [VERIFY] urgent, not optional."
+HELD-CONFLICT,Messari,PERIMETER,2026-03-17,,,AI pivot,The Block+5,2026-03-16,One-day conflict; corpus fetched The Block 2026-03-16 22:24 EDT first-party. Corpus wins. No change.
+HELD-CONFLICT,"Block, Inc.",PERIMETER,2026-02-26,-4000,-40%,AI pivot,LA Times/thestreet+21,2026-02,"USEFUL. The corpus row's day-of-month is explicitly open ('exact day-of-month remains open'). Aggregator supplies 2026-02-26. [VERIFY] at the linked-but-never-fetched primary theblock.co/post/391520."
+HELD,Robinhood,PERIMETER,2026-06-16,-290,-10%,Restructuring,Crypto News,2026-06-16,Exact match on date/headcount/percentage. No action.
+HELD,BitGo,PERIMETER,2026-06-26,-90,-15%,AI pivot,CoinTelegraph/X,2026-06-26,"Aggregator adds headcount 90 to a corpus row carrying blank. The corpus row already cites this aggregator as its source URL (the only row that does) with 'primary X post pending durable URL'. Still pending."
+HELD,Exodus,PERIMETER,2026-07-17,-54,-25%,Restructuring,Crypto News/SEC,2026-07-17,"The originating case for the no-import rule: aggregator 54 vs SEC-reported ~77. Unchanged. No action."
+HELD,BitMEX,PERIMETER,2026-07-23,-160,wind-down (100%),Market conditions,bitmex.com,2026-07-23,Aggregator adds headcount 160 to a corpus row carrying 'undisclosed'. NOT IMPORTED (BitMEX's own notice discloses no headcount).
+HELD,BitMart,PERIMETER,2026-07-26,-550,wind-down (100%),Market conditions,bitmart.com,2026-07-26,"550 already recorded in the corpus row as aggregator context only, explicitly not entered. Unchanged."
+HELD,Uphold,PERIMETER,2026-07-27,-85,-17%,Restructuring,CoinDesk,2026-07-27,Exact match. No action.
+HELD,Luno,PERIMETER,2026-07-28,,-20%,Market conditions,Bloomberg,2026-07-28,Exact match. No action.
+HELD,Gnosis,PERIMETER,2026-07-28,,,Restructuring,X,2026-07-17,"Corpus dates the underlying event 07-17 (Q2 report) and the marketing-function X post 07-28. Aggregator's 07-28 is the X post. Compatible; corpus is more precise."
+HELD,MARA Holdings,PERIMETER,2026-04-07,-40,-15%,Market conditions,Crypto Briefing/unchained+20,2026-Q2,Aggregator supplies date 2026-04-07 and -15% for a corpus row carrying only '2026-Q2, 40'. April is Q2 — compatible. [VERIFY] cheap.
+NET-NEW-CANDIDATE,Proof of Play,PERIMETER,2026-08-04,,-100%,Other,Crypto News,,"IN-WINDOW AUGUST EVENT the corpus does not hold. Web3 gaming studio shutdown. Post-deadline day 34. [VERIFY]."
+NET-NEW-CANDIDATE,Pump.fun,PERIMETER,2026-07-30,-40,,Restructuring,BitcoinWorld,,[VERIFY].
+NET-NEW-CANDIDATE,DDango,PERIMETER,2026-07-25,,-100%,Market conditions,BeInCrypto/X,,Shutdown. [VERIFY].
+NET-NEW-CANDIDATE,Odos,PERIMETER,2026-07-24,-10,-100%,Other,The Defiant/X,,Shutdown. [VERIFY].
+NET-NEW-CANDIDATE,AscendEX,PERIMETER,2026-07-10,,-100%,Regulatory,CoinPedia/Ascendex.com,,"*** THEME-4 RELEVANT AND THE MOST INTERESTING PERIMETER ROW HERE. *** The ONLY 2026 row in the entire aggregator whose stated reason is 'Regulatory', and it is an exchange shutdown nine days after the MiCA deadline. The corpus's post-deadline narrative is 'exits, not enforcement'; this would be an exit the aggregator attributes to regulation. [VERIFY] at ascendex.com first-party."
+NET-NEW-CANDIDATE,Zapper Fi,PERIMETER,2026-07-08,,-100%,Market conditions,CryptoTimes/X,,Shutdown. [VERIFY].
+NET-NEW-CANDIDATE,Yield Guild Games,PERIMETER,2026-07-07,-35,,AI pivot,YGG Play/CoinTelegraph,,"AI-framed July row. If real it changes the corpus's July count (currently 'Jul: 1 of 7 AI-framed'). [VERIFY] — do not restate the July ratio until this is settled."
+NET-NEW-CANDIDATE,Ethereum Foundation,PERIMETER,2026-06-23,-54,-20%,Restructuring,Ethereum Foundation,,"*** CORROBORATES AN EXISTING FLAGGED-BUT-UNENTERED CLAIM. *** The FalconX row (added 08-05) flagged 'a claimed Ethereum Foundation -20% workforce reduction — single-sourced inside an AI-assisted aggregator piece, no date, no primary. [VERIFY] before it is ever entered.' This supplies the date (06-23), the headcount (54) and a first-party source attribution. Second independent appearance. [VERIFY] at ethereum.org/blog."
+NET-NEW-CANDIDATE,OSL,PERIMETER,2026-06-19,-400,,Restructuring,NONE,,Large figure with an EMPTY source column. [VERIFY] or discard.
+NET-NEW-CANDIDATE,LBank,PERIMETER,2026-06-18,-100,-10%,AI pivot,lbank.com,,First-party source column. [VERIFY].
+NET-NEW-CANDIDATE,Matter Labs,PERIMETER,2026-06-17,,,Restructuring,Crypto Potato/X,,[VERIFY].
+NET-NEW-CANDIDATE,Keyrock,PERIMETER,2026-06-15,-60,-30%,Restructuring,NONE,,Empty source column. [VERIFY] or discard.
+NET-NEW-CANDIDATE,Dune,PERIMETER,2026-05-14,-40,-25%,AI pivot,The Block/X.com,,"AI-framed May row at a crypto-data firm — the same category as Messari. [VERIFY]."
+NET-NEW-CANDIDATE,SQD,PERIMETER,2026-04-29,-4,,Restructuring,NONE,,Empty source column; trivial scale. Low priority.
+NET-NEW-CANDIDATE,Zonadcrypto,PERIMETER,2026-04-21,,,Market conditions,TVP World,,[VERIFY].
+NET-NEW-CANDIDATE,CoinLens,PERIMETER,2026-04-21,-9,-33%,Market conditions,NONE,,Empty source column. Low priority.
+NET-NEW-CANDIDATE,Scroll,PERIMETER,2026-04-14,,,Market conditions,CoinDesk,,L2. CoinDesk-sourced. [VERIFY].
+NET-NEW-CANDIDATE,StarkWare,PERIMETER,2026-04-13,-40,-30%,Restructuring,Protos/ForkLog+17,,L2. Well-corroborated column (+17 sources). [VERIFY].
+NET-NEW-CANDIDATE,BTC Markets,PERIMETER,2026-04-09,,,Market conditions,MSN,,[VERIFY].
+NET-NEW-CANDIDATE,Swyftx,PERIMETER,2026-04-09,,-15%,Market conditions,Startup Daily/Information Age,,[VERIFY].
+NET-NEW-CANDIDATE,Quidax,PERIMETER,2026-03-26,,,Restructuring,TechCabal,,[VERIFY].
+NET-NEW-CANDIDATE,PIP Labs (Story Protocol),PERIMETER,2026-03-20,-8,-10%,Restructuring,SpazioCrypto,,"The 08-06 run grepped the repo for 'pip labs' during dedup and found nothing — i.e. it was already suspected and never resolved. Now dated. [VERIFY]."
+NET-NEW-CANDIDATE,Zap Africa,PERIMETER,2026-03-02,,-44%,Market conditions,TechCabal,,[VERIFY].
+NET-NEW-CANDIDATE,Web3 Foundation,PERIMETER,2026-02-02,,-65%,Market conditions,NONE,,Largest percentage in the table with an EMPTY source column. [VERIFY] or discard.
+NET-NEW-CANDIDATE,Entropy,PERIMETER,2026-01-25,,,Market conditions,TradingView,,[VERIFY].
+NET-NEW-CANDIDATE,MoonPay,PERIMETER,2026-01-16,,,Restructuring,thestreet.com,,[VERIFY].
+NET-NEW-CANDIDATE,Berachain,PERIMETER,2026-01-15,,,Market conditions,KuCoin+1,,[VERIFY].
+NET-NEW-CANDIDATE,MANTRA,PERIMETER,2026-01-14,,,Market conditions,Yellow.com/The Block+10,,[VERIFY].
