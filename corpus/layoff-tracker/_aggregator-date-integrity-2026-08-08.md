@@ -23,7 +23,7 @@ The aggregator's `source` column points at Blockworks. The Blockworks article wa
 - **Date, on the page: June 14, 2022 08:49 am**
 - Hero image path: `/wp-content/uploads/**2022/06**/Coinbase-3.jpg`
 - Body: 1,100 employees affected; headcount then "over 4,900"; $40–45M restructuring expense; Coinbase market value "just over $11 billion"; Armstrong quoted saying the firm "over-hired" since 2021 and citing a coming "crypto winter."
-- **SEC filing referenced in the article:** `coin-**20220614**.htm`
+- **SEC filing referenced in the article:** `coin-20220614.htm` — the accession's own date component is **2022-06-14**
 
 Every internal date marker — URL slug of the image, the byline date, the SEC accession, the $11B market cap, the Terra collapse reference — places this in **June 2022**. Corroborated independently by the NPR and AOL headlines surfaced in the same search, both of which report the 18% cut and both of which are 2022 items.
 
