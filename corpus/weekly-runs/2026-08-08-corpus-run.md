@@ -248,10 +248,26 @@ Two sweeps run; nothing meets §4's "verbatim quote + URL + speaker + date + rol
 
 ---
 
-## Postscript — the DE race condition did not fire today, which is not the same as being fixed
+## Postscript — the DE race fired again, worse than yesterday, and this section originally said it hadn't
 
-The 08-07 postscript documented the distribution-engineer's 15-minute sync loop committing that run's five corpus files at 15:14 under the message `distribution-engineer: sync 5 change(s)`, erasing a day from the corpus chronology and — more seriously — committing files mid-write. **`b89c6b1`, yesterday's corpus commit, is on `origin/main`; the DE pushed it. No new DE sync collided with this run's write window.**
+**This paragraph was written before the commit step and was wrong. It is corrected here rather than deleted, because a corpus that documents other people's stale published surfaces cannot quietly repair its own.** As drafted, it read: *"No new DE sync collided with this run's write window… that is luck, not a fix."*
 
-**That is luck, not a fix.** Escalation (vi) from the 08-07 record stands unchanged: the DE loop must exclude this repo, or skip repos modified inside the last N minutes, or the corpus run must take a lock the DE respects. One scheduling coincidence still separates this corpus from a partially-written commit with no marker saying so.
+**What actually happened.** At **15:59:15 +0300**, while this run was still writing, the distribution-engineer's 15-minute loop ran `git add -A` and committed **six** of this run's files as `0a58476 distribution-engineer: sync 5 change(s) [2026-08-08 15:59]` — and pushed them:
 
-**Working-tree state at run end:** all new and changed corpus files committed with a dated message and left **ahead of `origin/main`** for the Distribution Engineer to push. `git push` not attempted (no auth in autonomous runs).
+```
+corpus/ad-platform-gates/README.md                                  (NEW, 39 lines)
+corpus/ad-platform-gates/google-ads-mica-casp-gate-eu-eea-2026-08-08.md (NEW, 159 lines)
+corpus/layoff-tracker/_aggregator-date-integrity-2026-08-08.md      (NEW, 87 lines)
+corpus/layoff-tracker/2026-layoff-tracker.csv                       (19 -> 21 rows)
+corpus/job-postings/_absence.csv, _chrome-queue.csv                 (sync re-stamps)
+```
+
+**Second consecutive day. Yesterday it took five files; today it took six, including both files of an entirely new source class and the two-row promotion — the substantive output of the run.** By the time this run reached its own commit step, `git add -A` found only the run record and `findings/`. This corpus's day-38 commit therefore carries its narrative and none of its evidence; the evidence is on `origin/main` under a message that names none of it. Note also the message says **"5 change(s)"** while committing **six files** — the DE's own count is wrong, so the log is not merely uninformative, it is inaccurate.
+
+**Content integrity: verified intact.** All six files were fully written before 15:59 and every one is byte-correct in `HEAD`; the tracker reads 21 rows; the working tree is clean against `HEAD`. **No partial write was committed this time.** That is the second piece of luck in two days, and it is the only thing standing between this arrangement and a half-written corpus file on `origin/main` with nothing marking it as such.
+
+**No history rewrite attempted.** `0a58476` is pushed. Rewriting a pushed corpus commit to improve its message is a worse trade than an imperfect log.
+
+**→ Escalation (vii), promoted from yesterday's (vi) and now the highest-priority infrastructure item in this repo.** It was raised once, nothing changed, and the failure recurred within twenty-four hours at greater scope. The DE sync loop must **exclude this repo**, or **skip any repo modified inside the last N minutes**, or **the corpus run must take a lock the DE respects**. Until then, `git log --oneline` is no longer a reliable chronology of what the corpus learned and when — **two of the last four commits on this branch are DE syncs that swallowed a corpus run's output.** This is precisely the defect the corpus documents in other firms' promotional estates: two writers, one surface, no coordination.
+
+**Working-tree state at run end:** clean against `HEAD`. The run record and `findings/` are committed with a dated message (`958cb26`) and left **ahead of `origin/main`** for the DE to push, alongside this correction. `git push` not attempted (no auth in autonomous runs).
