@@ -29,7 +29,7 @@
 
 ### 4. Crypto.com CMO Steven Kalifowitz exit announcement (5 May 2026)
 - **Source:** Crypto.com corporate communications, CoinDesk, The Block.
-- **Stated framing:** Kalifowitz exits end of June; six-year tenure; succession during AI-native restructuring chapter.
+- **Stated framing:** ~~Kalifowitz exits end of June; six-year tenure; succession during AI-native restructuring chapter.~~ 🔴 **CORRECTED 2026-08-11 — the AI clause was never in any source.** The CoinDesk primary was captured in full on 2026-08-11 (the 2026-08-03 attempt returned an empty body) and contains **no AI, automation, restructuring or efficiency framing of any kind**, and does not connect the exit to the March 12% reduction. Corrected framing, at the strength the primary supports: **Kalifowitz exits the CMO role effective 30 June 2026 after close to six years and continues as advisor to the CEO; the firm gave a valedictory brand-legacy statement and named no successor.** Verbatim spokesperson quote and full capture: `cryptocom-kalifowitz-cmo-exit-primary-2026-08-11.md`. **Mechanism of the error: this file's §2 legitimately carries Marszalek's "AI-native restructuring" language for the March layoff, and the framing migrated one section down the page and acquired a source it never had. Adjacency inside a corpus file is not attribution.** Phase 2 may NOT print this exit as AI-framed.
 - **Theme 1 signal:** Marketing function's share of the March restructuring. The $1B-sponsorship-era CMO seat ends; the replacement-seat shape unannounced.
 
 ### 5. Binance CMO Rachel Conlan exit + Eowyn Chen interim (12 May 2026)
