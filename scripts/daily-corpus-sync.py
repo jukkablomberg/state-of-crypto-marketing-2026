@@ -164,11 +164,64 @@ def main():
         except Exception:
             pass
         summary["feed_age_hours"]=age_h
-        # HEALTHY iff the scan is under 36h old. Anything older means the upstream
-        # ATS scan has skipped at least one daily slot.
-        summary["feed_health"]=("UNKNOWN" if age_h is None
-                                else "HEALTHY" if age_h<=36 else "STALE")
+        # ---- SECOND PREDICATE: FINGERPRINT DELTA (watches bb + ff, added 2026-08-14) ----
+        # 2026-08-13: age said HEALTHY (14.0h) while the fingerprint was byte-identical
+        # to the prior run across a two-calendar-day gap. scripts/README.md's own rule
+        # says a byte-identical fingerprint means the scan did not look — but the banner
+        # printed only the age half, so the guard passed on a run it should have refused.
+        # Fix: persist the fingerprint, print the DELTA, and degrade to STALE on a zero
+        # delta regardless of age. Same-day re-runs stay idempotent (they compare against
+        # the last observation from a PRIOR calendar date, not against themselves).
+        fp_state_path=os.path.join(repo,"corpus","job-postings","_feed-fingerprint.json")
+        fp_now=summary["feed_fingerprint"]
+        fp_hist=[]
+        if os.path.exists(fp_state_path):
+            try: fp_hist=load_json(fp_state_path).get("history",[])
+            except Exception: fp_hist=[]
+        prior=None
+        for h in reversed(fp_hist):
+            if h.get("observed_date")!=today:
+                prior=h; break
+        fp_delta=None
+        if prior is not None and isinstance(fp_now,int) and isinstance(prior.get("fingerprint"),int):
+            fp_delta=fp_now-prior["fingerprint"]
+        summary["feed_fingerprint_delta"]=fp_delta
+        summary["feed_fingerprint_prior"]=(prior or {}).get("fingerprint")
+        summary["feed_fingerprint_prior_date"]=(prior or {}).get("observed_date")
+        # HEALTHY iff the scan is under 36h old AND the fingerprint moved since the last
+        # observation from a prior date. Either predicate failing means the corpus cannot
+        # claim the upstream ATS scan looked.
+        if age_h is None:
+            summary["feed_health"]="UNKNOWN"; summary["feed_health_reason"]="scanned_at_utc missing or unparseable"
+        elif age_h>36:
+            summary["feed_health"]="STALE"; summary["feed_health_reason"]=f"scan age {age_h}h exceeds 36h"
+        elif fp_delta==0:
+            summary["feed_health"]="STALE"; summary["feed_health_reason"]=(
+                f"fingerprint delta 0 vs {prior.get('observed_date')} "
+                f"({prior.get('fingerprint')}) — by scripts/README.md's own rule the scan did not look")
+        elif fp_delta is None:
+            summary["feed_health"]="HEALTHY"; summary["feed_health_reason"]=(
+                "age OK; no prior-date fingerprint on record, delta unmeasurable this run")
+        else:
+            summary["feed_health"]="HEALTHY"; summary["feed_health_reason"]=f"age {age_h}h, fingerprint delta {fp_delta:+d}"
         summary["absence_claim_permitted"]=(summary["feed_health"]=="HEALTHY")
+        # persist today's observation (idempotent: one entry per calendar date)
+        fp_hist=[h for h in fp_hist if h.get("observed_date")!=today]
+        fp_hist.append({"observed_date":today,"fingerprint":fp_now,
+                        "scanned_at_utc":summary["feed_scanned_at"],
+                        "scan_date":summary["src_jobs_date"],
+                        "age_hours":age_h,"delta_vs_prior_date":fp_delta})
+        fp_hist=sorted(fp_hist,key=lambda h:h.get("observed_date") or "")[-90:]
+        try:
+            os.makedirs(os.path.dirname(fp_state_path),exist_ok=True)
+            with open(fp_state_path,"w") as fh:
+                json.dump({"note":"feed-health guard state (watches bb+ff). "
+                                  "Fingerprint = open-positions.json scan_metadata.total_jobs_fetched. "
+                                  "A zero delta across calendar dates degrades FEED HEALTH to STALE.",
+                           "history":fp_hist},fh,indent=2)
+                fh.write("\n")
+        except Exception as e:
+            print(f"  !! could not persist fingerprint state: {e}")
         roles=[]
         for key in ("new_since_last_scan","still_open_from_prior_scans"):
             roles += op.get(key,[])
@@ -287,14 +340,19 @@ def main():
     print("=== daily-corpus-sync summary ===")
     print(f"date: {today}")
     print(f"source A (jobs)   scan_date: {summary['src_jobs_date']}")
+    _d=summary.get("feed_fingerprint_delta")
+    _ds=("n/a" if _d is None else f"{_d:+d}")
     print(f"FEED HEALTH: {summary.get('feed_health','UNKNOWN')} "
           f"(scanned_at_utc={summary.get('feed_scanned_at')}, "
           f"age={summary.get('feed_age_hours')}h, "
-          f"fingerprint total_jobs_fetched={summary.get('feed_fingerprint')})")
+          f"fingerprint total_jobs_fetched={summary.get('feed_fingerprint')}, "
+          f"delta={_ds} vs {summary.get('feed_fingerprint_prior_date')} "
+          f"({summary.get('feed_fingerprint_prior')}))")
+    print(f"  reason: {summary.get('feed_health_reason','—')}")
     if not summary.get("absence_claim_permitted", False):
-        print("  !! CLASS-1 ABSENCE CLAIM REFUSED: upstream ATS scan is stale or "
-              "undatable. A result of 0 new postings today means UNOBSERVED, "
-              "not ABSENT. Do not write an absence claim for class 1.")
+        print("  !! CLASS-1 ABSENCE CLAIM REFUSED: upstream ATS scan is stale, "
+              "undatable, or did not move. A result of 0 new postings today means "
+              "UNOBSERVED, not ABSENT. Do not write an absence claim for class 1.")
     print(f"source B (agency) lastUpdated: {summary['src_agency_date']}")
     print(f"job postings ADDED: {summary['job_added']}  firms: {sorted(summary['job_firms'])}")
     print(f"  of which via Chrome inbox: {summary['chrome_ingested']}")

@@ -1,0 +1,22 @@
+{
+  "note": "feed-health guard state (watches bb+ff). Fingerprint = open-positions.json scan_metadata.total_jobs_fetched. A zero delta across calendar dates degrades FEED HEALTH to STALE.",
+  "history": [
+    {
+      "observed_date": "2026-08-13",
+      "fingerprint": 2151,
+      "scanned_at_utc": "2026-08-12T22:10:37Z",
+      "scan_date": "2026-08-13",
+      "age_hours": 14.0,
+      "delta_vs_prior_date": null,
+      "provenance": "BACKFILLED 2026-08-14 from the verbatim printed banner quoted in corpus/weekly-runs/2026-08-13-corpus-run.md sec.1 \u2014 not re-derived from the upstream feed, which now holds only today's scan."
+    },
+    {
+      "observed_date": "2026-08-14",
+      "fingerprint": 2175,
+      "scanned_at_utc": "2026-08-13T22:23:52Z",
+      "scan_date": "2026-08-14",
+      "age_hours": 13.8,
+      "delta_vs_prior_date": 24
+    }
+  ]
+}

@@ -23,14 +23,20 @@ Deterministic daily producer for source classes **1 (job postings)** and **2 (ag
 Every run now prints:
 
 ```
-FEED HEALTH: HEALTHY|STALE|UNKNOWN (scanned_at_utc=..., age=..h, fingerprint total_jobs_fetched=...)
+FEED HEALTH: HEALTHY|STALE|UNKNOWN (scanned_at_utc=..., age=..h, fingerprint total_jobs_fetched=..., delta=+N vs YYYY-MM-DD (N))
+  reason: ...
 ```
 
-- **HEALTHY** — `scanned_at_utc` under 36h old. A zero is a genuine absence and may be written as one.
-- **STALE** — over 36h. The run prints `CLASS-1 ABSENCE CLAIM REFUSED`; the run record must say **"class 1 unobserved"**, never "class 1 produced nothing."
-- **UNKNOWN** — timestamp missing or unparseable. Treated as stale.
+The verdict is the AND of **two** predicates. Both must pass for a class-1 absence claim to be permitted.
 
-`total_jobs_fetched` is carried as a **fingerprint**: if it moves while `new_count` stays 0, the scan genuinely looked. If it is byte-identical to the prior run, the scan did not.
+- **Predicate 1 — age.** `scanned_at_utc` under 36h old. Over 36h ⇒ **STALE**; missing or unparseable ⇒ **UNKNOWN** (treated as stale).
+- **Predicate 2 — fingerprint delta (added 2026-08-14, watches bb + ff).** `total_jobs_fetched` is compared against the last observation from a **prior calendar date**, persisted in `corpus/job-postings/_feed-fingerprint.json`. A delta of **0 degrades the verdict to STALE regardless of age.** If no prior-date observation exists, the delta is unmeasurable and reported as `n/a` (verdict falls back to the age test, and the reason line says so).
+
+When the verdict is not HEALTHY the run prints `CLASS-1 ABSENCE CLAIM REFUSED`; the run record must say **"class 1 unobserved"**, never "class 1 produced nothing."
+
+**Why the second predicate exists.** The rule *"if the fingerprint moves while `new_count` stays 0 the scan genuinely looked; if it is byte-identical the scan did not"* was written on 2026-08-06 but never enforced — only printed. On **2026-08-13** the two halves disagreed for the first time: age 14.0h said HEALTHY while the fingerprint was byte-identical (2,151 → 2,151) **across a two-calendar-day gap**, and the banner reported only the half that passed. That run had to be recorded as `CLASS 1 UNRESOLVED` by hand. The guard now makes that ruling itself.
+
+Same-day re-runs stay **idempotent**: the comparison is always against a prior *date*, never against the run's own entry, so re-running does not manufacture a zero delta. Discrimination was verified both ways on 2026-08-14 (real delta `+24` ⇒ HEALTHY; prior-date fingerprint forced equal ⇒ **STALE** + absence claim refused).
 
 ### Coverage rules honoured
 Tracked-firm cohort only (alias table mirrors `tracked-firms.md`); every row carries a primary source URL; dedup against existing rows; **no fabrication** — only what the upstream feeds contain. Idempotent: re-running the same day adds nothing.
