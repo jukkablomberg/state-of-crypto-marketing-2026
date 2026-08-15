@@ -1076,3 +1076,41 @@ The distinction matters more than the row. Every other marketing-limb row in tha
 **7. What connects it.** The last four entries recorded the corpus finding errors in itself; 08-13 recorded something worse — a class of error it could not correct. **Today it found the largest error yet, and it found it by doing the cheapest thing on the list: requesting the primary surface.** The pattern now has a name and a test. **New watch (ll): before Phase 2 prints any absence as a finding, ask whether the primary surface was ever requested.** For class 3 the answer was *no* for twelve consecutive runs, and the absence turned out to be an artifact of the instrument.
 
 What survives today: **six admitted operator statements, 24 primary-verified layoff rows, one at-source regulator capture ending a thirteen-run class-3 zero, a job-postings absence that is certified rather than asserted for the first time — and one printed claim narrowed before it shipped rather than after.**
+
+---
+
+## 2026-08-15 — day 45 post-deadline: the enforcement is missing; the guidance never was
+
+**1. The corpus was one Phase-2 draft away from telling a regulator that the EU had said nothing.** Yesterday's entry corrected the *scope* of the class-3 silence. Today corrected the *companion claim* riding alongside it — that the EU has issued no operational marketing guidance to CASPs. **It has, it is specific, and it is thirteen months old.**
+
+**ESMA35-1872330276-2329, 11 July 2025** — *"Avoiding Misperceptions: Guidance for Crypto-Asset Service Providers Offering Unregulated Services"* — is a four-row **Dos and Don'ts table for CASP marketing communications**, anchored to Art. 66(1) and 66(2) MiCA. It was fetched at source and is net-new to this corpus: repo-wide grep on `halo`, `1872330276`, `unregulated activities` and both date forms returned **zero prior hits**.
+
+The sentence that matters is ESMA's, not the corpus's:
+
+> "Some CASPs may even use their regulated status under MiCA as a **marketing argument** and encourage the confusion between regulated and unregulated products and services."
+
+And in the DON'T column: *"The CASP's regulatory status is used as a promotional tool… including marketing materials."*
+
+**The corpus has been independently documenting that exact behaviour all quarter** — OKX Europe's three-authorisation column under Ghoos's byline, the OKX 8% / Coinbase 5% / Kraken €1M capture campaigns, Kraken's institutional MiCA-counterparty positioning. **It had the firms' side and not the regulator's, and it did not know the regulator's side existed.**
+
+**The correct Theme-4 spine, stated once and plainly:** *the guidance exists, is specific, and predates the deadline by a year. What is absent is enforcement.* The day-45 EU-NCA enforcement silence is untouched. What is retired is the implication that the silence was regulatory silence. **It was never that.**
+
+**2. A second capture from the same sweep gives the report a third regulatory philosophy.** **ESMA35-243228190-8024, 24 February 2026**: derivatives *"often marketed as perpetual futures"*, crypto-assets named, likely in scope of national CFD product-intervention measures — which carry **a mandatory risk warning, a narrow target market with an aligned distribution strategy, and the prohibition of monetary and non-monetary benefits.**
+
+That last one is a flat ban on the **acquisition-incentive mechanic** — the same mechanic the corpus captured running at EEA scale six weeks before the deadline. The jurisdictional table now has three rows, not two: **MAS regulates marketing *reach*; MiCA Art. 66 regulates marketing *content*; CFD product intervention regulates marketing *mechanics*.** Whether any tracked firm's promotion sits inside that perimeter is **unestablished and is not asserted.**
+
+**3. Three regulators, three renderings that are not the record — and this one was falsified from inside the repo.** ESMA's news index, walked page by page, returns 10 items per page while the offset advances by ~20: page 0 spans **14/08 → 10/07/2026**, page 1 **02/06 → 07/05**, page 2 **11/03 → 23/02**. A 37-day gap and a 56-day gap, with no visible discontinuity on the page.
+
+**The gap demonstrably contains real items, and the proof required no external source:** the corpus already holds **ESMA75-113276571-1710, dated 23 June 2026** — the MiCA transitional wind-down statement, one of the most consequential documents it owns — **and 23 June falls inside the first gap.** The 08-05 sweep's conclusion is therefore **re-scoped, not withdrawn**: it was accurate for the window it measured, and that window is roughly half the one a reader would assume.
+
+Add MAS, whose enforcement register returned ten rows dated 2020–2021 beneath its own stated five-year retention rule, and **watch (kk) is no longer an anecdote about VARA.** New watch **(mm)**: *before any absence claim is derived from a paginated or summarised index, record the first and last item date of every page fetched and confirm the boundaries meet. If they do not, name the measured coverage, never the nominal window.*
+
+**4. The MAS refusals are the discipline working, not the run failing.** MAS's **Guidelines on Standards of Conduct for Digital Advertising Activities**, effective 25 March 2026, apply to all MAS-regulated FIs **and their appointed third parties** — agencies and influencers, by name, which is the report's own comparison panel. Both MAS primary URLs returned HTTP 200 with **empty bodies**. The only substantive account available was a compliance vendor's summary. **It was refused on provenance, not relevance, and named explicitly so it is carried rather than rediscovered.** Same ruling on the enforcement register: **not measured, and the corpus will not say MAS published nothing.**
+
+**5. The class-4 null finally has its right wording, and it is stronger than the old one.** Four runs of appointment searches produced *"no 2026 appointment to any tracked firm's top marketing seat is publicly visible."* One deliberately re-vocabularised search — from *who holds the seat* to *what the seat says about MiCA* — returned **eight vendor and law-firm explainers and zero operator voices.** The better statement is: **no senior marketing operator at any tracked firm has a publicly indexed statement on the marketing-compliance surface at all.** Watch (nn). It is a Theme-1 and Theme-4 finding in one sentence and it is exactly the visibility-as-analysis claim the methodology was built for.
+
+**6. The audit that was asked for, delivered.** Eight standing absence claims were marked `primary surface requested: yes/no`. **One falsified** (the EU-guidance claim). **Two re-scoped** (both ESMA legs). **Three found to be press-visibility claims wearing firm-disclosure clothing** — no tracked firm's own estate has ever been swept for them. **One correctly labelled already** (class 2, unobserved not absent). Watch (ll) has now delivered its payload and belongs on the Phase-2 checklist rather than the daily agenda.
+
+**7. What connects it.** Three consecutive entries have recorded the corpus correcting itself, and the correction has come from the same move each time: **request the primary surface instead of searching around it.** VARA on 08-14, ESMA today, MAS attempted and honestly refused. **Three regulators, one method, and in every case the thing that was wrong was a characterisation the corpus had carried, not a fact it had captured.** That distinction is now well enough evidenced to print: **this corpus's captured facts have held; its inherited framings have not.**
+
+What survives today: **six admitted operator statements, 24 primary-verified layoff rows (9/9 recall), two net-new at-source regulator captures and one instrument note — the largest single-run class-3 yield in the project's history — a second consecutive guard-certified class-1 absence, and a second consecutive printed claim falsified before it shipped rather than after.**
