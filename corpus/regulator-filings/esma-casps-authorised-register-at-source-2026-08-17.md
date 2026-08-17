@@ -40,9 +40,9 @@ Both halves are ESMA's own registers, captured at source eight days apart, machi
 | CySEC (Cyprus) | 25 — 7.7% | 0 |
 | MFSA (Malta) | 22 — 6.8% | 0 |
 | NBS (Slovakia) | 6 — 1.9% | 1 |
-| **Authorities appearing at all** | **27** | **4** |
+| **Authorities appearing at all** | **27** | **3** — CONSOB, AFM, NBS |
 
-**Stated as the report can print it:** the EU's consolidated non-compliance record is 98.8% Italian, and Italy has authorised 2.8% of the EU's CASPs. Germany, which has authorised more CASPs than any other member state — nearly a quarter of the entire EU population — appears in the non-compliance register **zero times**. Twenty-seven authorities grant MiCA authorisations; **four** have ever notified a non-compliant entity.
+**Stated as the report can print it:** the EU's consolidated non-compliance record is 98.8% Italian, and Italy has authorised 2.8% of the EU's CASPs. Germany, which has authorised more CASPs than any other member state — nearly a quarter of the entire EU population — appears in the non-compliance register **zero times**. Twenty-seven authorities grant MiCA authorisations; **three** — CONSOB, the AFM and the NBS — have ever notified a non-compliant entity.
 
 **This is a stronger finding than the null it replaces.** "No EU marketing enforcement has appeared" invites the reply *"give it time."* This does not. It says: the visible enforcement record is not a thin early sample of a maturing regime — **it is one national authority's reporting practice, and it is not the practice of the authority that licenses the most firms.**
 
@@ -174,7 +174,7 @@ The snapshot is committed verbatim. Eleven defects were found in ESMA's own file
 
 ## Theme mapping
 
-- **Theme 4 (MiCA readiness) — spine.** The report now has a register-anchored numerator *and* denominator: 325 authorised CASPs across 27 authorities, 167 non-compliance entries across 4, **inversely distributed**, with zero marketing-communications actions in either. Pairs with `esma-halo-effect-regulatory-status-as-marketing-argument-2025-07.md`: ESMA warned in July 2025 against using regulated status as a marketing argument; thirteen months later 325 firms hold that status and no authority has enforced the warning.
+- **Theme 4 (MiCA readiness) — spine.** The report now has a register-anchored numerator *and* denominator: 325 authorised CASPs across 27 authorities, 167 non-compliance entries across 3, **inversely distributed**, with zero marketing-communications actions in either. Pairs with `esma-halo-effect-regulatory-status-as-marketing-argument-2025-07.md`: ESMA warned in July 2025 against using regulated status as a marketing argument; thirteen months later 325 firms hold that status and no authority has enforced the warning.
 - **Theme 1 (gate-stack visibility).** The regime's marketing obligations attach to the CASP perimeter, and **two entire strata of the cohort — the L1/L2 foundations and the wallets — sit outside it.** Where the gate stack does not reach is as much a Theme-1 finding as where it does.
 - **Theme 3 (agency overlap).** Not touched by this file.
 
