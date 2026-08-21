@@ -86,11 +86,52 @@ The two COMPLETE runs independently reproduce the 08-17 record's own figures (32
 
 ---
 
+---
+
+## date-provenance-audit.py
+
+**Class-4 / class-5 retrospective date guard (added 2026-08-21 — closes recommendation 3 of the 08-20 run).** Class 1 has a feed-health guard and class 3 has a capture guard. Classes 4 and 5 had a date check that ran **only at intake**, and it was two days old. Nothing had ever audited the rows admitted before it existed.
+
+On 08-20 two candidate items were refused because their real publication dates were 2020 and 2022 while the search results that surfaced them carried no date at all. **Both would have confirmed an open question** — which is exactly the class of item that gets the least scrutiny (watch (ss)).
+
+### Run
+```
+python3 scripts/date-provenance-audit.py
+```
+Exit `0` = no date inversions and no citationless rows. Exit `1` = at least one.
+
+### The predicate
+**Does the row's own `source_url` carry a date in its path, and is that date consistent with the date the corpus recorded?** A URL-path date is publisher-asserted, ships inside the citation the report already carries, and is checkable without a re-fetch. It is the mechanism that resolved the 08-20 Coinbase refusal.
+
+### Verdicts
+`SELF-DATED` · `DATE-INVERSION` (🔴 article predates the event it reports) · `LAG-EXCEEDED` · `NO-URL-DATE` (uncorroborated, not contradicted) · `NO-URL` (🔴 no citation at all) · `NO-PUBDATE-FIELD` (class-4 only: nothing machine-readable to check).
+
+### 🔴 The first run's two DATE-INVERSIONs were both bugs in this script
+Recorded, because it is the same shape as `verify-capture.py`'s retired byte heuristic — **a predicate that looked decisive and was not.**
+
+| Reported | Reality | Fix |
+|---|---|---|
+| BitMEX row: url `2026-07-01` precedes event `2026-07-23` | `/2026/07/` is **month-precision**, compared as a day | **Precision is symmetric** — ruling is made at the coarser of the two sides |
+| Kalifowitz file: url `2026-05-05` precedes `2026-08-11` | `2026-08-11` is the `Captured:` line — **our clock, not the artifact's** | Class-4 audit no longer guesses from prose; needs an explicit publication-date field |
+
+**Rule adopted: a new guard's first run is a test of the guard, not of the corpus. Adjudicate every flag by hand before believing any of it.**
+
+### What it found on the corpus (2026-08-21)
+Class 5: **12 SELF-DATED · 10 NO-URL-DATE · 2 LAG-EXCEEDED · 2 NO-URL.** Class 4: **5 NO-PUBDATE-FIELD · 2 NO-URL · 1 LAG-EXCEEDED.**
+
+The headline catch: **`Algorand -25%` is printed as a class-5 example in `README.md`, `methodology.md` and the public `README-for-github.md`, and its tracker row had no `source_url` at all.** Repaired at source the same run; sourcing it also produced a Theme-1 signal the uncited row never carried. **MARA Holdings remains uncited and is flagged to strike if unsourced by ship.**
+
+### Known limit — it narrows the queue, it does not empty it
+**`SELF-DATED` means the citation and the corpus agree. It does not mean either is right.** Only a first-party fetch settles that. And **no class-4 file carries a machine-readable publication-date field**, so five of eight are unauditable by any script; the fix is a one-line `**Published:**` field in the class-4 template.
+
+---
+
 ### Daily task ordering (recommended)
 1. `python3 scripts/daily-corpus-sync.py` → classes 1 + 2 (deterministic, always produces output).
 2. WebSearch pass → classes 3 (regulator), 4 (operator statements), 5 (layoffs) for net-new in-window items.
 3. **`python3 scripts/verify-capture.py` on every register CSV captured in step 2, BEFORE deriving any statistic from it.**
-4. Write the dated run record in `corpus/weekly-runs/`, update `findings/`, commit.
+4. **`python3 scripts/date-provenance-audit.py` — cheap, and it is the only thing watching what was admitted before the guards existed.**
+5. Write the dated run record in `corpus/weekly-runs/`, update `findings/`, commit.
 
 ### Known residual gap (bounded)
 Proprietary-ATS exchanges (Binance, Bybit, KuCoin, HTX) + Solana/ConsenSys are not API-reachable and surface only in `_absence.csv`. Closing them = pointing the existing `chrome-supplemental-scan` lane at `open-positions.json`'s `needs_chrome_fallback` list and feeding rendered postings back through the same schema.
