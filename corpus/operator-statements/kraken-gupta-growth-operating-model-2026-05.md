@@ -1,6 +1,8 @@
 # Kraken CGMO Mayur Gupta — the growth operating model, the AI-native engine, and a Tier-1 repudiation of the KOL playbook (May 19, 2026)
 
 **Source class:** 4 — operator statements (public statement by a senior marketing operator at a tracked firm).
+**Published:** 2026-05-19
+**Published-provenance:** article byline
 **Speaker:** **Mayur Gupta**, **Chief Growth & Marketing Officer, Kraken** (role at time of statement; formerly CMO — the title change is itself a subject of the interview).
 **Firm:** Kraken — **Stratum 1** (Tier-1 exchange, EU-passported via Central Bank of Ireland).
 **Format:** Long-form written interview, published by Incrypted (Eastern-European crypto media), conducted by Oleksandr Pishenin.

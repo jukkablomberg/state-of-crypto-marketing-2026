@@ -1,7 +1,21 @@
-# ESMA finfluencer factsheet + CONSOB amplification — **CANDIDATE, NOT ADMITTED. UNDATED.**
+# ESMA finfluencer factsheet + CONSOB amplification — **CANDIDATE — ✅ PROMOTED 2026-08-22. SUPERSEDED.**
+
+> ## ✅ RESOLVED 2026-08-22 — READ THE SUCCESSOR, NOT THIS FILE
+>
+> **Both capture-queue items at the foot of this file were closed first-party on 2026-08-22.** ESMA's own document page and EN factsheet PDF were fetched (HTTP 200), and CONSOB's own press release was fetched (HTTP 200) and **dates itself in its own text: "Rome, 12 January 2026."**
+>
+> **The date question that refused this item nine times is settled: produced 2025 (document colophon), published January 2026 (ESMA's own `/2026-01/` file paths on all 36 language versions), amplified by CONSOB 12 January 2026.**
+>
+> **The conditional written below resolves to the FIRST branch — mid-January 2026, pre-deadline — so it does NOT touch the post-deadline enforcement null (watch (b)), exactly as this file predicted.**
+>
+> **→ `esma-finfluencers-factsheet-at-source-2026-08-22.md`** is the corpus record. Cite that file, never this one.
+>
+> **This file is retained unedited below** because it is the corpus's cleanest worked example of watch (ee) — a near-miss recorded at full strength, named before it cost anything, and then closed from its own queue seven runs later. **The queue worked. Do not delete it.**
+
+---
 
 **Source class:** 3 (regulator filings and statements)
-**Status:** 🔶 **NOT A CORPUS FACT.** Substantively the most marketing-surface-specific regulator material this corpus has surfaced in class 3 — **and it cannot be dated from the capture, so it does not enter.**
+**Status (as written 2026-08-11, now historical):** 🔶 **NOT A CORPUS FACT.** Substantively the most marketing-surface-specific regulator material this corpus has surfaced in class 3 — **and it cannot be dated from the capture, so it does not enter.**
 **Captured:** 2026-08-11. **Capture is a SECONDARY** (Cointelegraph), HTTP 200.
 
 ---

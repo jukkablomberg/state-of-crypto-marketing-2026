@@ -1,5 +1,7 @@
 # Instrument note: a window-scoped search returns pre-window articles as current signal — twice in one run, in two different classes
 
+**Published:** N/A
+**Published-provenance:** Instrument/methodology note, **not an operator statement**. Exempt from the class-4 storage rule by kind. Retained in this directory because it documents a class-4 failure mode.
 **Recorded:** 2026-08-20. **Bears on:** class 4 (operator statements), class 5 (layoffs), and the report's date discipline generally.
 
 ---

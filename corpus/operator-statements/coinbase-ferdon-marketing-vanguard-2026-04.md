@@ -1,6 +1,8 @@
 # Coinbase CMO Catherine Ferdon — "AI is not creative", the regulatory pull toward beige, and the mandate for the next decade (April 9, 2026)
 
 **Source class:** 4 — operator statements (public statement by a senior marketing operator at a tracked firm).
+**Published:** 2026-04-09
+**Published-provenance:** article byline
 **Speaker:** **Catherine ("Cat") Ferdon**, **Chief Marketing Officer, Coinbase** (role at time of statement; joined Coinbase September 2025, previously first CMO of Cash App / Block).
 **Firm:** Coinbase — **Stratum 1** (Tier-1 exchange, EU-passported).
 **Format:** Podcast interview — *Marketing Vanguard*, published by **Adweek**, hosted by **Jenny Rooney**. Episode: "The Art of Making Fintech Cool with Catherine Ferdon of Coinbase" (32 min).

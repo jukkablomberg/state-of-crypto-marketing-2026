@@ -1,6 +1,8 @@
 # Sport-sponsorship reset — multi-incident cluster, May 2026
 
 **Source class:** operator-statements
+**Published:** UNKNOWN
+**Published-provenance:** 🔴 NOT ESTABLISHED. This file carries **no URL anywhere in its body** and therefore fails the class-4 storage rule in `methodology.md`. No date is asserted. **Do not cite until a URL and a first-party date exist.**
 **Themes:** Theme 1 (function shape) · Theme 5 (next twelve months) · Theme 2 (where the marketing dollars go)
 **Captured:** 2026-05-14
 **Capture rationale:** First multi-incident sport-sponsorship reset cluster of the 2026 cycle. Three Tier-1/Tier-2 exchanges and one Tier-1 cycling property all moved within ~120 days. Establishes the structural-reset framing the May 14 essay anchors.
