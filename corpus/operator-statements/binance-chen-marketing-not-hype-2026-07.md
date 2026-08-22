@@ -1,6 +1,8 @@
 # Binance Interim CMO Eowyn Chen — "crypto marketing's next job isn't hype" (18 July 2026)
 
 **Source class:** 4 — operator statements (public statement by a senior marketing operator at a tracked firm).
+**Published:** 2026-07-18
+**Published-provenance:** article byline; `article:modified_time` 2026-07-20
 **Speaker:** **Eowyn Chen**, **Interim Chief Marketing Officer, Binance** (role at time of statement).
 **Firm:** Binance — **Stratum 1** (Tier-1 exchange; EU passporting "partial"; `tracked-firms.md`).
 **Format:** Written Q&A interview, published by **CoinGape "Block of Fame"**, by Sneha Agrawal (Managing Editor, Block of Fame).

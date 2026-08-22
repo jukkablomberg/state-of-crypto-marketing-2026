@@ -1,6 +1,8 @@
 # Crypto.com — Steven Kalifowitz CMO exit: the PRIMARY, captured at last, and it falsifies a characterisation this corpus has carried for 98 days
 
 **Source class:** 4 (operator statements) — admitted as a **firm-attributed statement via a first-tier outlet**, not as an operator's own verbatim.
+**Published:** 2026-05-05
+**Published-provenance:** CoinDesk `publish_date` / `parsely-pub-date` 2026-05-05T13:48:32Z; URL slug agrees
 **Themes:** Theme 1 (marketing function shape) · Theme 4 (what a firm publishes about its own marketing leadership).
 **Captured:** 2026-08-11, HTTP 200, full body.
 **Firm:** Crypto.com — **Stratum 1, tracked.**

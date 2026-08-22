@@ -3,6 +3,8 @@
 **Captured:** 2026-08-10 (corpus run, day 40 post-deadline)
 **Firm:** OKX — **Stratum 1, Tier-1 exchange, EU entity, tracked** (`../../tracked-firms.md`)
 **Source class:** 4 (operator statements) — **entered as a REFUSAL RECORD plus a Theme-1 role datum, not as an admitted class-4 statement.**
+**Published:** 2022-12-06
+**Published-provenance:** DOCUMENT date, self-asserted; hosting page states *Updated on Apr 25, 2024*. The 1,337-day gap to the 2026-08-04 capturing URL is REAL and is the file’s subject, not a defect in this field.
 **capture_ai_disclosure:** the secondary captured here carries a machine co-byline. See §4.
 
 ---

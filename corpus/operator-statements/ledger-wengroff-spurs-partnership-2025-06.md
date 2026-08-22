@@ -1,6 +1,8 @@
 # Ledger EVP Marketing & Communications Ariel Wengroff — "not just an audience … a generation shaping what comes next" (June 25, 2025)
 
 **Source class:** 4 — operator statements (public statement by a senior marketing operator at a tracked firm).
+**Published:** 2025-06-25
+**Published-provenance:** article byline
 **Speaker:** **Ariel Wengroff**, **Executive Vice President, Marketing and Communications, Ledger** (role as stated verbatim in the source, at time of statement).
 **Firm:** Ledger (Ledger SAS, 106 rue du Temple, 75003 Paris, France) — **Stratum 3** (wallet / consumer crypto).
 **Format:** Firm-owned channel — announcement post on ledger.com, Company category.
