@@ -24,4 +24,16 @@ Public-source corpus organised by source class. Every file in this tree is citat
 - `operator-statements/sport-sponsorship-reset-2026-05.md` — multi-incident sport-sponsorship reset cluster (captured 2026-05-14)
 - `regulator-filings/fca-premier-league-sponsorship-warning-2026-06.md` — FCA→football-club crypto-sponsorship warning (2026-06-02/03)
 - `regulator-filings/esma-mica-transitional-period-end-2026-06.md` — ESMA Public Statement (23 June 2026, ESMA75-113276571-1710): unauthorised CASPs must "cease marketing activities and solicitation" as the MiCA transitional period ends 1 July 2026
-- `weekly-runs/` — dated daily corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-07-20-corpus-run.md`
+- `weekly-runs/` — dated daily corpus-assembly run records (six-class audit trail + absence-as-data). Latest: `2026-08-24-corpus-run.md`
+
+### Column-integrity notes on `layoff-tracker/2026-layoff-tracker.csv` (added 2026-08-24)
+
+- The tracker carries **8 fields**, including **`ai_cover_grade`** (added 2026-08-24). Every `Y` row in `ai_cover_narrative_y_n` is graded **A** (firm-stated, verbatim captured) · **B** (firm-stated, relayed by an outlet) · **C** (outlet characterisation, no firm quote) · **D** (anonymously sourced) · **E** (inferred — the firm said "automation", not "AI").
+- 🔴 **The ungraded AI-cover proportion must not be printed.** 9 of 26 rows are `Y` (35%); only **4 of 26 (15%)** are Grade A. Full audit + the permitted and prohibited sentences: `layoff-tracker/_ai-cover-narrative-grading-audit-2026-08-24.md`.
+- 🔴 **Figures in this tracker are not safe until their citation has been opened.** Six rows have been opened across four runs and **all six carried a defect**: Algorand (uncited), Crypto.com (`180` = the outlet's arithmetic), Luno (`−20%` = Bloomberg's, not the firm's), BitGo (unstable aggregator citation supplying a wrong date), **Gemini (`−30% YTD` STRUCK — never firm-stated and irreconcilable with the firm's own SEC-filed base; `200 jobs` refused)**. `headcount_change` and `percentage` still lack a grading ladder.
+- 🔴 **`README.md` / `README-for-github.md` advertise three layoff examples — Crypto.com, Gemini, Algorand — and all three have now failed inspection.** Correct before ship.
+
+### Class-3 reading rules (added 2026-08-24)
+
+- 🔴 **Do not read `ae_infrigment` as a statement about a listed entity.** ESMA defines it as *"Case of infringement identified by ESMA in accordance with Article 17 of Regulation (EU) No 1095/2010"* — the breach-of-Union-law procedure **against a national competent authority**. `ae_reason` ("Non compliancy reason", free text) *is* entity-level and is populated for **1 of 167** rows. Record: `regulator-filings/esma-register-field-semantics-ae-infrigment-resolved-2026-08-24.md`.
+- ⚠ **`CASPS.csv` has truncated on two separate fetch attempts** (2026-08-17 and 2026-08-24, both at 82,445 characters, both cut mid-field). **No absence claim about a named firm may be made from either.** The last COMPLETE capture is `regulator-filings/_esma-casps-snapshot-2026-08-17.csv` (329 rows, md5 `69e7dc…`).
