@@ -8,7 +8,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 
 ### 1. Job postings, by jurisdiction, by month
 - **Capture window:** rolling 12 months ending August 31, 2026.
-- **Firms tracked:** see `./tracked-firms.md` (~30 firms across exchanges, L1/L2 foundations, wallets, CASP-licensed firms).
+- **Firms tracked:** see `./tracked-firms.md` (**27 named firms** across exchanges, L1/L2 foundations, wallets, CASP-licensed firms; the "~30" of the report's framing language is the target, not the count).
 - **Sources:** firm careers pages, LinkedIn job postings, web3.career, CryptoJobsList.
 - **What we extract:** seniority, function (brand / growth / PMM / community / agency-mgmt / regulatory-comms), geography, posting date, time-to-fill, JD-stated AI-tooling requirements.
 - **Storage:** `./corpus/job-postings/` — one CSV per firm per month.
@@ -21,7 +21,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 ### 3. Regulator filings and statements
 - **Primary documents:** ESMA Statement on the end of transitional periods (April 17, 2026), MiCA Regulation (EU) 2023/1114, Commission Delegated Regulation on marketing communications, MAS guidelines, VARA marketing-comms guidance, FCA financial promotion rules.
 - **Public regulator-action register:** every public marketing-side enforcement case in Q2 2026 (ESMA, BaFin, AMF, CONSOB, AFM, CySEC).
-- **Storage:** `./corpus/regulator/` — PDFs + extraction notes.
+- **Storage:** `./corpus/regulator-filings/` — primary-source records + extraction notes.
 
 ### 4. Conference recordings, podcast transcripts, public LinkedIn posts
 - **Captured:** any public statement by a senior marketing operator (CMO / VP Marketing / Head of Brand / Head of Growth at a tracked firm) on a podcast, conference stage, LinkedIn post, X thread, or media interview.
@@ -29,8 +29,8 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - **Storage:** `./corpus/operator-statements/` — one markdown file per source with verbatim relevant quote + URL + speaker + date + role at time of statement.
 
 ### 5. Layoff announcements and earnings disclosures
-- **Capture:** every public 2026 marketing-team contraction (Crypto.com -12%, Gemini -30%, Algorand -25%, plus any new ones through August), with the firm's stated rationale and independent press analysis.
-- **Storage:** `./corpus/layoff-tracker.csv` — firm, date, percentage, stated rationale, independent rationale, marketing-specific impact (where reported).
+- **Capture:** every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, plus any new ones through August), with the firm's stated rationale and independent press analysis. **Marketing-specific impact is recorded only where a public source names it** — most 2026 crypto cuts are company-wide, and the tracker must not be read as a count of marketing-team contractions.
+- **Storage:** `./corpus/layoff-tracker/2026-layoff-tracker.csv` — firm, date_announced, headcount_change, headcount_grade, percentage, percentage_grade, source_url, ai_cover_narrative, ai_cover_grade, notes.
 
 ### 6. NorthPoint daily competitor-intelligence pipeline
 - **Source:** `./competitor-intelligence/trend-data.json`, `./competitor-intelligence/action-flags.json`, daily HTML snapshots in `./competitor-intelligence/YYYY-MM-DD.html` from April 8, 2026 onward.
@@ -76,4 +76,4 @@ Three reasons make a public-source synthesis structurally stronger than an inter
 
 ## Inbound nominations
 
-External nominations of public signals to add to the corpus arrive via `hello@northpoint.fi`. Read every Friday; corpus updated weekly through August. Tracked in `./inbound-nominations.md` (created when first nomination arrives).
+External nominations of public signals to add to the corpus arrive via `hello@northpoint.fi`. The corpus is updated **daily** (see `./corpus/weekly-runs/` for the dated run records); nominations are read on the next daily run. Tracked in `./inbound-nominations.md` (created when first nomination arrives). ⚠ **Known limit, recorded 2026-08-29:** the corpus-assembly loop has no mailbox access, so no nomination has ever been read by it. Nominations must be relayed into the repo by hand.

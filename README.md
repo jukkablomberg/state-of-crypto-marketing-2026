@@ -25,7 +25,7 @@ That choice is deliberate. The visibility filter — what each firm has shipped 
 
 A 40-page report — *State of Crypto Marketing 2026. Built from the public record.* — covering five themes:
 
-1. **The shape of the marketing function.** Split-IC patterns, gate-stack visibility, who owns what across thirty firms.
+1. **The shape of the marketing function.** Split-IC patterns, gate-stack visibility, who owns what across the 27 named firms in the cohort.
 2. **AI in the stack.** Claimed adoption vs. JD-confirmed adoption.
 3. **The agency overlap matrix.** What three agencies on one firm tells you about the gate-stack vacancy.
 4. **MiCA readiness — exposure surface by firm.** Which Tier-1 firms have a publicly visible MiCA-marketing-comms seat. Which do not.
@@ -55,7 +55,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 ### 3. Regulator filings and statements
 - Primary documents: ESMA Statement on the end of transitional periods (April 17, 2026), MiCA Regulation (EU) 2023/1114, Commission Delegated Regulation on marketing communications, MAS guidelines, VARA marketing-comms guidance, FCA financial promotion rules.
 - Public regulator-action register: every public marketing-side enforcement case in Q2 2026 (ESMA, BaFin, AMF, CONSOB, AFM, CySEC).
-- Storage: `corpus/regulator/` — PDFs + extraction notes.
+- Storage: `corpus/regulator-filings/` — primary-source records + extraction notes.
 
 ### 4. Conference recordings, podcast transcripts, public LinkedIn posts
 - Captured: any public statement by a senior marketing operator (CMO / VP Marketing / Head of Brand / Head of Growth at a tracked firm).
@@ -63,8 +63,8 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - Storage: `corpus/operator-statements/` — markdown per source with verbatim quote + URL + speaker + date + role at time of statement.
 
 ### 5. Layoff announcements and earnings disclosures
-- Capture: every public 2026 marketing-team contraction (Crypto.com -12%, Gemini -30%, Algorand -25%, plus any new ones through August), with the firm's stated rationale and independent press analysis.
-- Storage: `corpus/layoff-tracker.csv`.
+- Capture: every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, Block Inc., Coinbase -14%, plus any new ones through August), with the firm's stated rationale, independent press analysis, and marketing-specific impact **where the firm or press states it**. Most 2026 crypto cuts are company-wide; the tracker records marketing-specific impact only where a public source names it.
+- Storage: `corpus/layoff-tracker/2026-layoff-tracker.csv`.
 
 ### 6. NorthPoint daily competitor-intelligence panel
 - Source: an 18-month longitudinal panel of agency-side content gravity, refreshed daily.
@@ -78,7 +78,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 
 ---
 
-## Tracked firms — substantive synthesis cohort (~30)
+## Tracked firms — substantive synthesis cohort (27 named)
 
 ### Tier-1 exchanges
 Binance · OKX · Bybit · KuCoin · Coinbase · Kraken · Crypto.com · Gemini · Bitstamp · Bitpanda · HTX
@@ -113,7 +113,7 @@ Selection criterion: a firm enters the cohort if it (1) operates a regulated or 
 
 If you know of a public signal that should be in the corpus — a job posting, a podcast appearance, a regulator filing, a layoff disclosure, a case study — send it to **hello@northpoint.fi**.
 
-Inbound nominations are read every Friday and evaluated against the corpus coverage rules above. If a nomination fits, it enters the corpus and the contributor is acknowledged by name in the report's appendix on Sep 1 (unless the contributor requests otherwise).
+Inbound nominations are read on the next daily corpus run and evaluated against the corpus coverage rules above. If a nomination fits, it enters the corpus and the contributor is acknowledged by name in the report's appendix on Sep 1 (unless the contributor requests otherwise).
 
 We are particularly interested in:
 - Public marketing-side enforcement cases under MiCA, MAS, VARA, FCA in 2026.
@@ -127,11 +127,11 @@ We are particularly interested in:
 
 | Phase | Window | Output |
 |---|---|---|
-| **1 — Corpus assembly** | May–June 2026 | Public-source corpus across 30 tracked firms × 6 source classes |
+| **1 — Corpus assembly** | May–June 2026 | Public-source corpus across 27 named tracked firms × 6 source classes |
 | **2 — Theme synthesis** | July 2026 | Each of the five themes drafted against the citation-anchored corpus |
 | **3 — Ship** | August 15 – September 1, 2026 | Design pass, regulator-readability pass, press kit, ship |
 
-Weekly drip essays publish at [northpoint.fi/resources](https://northpoint.fi/resources) and the corpus updates here every Friday.
+Weekly drip essays publish at [northpoint.fi/resources](https://northpoint.fi/resources) and the corpus updates here daily — see `corpus/weekly-runs/` for the dated run records.
 
 ---
 
@@ -142,9 +142,9 @@ corpus/
   job-postings/           # CSV per firm per month
   agency-claims/          # JSON per agency
   agency-overlap-matrix.csv
-  regulator/              # PDFs + extraction notes
+  regulator-filings/      # primary-source records + extraction notes
   operator-statements/    # markdown per public statement
-  layoff-tracker.csv
+  layoff-tracker/         # tracker CSV + adjudication records
 findings/                 # working notes, one file per theme
 methodology.md            # this document, versioned
 tracked-firms.md          # the substantive synthesis cohort
