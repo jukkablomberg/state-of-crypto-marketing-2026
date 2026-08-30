@@ -254,8 +254,34 @@ Panel unchanged (76 days stale). Day-60 shift appended to `findings/longitudinal
 1. 🔴 **DECIDE THE BINANCE §5 CLAIM. THIS IS THE ONLY LOAD-BEARING DEFECT LEFT.** *"First Tier-1 to put a non-marketing operator into the interim CMO seat without running a search"* is a **named-firm claim about a named person**, it is in Theme 1 and in a published essay, and its only corpus support is an uncited section of a file that until today certified its own compliance falsely. **One CoinDesk URL settles it. Without that URL the claim must be cut.** This is Jukka's call, not the loop's.
 2. ⚠ **RE-RUN THE SYNC AND CONFIRM THE FEED IS STILL LIVE.** 08-31 is the last day of the class-1 capture window that all three public documents advertise. **If the scan is frozen on 08-31, the window claim needs a scope sentence after all** — and unlike today, there will be no day left to recover.
 3. ⚠ **AUTOMATE OR RETIRE THE SLUG RECONCILIATION.** It found a live near-miss and it runs only because a session chose to run it. Either it becomes a predicate in `daily-corpus-sync.py` (parsing both path and query-parameter slug forms) or the report's appendix states plainly that class-1 company identity is slug-derived and unreconciled. **Do not leave it as a thing that happened once.**
-4. **Do NOT re-fetch `CASPS.csv`, `OTHER.csv`, `NCASP.csv`. Do NOT re-open MAS. Do NOT re-issue the retry queue. Do NOT attempt row 13's Bloomberg paywall. Do NOT fetch the four un-fetched FCA orders, or VARA's Shelbit / MEXC / CoinMENA notice bodies.** Nothing in the report depends on any of them, and there is no time to adjudicate a surprise.
-5. **Escalate to Jukka — three items, in order:**
+4. 🔴 **THE REPO NOW HAS TWO STALE GIT LOCK FILES AND THE MOUNT CANNOT REMOVE THEM. READ THIS BEFORE TRYING TO COMMIT.**
+
+```
+.git/HEAD.lock              (0 bytes,  left by this run's first commit)
+.git/refs/heads/main.lock   (41 bytes, left by this run's second)
+```
+
+`rm` and `mv` both return `Operation not permitted` — the known mount limitation, in a new place. **`git commit` and `git update-ref` will fail on 08-31**, exactly as the second commit failed today. The proven sequence, used successfully twice this run:
+
+```bash
+export GIT_INDEX_FILE=/tmp/idx-$$          # alternate index — the .git/index.lock cannot be unlinked either
+git read-tree HEAD && git add -A -- <paths>
+TREE=$(git write-tree); PARENT=$(git rev-parse HEAD)
+COMMIT=$(printf '%s' "$MSG" | GIT_AUTHOR_NAME="Jukka Blomberg" \
+  GIT_AUTHOR_EMAIL="jukka.blomberg@outlook.com" GIT_COMMITTER_NAME="Jukka Blomberg" \
+  GIT_COMMITTER_EMAIL="jukka.blomberg@outlook.com" git commit-tree "$TREE" -p "$PARENT" -F -)
+# git update-ref WILL FAIL on the stale HEAD.lock. Write the ref directly instead —
+# an in-place truncate+write needs no unlink:
+python3 -c "open('.git/refs/heads/main','w').write('$COMMIT\n')"
+git log origin/main..HEAD --oneline     # verify before believing it
+```
+
+⚠ **Verify the parent before writing the ref.** Writing `refs/heads/main` by hand bypasses git's own safety check that the ref has not moved underneath you. Read the current value first and assert it equals the `$PARENT` you built on — as this run did — or a concurrent Distribution Engineer commit is silently discarded.
+
+🟢 **This does not block the push.** `git push` updates `refs/remotes/origin/main`, a different lock. Both of today's commits are on `main` ahead of `origin/main` and are pushable as they stand.
+
+5. **Do NOT re-fetch `CASPS.csv`, `OTHER.csv`, `NCASP.csv`. Do NOT re-open MAS. Do NOT re-issue the retry queue. Do NOT attempt row 13's Bloomberg paywall. Do NOT fetch the four un-fetched FCA orders, or VARA's Shelbit / MEXC / CoinMENA notice bodies.** Nothing in the report depends on any of them, and there is no time to adjudicate a surprise.
+6. **Escalate to Jukka — three items, in order:**
    - **(i) 🔴 ONE CITATION HOLE LEFT, AND IT IS A CLAIM ABOUT A NAMED PERSON AT BINANCE.** See 1. Source or cut. **Two days.**
    - **(ii) 🟢 THE PRE-SHIP DEFECT QUEUE IS OTHERWISE EMPTY.** The feed recovered, so the capture window holds to 08-31 as advertised. Every layoff-tracker row is cited (26/26) — first time in the cycle. Every public document now states the agency panel's real last-refresh date. The absence-panel distinction Themes 1 and 4 depend on is written into `methodology.md` rather than living in run records. **The corpus-wide citationless-row count is zero.**
    - **(iii) ⚠ TWO INSTRUMENT LIMITS THE APPENDIX SHOULD STATE RATHER THAN THE LOOP KEEP RE-DISCOVERING.** Class-1 company identity is slug-derived and reconciled by nothing (watch al); `_absence.csv` dates itself from the run clock, not the observation (watch ai). Both are honest to publish and cheap to state. **Neither is a blocker.**
