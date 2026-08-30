@@ -30,7 +30,7 @@ Older essays from the cycle (May 6 cycle-opener · May 7 Coinbase pod-model · M
 
 The crypto marketing category has plenty of agency-side reports — vendor comparisons, "best of" lists, awards-shop benchmarks. None of them read the function from the operator's seat, and none of them survive a regulator's reading.
 
-This report does both. It is built from public sources only — job postings, agency case studies, regulator filings, conference recordings, podcast transcripts, layoff disclosures, and 18 months of NorthPoint's own daily competitor-intelligence panel. **Nothing in the report comes from off-the-record interviews or anonymised quotes.** If a thing is not publicly visible, it does not go in.
+This report does both. It is built from public sources only — job postings, agency case studies, regulator filings, conference recordings, podcast transcripts, layoff disclosures, and 18 months of NorthPoint's own competitor-intelligence panel (18 agencies; last refreshed 2026-06-15). **Nothing in the report comes from off-the-record interviews or anonymised quotes.** If a thing is not publicly visible, it does not go in.
 
 That choice is deliberate. The visibility filter — what each firm has shipped publicly — is itself the analysis. It is also the same read a regulator can do, which is the only read that matters in Q3 enforcement.
 
@@ -81,8 +81,9 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - Capture: every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, Block Inc., Coinbase -14%, plus any new ones through August), with the firm's stated rationale, independent press analysis, and marketing-specific impact **where the firm or press states it**. Most 2026 crypto cuts are company-wide; the tracker records marketing-specific impact only where a public source names it.
 - Storage: `corpus/layoff-tracker/2026-layoff-tracker.csv`.
 
-### 6. NorthPoint daily competitor-intelligence panel
-- Source: an 18-month longitudinal panel of agency-side content gravity, refreshed daily.
+### 6. NorthPoint competitor-intelligence panel
+- Source: an 18-month longitudinal panel of agency-side content gravity across 18 agencies.
+- **Last refreshed 2026-06-15.** The panel is *designed* to refresh daily and did so through mid-June; it has not moved since. The report uses it for longitudinal shape up to that date and makes no claim about agency-side activity after it.
 - What it gives the report: longitudinal signal — what shifted, when, in which direction.
 
 ### Coverage rules
