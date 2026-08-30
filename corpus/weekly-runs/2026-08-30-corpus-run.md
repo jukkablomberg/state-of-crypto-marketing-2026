@@ -25,6 +25,8 @@ job postings ADDED: 0  firms: []
 
 Both predicates pass. `scan_date` is **2026-08-30**, `scanned_at_utc` is fresh, and the fingerprint moved **3362 → 3398**. The scan looked and found no tracked-firm marketing role.
 
+⚠ **The recovery was not the scheduler healing itself, and the run record must not read as if it were.** `situation.md` records that the **product-builder ran the repo's own scanner in-session tonight** (`[NP-ATS-FEED-ONESHOT]`, 147 companies, 3,398 jobs) — a **one-shot**, not a restored cadence. It also found that `scan.py`'s docstring wrongly claimed the sandbox blocks greenhouse/lever/ashby/workable; all four return 200. **So today's HEALTHY verdict is real but manually produced, and nothing yet proves the scheduled task will fire on 08-31** — the last day of the advertised capture window. Carried on the needs-jukka row rather than treated as closed.
+
 > 🟢 **PERMITTED, and stated:** *no firm in the Stratum 1–4 cohort had a net-new marketing or growth posting observable through the ATS API scan of 2026-08-30.*
 > 🔴 **STILL PROHIBITED:** any statement extending that to Binance, Bybit, HTX, KuCoin or Aave, which are not API-reachable and are in `_absence.csv` for that reason.
 
@@ -86,6 +88,8 @@ That is **circle.so**, the creator-community platform — not Circle Internet Fi
 ⚠ **The cheap check gives the wrong answer confidently:** searching the slug returns *Circle Health* and *Funding Circle*; searching the name returns the USDC issuer. Only the posting body settles it. Corroborated against circle.so's own public copy, which carries the same sentence nearly verbatim.
 
 🔴 **The filter that saved the corpus is a filter on the name, and the name was the thing that was wrong.** Circle is not in the cohort, so both rows were dropped. Had the colliding slug belonged to a cohort display name — *Gemini*, *Phantom*, *Ledger*, *Kraken* are all common English words — two fabricated crypto marketing postings, URL-verified and correctly dated, would have entered `corpus/job-postings/` with nothing positioned to object.
+
+🟢 **Independently corroborated the same day, by a loop that had no idea it was corroborating anything.** The Convertor's apply lane worked the *same two rows* this morning and its log names the company **"Circle (circle.so)"** — it resolved the identity correctly because staging an application forces you to read the job description. It also caught that the sister row is geo-ineligible (*"any North American time zone"*) and recorded a **Lead Gen sourcing-filter miss**. **Two loops, opposite ends of the pipeline, hit the same defect within hours; the one that reads bodies saw it and the one that reads labels did not.**
 
 **A slug-vs-label reconciliation was run across all 17 rows in the 13 tracked-firm CSVs: 0 real mismatches.** It raised two flags and **both were defects in the check** — `gemini` reads `boards.greenhouse.io/embed/job_app?**for=gemini**` (company in a query parameter, not the path) and `optimism` reads slug `oplabs` (OP Labs, a known-good alias matching tracker row 12). Recorded in full per the 08-21 rule that a guard's first run is a test of the guard. Full record: `corpus/job-postings/_ats-slug-collision-circle-2026-08-30.md`. New watch (al).
 
