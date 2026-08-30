@@ -13,6 +13,23 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - **What we extract:** seniority, function (brand / growth / PMM / community / agency-mgmt / regulatory-comms), geography, posting date, time-to-fill, JD-stated AI-tooling requirements.
 - **Storage:** `./corpus/job-postings/` — one CSV per firm per month.
 
+#### ⚠ What `_absence.csv` does and does not mean (recorded 2026-08-30)
+
+`corpus/job-postings/_absence.csv` lists tracked firms the scan **could not reach**. It is a record of **instrument reach**, not of firm behaviour, and the two must never be conflated:
+
+| Statement | Supported by `_absence.csv`? |
+|---|---|
+| "The scanner had no API route to this firm's ATS on this date." | 🟢 **Yes.** This is exactly what the file records. |
+| "This firm posted no marketing roles." | 🔴 **No.** Never. Binance, Bybit, HTX and KuCoin run proprietary ATSs; Aave's Lever board 404s. Their postings are *unobserved*, not absent. |
+| "This firm is publicly silent on the marketing function." | 🔴 **No.** That is a class-3/4 claim and needs class-3/4 evidence. |
+
+Two further limits, both recorded against real incidents rather than in the abstract:
+
+1. **The panel has never contained an absence in the second sense.** Every firm that has ever appeared in it is there because of a proprietary ATS or an HTTP error — i.e. because of *our* reach. As of 2026-08-30 its membership has been the same five firms (Aave, Binance ×2, Bybit, HTX, KuCoin) on every run since the cohort expansion.
+2. **The file's `as_of` column is written from the sync's run clock, not from the upstream `scan_date`.** On 2026-08-29 the upstream ATS scan was frozen and `_absence.csv` still rolled its `as_of` to `2026-08-29` — asserting an observation that no 2026-08-29 scan produced. The feed-health guard refused the *absence claim* that day, but the file itself was not corrected. **Generalised rule: any corpus file carrying a date must date itself from the artifact observed, not from the run that wrote it.** Until the sync is patched, read `as_of` against `_feed-fingerprint.json`, which records the true `scanned_at_utc` and `scan_date` per run.
+
+Therefore Themes 1 and 4 draw absence claims **only** from classes 3 and 4 (what a firm has and has not said publicly), never from class 1's reach. `findings/theme-4-mica-exposure-surface.md` was written to this constraint deliberately.
+
 ### 2. Agency case studies and press releases
 - **Agencies tracked:** Coinbound, Lunar Strategy, MarketAcross, Outset PR, RZLT, ICODA, NinjaPromo, Blockwiz, Bond Finance, Crowdcreate, GuerrillaBuzz, TokenMinds, Single Grain, Flexe.io, Blue Manakin, Majinx, X10, Serotonin (the existing competitor-intelligence panel of 18).
 - **Cross-reference:** which firms each agency publicly claims as a client; map overlap (firms with multiple agencies, agencies with multiple competing firms in same vertical).
@@ -32,7 +49,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 - **Capture:** every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, plus any new ones through August), with the firm's stated rationale and independent press analysis. **Marketing-specific impact is recorded only where a public source names it** — most 2026 crypto cuts are company-wide, and the tracker must not be read as a count of marketing-team contractions.
 - **Storage:** `./corpus/layoff-tracker/2026-layoff-tracker.csv` — firm, date_announced, headcount_change, headcount_grade, percentage, percentage_grade, source_url, ai_cover_narrative, ai_cover_grade, notes.
 
-### 6. NorthPoint daily competitor-intelligence pipeline
+### 6. NorthPoint competitor-intelligence pipeline (⚠ last refreshed 2026-06-15)
 - **Source:** `./competitor-intelligence/trend-data.json`, `./competitor-intelligence/action-flags.json`, daily HTML snapshots in `./competitor-intelligence/YYYY-MM-DD.html` from April 8, 2026 onward.
 - **What it gives the report:** longitudinal signal — what shifted, when, in which direction. Most one-shot research projects do not have an 18-month panel of agency-side content gravity. This one does.
 
@@ -41,7 +58,7 @@ The corpus is anchored to six source classes, gathered continuously between now 
 Source classes 1 (job postings) and 2 (agency claims) are produced **deterministically from NorthPoint's existing daily data feeds**, not from web search — web search cannot reliably date-stamp ATS postings or agency claims. `scripts/daily-corpus-sync.py` consumes:
 
 - **`open-positions.json`** — daily ATS API scan (greenhouse/ashby/lever/breezy/workable), URL-verified and dated → per-firm CSVs in `corpus/job-postings/`, mapped to the Stratum 1–4 cohort, dedup by source URL. Proprietary-ATS firms with no API coverage are logged in `corpus/job-postings/_absence.csv` (absence = data).
-- **`trend-data.json`** — daily 18-agency panel with `recentClientsNamed` → `corpus/agency-overlap-matrix.csv` (firm × agency, overlap-flagged) + dated `corpus/agency-claims/<agency>.csv` snapshots.
+- **`trend-data.json`** — 18-agency panel with `recentClientsNamed`, **`lastUpdated` 2026-06-15 and unchanged since; the class-2 outputs have been byte-identical on every run after that date** → `corpus/agency-overlap-matrix.csv` (firm × agency, overlap-flagged) + dated `corpus/agency-claims/<agency>.csv` snapshots.
 
 Classes 3 (regulator), 4 (operator statements), and 5 (layoffs) remain web-search/fetch driven, verified against primary sources. The run is **daily**; the sync script is idempotent. See `scripts/README.md`.
 

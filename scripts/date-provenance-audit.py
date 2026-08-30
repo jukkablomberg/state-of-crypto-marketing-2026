@@ -188,6 +188,26 @@ def audit_markdown(directory):
         if not name.endswith(".md"):
             continue
         body = open(os.path.join(directory, name), encoding="utf-8", errors="replace").read()
+        # --- SCOPE FIX 2026-08-30 ---------------------------------------------
+        # An underscore-prefixed file is an INSTRUMENT/METHODOLOGY record, not a
+        # captured operator statement. The convention is repo-wide (`_absence.csv`,
+        # `_feed-fingerprint.json`, `_esma-*-snapshot-*.csv`, `_citation-opening-
+        # sweep-*.md`). Such a file records how the corpus failed or was measured;
+        # it cites no external artifact and correctly never will.
+        #
+        # Until today the audit applied the class-4 storage rule to these files and
+        # returned a 🔴 NO-URL that CAN NEVER BE CLOSED. A red flag that cannot
+        # clear is worse than no flag: it inflates the pre-ship defect count and
+        # trains the reader to scroll past the colour. `_stale-article-as-current-
+        # signal-instrument-2026-08-20.md` even declares itself "Exempt from the
+        # class-4 storage rule by kind" in its own header, and was flagged anyway.
+        #
+        # Exempt by kind — but reported, never silently skipped.
+        if name.startswith("_"):
+            out.append((i, name, "-", "-", "EXEMPT-INSTRUMENT",
+                        "underscore-prefixed instrument/methodology record, not a captured operator "
+                        "statement; the class-4 storage rule does not apply to it by kind"))
+            continue
         urls = re.findall(r"https?://[^\s)\]>\"'`]+", body)
         if not urls:
             out.append((i, name, "", "", "NO-URL",
