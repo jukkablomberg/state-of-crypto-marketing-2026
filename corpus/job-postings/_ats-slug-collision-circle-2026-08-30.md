@@ -30,6 +30,12 @@ The discriminating evidence is the posting body, captured first-party by the ATS
 
 ⚠ **A search on the ATS slug alone does not resolve this.** Querying `jobs.ashbyhq.com/circle` returns *Circle Health* and *Funding Circle*, and general search for "Circle" returns the USDC issuer's description — i.e. **the search layer confirms the wrong company.** Only the posting body settles it. Recorded because the cheap check gives the wrong answer confidently.
 
+## Corroborated by a second loop the same day
+
+NorthPoint's Convertor (apply lane) processed **these same two rows** on 2026-08-30 and its log names the company **"Circle (circle.so)"** — identifying it correctly, because staging a job application forces a read of the job description. It additionally found the sister row (*Growth Lead, Discover*, fit 100) geo-ineligible on the JD's *"any North American time zone"* clause and recorded a **Lead Gen sourcing-filter miss** against it.
+
+**Two loops at opposite ends of the same feed hit this within hours of each other. The one whose work requires reading the posting body caught it; the ones that consume the label did not.** That is the finding in one sentence.
+
 ## The mechanism
 
 Company identity in the upstream feed is resolved by **ATS slug**, and `circle` on Ashby belongs to circle.so. The tier and category (`Tier 2`, `Stablecoin`) come from NorthPoint's own prospect table keyed on the display name **Circle**, which was entered for Circle Internet Financial. **The slug and the label were never checked against each other, and nothing downstream checks them either** — `url_verified: head_200` verifies that the URL resolves, not that it resolves to the company the row names.
