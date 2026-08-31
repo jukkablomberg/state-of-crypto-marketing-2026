@@ -2,7 +2,7 @@
 
 **Source class:** operator-statements — ⚠ **but this is a SYNTHESIS note, not a capture.** See the disposition block below.
 **Published:** UNKNOWN
-**Published-provenance:** ⚠ **PARTIALLY ESTABLISHED, 2026-08-30.** Three of the seven incidents are now anchored to primary URLs the corpus already holds (§2, §3, §4). **Four are not, and are marked `🔴 UNSOURCED — DO NOT CITE` inline.** No date is asserted for the file as a whole.
+**Published-provenance:** ⚠ **PARTIALLY ESTABLISHED, 2026-08-30; extended 2026-08-31.** **Four** of the seven incidents are anchored to primary URLs (§2, §3, §4 to primaries the corpus already held; **§5 to a first-party fetch made 2026-08-31**). **Three are not (§1, §6, §7), and are marked `🔴 UNSOURCED — DO NOT CITE` inline.** No date is asserted for the file as a whole.
 **Themes:** Theme 1 (function shape) · Theme 5 (next twelve months) · Theme 2 (where the marketing dollars go)
 **Captured:** 2026-05-14
 **Capture rationale:** First multi-incident sport-sponsorship reset cluster of the 2026 cycle. Three Tier-1/Tier-2 exchanges and one Tier-1 cycling property all moved within ~120 days. Establishes the structural-reset framing the May 14 essay anchors.
@@ -15,9 +15,19 @@
 
 **What was done today.** The incidents whose primaries the corpus *already holds* have been anchored to those primaries, in place. Nothing was fetched and **no URL was guessed** — every link below is copied from an existing corpus record.
 
-**What remains, stated plainly.** §1 (Bybit / Red Bull), §5 (Binance — Conlan / Chen), §6 (Crypto.com — McGhee) and §7 (Tour de Suisse / Zondacrypto) have **no citation anywhere in this corpus.** They are marked inline.
+**What remains, stated plainly.** §1 (Bybit / Red Bull), §6 (Crypto.com — McGhee) and §7 (Tour de Suisse / Zondacrypto) have **no citation anywhere in this corpus.** They are marked inline. **§5 was sourced on 2026-08-31** — see below.
 
-**Ruling for ship:** the three anchored incidents are citable **via their anchors, not via this file**. The four unsourced incidents are **NOT citable** and must not appear in the report in any form. 🔴 **§5 is the load-bearing one** — the Binance interim-CMO reading is quoted in the May 13 essay and referenced in the Theme-1 synthesis, and it rests here on an uncited CoinDesk scoop. **Either it is sourced before ship or the Theme-1 claim that depends on it is cut.** Escalated to Jukka in the 2026-08-30 run record.
+**Ruling for ship:** the four anchored incidents (§2, §3, §4, §5) are citable **via their anchors, not via this file**. The three unsourced incidents are **NOT citable** and must not appear in the report in any form.
+
+## 🟢 §5 RESOLVED 2026-08-31 — and the resolution went the other way
+
+The escalation asked for one of two outcomes: **source the Binance §5 claim, or cut it.** The CoinDesk scoop was found and fetched first-party at T-1. **Neither outcome was correct, because the citation supports the incident and refutes the reading built on it.**
+
+- 🟢 **The incident is now anchored** to `binance-conlan-cmo-exit-primary-2026-08-31.md` — a full class-4 capture with verbatim quotes, speaker, role and publication date.
+- 🔴 **Three limbs of the Theme-1 claim were CUT**, because the primary contains none of them: *"without running a search"*, *"first Tier-1"*, and *"the brief is being re-cut into a product-and-distribution job."*
+- **What this cost the report:** a narrower Theme-1 claim that is true and cited, in place of a sharper one that was neither. **What it saved:** shipping a named-person, named-firm assertion about a hiring process that no source in the world had made.
+
+⚠ **The general finding, which is bigger than this file:** the four-month-old ruling was that §5 was *uncited*. **It was also wrong**, and nothing in the pipeline could have discovered that, because *every* guard the repo has checks whether a citation **exists** — none checks whether it **says what the row claims**. `date-provenance-audit.py` will now report §5 as `SELF-DATED`, its cleanest verdict, and that verdict would have been identical had the article said the opposite of the claim. **A citation is not a warrant. Watch (vv) extended from numbers to claims.**
 
 ---
 
@@ -47,9 +57,13 @@
 - **Theme 1 signal:** Marketing function's share of the March restructuring. The $1B-sponsorship-era CMO seat ends; the replacement-seat shape unannounced.
 
 ### 5. Binance CMO Rachel Conlan exit + Eowyn Chen interim (12 May 2026)
-- **Source:** 🔴 **UNSOURCED — DO NOT CITE. THIS IS THE LOAD-BEARING ONE.** No URL held anywhere in this corpus for either the CoinDesk scoop or the Wu Blockchain framing. The Theme-1 reading below (a non-marketing operator placed in the CMO seat without a search) rests entirely on this uncited section. **Source before ship or cut the Theme-1 claim.**
-- **Stated framing:** Conlan exits 15 June (three years). Eowyn Chen (ex-CEO Trust Wallet) named interim CMO. Conlan stays on as adviser.
-- **Theme 1 signal:** First Tier-1 to put a non-marketing operator (wallet product CEO) into the interim CMO seat without running a search. The brief is being re-cut into a product-and-distribution job sitting where the marketing org used to sit. Spine of the May 13 NorthPoint essay "Binance lost its CMO too."
+- **Source:** 🟢 **SOURCED AND SPLIT 2026-08-31** → `binance-conlan-cmo-exit-primary-2026-08-31.md`, https://www.coindesk.com/business/2026/05/12/binance-s-chief-marketing-officer-rachel-conlan-is-leaving-the-exchange (Ian Allison, CoinDesk, published 2026-05-12, publisher-modified 2026-05-19). Fetched first-party at T-1. **Cite that capture, not this file.**
+- **Stated framing (🟢 all four limbs supported by the primary):** Conlan's last day is 15 June 2026; she took the CMO post in September 2023. Eowyn Chen, former CEO of Trust Wallet, named interim CMO, attributed to a Binance spokesperson. Conlan remains as an adviser through the transition. Binance's own framing of the exit is personal — *"decided to step down to focus on personal priorities."*
+- **Theme 1 signal — 🔴 CUT AND REWRITTEN 2026-08-31. The old reading is struck; do not restore it.**
+  - ~~First Tier-1 to put a non-marketing operator (wallet product CEO) into the interim CMO seat **without running a search**. The brief is being re-cut into a product-and-distribution job sitting where the marketing org used to sit.~~
+  - 🔴 **Struck because the citation, once read, does not contain it.** The CoinDesk primary says **nothing at all about a search** — not that one was run, not that one was skipped. It makes **no comparative claim** that would support *"first Tier-1."* It **does not describe the interim brief** in any way. Three separate unsupported limbs, carried for 110 days on a source nobody had opened.
+  - 🟢 **Admissible replacement, at the strength the primary supports:** *Binance's CMO seat turned over in May–June 2026; the publicly named interim occupant's stated prior role is chief executive of a wallet business rather than a marketing seat; the departing CMO stayed on as an adviser; and the firm's public framing of the exit was personal, not structural.*
+  - ⚠ **The May 13 NorthPoint essay "Binance lost its CMO too" was built on the struck reading.** It is published external content and is **not** editable from this corpus. Escalated to Jukka 2026-08-31.
 
 ### 6. Crypto.com Predictions head Travis McGhee exit (~13 May 2026)
 - **Source:** 🔴 **UNSOURCED — DO NOT CITE.** No URL held. Also note McGhee is a **prediction-markets/derivatives** lead, not a marketing operator, so §4's class-4 role gate excludes him regardless of sourcing.

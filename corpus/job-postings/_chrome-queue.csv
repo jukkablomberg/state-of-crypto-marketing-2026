@@ -1,7 +1,7 @@
 firm,ats,careers_url,status,blocker,target_functions,as_of
-Binance,proprietary,https://www.binance.com/en/careers/job-openings,pending-chrome,"JS SPA — needs bapi careers endpoint, not naive render",brand|growth|PMM|community|comms,2026-08-30
-Binance,proprietary,https://www.binance.com/en/careers/job-openings?team=All&location=Dubai,pending-chrome,"JS SPA — needs bapi careers endpoint, not naive render",brand|growth|PMM|community|comms,2026-08-30
-Bybit,proprietary,https://jobs.bybitglobal.com/social-recruitment/bybit/,pending-chrome,"Moka SPA, sign-in-walled — needs authed session or Moka API",brand|growth|PMM|community|comms,2026-08-30
-HTX,proprietary,https://www.htx.com/en-us/crm/market-recruitment,pending-chrome,JS SPA (crm recruitment) — needs API/authed session,brand|growth|PMM|community|comms,2026-08-30
-Kucoin,proprietary,https://hire-r1.mokahr.com/social-recruitment/kcareers/100000192,pending-chrome,MokaHR SPA — needs Moka API/authed session,brand|growth|PMM|community|comms,2026-08-30
-Solana,proprietary,https://jobs.solana.com/companies/solana-foundation-2,ingested,Getro board — renders; closeable via Chrome lane,brand|growth|PMM|community|comms,2026-08-30
+Binance,proprietary,https://www.binance.com/en/careers/job-openings,pending-chrome,"JS SPA — needs bapi careers endpoint, not naive render",brand|growth|PMM|community|comms,2026-08-31
+Binance,proprietary,https://www.binance.com/en/careers/job-openings?team=All&location=Dubai,pending-chrome,"JS SPA — needs bapi careers endpoint, not naive render",brand|growth|PMM|community|comms,2026-08-31
+Bybit,proprietary,https://jobs.bybitglobal.com/social-recruitment/bybit/,pending-chrome,"Moka SPA, sign-in-walled — needs authed session or Moka API",brand|growth|PMM|community|comms,2026-08-31
+HTX,proprietary,https://www.htx.com/en-us/crm/market-recruitment,pending-chrome,JS SPA (crm recruitment) — needs API/authed session,brand|growth|PMM|community|comms,2026-08-31
+Kucoin,proprietary,https://hire-r1.mokahr.com/social-recruitment/kcareers/100000192,pending-chrome,MokaHR SPA — needs Moka API/authed session,brand|growth|PMM|community|comms,2026-08-31
+Solana,proprietary,https://jobs.solana.com/companies/solana-foundation-2,ingested,Getro board — renders; closeable via Chrome lane,brand|growth|PMM|community|comms,2026-08-31
