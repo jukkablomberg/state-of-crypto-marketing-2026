@@ -214,3 +214,19 @@ Panel unchanged (78 days stale). **Day-62 entry appended to `findings/longitudin
 3. 🔴 **ONE DECISION, AND IT IS ABOUT TOMORROW, NOT TODAY: THIS LOOP HAS NO POST-WINDOW CONTRACT AND IS STILL SCHEDULED.** The capture window closed yesterday; nothing in the repo or in this loop's prompt says what a corpus run does afterwards. Today's run inferred the rule and caught a real defect doing so — **two derived exhibits had already re-dated themselves past the window close, and would have shipped that way.** The sync will roll them again tomorrow. **Either retire the task at ship, or tell it what a post-window run is for** (my read: classes 3–5 stay valuable as a living register for the *next* cycle; class 1 should be frozen in code, not by hand). Not self-patched — a scope change on ship day is the trade watch (tt) exists to refuse.
 4. **Still yours, still outside this repo:** the May 13 essay *"Binance lost its CMO too"* states the reading the corpus struck yesterday. Amend, append a correction, or accept that the report and the essay disagree — **the report being the more defensible of the two.**
 5. **Post-ship backlog, unchanged and none of it blocking:** patch the fingerprint predicate for negative deltas (watch an); automate the slug reconciliation or leave it published (watch al, now disclosed); add `**Published:**` to the five class-4 files missing it; and **the one this run adds — teach the sync that its window has an end** (watch ao).
+
+---
+
+## Addendum — commit mechanics, recorded because a claim of cleanliness needs its caveat
+
+**The commit landed by the alternate-index route** (`GIT_INDEX_FILE`), which is the workaround the 08-30 record wrote down for this mount. Parent asserted equal to `refs/heads/main` before the ref was written by hand, per that record's own warning — a concurrent Distribution Engineer commit would otherwise be silently discarded. **`76029dd` is on `main`, one ahead of `origin/main`, working tree clean.** `git push` was **not** attempted (no GitHub auth in autonomous runs); the DE pushes.
+
+⚠ **One residue this run could not remove, stated rather than claimed away: a 0-byte `.git/index.lock`, created at 15:04 by this run's own first (failed) commit attempt.** `rm` and `mv` both return `Operation not permitted` — the standing FUSE limitation, in the same place row 737 hit it on 08-30. **It does not block the push** (push locks refs, not the index) and it did not block this commit, but it **will** block a future `git add` / `git commit` through the normal path until it is removed host-side.
+
+🟢 **The working tree reads clean anyway, and it did not before.** After the alternate-index commit the on-disk `.git/index` was stale, so `git status` reported the two new files as simultaneously deleted and untracked — **a tree that looks dirty is a tree the DE may decline to push.** Rebuilt the index from `HEAD` into a scratch file and **wrote it over `.git/index` in place** (truncate + write needs no unlink — the same manoeuvre as the ref write). `git status` is now empty.
+
+**No new queue row filed for the lock.** The product-builder already has an OPEN 2026-09-01 row covering 108 files of this exact class in `northpoint` and `monitoringroom`; a fourth row for one non-blocking empty file is queue noise, and **the standing rule is that the mount cannot unlink, so the file is reported and never claimed deleted.** If Jukka is running that card's `rm` anyway, this path can ride along:
+
+```
+rm "$HOME/Operating System/projects/state-of-crypto-marketing-2026/repo/.git/index.lock"
+```
