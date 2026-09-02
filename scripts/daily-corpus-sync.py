@@ -8,7 +8,7 @@ data feeds into citation-anchored corpus output WITHOUT depending on web search:
   Source A (job postings):  northpoint/sales-funnel/prospects/open-positions.json
                             (daily ATS API scan: greenhouse/ashby/lever/breezy/... ,
                              URL-verified, dated, seniority-scored)
-  Source B (agency intel):  northpoint/sales-funnel/competitor-intelligence/trend-data.json
+  Source B (agency intel):  northpoint/research/legacy/agency-panel-trend-data-asof-2026-06-15.json (frozen 2026-06-15)
                             (daily 18-agency panel with recentClientsNamed per agency)
 
 Outputs (every run, concrete):
@@ -380,7 +380,10 @@ def main():
                 summary["frozen_absence_firms"]=sorted(set(summary["absence_firms"])-shipped)
 
     # ---------- Source B: agency intelligence ----------
-    td_path=os.path.join(sales,"competitor-intelligence","trend-data.json")
+    # 2026-09-02: legacy competitor-intelligence/ deleted; the frozen 2026-06-15 panel now lives in
+    # ../research/legacy/ (projects/northpoint/research/legacy/agency-panel-trend-data-asof-2026-06-15.json).
+    td_path=os.path.join(sales,"..","research","legacy","agency-panel-trend-data-asof-2026-06-15.json")
+    if not os.path.exists(td_path): td_path=os.path.join(sales,"competitor-intelligence","trend-data.json")
     if os.path.exists(td_path):
         td=load_json(td_path)
         summary["src_agency_date"]=td.get("lastUpdated")
@@ -400,7 +403,7 @@ def main():
                     if slug: firm_to_agencies.setdefault(slug,set()).add(agency)
                     w.writerow([last.get("date"),cl,"yes" if slug else "no",
                                 last.get("healthScore"),last.get("threatLevel"),
-                                f"competitor-intelligence/trend-data.json {summary['src_agency_date']}"])
+                                f"research/legacy/agency-panel-trend-data-asof-2026-06-15.json {summary['src_agency_date']}"])
             summary["agency_files"]+=1
         # overlap matrix: tracked firm x agencies that claim it
         mpath=os.path.join(repo,"corpus","agency-overlap-matrix.csv")
