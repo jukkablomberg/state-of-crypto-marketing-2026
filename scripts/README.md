@@ -38,6 +38,38 @@ When the verdict is not HEALTHY the run prints `CLASS-1 ABSENCE CLAIM REFUSED`; 
 
 Same-day re-runs stay **idempotent**: the comparison is always against a prior *date*, never against the run's own entry, so re-running does not manufacture a zero delta. Discrimination was verified both ways on 2026-08-14 (real delta `+24` ⇒ HEALTHY; prior-date fingerprint forced equal ⇒ **STALE** + absence claim refused).
 
+### Class-1 capture-window freeze (added 2026-09-02 — closes watch (ao), fixes watch (ai))
+
+The feed-health guard answers *did the scan look?* It answers that correctly every day — **including every day after the capture window closed**, which is when the right question changed and nothing in the script knew it.
+
+`methodology.md` §1, `README.md` and the public `README-for-github.md` all state the class-1 window as *"rolling 12 months ending August 31, 2026"*. The script had no concept of that end date, so on **2026-09-01 (ship day)** a HEALTHY feed rolled the `as_of` column of `_absence.csv` and `_chrome-queue.csv` — **shipped Theme-1/Theme-4 exhibits** — from `2026-08-31` to `2026-09-01`. Restored by hand. On **2026-09-02** the same roll recurred **and the absence panel gained a member** (Gemini, greenhouse read timeout): a post-window class-1 observation, one write from entering a shipped exhibit. Restored by hand again. **Two hand corrections is the signal to put the rule in code.**
+
+```
+CAPTURE_WINDOW_END = "2026-08-31"     # or --window-end YYYY-MM-DD | none
+```
+
+When `today > CAPTURE_WINDOW_END` the run prints `CLASS-1 CAPTURE WINDOW CLOSED` and:
+
+| Artifact | Post-window behaviour | Why |
+|---|---|---|
+| `job-postings/<firm>.csv` | **not written**; offered rows counted and printed | a corpus claim |
+| `job-postings/_absence.csv` | **not written** — not even when content is unchanged | a corpus claim; the `as_of` column alone re-dates it |
+| `job-postings/_chrome-queue.csv` | **not written** | same |
+| `job-postings/_feed-fingerprint.json` | **still written, every run** | an **instrument log**. "A 09-02 scan ran" is a true fact about the instrument |
+| class 2 (`agency-*`) | unaffected | its `as_of` comes from the feed's `lastUpdated`, not the run clock |
+
+The feed is still read and still reported, so the daily record can state the live instrument state without the corpus absorbing it. **Absence-panel drift is printed explicitly** — a firm in today's live read but not in the shipped `_absence.csv` is a change in *instrument reach after the window*, and the banner says so in those words, because that is the exact conflation `methodology.md` §1 forbids.
+
+**Red-proofed both ways (2026-09-02), per lessons L16:**
+
+| Invocation | Verdict |
+|---|---|
+| default (`--window-end 2026-08-31`) | **FROZEN** — both exhibits byte-identical to `HEAD` (md5 verified), 0 rows admitted, Gemini drift flagged |
+| `--window-end none` | **WRITES** — reproduces the exact defect: `as_of` → `2026-09-02` on both files, plus the new Gemini row |
+| `--window-end 2026-12-31` | **WRITES** — window open, normal behaviour intact |
+
+`--window-end` exists so the guard *can* be made to return the other verdict. A guard that cannot fail is not a guard.
+
 ### Coverage rules honoured
 Tracked-firm cohort only (alias table mirrors `tracked-firms.md`); every row carries a primary source URL; dedup against existing rows; **no fabrication** — only what the upstream feeds contain. Idempotent: re-running the same day adds nothing.
 

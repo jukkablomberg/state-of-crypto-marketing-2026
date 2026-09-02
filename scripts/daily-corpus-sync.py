@@ -26,6 +26,38 @@ explicitly. No fabrication: only what the source feeds actually contain.
 """
 import argparse, csv, json, os, sys, datetime, re
 
+# ---- CLASS-1 CAPTURE WINDOW (watch (ao)/(ai), added 2026-09-02) ----------------
+# methodology.md §1, README.md and README-for-github.md all state the class-1
+# capture window as "rolling 12 months ending August 31, 2026". Until today this
+# script had NO concept of that end date: it answered "did the scan look?" — which
+# it answers correctly every day, including days whose answer the report may not use.
+#
+# On 2026-09-01 (ship day) that gap bit for the first time. The feed was HEALTHY,
+# 0 postings were added, and the sync nonetheless rolled the `as_of` column of
+# _absence.csv and _chrome-queue.csv from 2026-08-31 to 2026-09-01 — making a
+# SHIPPED Theme-1/Theme-4 exhibit assert an observation date outside the window all
+# three public documents advertise. It was restored by hand. On 2026-09-02 the same
+# roll recurred AND the absence panel gained a new member (Gemini, greenhouse read
+# timeout) — i.e. a post-window class-1 observation was one write from entering a
+# shipped exhibit. Restored by hand again. Two hand corrections is the signal to
+# put the rule in code.
+#
+# The rule, exactly as ruled on 2026-09-01 and re-applied 2026-09-02:
+#   * class-1 CORPUS CLAIMS (per-firm job rows, _absence.csv, _chrome-queue.csv)
+#     are FINAL at the window close and are not rewritten afterwards;
+#   * the INSTRUMENT LOG (_feed-fingerprint.json) keeps recording every run, because
+#     "a 09-02 scan ran" is a true fact about the instrument and belongs on the record.
+# The distinction is the whole point: a fingerprint entry is not a corpus claim.
+#
+# Post-window the script still READS the feed and still PRINTS what it saw, so the
+# daily run record can report the live instrument state without the corpus absorbing
+# it. Set CAPTURE_WINDOW_END to None to disable the freeze (e.g. a next cycle).
+CAPTURE_WINDOW_END = "2026-08-31"
+
+def window_closed(today, window_end=CAPTURE_WINDOW_END):
+    """True when `today` falls after the class-1 capture window's last day."""
+    return bool(window_end) and today > window_end
+
 # ---- Tracked-firm cohort (Stratum 1-4, tracked-firms.md) + alias -> canonical file slug
 TRACKED = {
     # Stratum 1 — exchanges
@@ -111,6 +143,14 @@ def read_existing_urls(path):
                 if row.get("source_url"): urls.add(row["source_url"].strip())
     return urls
 
+def count_new_rows(jp_dir, slug, rows):
+    """Dry run of append_firm_rows: how many rows WOULD be admitted. Writes nothing.
+    Used when the capture window has closed, so the run record can state what the live
+    feed offered without the corpus admitting it (watch ao)."""
+    path=os.path.join(jp_dir,f"{slug}.csv")
+    existing=read_existing_urls(path)
+    return len([r for r in rows if r[4] and r[4] not in existing])
+
 def append_firm_rows(jp_dir, slug, rows):
     """rows: list of [date_posted,title,jurisdiction,seniority,source_url,captured_date,notes].
     Dedups by source_url against the existing file; rewrites cleanly if file is an empty scaffold.
@@ -134,7 +174,12 @@ def main():
     ap.add_argument("--repo", default=repo_default)
     # repo lives at <projects>/state-of-crypto-marketing-2026/repo ; sales-funnel is a sibling project
     ap.add_argument("--sales", default=os.path.join(repo_default, "..", "..", "northpoint", "sales-funnel"))
+    # --window-end exists so the freeze is RED-PROOFABLE (lessons L16): a guard that
+    # cannot be made to return the other verdict has not been tested. "none" disables it.
+    ap.add_argument("--window-end", default=CAPTURE_WINDOW_END,
+                    help="class-1 capture window last day (YYYY-MM-DD), or 'none' to disable the freeze")
     args=ap.parse_args()
+    win_end=None if str(args.window_end).lower()=="none" else args.window_end
     repo=os.path.abspath(args.repo); sales=os.path.abspath(args.sales)
     today=datetime.date.today().isoformat()
     jp_dir=os.path.join(repo,"corpus","job-postings")
@@ -143,7 +188,12 @@ def main():
 
     summary={"job_added":0,"job_firms":set(),"absence_firms":[],"matrix_rows":0,
              "agency_files":0,"overlaps":[],"src_jobs_date":None,"src_agency_date":None,
-             "chrome_ingested":0,"chrome_queue_firms":[]}
+             "chrome_ingested":0,"chrome_queue_firms":[],
+             # class-1 window freeze (watch ao/ai)
+             "window_end":win_end,"window_closed":False,
+             "frozen_job_rows":0,"frozen_job_firms":[],"frozen_absence_firms":[]}
+    frozen = window_closed(today, win_end)
+    summary["window_closed"]=frozen
 
     # ---------- Source A: job postings ----------
     op_path=os.path.join(sales,"prospects","open-positions.json")
@@ -242,6 +292,13 @@ def main():
                     url, today,
                     f"ATS={j.get('ats','')}; url_verified={j.get('url_verified')}; src=open-positions.json {summary['src_jobs_date']}",
                 ])
+            if frozen:
+                # Class 1 is closed. Report what the live feed offered; admit none of it.
+                would = count_new_rows(jp_dir, slug, rows)
+                if would:
+                    summary["frozen_job_rows"]+=would
+                    summary["frozen_job_firms"].append(disp(slug))
+                continue
             added=append_firm_rows(jp_dir, slug, rows)
             if added: summary["job_added"]+=added; summary["job_firms"].add(disp(slug))
 
@@ -268,6 +325,13 @@ def main():
                         url, today,
                         f"ATS={it.get('ats','proprietary')}; via=chrome-lane; src={it.get('source','careers-page')}",
                     ])
+                if frozen:
+                    would = count_new_rows(jp_dir, slug, rows)
+                    if would:
+                        summary["frozen_job_rows"]+=would
+                        summary["frozen_job_firms"].append(disp(slug))
+                    ingested_firms.add(slug)
+                    continue
                 added=append_firm_rows(jp_dir, slug, rows)
                 if added:
                     summary["job_added"]+=added; summary["job_firms"].add(disp(slug))
@@ -288,17 +352,32 @@ def main():
             if slug and slug not in ingested_firms:
                 absent.append((disp(slug),"api-fetch-error", item.get("error","")[:120]))
         # write the actionable Chrome work-queue (tracked proprietary firms + what to fetch)
-        if chrome_queue:
+        # POST-WINDOW: both of these are SHIPPED corpus exhibits carrying an `as_of`.
+        # They are not rewritten after the window closes — not even when their content
+        # is unchanged, because the `as_of` column alone would re-date them (watch ai).
+        if chrome_queue and not frozen:
             with open(os.path.join(jp_dir,"_chrome-queue.csv"),"w",newline="") as f:
                 w=csv.writer(f); w.writerow(["firm","ats","careers_url","status","blocker","target_functions","as_of"])
                 for fm,ats,url,st in sorted(set(chrome_queue)):
                     w.writerow([fm,ats,url,st,CHROME_BLOCKERS.get(fm,""),"brand|growth|PMM|community|comms",today])
+        if chrome_queue:
             summary["chrome_queue_firms"]=sorted({c[0] for c in chrome_queue})
-        if absent:
+        if absent and not frozen:
             with open(os.path.join(jp_dir,"_absence.csv"),"w",newline="") as f:
                 w=csv.writer(f); w.writerow(["firm","reason","detail","as_of"])
                 for fm,rs,dt in sorted(set(absent)): w.writerow([fm,rs,dt,today])
         summary["absence_firms"]=sorted({a[0] for a in absent})
+        if frozen:
+            # What the live instrument saw today, reported but NOT admitted. A firm here
+            # that is not in the shipped _absence.csv is an instrument change AFTER the
+            # window — never evidence about the firm (methodology.md §1).
+            shipped=set()
+            _ap=os.path.join(jp_dir,"_absence.csv")
+            if os.path.exists(_ap):
+                with open(_ap,newline="") as f:
+                    for row in csv.DictReader(f):
+                        if row.get("firm"): shipped.add(row["firm"].strip())
+                summary["frozen_absence_firms"]=sorted(set(summary["absence_firms"])-shipped)
 
     # ---------- Source B: agency intelligence ----------
     td_path=os.path.join(sales,"competitor-intelligence","trend-data.json")
@@ -339,6 +418,11 @@ def main():
     # ---------- concrete summary ----------
     print("=== daily-corpus-sync summary ===")
     print(f"date: {today}")
+    if summary.get("window_closed"):
+        print(f"CLASS-1 CAPTURE WINDOW CLOSED ({summary['window_end']}) — class-1 corpus files FROZEN.")
+        print("  _absence.csv / _chrome-queue.csv NOT rewritten (their as_of would re-date a shipped exhibit).")
+        print("  Per-firm job rows NOT admitted. The feed is still read and reported below.")
+        print("  _feed-fingerprint.json IS still written: an instrument log, not a corpus claim.")
     print(f"source A (jobs)   scan_date: {summary['src_jobs_date']}")
     _d=summary.get("feed_fingerprint_delta")
     _ds=("n/a" if _d is None else f"{_d:+d}")
@@ -356,8 +440,17 @@ def main():
     print(f"source B (agency) lastUpdated: {summary['src_agency_date']}")
     print(f"job postings ADDED: {summary['job_added']}  firms: {sorted(summary['job_firms'])}")
     print(f"  of which via Chrome inbox: {summary['chrome_ingested']}")
+    if summary.get("window_closed"):
+        print(f"  post-window rows OFFERED but NOT admitted: {summary['frozen_job_rows']} "
+              f"firms: {sorted(set(summary['frozen_job_firms']))}")
     print(f"chrome work-queue (proprietary tracked firms): {summary['chrome_queue_firms']}")
-    print(f"tracked firms STILL w/o coverage (absence=data): {summary['absence_firms']}")
+    print(f"tracked firms STILL w/o coverage (absence=data): {summary['absence_firms']}"
+          + ("  [LIVE READ — not written to the shipped exhibit]" if summary.get("window_closed") else ""))
+    if summary.get("window_closed") and summary.get("frozen_absence_firms"):
+        print(f"  !! POST-WINDOW ABSENCE-PANEL DRIFT: {summary['frozen_absence_firms']} "
+              "appear in today's live read but NOT in the shipped _absence.csv. "
+              "This is a change in INSTRUMENT REACH after the window, not evidence about the firm. "
+              "Not written. Report it as instrument state, never as a class-1 finding.")
     print(f"agency-claims files written: {summary['agency_files']}")
     print(f"agency-overlap-matrix rows: {summary['matrix_rows']}")
     print(f"agency OVERLAPS on tracked firms: {summary['overlaps']}")
