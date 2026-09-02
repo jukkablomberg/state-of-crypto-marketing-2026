@@ -79,13 +79,23 @@ The distinction between the third row and the fourth **is the whole patch**; it 
 | AI labs (OpenAI · Anthropic · Cohere · Perplexity) | 12 · 8 · 3 · 2 = **25** | 11 · 8 · 3 · 2 = **24** |
 | Stratum 1–4 crypto cohort | Gemini 1 · Phantom 1 = **2** | Phantom 1 = **1** |
 
-**The crypto side halved because a job board timed out.** Gemini's single open marketing role did not close; it became unobservable. n=7 in the series, and the most instructive observation in it: **a ratio Theme 2 was going to quote moved 50% on the denominator side for a reason that has nothing to do with any firm's marketing function.** This is exactly why watch (ag) was never allowed to become a corpus claim, and the appendix language written on 09-01 (`findings/appendix-scope-of-the-citation-index.md` §3) already carries the handling rule. ⚠ **Still not a corpus entry**; AI labs are outside the cohort and no claim is derived from them.
+**The TRACKED-COHORT side halved because a job board became unreachable.** Gemini's single open marketing role did not close; it became unobservable. n=7, and the most instructive observation in the series is the one where it broke: **a ratio Theme 2 was going to quote moved 50% on its smaller side for a reason that has nothing to do with any firm's marketing function.**
 
-### 5. ⚠ **THE NEGATIVE-DELTA HOLE GOT ITS LARGEST INSTANCE — AND TODAY IT SHARES A CAUSE WITH HEADLINE 3, WHICH SHARPENS WATCH (an) RATHER THAN JUST ADVANCING IT.**
+⚠ **The denominators are asymmetric, and that sentence is only true with "tracked-cohort" in it.** The AI-lab side is unfiltered — every AI lab in the feed. The crypto side is filtered to the 27-firm Stratum 1–4 cohort. **Counted without that filter, crypto marketing roles in the same feed went 17 → 16: a −6% move, not −50%.** (The 15 non-tracked crypto companies in `still_open_from_prior_scans` — Circle, Immutable, Stellar Development Foundation, Paxos, Fireblocks, Ondo Finance, Monad Foundation, Polymarket, Blockstream, CoinTracker, Tempo among them — were each checked against `tracked-firms.md` **and** the sync's alias table: zero hits in either, so **no tracked firm was missed**.) **A reader who takes "the crypto side halved" as a statement about the industry has been misled**, and an earlier draft of this record invited exactly that in three places — see the correction addendum. This is why watch (ag) was never allowed to become a corpus claim, and why `findings/appendix-scope-of-the-citation-index.md` §3 requires the denominator in the same sentence as the number. ⚠ **Still not a corpus entry**; AI labs are outside the cohort and no claim is derived from them.
+
+### 5. ⚠ **THE NEGATIVE-DELTA HOLE GOT ITS LARGEST INSTANCE — AND MY FIRST READING OF WHY WAS WRONG.**
 
 `total_jobs_fetched` **3401 → 3355, delta −46** — the largest negative in the series (prior: −12, −2, −1). The second predicate refuses a delta of **0**; −46 is non-zero and passes. Age (13.9h) carries the verdict independently, so nothing rests on it.
 
-⚠ **What is new is the mechanism.** Gemini's board timed out, so its jobs left `total_jobs_fetched`. **The fingerprint moved because the instrument lost reach — not because the market moved.** The predicate's premise is *"if the fingerprint moves, the scan genuinely looked"*; today it moved by −46 **while the scan looked at one fewer company than yesterday.** Non-zero and *the scan looked at the same estate* are not the same claim, and the gap between them is now measured rather than hypothesised. **Not patched today** — one predicate change per run, red-proofed, and this one needs a companies-scanned-normalised comparison that is a design question, not a line edit. Recorded for the post-ship backlog with its first real instance.
+⚠ **What is new is a candidate mechanism — and it is CORRELATION, not measurement. See the correction addendum at the foot of this record: an earlier draft of this section claimed it as measured and was wrong.**
+
+The available facts: Gemini's board timed out, and `total_jobs_fetched` fell by 46. The plausible reading is that Gemini's postings left the total. **The feed does not support that as a finding**, and three things say so:
+
+- `companies_scanned` is **147 on both days**; `companies_via_api` is **99 on both days.** The scanner attempted the same estate. Gemini's presence in `fetch_errors` is itself proof it was attempted.
+- **No field in `open-positions.json` breaks `total_jobs_fetched` down per company**, so no part of the −46 is attributable to any firm from the feed alone.
+- ⚠ **A counter-signal the first draft did not notice:** `fetch_seconds` **halved, 34.8 → 17.4.** A read timeout should *add* elapsed time, not remove 17 seconds. Something else about the run also changed, and the corpus does not know what.
+
+**So the honest statement is the weaker one:** a −46 delta and a lost board co-occurred; the predicate's premise is *"if the fingerprint moves, the scan genuinely looked"*, and **non-zero** and **the scan looked at the same estate** remain different claims — but today did not measure the gap between them, it only made it easy to imagine. **Not patched** — one predicate per run, and a fix would need per-company fetch counts the feed does not emit.
 
 ### 6. ⚠ **WATCH (am), THIRD CONSECUTIVE RUN — AND THE RETRIEVAL LAYER MADE THE SAME WRONG ATTRIBUTION IT MADE ON 08-31, ESCALATED.**
 
@@ -184,7 +194,7 @@ Panel unchanged (79 days stale). **Day-63 entry appended to `findings/longitudin
 
 | Guard | Result |
 |---|---|
-| `daily-corpus-sync.py` feed-health | 🟢 **HEALTHY**, both predicates pass, unassisted, third consecutive day. ⚠ Delta **−46**, largest negative on record, and today it is **traceable to lost instrument reach rather than market movement** — watch (an) advanced with its first mechanism, not just its first size |
+| `daily-corpus-sync.py` feed-health | 🟢 **HEALTHY**, both predicates pass, unassisted, third consecutive day. ⚠ Delta **−46**, largest negative on record. ⚠ **An earlier draft called it "traceable to lost instrument reach"; it is not** — `companies_scanned` and `companies_via_api` are identical on both days and the feed emits no per-company counts. Watch (an) advanced on **size only**; the mechanism is unexplained |
 | **`daily-corpus-sync.py` window freeze (NEW)** | 🟢 **FIRST RUN, and its first run is a test of the guard, not of the corpus** (watch tt). Discrimination verified three ways: default FREEZES (exhibits md5-identical to `HEAD`), `--window-end none` and `--window-end 2026-12-31` both WRITE and reproduce the exact 09-01/09-02 defect in a scratch copy. Idempotent across three runs |
 | `verify-capture.py` | **Not run — correctly.** No register CSV was captured. Recorded, not silently skipped |
 | `date-provenance-audit.py` | 🟢 **exit 0.** `EXEMPT-INSTRUMENT=1 · LAG-EXCEEDED=2 · NO-URL-DATE=14 · SELF-DATED=18 · UNPARSEABLE-DATE=1` — **identical to 09-01. Zero date inversions, zero citationless rows corpus-wide, fourth consecutive run.** 17 rows remain unaudited by the predicate |
@@ -201,8 +211,8 @@ Panel unchanged (79 days stale). **Day-63 entry appended to `findings/longitudin
 - **(b) First named post-deadline EU NCA marketing-side action** — 🟢 **NOT ADVANCED. NULL HOLDS AT DAY 63**, now under maintenance rather than under test. A €540m aggregate was refused today precisely because it resembles a break and is not one.
 - **🆕 (ao) A guard can be right and be the wrong question** — 🟢 **CLOSED IN CODE, 24 hours after it was opened.** `CAPTURE_WINDOW_END`, red-proofed three ways. **The fastest close in the cycle, because the defect recurred the next morning exactly as predicted.**
 - **(ai) A derived file can date itself from the run clock** — 🟢 **CLOSED FOR THE POST-WINDOW CASE.** ⚠ **The in-window form is UNFIXED and stays open**: while a window is open, `as_of` still comes from the run clock rather than the artifact (the original 08-29 instance). `methodology.md` §1 now says which half is fixed.
-- **🆕 (ap) 🔴 THE ABSENCE PANEL'S MEMBERSHIP CAN MOVE ON INSTRUMENT NOISE ALONE.** Gemini entered on a *timeout*, not a 404 or a proprietary ATS — a class the panel had never contained. Five firms had been stable across every in-window run; one transient network failure changed that, **and simultaneously halved the crypto cohort's open-marketing-role count (watch ag, 2 → 1).** Absence-as-data survives only while absence is *durable*; a timeout is not.
-- **(an) A negative fingerprint delta passes a predicate written for a zero one** — ⚠ **ADVANCED, first mechanism.** −46, and it moved because the scanner lost a company, not because the market moved. **Not patched** — one predicate per run, and the fix needs normalising against `companies_via_api`, which is design, not a line edit.
+- **🆕 (ap) 🔴 THE ABSENCE PANEL'S MEMBERSHIP CAN MOVE ON INSTRUMENT NOISE ALONE.** Gemini entered on a *timeout*, not a 404 or a proprietary ATS — a class the panel had never contained. Five firms had been stable across every in-window run; one transient network failure changed that, **and simultaneously halved the TRACKED COHORT's open-marketing-role count (watch ag, 2 → 1 — a 27-firm denominator, not an industry one; unfiltered crypto moved 17 → 16).** Absence-as-data survives only while absence is *durable*; a timeout is not.
+- **(an) A negative fingerprint delta passes a predicate written for a zero one** — ⚠ **ADVANCED ON SIZE ONLY.** −46, the largest on record. ⚠ **No mechanism established** — the co-occurring Gemini timeout is a plausible cause and nothing more; `companies_scanned` (147) and `companies_via_api` (99) are identical on both days, and `fetch_seconds` **halved** (34.8 → 17.4), which a timeout does not explain. **Not patched**, and a fix would need per-company fetch counts the feed does not emit.
 - **(am) A search-result summary can garble what it summarises** — ⚠ **THIRD CONSECUTIVE RUN, and escalating in kind:** 08-31 merged adjacent sections; 09-01 produced three mutually inconsistent dates; **today it asserted a wrong CEO for a tracked firm — the same person as the 08-31 merge, now promoted from a neighbouring section into Coinbase's chair.** The corpus's held row is what caught it, all three times.
 - **(ss) A false item that confirms is not scrutinised the way a surprising one is** — 🟢 **PAID OUT, FOURTH CONSECUTIVE RUN, and today with a real specimen:** an undated July-2025 appointment at a tracked Stratum-1 firm, presented inside a 2026 frame, fitting Theme 1 comfortably. Refused on date and on class.
 - **(ag) Where the marketing hiring actually went** — ⚠ **ADVANCED TO n=7 AND THE SERIES BROKE FOR AN INSTRUMENT REASON.** 25:2 → **24:1**. Still not a corpus entry; the handling rule is published.
@@ -256,6 +266,43 @@ Panel unchanged (79 days stale). **Day-63 entry appended to `findings/longitudin
 
 1. 🟢 **THE DAILY HAND-CORRECTION IS GONE.** Yesterday's record said the sync would roll two shipped exhibits' dates again today. It did — **and also tried to add Gemini to the absence panel**, which would have changed what a shipped exhibit *says*, not just its date. Both restored; **the rule is now in code and red-proofed both ways**, so this cannot recur whoever runs it.
 2. 🔴 **ROW 756 IS STILL YOURS AND I AM NOT RE-ASKING IT — but it is now a cleaner decision than it was yesterday.** It read *retire the loop, or tell it what a post-window run is for.* The patch removes the "hand-correct an exhibit every morning" cost from the keep branch, so the choice is simply **keep or retire**. My read is unchanged: classes 3–5 are worth keeping as a living register for the next cycle; class 1 is now frozen in code rather than by hand. **Scheduler is your click either way.**
-3. ⚠ **THE MOST INTERESTING THING TODAY IS A NUMBER THAT MOVED FOR NO REASON.** Gemini's job board timed out, and with it the crypto cohort's open-marketing-role count went **2 → 1** while the AI-lab count went 25 → 24. **Half the crypto side of a ratio Theme 2 was going to quote vanished on a network error.** It is not in the corpus and never was — but if that number ever reaches the report, it needs the denominator sentence from `findings/appendix-scope-of-the-citation-index.md` §3 next to it, not on its own.
+3. ⚠ **THE MOST INTERESTING THING TODAY IS A NUMBER THAT MOVED FOR NO REASON — AND MY FIRST WRITE-UP OF IT OVERSTATED THE MOVE.** Gemini's board became unreachable and the **tracked-cohort** open-marketing-role count went **2 → 1** against 24 at the AI labs. That is a 27-firm denominator: **counted across all crypto companies in the same feed the move is 17 → 16, −6%.** My first draft said "the crypto side halved" in three places without that qualifier, which invites an industry reading the data does not support; corrected in the record, and the correction is itself the argument for the appendix's denominator rule. **If that ratio ever reaches the report, both denominators go in the same sentence as the number.**
 4. **Still yours, still outside this repo:** the May 13 essay *"Binance lost its CMO too"* states the reading the corpus struck on 08-31 (row 751). Amend, append a correction, or accept the disagreement.
 5. **Post-ship backlog, unchanged and none of it blocking:** the fingerprint negative-delta predicate (watch an — **now with a real mechanism**, normalise against `companies_via_api`); `**Published:**` on the five class-4 files missing it; the in-window half of the run-clock `as_of` (watch ai). **Nothing here needs a decision today.**
+
+---
+
+## Correction addendum — **a verification pass caught this run's own headline overstating itself, and the corrections are recorded rather than smoothed away**
+
+Before commit, an independent adversarial audit re-derived every number in this record against the feed, the repo and a fresh red-proof of the new guard. **Ten of the eleven checked claims passed exactly.** One failed, and it failed in the register this whole report criticises in other people's estates: **a plausible causal story asserted as a measured one.**
+
+### 🔴 Correction 1 — the −46 delta's cause was ASSERTED, and the record called it MEASURED
+
+The first draft of headline 5 read: *"it moved by −46 while the scan looked at one fewer company than yesterday"*, *"the gap between them is now measured rather than hypothesised"*, and in the guards table, *"traceable to lost instrument reach rather than market movement."*
+
+**The feed contradicts this.** Against the pre-scan backup (`prospects/.backups/open-positions.json.20260901T221746Z.bak`, fingerprint 3401 — the true 09-01 state):
+
+| | 09-01 | 09-02 |
+|---|---|---|
+| `companies_scanned` | 147 | **147** |
+| `companies_via_api` | 99 | **99** |
+| `companies_via_chrome_pending` | 48 | **48** |
+| `fetch_seconds` | 34.8 | **17.4** |
+
+The scanner attempted the same estate both days — **Gemini's presence in `fetch_errors` is itself proof it was attempted.** No field in `open-positions.json` breaks `total_jobs_fetched` down per company, so **nothing attributes any part of the −46 to Gemini.** And `fetch_seconds` **halved**, which a read timeout does not explain and which the first draft did not notice at all.
+
+🟢 **Corrected in headline 5, the guards table, watch (an) and For-Jukka item 3.** Watch (an) advances **on size only**; the mechanism is unexplained and is now written as unexplained.
+
+### 🔴 Correction 2 — "the crypto side halved" invited an industry reading the data does not support
+
+True of the **27-firm Stratum 1–4 cohort**; the AI-lab side of the same ratio is **unfiltered**. Counted symmetrically, **crypto marketing roles in the same feed went 17 → 16, −6%.** The audit independently re-checked all 15 non-tracked crypto companies against `tracked-firms.md` and the sync's alias table — **zero hits, so no tracked firm was missed** and the 24:1 arithmetic is right. The *rhetoric* was wrong in three places. 🟢 **Corrected in headline 4, watch (ap) and For-Jukka item 3, with both denominators now stated.**
+
+### Two smaller flags, accepted
+
+- **The fenced console blocks in headlines 1 and §1 are ABRIDGED, not transcripts** — hand-wrapped, with the `reason:`, `source B` and `of which via Chrome inbox` lines dropped, and `[LIVE READ — not written to the shipped exhibit]` shortened. Stated here rather than re-pasted; the unabridged output is reproducible by running the script.
+- **The fingerprint series `3362 → 3398 → 3397 → 3401 → 3355` elides a duplicate 3362** (08-28, and the 08-29 stale re-read of the same file). The elision is defensible; it is still not the file's contents, and the file is the authority.
+- Minor: `fetch_errors` names **Bitwise Asset Management**; this record shortens it to "Bitwise".
+
+### Why this addendum exists rather than a silent edit
+
+**A record that quietly fixes its own headline is a worse artifact than one that shows the fix.** The failure mode caught here — *co-occurrence written up as causation, with the word "measured" attached* — is precisely watch (ss)'s shape one level up: **the story was attractive, it confirmed a watch item I had opened myself the same morning, and it got less scrutiny than a surprising result would have.** It was caught because the run's own verification step was adversarial and re-derived the numbers instead of re-reading the prose. ⚠ **Recorded as new watch (aq): a run can overstate its own findings in exactly the register it audits others for, and the drafting run is the least able to see it.**
