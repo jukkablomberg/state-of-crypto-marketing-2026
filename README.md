@@ -1,12 +1,12 @@
 # State of Crypto Marketing 2026
 
 > An operator-grade public-source synthesis of how senior crypto marketing leaders run the function in 2026.
-> Built from the public record, citation by citation. Ships **September 1, 2026.**
+> Built from the public record, citation by citation. Publishes **September 15, 2026** (first announced for September 1; the capture window closed August 31).
 
 This repository is the live corpus and methodology for the report. Every claim in the published report will be anchored to a primary source you can independently verify from this repo.
 
 **Author:** [Jukka Blomberg](https://www.linkedin.com/in/jukkab/) — ex-CMO at international crypto exchanges, founder of [NorthPoint](https://northpoint.fi).
-**License:** MIT (corpus, methodology, framework). The report itself ships under the same license on Sep 1, 2026.
+**License:** MIT (corpus, methodology, framework). The report itself publishes under the same license on Sep 15, 2026.
 **Cycle-opener essay:** [northpoint.fi/resources/writing/state-of-crypto-marketing-2026](https://northpoint.fi/resources/writing/state-of-crypto-marketing-2026)
 
 ---
@@ -21,7 +21,7 @@ That choice is deliberate. The visibility filter — what each firm has shipped 
 
 ---
 
-## What ships on September 1, 2026
+## What publishes on September 15, 2026
 
 A 40-page report — *State of Crypto Marketing 2026. Built from the public record.* — covering five themes:
 
@@ -114,7 +114,7 @@ Selection criterion: a firm enters the cohort if it (1) operates a regulated or 
 
 If you know of a public signal that should be in the corpus — a job posting, a podcast appearance, a regulator filing, a layoff disclosure, a case study — send it to **hello@northpoint.fi**.
 
-Inbound nominations are read on the next daily corpus run and evaluated against the corpus coverage rules above. If a nomination fits, it enters the corpus and the contributor is acknowledged by name in the report's appendix on Sep 1 (unless the contributor requests otherwise).
+Inbound nominations are read on the next daily corpus run and evaluated against the corpus coverage rules above. If a nomination fits, it enters the corpus and the contributor is acknowledged by name in the report's appendix on Sep 15 (unless the contributor requests otherwise).
 
 We are particularly interested in:
 - Public marketing-side enforcement cases under MiCA, MAS, VARA, FCA in 2026.
@@ -130,7 +130,9 @@ We are particularly interested in:
 |---|---|---|
 | **1 — Corpus assembly** | May–June 2026 | Public-source corpus across 27 named tracked firms × 6 source classes |
 | **2 — Theme synthesis** | July 2026 | Each of the five themes drafted against the citation-anchored corpus |
-| **3 — Ship** | August 15 – September 1, 2026 | Design pass, regulator-readability pass, press kit, ship |
+| **3 — Ship** | August 15 – September 15, 2026 | Synthesis (Sep 3–13), citation audit, design pass, regulator-readability pass, publish |
+
+Note (2026-09-02): the report was first announced for September 1, 2026. Synthesis started late; the corpus window closed on August 31 as planned and the report publishes on September 15, 2026. Dated run records in `corpus/weekly-runs/` are unchanged.
 
 Weekly drip essays publish at [northpoint.fi/resources](https://northpoint.fi/resources) and the corpus updates here daily — see `corpus/weekly-runs/` for the dated run records.
 
@@ -158,9 +160,9 @@ README.md
 
 ## License
 
-MIT — for the corpus, methodology, framework, and the report itself on Sep 1, 2026. Cite as:
+MIT — for the corpus, methodology, framework, and the report itself on Sep 15, 2026. Cite as:
 
-> Blomberg, Jukka. *State of Crypto Marketing 2026. Built from the public record.* NorthPoint, September 1, 2026. https://northpoint.fi/resources/writing/state-of-crypto-marketing-2026
+> Blomberg, Jukka. *State of Crypto Marketing 2026. Built from the public record.* NorthPoint, September 15, 2026. https://northpoint.fi/resources/writing/state-of-crypto-marketing-2026
 
 ---
 
