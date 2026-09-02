@@ -47,7 +47,11 @@ CHAPTERS = [
 
 DRAFT_LINE = re.compile(r'^\*\*DRAFT v[\d.]+.*$', re.M)
 CHANGELOG_BQ = re.compile(r'^> \*\*v[\d.]+ changelog.*?(?=\n(?!>)|\Z)', re.M | re.S)
-ANCHORS_SPLIT = re.compile(r'\n\*\*Citation anchors used[^\n]*\*\*', re.M)
+# Split on a LOOKAHEAD so the marker and everything after it survives. The earlier
+# pattern consumed the marker line greedily to its last `**`, which on a one-line
+# anchor block silently deleted most of the chapter's citations from the report.
+# Assembly must never remove a citation; the guard below now proves it doesn't.
+ANCHORS_SPLIT = re.compile(r'\n(?=\*\*Citation anchors used)', re.M)
 
 
 def strip_apparatus(text, chapter, dropped):
@@ -89,7 +93,24 @@ def main():
         total_words += len(chapter_body.split())
         body.append(chapter_body)
         if anchors:
-            endmatter.append(f"### {title}\n\n**Citation anchors used.**{anchors}")
+            endmatter.append(f"### {title}\n\n{anchors}")
+
+    # GUARD: assembly may drop drafting apparatus. It may never drop a citation.
+    src_urls, out_urls = 0, 0
+    URL = re.compile(r'https?://|(?<![A-Za-z0-9@.-])(?:[a-z0-9][a-z0-9-]*\.)+'
+                     r'(?:com|org|io|net|co|uk|gov|eu|de|fr|it|es|nl|ch|fm|news|info)/')
+    for fn, _ in CHAPTERS:
+        fp = os.path.join(FINDINGS, fn)
+        if os.path.exists(fp):
+            src_urls += len(URL.findall(open(fp, encoding='utf-8').read()))
+    assembled_text = "\n".join(body) + "\n".join(endmatter)
+    out_urls = len(URL.findall(assembled_text))
+    if out_urls < src_urls:
+        print("FAIL: assembly DROPPED citations — %d in chapters, %d in the report."
+              % (src_urls, out_urls))
+        print("      A report that cites less than its chapters is not the same document.")
+        return 1
+    print("Citation guard: %d citation strings in chapters, %d carried through." % (src_urls, out_urls))
 
     if missing:
         print("MISSING CHAPTERS — report is incomplete:")
