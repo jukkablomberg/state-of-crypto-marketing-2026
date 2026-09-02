@@ -1,0 +1,974 @@
+---
+title: "State of Crypto Marketing 2026"
+subtitle: "What the public record shows about crypto's marketing function in its first regulated year"
+publisher: "NorthPoint"
+assembled: "2026-09-02"
+---
+
+# State of Crypto Marketing 2026
+
+### What the public record shows about crypto's marketing function in its first regulated year
+
+**NorthPoint.** Capture window closed **31 August 2026**. Assembled 2026-09-02.
+
+This report is a public-source synthesis. There are no interviews, no anonymised
+quotes and no private knowledge anywhere in it. Every claim is anchored to a primary
+source a disagreeing reader can open, or carries an explicit `[VERIFY]` tag marking a
+check the authors have not completed. Where a figure's primary source states a range,
+the range is reported rather than the convenient endpoint. Where the record is silent,
+the silence is recorded as data — and, wherever the silence might instead be an artefact
+of our own instruments, it is labelled as that instead.
+
+The corpus, the methodology and the dated run records that produced this report are
+public at **github.com/jukkablomberg/state-of-crypto-marketing-2026**, MIT licensed.
+
+---
+
+## Contents
+
+1. Chapter 1 — Register first, cases later
+2. Chapter 2 — The shape of the marketing function
+3. Chapter 3 — AI in the stack: claimed versus confirmed
+4. Chapter 4 — The agency stack
+5. Chapter 5 — MiCA and regulated-marketing readiness
+6. Chapter 6 — Layoffs and the next twelve months
+7. Chapter 7 — What the visible record says about the invisible
+8. Methodology
+9. Citation anchors, by chapter
+
+---
+
+# Chapter 1 — Register first, cases later
+
+
+---
+
+On 23 June 2026, ESMA published a public statement — reference ESMA75-113276571-1710 — reminding the market that crypto-asset service providers without MiCA authorisation must "cease marketing activities and solicitation" when the transitional period ended on 1 July 2026. It was, on its face, an unremarkable document: a supervisor restating a deadline the industry had known about for two and a half years.
+
+What happened next is the finding this report opens with. **Nothing happened.** As of 23 July — twenty-two days past the deadline — not one national competent authority in the EU's twenty-seven member states has brought a named, marketing-side enforcement case against any of the thirty firms this report tracks. Not a fine, not a public censure, not a named warning about a misleading promotion. This corpus has swept the enforcement record daily since 1 July; the silence is unbroken, and it is documented day by day in the run records that accompany this report.
+
+It would be a serious misreading to call that silence a reprieve. The instruments regulators *are* using tell you exactly what phase this is: it is the filing period, not the pardon.
+
+## What the regulators are actually doing
+
+Four instruments are in motion, and none of them is a case — yet.
+
+**The registers.** ESMA's approach devolves post-deadline policing to the national authorities, and the visible activity is registry-building: ESMA's register of non-compliant entities `[VERIFY: entity count — 157 per 2026-07-17 capture; re-confirm against the live register at citation audit]`, and the AMF's blacklist of unauthorised crypto sites, which has added thirty-eight entries in 2026 alone (per the AMF's public register, swept 2026-07-23). BaFin's crypto activity in the same window consists of unauthorised-entity warnings (Verto, DAO1) and a publicly stated finfluencer-supervision posture — set out in its own annual risk-priority document, *Risks in Focus 2026*, which names cryptoassets and social media as a consumer-risk priority, states that finfluencers "like any other person" fall under MiCAR's market-abuse rules, and commits to "a random market screening of selected German-speaking finfluencers on the social media channels YouTube and Instagram" — published **28 January 2026**, and notable for where it sits: the 2026 edition is the first in which BaFin ranks consumer risks at all, and crypto-plus-social-media is one of exactly three inaugural entries. Perimeter enforcement and channel surveillance, not centre-of-market cases. A register is not an acquittal list. It is a queue.
+
+**The thematic review.** The instrument that sits between a register and a case is a supervisor testing live marketing output and publishing what it found — and one European authority has already done it twice. In **January 2025**, weeks after MiCAR entered full application, the AFM published a baseline study of CASP advertisements and cost disclosure and told the market, in unusually operational terms, what compliant looked like: a risk warning reading "investing in crypto-assets involves risks" was ruled **"too generic"**; cost policies had to sit **"one click away from the homepage, or two clicks if using a drop-down menu"**; advertisements promising "safe" trading or crypto "savings" were singled out as trivialising risk. Then, on 16 April 2026, it went back and counted. The AFM published the results of a review of the advertising and cost disclosures of thirty-three crypto-asset service providers: significant advertising shortcomings at fourteen of them, significant cost-disclosure shortcomings at nineteen. Supervisory letters went to the Dutch firms; ten international firms were referred to their home-state authorities. No firm was named and no fine was issued — which is precisely the point. "The period of leniency has ended," the AFM's executive board member Hanzo van Beusekom said, in the sentence a regulator uses immediately before it stops writing letters.
+
+Read the two studies together and the finding sharpens considerably. **Fifteen months separate them, and the defects are the same in both.** The AFM warned in January 2025 that advertisements talking about trading "safely" in crypto needed "further explanation or context"; in April 2026 it recorded "statements referring to 'safe' trading in crypto, without further explanation or clarification of the associated risks" at scale. This is not a regulator discovering a problem. It is a regulator publishing specific, actionable guidance, waiting a year and a quarter, re-testing the market, and finding that a substantial share of it did not respond. That is a harder claim than "regulators are paying attention," and it is the one the record supports.
+
+Two things make the Dutch case worth more than its size suggests. First, the defect the AFM singles out — advertisements "referring to 'safe' trading in crypto, without further explanation or clarification of the associated risks" — is the same defect this report's own audit sweep found live on public pages across the cohort; a supervisor's independent testing arrived at the identical finding. Second, and more useful for anyone trying to see around the corner: **the Netherlands is roughly a year ahead of the rest of the union.** The Dutch transitional period closed on 30 June 2025, not 1 July 2026. What the AFM is doing ten months after its deadline is the most concrete available forecast of what the AMF, BaFin, CONSOB and CySEC do in the first half of 2027 — and it is not a pardon.
+
+There is one more line in that review, and it is the most quietly damning sentence in this chapter. The AFM records that during the period it examined, "several CASPs" were "hesitant to engage in marketing activities or did not have any marketing communications" at all, as a mitigation response to the end of the transitional period. The silence this report documents from the outside — vacant CMO seats, an operator-statement drought, marketing surfaces that went quiet — is the same silence a supervisor observed from the inside, and wrote down.
+
+**The precedent template.** The United Kingdom already ran this movie. The FCA's cryptoasset financial-promotions regime took effect in October 2023; its first landmark enforcement action against a major exchange landed in February 2026 — a lag of roughly twenty-eight months between rulebook and named case. If the EU's national authorities follow even a compressed version of that curve, the first named MiCA marketing cases fall well inside the shelf life of every marketing decision being made today. The promotions being published in this quiet window are the evidence file for those future cases.
+
+**The perimeter squeeze.** The one place enforcement *is* visible is at the market's edge: unauthorised-entity blacklists, solicitation warnings, and the structural exits. The **first** of those exits was not the one that got the attention. On **5 February 2026** — five months before the deadline — Gemini announced it was leaving the United Kingdom, the European Union and Australia outright, cutting a quarter of its workforce in the same breath, and said why in plain language: "These foreign markets have proven hard to win in for various reasons, and we find ourselves stretched thin with a level of organizational and operational complexity that drives our cost structure up and slows us down." A Tier-1 exchange concluded the European compliance surface was not worth the revenue behind it, and said so, months before anyone had to. The largest of the exits is documented in this corpus in real time: Binance's withdrawal of its MiCA application and the wind-down of its EEA marketing surface, confirmed in the firm's own communications in the final days of June 2026 (see the regulator-filings corpus, `binance-mica-eu-exit-2026-06.md`, and the longitudinal note entries of 27–30 June). When the largest exchange in the world stops marketing to four hundred and fifty million people rather than carry the compliance surface, that is not a non-event. That is the deadline working — through structure, before cases.
+
+## What the operators did with the silence
+
+Against that regulatory backdrop, the tracked cohort's observable behaviour in July 2026 falls into three patterns, each developed in its own chapter of this report.
+
+**First, the capture campaign.** Within days of 1 July, six licensed competitors launched named campaigns to harvest the users Binance's exit stranded — a jurisdiction-diverse panel of MiCA-authorised firms treating a rival's compliance retreat as an acquisition channel (documented in `mica-competitive-capture-2026-06.md`; the nearest dated checkpoint is 31 July, when the OKX and Kraken deadline-linked offers lapse). Compliance status has become, for the first time in this industry's marketing history, the *offer itself*. That is the strongest evidence in this corpus that MiCA is functioning as a market-structure force rather than a paperwork exercise.
+
+**Second, the empty chairs.** The seats that would normally be speaking into a window like this are vacant at precisely the firms with the largest exposure. Binance's CMO seat has been held on an interim basis since the May churn; Crypto.com's CMO seat was vacated in the same wave; and this corpus's operator-statement class — senior marketing voices on the record — has been in drought since May. Twenty-two days into the most consequential enforcement window in the industry's history, its most senior marketing operators are structurally silent. Chapter 2 maps the function's shape; the short version is that the industry walked into its first regulated-marketing era mid-restructure.
+
+**Third, the quiet copy.** The public marketing surfaces of the tracked cohort, read against the specific obligations MiCA and the national regimes impose, show a gap between what the rules require and what the pages say — and the clearest instances in this corpus are not overclaims but surfaces the firm has stopped maintaining. On 2 August, two days after their stated close, deadline-keyed campaign pages at **Kraken** (two separate surfaces), **OKX** and **Bitpanda** were all still live, in the present tense, with working calls to action; a sixth firm was serving a "Register now" button on the very page announcing it had stopped accepting registrations. Every one of those reads is verbatim from a page fetched that day, and every one carries the same qualifier: they were served to a non-EEA fetch, and a geofenced European visitor may be served a closed state. Chapter 5 presents what the record supports — public-page observations with quoted text, rule citation and capture date, for the tracked firms whose own campaign surfaces were actually captured — and states plainly which columns of a full per-firm scorecard this corpus cannot fill. The point of this chapter is narrower: **that copy is running during the filing period.** Each of those pages is, as of its capture date, being published into a window regulators have explicitly framed as post-deadline.
+
+**A fourth pattern belongs to the cost side.** The 2026 layoff record this corpus tracks — thirteen public contractions to date — contains a detail that has gone unremarked in industry coverage: not one announcement names marketing as the affected function. And the stated rationales are themselves a marketing artefact. AI-efficiency framing is the dominant story of the year — Gemini in February, Crypto.com in March, Coinbase and Kraken in May — but it was never the universal one, and the exception is older than the rule's most famous instance. On 12 March, four days before Coinbase's cut was announced, OP Labs cut twenty roles, about a fifth of the company, and its chief executive Jing Wang went out of her way to say what it was not: "This is not about finances. OP Labs is well capitalized with years of runway." The cut was to "narrow our focus" and "do fewer things … exceptionally well." Polygon Labs (16 July, in-cohort) and Exodus Movement (17 July, perimeter — per its own SEC Exhibit 99.1) later gave *payments-pivot* and repositioning rationales in the same week.
+
+The split that emerges is worth naming even though it is not yet safe to assert: every tracked **consumer exchange** that cut in 2026 reached for AI (Gemini, Crypto.com, Coinbase, Kraken); neither tracked **infrastructure or protocol firm** did (OP Labs, Polygon Labs). Four against two is a pattern, not a proof, and one of the four leans on thinner evidence than the others — Kraken has never stated a rationale on the record at all. Its AI framing reaches the public through a single anonymous source quoted by Bloomberg, while every other rationale in this record comes from a memo, a filing, a chief executive's own post, or a company announcement. When a firm lets an explanation circulate without owning it, that is itself a communications decision, and this report notes it rather than laundering it into the same category as the rest.
+
+The pattern in the four tracked-firm cuts is worth stating carefully, because it is a hypothesis and not yet a finding: **AI-efficiency framing appears at the consumer exchanges, and focus-narrowing or repositioning framing at the infrastructure and protocol firms.** Consumer exchanges have a retail narrative to manage; protocol firms answer to a token market instead. Four data points is not a claim, and Chapter 6 tests it rather than asserting it.
+
+One sequence at a single tracked firm is worth carrying forward on its own, because both halves are in the public record and nobody has put them together: OP Labs cut about a fifth of its staff on 12 March, and on 21 May posted a requisition for a Marketing Executive in New York. Seventy days. What that means is not something this report can know, and it does not guess — but a firm that contracts hard and then hires into marketing is not a firm that has decided marketing is the problem. Firms tell the story that serves them; Chapter 3 tests the AI story against what job descriptions actually confirm, and Chapter 6 reads the layoff record for what it implies about the next twelve months.
+
+## The report's method, in one paragraph
+
+Everything in this report is built from the public record: job postings (2,235 postings across 147 firms scanned daily through an URL-verified feed), regulator filings and registers, agency case-study claims, operator statements on the record, and public layoff disclosures — six source classes, assembled daily since May, every row anchored to a primary source any reader can verify, with absence of signal recorded as data rather than filled by inference. Where a figure's primary source states a range, the range is reported, not the convenient endpoint. The corpus is public (github.com/jukkablomberg/state-of-crypto-marketing-2026); the visibility filter is itself the analysis: what a firm shows the public record — and what it structurally omits — is the most honest description available of how its marketing function is really run.
+
+## The thesis
+
+The state of crypto marketing in 2026 is a function caught between two clocks. The regulatory clock started on 1 July and is accumulating a file; the organisational clock is mid-restructure, with empty senior seats, AI-reshaped teams, and cost programmes that dare not say the word "marketing." The gap between those clocks — the register-first, cases-later window this chapter has described — is where every finding in the following six chapters lives. The firms treating the silence as a filing period are visible in this corpus. So are the firms treating it as a pardon.
+
+---
+
+*Closing absence-read: the single most informative fact in this chapter is a null — twenty-two days, twenty-seven authorities, zero named marketing cases, while the registers grow. In a regime built on disclosure, the absence of enforcement is not the absence of evidence. The evidence is being published daily, by the firms themselves, on their own homepages.*
+
+---
+
+---
+
+# Chapter 2 — The shape of the marketing function
+
+
+> **Two rules govern this chapter.** **One — the job-posting dataset measures our reach, not firms' behaviour.** `_absence.csv` records which firms the scanner could not fetch on a given morning; it has never once meant "this firm published nothing." Every absence claim below is drawn from what a firm has and has not *publicly said* — classes 3 and 4 — as `methodology.md` §1 requires. **Two — where a claim rests on press and search visibility rather than a firm's own estate, it says so**, because on the one tracked firm whose estate we tested, an enumerable announcement index does not exist.
+
+---
+
+## Four seats, one month
+
+Between May and June 2026 the top marketing seat at three of the eleven Stratum-1 exchanges named in `tracked-firms.md` became vacant, interim, or unestablishable from any public source — and both vacancies fell in June, the MiCA transitional period's final month.
+
+**Binance.** CoinDesk reported on 12 May 2026 that Chief Marketing Officer **Rachel Conlan** was leaving, last day **15 June 2026**; she took the post in September 2023. Binance supplied two statements by email — a spokesperson's (*"after four years of remarkable service has decided to step down to focus on personal priorities"*) and Conlan's own — and named **Eowyn Chen, former CEO of Trust Wallet**, interim CMO, with Conlan staying on as an adviser. Three tenure figures appear in that one article and no two agree, so only the dated pair is printed. **The narrow reading is the whole reading: the publicly named interim occupant's stated prior role is chief executive of a wallet business, not a marketing seat.** The primary says nothing whatsoever about a search — in either direction — and makes no comparative claim across Tier-1 firms. Both limbs were carried here for 110 days and struck on 31 August when the citation was finally read.
+
+**Crypto.com.** A spokesperson told CoinDesk on 5 May 2026 that CMO **Steven Kalifowitz** would leave the role **effective 30 June 2026** after close to six years, staying on as **"advisor to the CEO."** The quoted statement is brand-historical and nothing else. **The primary contains no AI framing of any kind and does not connect the exit to the firm's March twelve-percent reduction** — a characterisation this corpus carried for 98 days before capturing the document, having let it migrate one section down a corpus file and acquire a source it never had.
+
+**OKX.** OKX's own estate announced **Haider Rafique** as CMO in December 2022, *"overseeing the company's growth and brand strategy"*; that page states *Updated on Apr 25, 2024*. An in-window CoinDesk interview the firm participated in describes him as *"global managing partner for Corporate Affairs and Investor Relations."* **Nothing captured says the marketing responsibility ended**, and a broadened title fits the evidence equally well. What can be said is narrower: this corpus can establish what OKX's marketing seat was called in 2022 and cannot establish from any public source what it is called now, who holds it, or whether the person it recorded still does. A regulator hits the same wall.
+
+**Bybit** belongs in the record and not in the report. `tracked-firms.md` carries "Apr 30 Helen Liu departure," which two corpus files call "the standing Bybit case"; **no URL for it exists anywhere in this repository, and no source held here states her role.** `[VERIFY: Bybit / Helen Liu, 2026-04-30 — uncited and role-less; not citable as a marketing-seat turnover.]` The same note pairs it with "Apr 28-29 split-IC postings" — `research-framework.md`'s own illustrative split-IC pattern for this theme — and **`corpus/job-postings/bybit.csv` is empty.** The framework's worked example is not in the shipped dataset.
+
+**The succession null, and the label it must carry.** **No permanent successor to either the Binance or the Crypto.com seat has been publicly named**, and the null was tested rather than assumed. A search scoped to August-2026 appointments returned *"Crypto.com names new CMO"*; fetched, it is dated **12 August 2020 and announces Kalifowitz himself.** A second candidate — a Crypto.com Global VP of Growth and Media — dated to **July 2025**, eleven months before the exit. Both refused. `[VERIFY: no URL held for the July-2025 appointment.]` Then on 16 August the corpus tested whether a firm's own estate could carry such a claim at all, on the strongest subject available: Coinbase, a US-listed issuer with an IR site and a press page. `coinbase.com/press` is **a brand-asset download portal** — logos, the corporate typeface, a headshot archive named `Coinbase_Leadership__2024.zip` — with no release archive at all, and the IR newsroom's only machine-readable feed carries a `lastBuildDate` of **September 2022**. Hence the label: **where a firm's own estate maintains no enumerable announcement index, a claim about what it has publicly said can only be a claim about what press and search indexes surfaced.** Crypto.com's about-page was blocked by the fetch-provenance rule and not guessed; OKX's leadership page has not moved in twenty-eight months.
+
+---
+
+## Two firms named a structure; one named a job
+
+Inside seventy-four days, three of the largest exchanges in the world publicly described marketing as something other than a promotion engine — **two organisationally, one editorially, and the difference should not be flattened.**
+
+**Coinbase (Brian Armstrong, CEO memo, 5 May 2026)** named **"AI-native pods"** as the new operating unit, capped management at five layers below the CEO and put every leader in an IC seat, alongside a fourteen-percent reduction of roughly 700 roles. ⚠ **The memo is not held first-party**; the anchor is Fortune's contemporaneous report, and the affected functions on the record are engineering, design and product. **No source names marketing among them** — a ruling re-verified three times in the cycle's final week against a retrieval layer that kept trying to insert it.
+
+**Kraken (Mayur Gupta, Chief Growth & Marketing Officer, 19 May 2026)** described the same move from inside the function and treated his own title as its trailing indicator: *"Most CMO jobs are top-of-funnel jobs… That leads to a fragmented growth model that is oriented towards inputs and not outcomes."* Against that, marketing, product, design and engineering *"have to work as one system pushing towards a common set of outcomes"*, with *"no silos. Full accountability across the journey."* Then the line Theme 1 turns on — **"The title is almost the least interesting part. The operating model is what actually changed."** The destination is a **"natively AI growth engine"** in which *"engineers are designing product ideas, marketers are shipping products."* The title moved too: CMO to CGMO.
+
+**Binance (Eowyn Chen, interim CMO, 18 July 2026)** answered a different question — not how the function is built but what it is for: *"marketing will be less about driving hype and more about building understanding—helping users navigate new products, understand risks, and make informed decisions"*; *"trust is earned through transparency, participation, and community – not through broadcast."* She relocates the metric too: *"I want to move beyond growth numbers to signals of genuine understanding and trust."*
+
+Coinbase and Kraken make comprehension an **output of a restructured system**. Chen makes comprehension **the product**. One is an org chart, the other an editorial mandate. ⚠ Both interviews carry a placement ambiguity the corpus cannot resolve from outside — Chen's vertical publicly sells cover-story placement, and Gupta's outlet runs a marketing-services and KOL arm on a page carrying a Kraken affiliate link. Both are usable for what was said; neither is evidence that trade press sought these operators out.
+
+---
+
+## The pull toward beige
+
+The hinge into Theme 4 is a dated sentence from a Tier-1 CMO naming regulatory pressure as the mechanism that sterilises brand output. Coinbase's **Catherine Ferdon**, on Adweek's *Marketing Vanguard*, 9 April 2026:
+
+> *"…there's constant regulatory scrutiny. It's an ever evolving landscape and it's evolving in different ways across hundreds of geographies. And so when you have that situation on the field, the first instinct is really to generate like a very sterile brand."*
+
+> *"…there's like a lot of things that we've passed on because they're just, frankly, they're too beige, right? And there's really strong gravitational pull towards being beige where I'm sitting."*
+
+⚠ **The wording is from an automated third-party transcript**, not a publisher-issued one, and the same public text carries visible speech-recognition artefacts elsewhere. `[VERIFY: check both quotations against the episode audio before publication.]`
+
+The report has argued from artefacts that the compliance surface *is* the campaign. **This is that causal claim named from the seat that owns the go/no-go, and named as a creative cost rather than a compliance one.** Her posture is to resist it — *"when you can really break through, fortune favors the bold"* — the opposite of Kraken's institutional MiCA surface, where the licence leads as the product claim: two MiCA-licensed Tier-1s, one regulatory surface, two opposite creative answers.
+
+One absence sits against it, drawn from class 4 where it belongs: **no senior marketing operator at any tracked firm has a publicly indexed statement on the marketing-compliance surface at all.** A search re-vocabularised from *who holds the seat* to *what the seat says about MiCA* returned eight vendor and law-firm explainers and zero operator voices. Sharpest instance: the interim CMO of the firm that withdrew from the EU gave a long interview on the future of crypto marketing **seventeen days after the deadline** and mentioned MiCA, the EU and the exit **exactly zero times**. That is an indexed-visibility claim, labelled per the estate finding above.
+
+---
+
+## What the cohort actually hired
+
+**Table 1 · Panel A — every marketing or growth requisition in the shipped class-1 corpus. 27-firm cohort, window ending 2026-08-31 (n=12).**
+
+| Firm | Str | Title | Seniority / function | Jurisdiction | Posted |
+|---|:--:|---|---|---|---|
+| Solana Foundation | 2 | Institutional Growth Lead — Japan | Lead / growth | Japan | 2025-12-26 ~ |
+| Solana Foundation | 2 | Institutional Growth Lead — Greater China | Lead / growth | Hong Kong | 2025-12-26 ~ |
+| Solana Foundation | 2 | Director, Institutional Growth | Director / growth | New York, NY | 2026-03-26 ~ |
+| Ava Labs | 2 | Director of Social Media | Director / comms-PR | Brooklyn, NY | 2026-05-18 |
+| OP Labs (Optimism) | 2 | Marketing Executive | **IC** / marketing | New York | 2026-05-21 |
+| Ava Labs | 2 | Director of Communications | Director / comms-PR | Remote (USA) | 2026-06-09 |
+| Phantom | 3 | Head of Brand Creative | Head of / brand | Remote — US | 2026-07-01 |
+| Coinbase | 1 | Creative Director | Director / brand | Remote — Canada | 2026-07-17 |
+| Kraken | 1 | Director, Paid Marketing | Director / marketing | United States | 2026-07-23 |
+| Kraken | 1 | Director, Paid Marketing | Director / marketing | United Kingdom | 2026-07-23 |
+| Gemini | 1 | Predictions Partnerships Marketing Lead | Lead / marketing | New York, NY | 2026-07-29 |
+| MetaMask / ConsenSys | 3 | Product Marketing Lead — Trade | Lead / PMM | US / EMEA / LATAM remote | 2026-08-06 |
+
+`~` board-relative date, approximate (Solana's Getro board, Chrome lane). Every row is URL-verified and dated; URLs are in the anchors block.
+
+**Read the shape before the number.** Twelve requisitions, eight firms, twelve months. **Ten of the twelve sit at Director or Lead level**; there is one Head-of seat, one IC, and **no VP or C-level marketing requisition anywhere in the record.** By function: growth 3, marketing 4, brand 2, communications/PR 2, product marketing 1, **community 0**. **No title names compliance, regulatory marketing communications, or MiCA** — and the shipped schema carries seven columns of which JD body text is not one, so title-level absence is the strongest form that statement can take. The same schema explains a second gap: `methodology.md` §1 promises time-to-fill and JD-stated AI-tooling requirements as extracted fields and **class 1 supplies neither**; `posted_at` also drifts forward for fixed requisition IDs, so a role refreshed weekly registers as permanently young. Geography, as a fact about the dataset only: nine of twelve name a US location or US-inclusive remote scope, **exactly one names a European jurisdiction alone (Kraken UK)**, and **none names an EU member state.**
+
+**Four rows read individually.** **Kraken posted two Director, Paid Marketing requisitions on one day, US and UK** — nine weeks after its CGMO said on the record of Ukraine, *"we have never run a local campaign here. That success was largely organic."* The sequence is datable and is stated as a sequence; **Gupta has not spoken publicly about the paid build-out and no reconciliation is claimed.** **Coinbase's Creative Director requisition (17 July) lands about ten weeks after the AI-pod memo and the cut**: read narrowly, the operating model did not remove the senior brand seat, it re-opened it; read against Ferdon's April diagnosis, it is the hiring half of a stated creative problem. n=1, held as a datapoint. **Gemini's is the first marketing seat this corpus has ever captured at Gemini** — a *predictions* seat in New York, posted 29 July, after the firm exited the UK, the EU and Australia on 5 February 2026 alongside a firm-stated, SEC-filed twenty-five-percent reduction. The sequence is recorded; no redirection is asserted. **OP Labs cut twenty roles, about a fifth of the company, on 12 March 2026 and posted a Marketing Executive requisition in New York on 21 May — seventy days.** A firm that contracts hard and then hires into marketing has not decided marketing is the problem, and that is the limit of what the record supports.
+
+---
+
+## The headcount table this chapter cannot build
+
+`research-framework.md` asks Theme 1 for a headcount-by-firm table split across brand, growth, PMM, community, regional, agency-management and regulatory-comms. **The public record does not contain it, and that is the finding.**
+
+Across the whole cohort this corpus holds **exactly one firm-attributed marketing-function headcount figure**: Coinbase, on the record via a spokesperson, 23 April 2026 — *"The marketing team at Coinbase is over 150 people…"* It is a floor, not a count, undated as to its own as-of moment, and it precedes the 5 May reduction by twelve days. **The defensible sentence is: Coinbase stated in April 2026 that its marketing team numbered over 150, twelve days before announcing a fourteen-percent company-wide reduction.** It is also *refused* as an operator statement under §4 — an unnamed spokesperson is not a named CMO or VP — and the gate was applied even though it cost that run its best quote. Its context is the other half of the seat story: it was Coinbase's reply to a report that **a named group of senior Coinbase marketers, including its former CMO, had moved to OpenAI**, with a further move to Anthropic in 2026 — the senior layer leaving *for* AI employers rather than adopting AI tools. ⚠ **Every date in that record is a start date at the destination employer, taken from public profiles, not a departure date from Coinbase** — one documented gap between the two is twenty-two months — so **any claim of the form "N marketing leaders left firm X during window W" built on them is wrong by construction.** None is made here.
+
+One firm in this record publishes a periodic account of its own marketing function, and it is not in the cohort. **Gnosis Ltd — perimeter, not tracked — published a Q2 2026 quarterly report with a Marketing section**, naming its channel stack, crisis-comms scope, a Q3 SEO/GEO workstream and an MQL pivot toward *"larger wallets and FinTechs."* ⚠ **It is cited as firm-published periodic reporting, not as an operator statement**: Gnosis is perimeter, the section names no operator, and §4 admits neither. That it does not fit is the point — **§4's perimeter is drawn around individuals with titles, so it cannot see a firm's own published account of its marketing function.** The firms obliged to report publicly are the ones this corpus can see. Against that, **Ledger** is marketing-visible and, on the instrument's own showing, not hiring marketing: an NBA jersey patch, an in-house studio and an EVP of Marketing and Communications quoted on its own channel, while its Ashby board was scanned without error across the window and produced **zero qualifying marketing roles** — absence in the methodology's intended sense, the instrument having looked and found nothing.
+
+---
+
+## What the instrument cannot see, stated before it is asked
+
+**Table 1 · Panel B — class-1 coverage across the 27-firm cohort at the 2026-07-30 audit.**
+
+| Status | Firms | What it actually means | Absence claim? |
+|---|:--:|---|:--:|
+| **NOT-IN-FEED** | 4 | Never scanned — absent from the scanner's company list. Includes **OKX**, a Tier-1 tracked exchange. | **No** |
+| **IN-FEED-FLOW-LOSS** | 2 | Scanned; qualifying marketing roles passed the filter on five dated in-window occasions and none reached the corpus, because the writer records only roles open at run time and did not exist until 2026-06-26. | **No** |
+| **IN-FEED-BROKEN-SLUG** | 1 | In the config with a malformed ATS slug: returns neither rows nor an error — **structurally unreachable, and silent about it.** | **No** |
+| **IN-FEED-TRUE-ABSENCE** | 4 | Scanned without error; zero qualifying marketing roles. **The instrument looked and found nothing.** | **Yes — only this one** |
+| ABSENCE-RECORDED | 4 | Reachability failure, correctly logged (proprietary recruiting SPA, or a 404). | **No** |
+| COVERED + ABSENCE | 2 | Historic rows plus a current proprietary-ATS absence row. | n/a |
+| COVERED | 10 | Produced rows. | n/a |
+
+**Only the fourth status licenses a sentence about a firm**, and the shipped absence panel — Aave, Binance (×2), Bybit, HTX, KuCoin, frozen at 2026-08-31 — contains none of that kind. Every row it has ever held carries a reason of `api-fetch-error` or `proprietary-ATS/needs-chrome`. **Binance, Bybit, HTX, KuCoin and Aave are unobserved, not silent**, and no sentence in this report says otherwise. Nor is the panel a random sample of silence: four of the five run their own recruiting stack, which correlates with size.
+
+Three incidents are why the rule is stated this hard. **MetaMask/ConsenSys** sat in the panel for weeks and left it on 25 August when an upstream slug was fixed, revealing a posting that had been **public for nineteen days** — the firm did nothing, we did. **Arbitrum** entered on 27 August because a Lever socket timed out: a firm can enter and leave on consecutive days with no event at either end, which makes any count drawn from the panel non-reproducible. And **`_backfill-queue.csv`** holds nine requisition IDs at five firms that the upstream feed saw pass the filter and the corpus never captured — so **twelve is a floor on what the instrument retained, not a count of what the cohort posted** (those nine candidate URLs are constructed, unverified, and deliberately not printed).
+
+Two limits belong to the dataset itself. **Company identity is derived from ATS slugs and reconciled against nothing** — tier and category are joined from a separate table keyed on display name, never cross-checked. On 30 August two URL-verified, correctly dated postings labelled as a stablecoin issuer belonged to a similarly-named community-software company, and were excluded only because that name sits outside the cohort: **a filter on the name, when the name was the error.** All tracked-firm rows were reconciled by hand with no contamination found; firms with common-word names carry the residual risk. And **the panel's `as_of` is written from the run clock rather than the observed scan**, so it must be read against `_feed-fingerprint.json`.
+
+Finally, Chapter 1's standing condition, restated because this chapter is where it bites hardest: an absence is a finding only after a full-range re-sweep **and** a check of the firm's own published channels. The cautionary case is **Bitpanda**, recorded as producing zero public marketing signal on four consecutive runs while running a four-language television and out-of-home brand campaign on its own blog since September 2025. **An absence panel built from media surfaces measures media bookings, not marketing visibility.**
+
+---
+
+*Closing absence-read: the industry's senior marketing seats are hardest to observe at exactly the firms carrying the largest regulatory exposure — and the opacity is self-imposed. Two Tier-1 CMO transitions in the deadline month reach the public record through one journalist at one outlet, and neither firm's own estate carries a dated note of the change. A third firm's leadership page has not moved in twenty-eight months. The cohort's most disclosure-rich member runs a press page that is a logo-download portal and an investor feed that stopped building in 2022. This is not a reporting failure; it is a description of the function. Marketing surfaces here are heavily resourced and corporate-communications surfaces are not — and the seat that owns the first is documented only by the second. A regulator opening the file on any of these firms in 2027 reads the same absence, and is entitled to ask why a function that publishes constantly publishes nothing about itself.*
+
+---
+
+---
+
+# Chapter 3 — AI in the stack: claimed versus confirmed
+
+
+> **v0.1 framing note.** This chapter does not answer the question it was commissioned to answer, and it says so in its first section rather than in a footnote. `research-framework.md` specifies Theme 2 as *claimed adoption versus JD-confirmed adoption*. **The JD-confirmation side of that comparison does not exist in the shipped corpus.** What arrived in its place is a third evidence class the framework did not anticipate, and the substitution is the chapter's first finding.
+
+---
+
+## The confirmation side is empty, and saying so is cheaper than pretending otherwise
+
+The design was sound. A job description is a firm's least performative public document — nobody writes a requisition to impress the trade press — and a JD requirement for AI tooling is an operational commitment where an interview is cheap talk. The comparison would have been the strongest thing in this report.
+
+**It cannot be run.** The shipped class-1 corpus holds **twelve qualifying marketing or growth postings across the entire twenty-seven-firm tracked cohort for the whole twelve-month window** — Ava Labs 2, Solana Foundation 3, Kraken 2, and one each at Coinbase, Gemini, MetaMask/ConsenSys, OP Labs and Phantom. Nineteen of the twenty-seven tracked firms produced none. And **not one of the twelve has had its JD body read**: the corpus records posting metadata — title, jurisdiction, seniority, dated URL-verified permalink — and the run record of 24 July that first proposed the AI-tooling read wrote it as conditional (*"sets up a Theme-2 read once the JD bodies are fetched"*). They never were. **A twelve-row instrument that was never pointed at the text cannot confirm or refuse anything, and a matrix built on it would be a decoration.**
+
+Twelve is a floor, not a count of firm behaviour. Five tracked firms sit in the absence panel because their careers infrastructure is unreachable by the API scan — Aave on a Lever 404; Binance, Bybit, HTX and KuCoin on proprietary applicant-tracking systems — a fact about the scanner, not about them. The 30 July cohort audit found **five further marketing roles at Arbitrum and Trust Wallet that the upstream feed saw and dated and that never reached the corpus**, because the sync script writes only roles open at the moment of a run and did not exist until 26 June. **Absence here measures our reach; this chapter draws no hiring finding from it.**
+
+## What the corpus found instead: a third evidence class
+
+On 23 August, while closing a verification item on a layoff row, the corpus captured Gnosis Ltd's **Q2 2026 quarterly report** — a routine periodic document filed to its DAO forum, carrying a Marketing section written by the firm about its own marketing function. The corpus file names the class, because it had no name before: **firm-published periodic reporting on its own marketing function.** Not a job posting, not a podcast, not a press release, not an agency case study — a firm describing, in a dated document addressed to token holders rather than to press or recruits, what its marketing team did and what tooling it used.
+
+That is a better instrument than a JD. A requisition says what a firm intends to buy; a quarterly report says what it already ran, with a metric direction attached, to an audience that can ask follow-ups on the same page — and one did, which is how the headcount in that document became public three days later. **Finding this class is a genuine methodological result, and it arrived as a by-product of a task about something else entirely.**
+
+---
+
+## The claim-versus-evidence matrix
+
+Every AI claim in the corpus that touches the marketing function, by firm, by claim register, by evidence grade. Grades A–E for layoff rationales are the ladder set out in `_ai-cover-narrative-grading-audit-2026-08-24.md`.
+
+| Firm | Cohort | Claim register | The claim, as made | Evidence grade | JD confirmation |
+|---|---|---|---|---|---|
+| **Coinbase** | Tracked S1 | Operator interview — CMO Ferdon, 2026-04-09 | "AI is not creative… you need really solid people wielding that tool" | Named, dated, verbatim — **automated transcript, unchecked against audio** | 1 posting (Creative Director, 07-17); body unread |
+| **Kraken** | Tracked S1 | Operator interview — CGMO Gupta, 2026-05-19 | "natively AI growth engine"; "marketers are shipping products" | Named, dated, verbatim — page carries a Kraken affiliate link | 2 postings (Director, Paid Marketing ×2, 07-23); bodies unread |
+| **Binance** | Tracked S1 | Operator interview — Interim CMO Chen, 2026-07-18 | "AI supports users—it doesn't replace them" | Named, dated, verbatim — **near-primary**; branded-content vertical | Unobservable — proprietary ATS; absence panel |
+| **Gnosis** | **Perimeter** | **Firm-published quarterly report, 2026-07-17** | "We embedded AI across the marketing and comms function…" | **First-party captured; unattributed corporate text** | n/a — not tracked |
+| Crypto.com | Tracked S1 | Layoff rationale, 2026-03-19 | CEO Marszalek: "enterprise-wide AI" | **A** — firm-stated, verbatim | Zero postings in the corpus |
+| Gemini | Tracked S1 | Layoff rationale, 2026-02-05 | 8-K EX-99.1: *"A message from our founders on AI…"* | **A** — firm-stated, **SEC-filed** | 1 posting (Predictions Marketing Lead, 07-29) |
+| Block, Inc. | Perimeter | Layoff rationale, 2026-02-26 | Dorsey: "smaller", "flatter", AI-first | **A** — firm-stated, verbatim (upgraded from C, 08-27) | n/a |
+| BitGo | Perimeter | Layoff rationale, 2026-06-25 | CEO Belshe: "AI-powered infrastructure" | **A** — firm-stated, verbatim | n/a |
+| Dune Analytics | Perimeter | Layoff rationale, 2026-05-14 | CEO Haga: "25% of the team"; explicit product-AI link | **A** — firm-stated, verbatim | n/a |
+| Coinbase | Tracked S1 | Layoff rationale, 2026-05-05 | Armstrong memo: "AI-native pods" | **B** — firm-stated, relayed; no verbatim in-row | (as above) |
+| Messari | Perimeter | Layoff rationale, 2026-03-16 | CTO/incoming CEO Li: "AI-first" | **B** — firm-stated, relayed; X primary unfetched | n/a |
+| Kraken | Tracked S1 | Layoff rationale, 2026-05-14/15 | AI efficiency, via *"a person familiar with the matter"* | **D** — **anonymous; firm never on record** | (as above) |
+| Luno | Perimeter | Layoff rationale, 2026-07-28 | CEO Lanigan's word is **"automation"** | **E** — **our inference; neither firm nor outlet says AI** | n/a |
+| MARA Holdings | Perimeter | Layoff rationale, 2026-04-02 | Spokesperson: *"energy and digital infrastructure"* | **Y-ADJACENT, graded down** — AI/HPC is the outlets' framing | n/a |
+| Robinhood | Perimeter | Layoff rationale, 2026-06-16 | CEO Tenev **declined the AI-blame framing** | **N** — explicit refusal | n/a |
+| Uphold | Perimeter | Layoff rationale, 2026-07-27 | Enterprise repositioning, **explicitly non-AI** | **N** — explicit refusal | n/a |
+
+**Read the right-hand column first.** It is empty by construction, and every claim in the table is therefore unconfirmed in the sense this chapter was built to test.
+
+---
+
+## Register one: the operator interview
+
+Three Tier-1 exchanges put a named senior marketing operator on the record about AI inside ten weeks, and **they do not agree.**
+
+**Coinbase's CMO drew a boundary.** Catherine Ferdon, on Adweek's *Marketing Vanguard*, 9 April 2026 — the episode opens cold on the line, before the host's introduction: *"AI can be a really powerful tool to get us to creative outcomes faster, but AI is not creative, right? So you need really solid people wielding that tool to achieve the best results."* **The wording comes from a machine-generated partial transcript published by a third party, not by Adweek, and it carries visible ASR artefacts** — the host is rendered addressing her as "Kat"; one passage reads *"just remind me the Coinbase, specifically the company store."* Both are reproduced rather than silently corrected. `[VERIFY: check every Ferdon quote against the episode audio before publication; the Acast publisher surface has not been independently fetched.]`
+
+**Kraken's CGMO described the opposite posture as an operating model.** Mayur Gupta, 19 May 2026: *"We are now pushing towards being a **natively AI growth engine** where these lines blur even more. **Engineers are designing product ideas, marketers are shipping products** and the velocity of identifying growth opportunities … has suddenly 100x."* Provenance recorded rather than smoothed: the outlet operates a marketing and KOL-network arm, and the page's first mention of Kraken links to an affiliate destination. The quotes are direct, dated and attributed; the placement's commercial status cannot be determined from the public page.
+
+**Binance's interim CMO split the question.** Eowyn Chen, 18 July 2026: *"AI supports users—it doesn't replace them,"* and *"Security, compliance, and fraud in the AI era require entirely new approaches."* The piece sits in a vertical that sells cover-story placement and is not labelled sponsored. **Usable for what Chen said; unusable as evidence that trade press sought her out.**
+
+Two dated sequences sit inside this register, and both must be stated as sequences and nothing more. At Coinbase, Ferdon's *"AI is not creative"* on 9 April, then Armstrong's AI-native-pods memo and 14% reduction on 5 May — **twenty-six days.** At Kraken the same pairing runs backwards: the AI-attributed cut on 14–15 May, then Gupta's interview on 19 May — **four days.** Nothing public says Ferdon was overruled or that Gupta was answering. **State the sequence; refuse the causal story.**
+
+**And the register runs in a direction the theme did not anticipate.** CoinDesk reported on 23 April 2026 that six named senior Coinbase marketers — including CMO **Kate Rouch** into the same title — moved to OpenAI between November 2024 and December 2025, and Base's marketing lead to Anthropic around April 2026. **The senior layer of the largest US crypto exchange's marketing function did not adopt AI; it left to work at AI companies.** Coinbase's on-record reply supplies the only firm-attributed marketing headcount in this corpus — *"The marketing team at Coinbase is over 150 people"* — a floor, stated twelve days before the 14% cut. `[VERIFY: every role and date is CoinDesk's reading of a public LinkedIn profile, and each is a start date at the destination, not a departure date from Coinbase — no "N marketers left in window W" claim may be built from them.]`
+
+## Register two: the layoff rationale, where the claim is loudest and the evidence thinnest
+
+The 2026 layoff tracker holds **twenty-six public workforce contractions** at tracked and perimeter firms; **nine carry an AI framing.** Ungraded, that is 35% — and it is the number this report was about to print wrong.
+
+Graded, the nine split. **Five are Grade A** — firm-stated, verbatim, captured first-party: Crypto.com (CEO Kris Marszalek, *"We are joining the list of companies integrating enterprise-wide AI"*), **Gemini in an SEC-filed 8-K exhibit whose own subtitle reads "A message from our founders on AI, prediction markets, and focus"**, Block/Dorsey, BitGo (CEO Mike Belshe, *"security, trading, stablecoins, settlement, and AI-powered infrastructure"*) and Dune (CEO Fredrik Haga). **Two are Grade B** — firm-stated but relayed, with the firm's own primary unfetched: Coinbase's Armstrong memo, Messari's *"AI-first."* **One is Grade D**: Kraken's rationale reaches the public solely through Bloomberg's *"a person familiar with the matter who was not authorized to speak publicly"* — **Kraken has never stated a rationale on the record at all.** **One is Grade E**: Luno's chief executive said *"automation,"* and neither firm nor outlet says AI anywhere. That row is this corpus's own inference, labelled as such.
+
+So: **five of twenty-six contractions carry a firm's verbatim AI claim — 19%, not 35%**; seven carry the firm's own words at any remove. ⚠ The audit that built this ladder published **4 of 26** on 24 August; the fifth Grade A arrived on 27 August when Block's primary was finally opened and the row upgraded from C. **That audit file's share figure is stale by one row and should be corrected before it is quoted.**
+
+**One row must not be printed as an AI rationale at all.** MARA Holdings is labelled `Y-ADJACENT, graded down deliberately`: the firm's own words describe a *"strategic evolution from a pure-play Bitcoin miner into an energy and digital infrastructure company."* AI and HPC are the outlets' framing of a bitcoin sale, not the spokesperson's framing of the layoff. The corpus names the error mechanism: **adjacency is not attribution.**
+
+**Two firms refused the framing outright, and the refusals are as informative as the claims.** Robinhood's chief executive Vlad Tenev declined AI blame explicitly — the covering headline is literally that *blaming AI isn't cutting it* — citing management-layer flattening and product velocity instead. Uphold's rationale is enterprise repositioning, stated as explicitly non-AI. **Uphold is consumer-facing, and its refusal killed the tidiest hypothesis this report had** — that consumer exchanges reach for AI and infrastructure firms do not.
+
+**And the framing is observably added downstream.** In the single article reporting Bitwise's August cut, the firm's chief executive gives a purely non-AI rationale in an emailed statement while the outlet's own "Layoffs continue" section says the industry *"shifted toward AI-driven efficiencies."* **Firm and publisher, opposite framings, one document.**
+
+⚠ **One-sided audit, disclosed.** The grading pass examined only the `Y` rows — the ones that would raise the AI share. **The sixteen `N` rows have never been checked for the reverse error**, a firm that did invoke AI and was recorded as not having done so. The number that survives is therefore a floor on the *evidence quality* question and unaudited on the *count* question.
+
+## Register three: the firm's own periodic report
+
+Gnosis Ltd, Q2 2026 quarterly report, published 17 July 2026, verbatim:
+
+> *"We embedded AI across the marketing and comms function and saw this impact particularly our short form video (SFV) output and social media content improving our posting cadence while guarding quality."*
+
+**Read what that sentence does.** A named function. A named affected output. A named metric direction. And a volunteered constraint in the same clause — *"while guarding quality."* Nobody made them add that. **It is the most honest artefact in this chapter**, and it comes from a perimeter firm reporting to token holders, not from a tracked exchange talking to press.
+
+The same document names **"SEO / GEO"** — generative engine optimisation — as a Q3 workstream. **One firm, one routine document, treating AI as both a production input and a distribution surface.** No interview in this corpus does both.
+
+**Scope discipline, absolute.** §0 of the corpus file states it plainly: Gnosis is **not a tracked firm**, the Marketing section **names no operator**, and the file therefore **does not satisfy `methodology.md` §4 and must not be cited as an operator statement.** That it does not fit is part of the finding: **§4's perimeter is drawn around individuals with titles, so it cannot see a firm's own published account of its marketing function.** ⚠ The same section reports *"a solid improvements on cost-per-acquisition"* with no baseline and no delta — **no CPA claim is printed here** — and no causal link is asserted between the AI embedding and the team reduction disclosed in the same document. The corpus holds co-occurrence, nothing more.
+
+---
+
+## The load-bearing finding
+
+**The dominant explanatory narrative for contraction in crypto in 2026 is artificial intelligence, and a measurable part of it is not the firms' story.** Of nine AI-framed contractions, **one reaches the public only through an unnamed source its firm has never corroborated, and one is this report's own reading of the word "automation."** Two more sit behind a reporter rather than a document. Meanwhile two firms — one consumer-facing — publicly declined the framing, one was labelled with it by adjacency and had to be graded down, and in at least one article a publisher applied AI framing to a firm that had just refused it in an emailed statement.
+
+**A narrative that firms are pushed into and pulled out of is a marketing artefact in its own right.** That is the sharpest thing this chapter can say, and it depends on no unverified number. AI in 2026 is not only a tooling question inside the marketing function; **it is a story the marketing function is used to tell** — and the record shows that story being attached, refused, relayed and inferred by parties other than the firm.
+
+## One observation Theme 2 should not ship without
+
+> On the final day of a twelve-month capture window, the same daily scan that observed **two** open marketing or growth roles across the entire twenty-seven-firm crypto cohort observed **twenty-five** at four AI labs outside it.
+
+**Handling, from the appendix that adjudicated it.** The AI labs are outside the cohort and **no claim in this report is derived from them.** The number is offered as context for where the marketing function's hiring went in 2026, and it is **attributed to NorthPoint's own daily scan rather than presented as a market statistic — the denominator is our tracked list, not the industry.** One further reason to keep the denominator in the sentence: on 2 September, two days after the window closed, the ratio moved to 24:1 because a single greenhouse read timed out. **A number that halves on its smaller side while no firm does anything must never travel without its instrument attached.**
+
+---
+
+*Closing absence-read: this chapter was commissioned to check what firms claim about AI against what their job descriptions confirm. It found twelve job descriptions across twenty-seven firms and twelve months, and read none of their bodies. An industry that produced three Tier-1 CMO statements on AI, nine AI-framed layoff rationales and one firm-published account of AI inside a marketing function produced twelve marketing requisitions for any of it to be checked against. **The claim surface is large, well-lit and dated; the hiring surface it would have to be checked against is almost not there** — and that, rather than anything said on the claim surface, is the most reliable description of what happened to the crypto marketing function in 2026.*
+
+---
+
+---
+
+# Chapter 4 — The agency stack
+
+
+> **Binding scope caveat — stated once here and repeated wherever a figure appears.** The 18-agency comparison panel is a **point-in-time snapshot as of 2026-06-15**. That is a deliberate scoping decision, taken 2026-07-10: the panel is the report's fixed comparison set, and refreshing it mid-cycle would break the longitudinal series it exists to supply. Every count and every named relationship below is stated **as of 2026-06-15** and must be read as of that date. Nothing in this chapter describes the agency market today.
+
+---
+
+The framework asked Theme 3 four questions: which firms run which agencies, where the overlaps are, which relationships ended in the last twelve months, and where multi-agency overlap exists without a single internal seat owning the stack. The corpus answers the first two thinly, the third not at all, and the fourth exactly once — at the one firm whose internal marketing picture the report's instruments cannot see.
+
+**The thinness is the finding, and it is not a defect in the panel.** Eighteen crypto-native agencies are tracked. Between them, as of 2026-06-15, they publicly claim **twenty-six client relationships** — twenty-one naming a specific entity, five naming only a category ("DeFi protocols", "NFT projects", "SaaS clients", "early-stage tokens", "fundraising clients"). Twenty distinct entities are named. **Eight are firms this report tracks, and four agencies account for all eight: Coinbound, MarketAcross, RZLT and Blockwiz.** The remaining **fourteen of the eighteen publicly claim no firm in this report's cohort at all**, and seven of those fourteen name no client of any kind.
+
+The agency layer visible in crypto marketing's public shop-window is, in the main, **not selling to the cohort that carries the regulated marketing surface.** A panel built to watch this market found that most of it does not publish a client list containing anyone the regulators are about to read.
+
+## The matrix
+
+Every tracked firm any panel agency publicly claims, as of 2026-06-15. These are **claims** — what an agency publishes about itself, never a confirmed engagement. The right-hand column is the report's own job-postings instrument, present because the methodology promises triangulation: when an agency claims a firm, the firm's own postings are supposed to test the claim.
+
+| Tracked firm | Stratum | Claiming agency (as of 2026-06-15) | n | What the job-postings instrument can see |
+|---|---|---|---|---|
+| **Sui Foundation** | 2 | **Coinbound + RZLT** | **2 — OVERLAP** | **Nothing.** Ashby slug carries a URL-encoded space and returns empty with no error; the firm's real board is Getro, which the adapter cannot read |
+| Binance | 1 | MarketAcross | 1 | Nothing — proprietary ATS; instrument reach, not firm silence |
+| Bybit | 1 | Blockwiz | 1 | Nothing — CSV exists, holds no rows; proprietary ATS |
+| KuCoin | 1 | Blockwiz | 1 | Nothing — CSV exists, holds no rows; proprietary ATS |
+| MetaMask / ConsenSys | 3 | Coinbound | 1 | One row — Product Marketing Lead – Trade, posted 2026-08-06, surfaced only after a slug fix on 2026-08-25 |
+| OKX | 1 | Coinbound | 1 | Nothing — absent from the scanner's company list, so never scanned and never erroring |
+| Polygon | 2 | MarketAcross | 1 | Scanned clean, **zero** qualifying marketing roles — absence in the methodology's intended sense |
+| Solana | 2 | MarketAcross | 1 | Three rows, all institutional/BD-flavoured growth; capture note records no visible brand, PMM, community or regulatory-comms seat |
+
+*Sources: `corpus/agency-overlap-matrix.csv` and the eighteen per-agency snapshots in `corpus/agency-claims/`, all as of 2026-06-15; right-hand column from `corpus/job-postings/_absence-cohort-audit.csv` (2026-07-30) and the per-firm CSVs.*
+
+**Read the right-hand column before the left.** For five of the eight claimed firms the instrument cannot produce a test at all — Binance, Bybit and KuCoin run proprietary recruiting systems, OKX was never in the scan, Sui is in the scan but structurally unreachable. For Polygon it looked and found nothing. For Solana and MetaMask/ConsenSys it holds rows. **The triangulation the methodology promises is available for a quarter of the claimed set** — a statement about the instrument, not about any agency's honesty.
+
+## What the matrix actually measures — which is not what its name says
+
+Three captures establish the same thing, and the third lands inside the matrix's own flagship row.
+
+**Bitpanda** — Stratum 1, Vienna, EU-passported — launched a global brand campaign on 25 September 2025 in four languages across TV, out-of-home, digital and social, with five football clubs including Arsenal and named German-language Instagram creators. Its creative agency was **Serviceplan**, one of Europe's largest independent mainstream advertising groups; production was the German house 27km. Neither is crypto-native, neither is in the panel, neither will ever appear in the matrix. Bitpanda's row is empty. The announcement page also self-labels — "This Promotion" — and warns that "the invested amount may be lost completely"; the verified claim is about that page, not about the campaign's television, out-of-home or creator executions, which the corpus has not seen.
+
+**Ledger** — Stratum 3, Paris — holds a three-year NBA jersey-patch partnership with the San Antonio Spurs (announced 2025-06-25) and a 2026 X Games League activation carrying a 30-second national spot on ESPN and ABC. **No agency is named anywhere in either announcement**, and the firm declares an in-house unit, "Ledger Studio". Ledger appears in zero matrix rows.
+
+**Sui** — the single OVERLAP row. Its actual brand system — symbol, colour, one typeface across the system, a derived icon library, governed gradient rules, deployed "across products, events, websites and motion" — was built by **Holographik**, a studio outside the panel by construction, in an engagement described client-side as "a genuine long-term creative partner. Less a delivery, more a living system built together." `[VERIFY: the speaker, Jordan Francis, "Head of Design & Creative", is not attributed to an organisation in the source; the client-side reading is strong but circumstantial and unconfirmed against Sui Foundation's own channels.]`
+
+> **The matrix does not measure agency relationships. It measures presence in the crypto-native segment. At the one firm where it reports the richest relationship structure, the deepest engagement is the one it cannot see.**
+
+**That is a rule for every sentence in this chapter, not a caveat.** Any claim of the form "N tracked firms have no named agency relationship" measures **absence from the crypto-native panel**, not absence of an agency — and the segment the panel cannot see is where the largest, most visible crypto brand campaigns of the window actually ran. At the top of Stratum 1, brand work moves to mainstream agencies and leaves this corpus's field of view. One disclosure the reader is owed: the panel is the pre-existing 18-agency comparison set described in `methodology.md` §6, held fixed for longitudinal continuity. It is not a census of the agency market, and that is what explains the segment boundary — it does not excuse it.
+
+## The one overlap, and the one thing the corpus cannot see about it
+
+With n=1 there is no multi-agency pattern to analyse, and none is asserted. The framework asked which firm types run one agency versus two or three; **as of 2026-06-15, seven of the eight claimed firms are claimed by one agency and the eighth by two.** No distribution exists.
+
+The single overlap still earns its own passage, because of what sits underneath it. Sui is degraded on three instruments at once: the only OVERLAP row; the firm whose actual brand agency the panel cannot see; and the only firm in the class-1 cohort audit that is **in the scan, unreachable, and silent about it** — an Ashby slug carrying a URL-encoded space that returns nothing with no error, alongside a Getro board the adapter cannot read. Failures that 404 are safe, because the instrument reports them; failures that return empty are indistinguishable from absence. `[VERIFY: the Ashby slug against Ashby, to establish which defect dominates.]`
+
+So the framework's fourth question reaches, at the only firm where it can be asked, a firm whose internal marketing-seat picture is exactly what the corpus cannot observe. `tracked-firms.md` records "79 open roles per web3.career; three open IC marketing seats" at Sui; **that is a manual observation the instrument has never reproduced, and it is treated here as unreproduced rather than as data.** **This is an honest statement about the instrument, not a claim about Sui.**
+
+## A Tier-1 buyer names the playbook, and calls it the mistake
+
+The strongest material in this chapter is firm-side. On 19 May 2026, **Mayur Gupta, Chief Growth & Marketing Officer of Kraken** — Stratum 1, EU-passported — described how global players enter the Ukrainian market:
+
+> "The mistake many global players have made in Ukraine is treating it like other markets and running a standard marketing playbook: **partner with local KOLs, run a tournament, claim the win. Ukrainian users see right through that.** What they actually want is fiat ramps that work smoothly, a product that matches the sophistication of this market, and a partner that will invest in the ecosystem over the long-run."
+
+And, in the same interview, the counter-claim:
+
+> "Hundreds of thousands of Ukrainians are already registered with Kraken, and Ukraine is one of our strongest emerging markets by per-capita penetration – and **we have never run a local campaign here. That success was largely organic. It was spread by word of mouth**, from developers, from professional traders, from people who wanted a platform they could trust during the most difficult years of their lives."
+
+The destination he names is an internal capability, not a vendor: "a **natively AI growth engine**… Engineers are designing product ideas, marketers are shipping products."
+
+**KOL partnerships, tournament and campaign activations, regional launch pushes: that is a near-verbatim description of the panel's core service composition.** The structural point is what makes it new. Theme 3 has held firm-side and agency-side data in tension before, but always in one shape — an agency claims a firm, and the firm's own postings contradict the claim. **This is the first instance in the corpus of a firm-side senior operator naming the agency/KOL playbook as the thing that fails.** The dating helps rather than hurts: the statement (2026-05-19) is contemporaneous with the panel snapshot (as of 2026-06-15).
+
+Three limits ship with the quote. It is a written Q&A, not a recording. The outlet operates a marketing arm and a KOL network, and the page carries a Kraken affiliate link with no paid-placement disclosure visible — the corpus does not determine whether the placement is editorial. And Kraken's own class-1 record complicates the organic thesis: two "Director, Paid Marketing" requisitions, US and UK, both posted 2026-07-23. **Gupta has not spoken publicly about that build-out, and no reconciliation is asserted here.**
+
+## The regulator arrives at the same channel from the other direction
+
+The one European instrument that speaks to promotional conduct rather than authorisation status is **ESMA's *Finfluencers: tips for responsible promotion*, published January 2026 and amplified by CONSOB on 12 January 2026.** On paid partnerships: "If you're getting money, gifts or perks to promote something, don't hide it – say it loud and clear. **Not in tiny text. Not just hashtags.**" On protection: "**Disclaimers such as 'This is not investment advice' will not protect you in these cases.**"
+
+**And it is addressed to nobody who holds a licence.** Not one sentence is directed at a CASP, an issuer or an authorised firm, and the document disclaims its own legal force. BaFin's *Risks in Focus 2026* (28 January 2026) sits in the same month, committing to random screening of German-speaking finfluencers on YouTube and Instagram; in June 2026 the FCA warned Premier League clubs that crypto sponsorship deals with unauthorised firms could expose them to liability — "Millions of football fans trust their club's badge."
+
+Regulator and Tier-1 buyer, in the same window, arriving at the same channel from opposite ends: one publishing conduct rules to the influencer layer, the other saying users see through it. **The panel's flagship product is under pressure from both ends at once, and neither pressure is enforcement.** The instrument that would regulate the panel directly — MAS's *Guidelines on Standards of Conduct for Digital Advertising Activities*, described by the secondary layer as reaching MAS-regulated firms **and their appointed third parties** — remains uncaptured. `[VERIFY: the operative MAS text and its effective date; the corpus holds only a consultation record, and the widely-repeated 25 March 2026 effective date is expressly not admitted.]`
+
+## The deliverable this chapter cannot supply
+
+The framework asks for a **12-month timeline of named agency-relationship endings**. **The corpus holds none, and this chapter will not manufacture one.** In fifteen months of collection, not one firm-side announcement ending a named agency relationship and not one agency announcement losing a named client has entered it.
+
+The reason is structural rather than evidentiary. Neither party has an incentive to publish a departure: a case-study page records arrivals, and the panel is built from what agencies say about themselves — a surface on which relationships appear and do not disappear. **The corpus's sponsorship record holds the endings the agency record does not**, and even that is only partly citable: three of the seven incidents in the 2026 sport-sponsorship reset cluster carry no citation anywhere in this corpus and are excluded here entirely.
+
+The deliverable is therefore recorded as an absence with a stated cause rather than quietly dropped — and the absence is its own weak finding. **In a market where four agencies publicly claim eight tracked firms, the public record contains no mechanism by which a reader could ever learn that one of those eight had left.**
+
+---
+
+*Closing absence-read: the panel's fourteen silent agencies are the loudest thing in this chapter. Fourteen of eighteen crypto-native agencies publicly claim no firm in the cohort that carries the regulated marketing surface; seven claim no named client at all. Meanwhile the two largest brand campaigns the corpus captured in the window — Bitpanda's five-club, four-language, TV-and-out-of-home launch, and Ledger's NBA jersey patch and national US television buy — ran through agencies this panel is structurally incapable of seeing, one of them through no named agency whatsoever. What the matrix shows is not the industry's agency stack. It is one segment of it, photographed on 2026-06-15, and the segment where the money moved is outside the frame. A chapter that printed the eight rows without printing that sentence would have described the wrong market with perfect citations.*
+
+---
+
+---
+
+# Chapter 5 — MiCA and regulated-marketing readiness
+
+
+> **Scope sentence, and it repeats deliberately.** All register figures are computed on ESMA's authorised-CASP register **as at the capture of 2026-08-17** — 329 rows, md5 `69e7dc926b123bac8cb930ab2614ccf6`, verified complete and committed to the public corpus. A capture on 2026-08-25 through a different channel returned **335** rows; its notification dates were never read and **no figure here covers those six rows.**
+
+---
+
+Chapter 1 told this as a chronology: the register opens, the cases come later. This chapter tells it as a structure — a register not shaped like the industry the regime was written for, and firms whose promotional estates it cannot see. Article 68's marketing-communications obligations and Article 66's fair-clear-and-not-misleading standard bind **authorised** CASPs, so the first question is not what the rules say. It is who is inside them.
+
+## The authorisation curve bends the wrong way
+
+Of the 328 authorised CASPs carrying a notification date as at 2026-08-17, **35 — 10.7% — were notified on or after 1 July 2026**, the day the transitional period ended. One row of the 329 (KBC Bank NV, NBB/Belgium) carries no date, so the rate is stated over the 328 dated rows rather than dropping the blank silently. One of the 35, Deutsche WertpapierService Bank AG, is dated **28/08/2026** — after the capture holding it, with an earlier `ac_lastupdate`, so the forward date was in the source; a reader who wants the unarguable version should read 34.
+
+**The shape matters more than the rate.** The register's largest month is **June 2026, at 75 — more than four times May's 18** — against 31 in July and 4 to 17 August. Firms raced the deadline; they did not follow it.
+
+*Limit: 35 rows against a 293-row back-catalogue. Registers lag. This counts rows present on 2026-08-17 bearing a notification date on or after 2026-07-01, and nothing more.*
+
+## The post-deadline entrant is a German cooperative bank, and it does not leave Germany
+
+Of the 35, **14 are German**, and inside BaFin's fourteen **twelve are cooperative or regional retail banks** — Donau-Iller-Bank eG, Volksbank Schwarzwald-Donau-Neckar eG, VR-Bank Erding eG, Volksbank eG – Die Gestalterbank and eight more of the same form. Names are quoted verbatim from `ae_lei_name`; "cooperative or regional retail bank" is an inference from the legal forms (eG / Volksbank / Raiffeisenbank / VR-Bank) and is labelled as one. **Not one of the 35 is a firm this report tracks**, checked programmatically against every Stratum 1–4 name. The permitted reading is narrow — *no tracked-cohort firm was newly authorised in this window* — and is not evidence that any was refused or withdrew, since nine of eleven Tier-1 exchanges already held an entry.
+
+The passporting column completes it. **23 of the 35 (65.7%) hold a single-market authorisation, against 34.1% of the 293 pre-deadline firms — and all fourteen German entrants took a domestic-only authorisation.** Not one took a passport. The post-deadline entrant to European crypto services is not a crypto-native firm building a European marketing function. It is a Volksbank adding a product line for customers it already has.
+
+*Limit, and it ships attached: a 35-row window against a back-catalogue accumulated over years. The register records status at capture, not intent. A firm may passport later. **Nothing here says the post-deadline cohort will stay domestic.***
+
+## Two populations under one licence name
+
+`ac_serviceCode_cou` lists the member states into which each CASP may provide services — the regulator's own statement of how far a firm's marketing may lawfully reach. Populated in 324 of 329 rows:
+
+| States authorised | Rows | Share of 324 |
+|---|---:|---:|
+| **1 (single-market only)** | **124** | **38.3%** |
+| 2–9 | 37 | 11.4% |
+| 10–25 | 14 | 4.3% |
+| 26–28 | 17 | 5.2% |
+| **29–30 (effectively EEA-wide)** | **132** | **40.7%** |
+
+**Median 10. Mean 15.0. And the mean describes nobody** — only 68 of 324 sit between 2 and 28 states. *Do not print the mean as typical: the distribution is bimodal and the mean lands in its empty middle.* Two source defects govern any recomputation: ESMA codes Greece as **both `EL` and `GR`**, and the nine rows carrying both are the register's only "31-state" rows, so every figure here uses the normalised set; and **five blank passport cells are a register completeness defect, not five firms confined to no market.**
+
+**Where the tracked cohort sits is a scope disclosure this report owes its reader before it is a finding.** Ten tracked firms map to thirteen register entities and **eleven of the thirteen are authorised for 26–30 member states** — the firms whose marketing this report reads run continental promotional surfaces under a regime most of its own licensees experience as domestic. By stratum: Tier-1 exchanges **9 of 11** (Binance and HTX absent); L1/L2 foundations **0 of 8**; wallets **0 of 5**; Stratum 4 **1 of 3**.
+
+🔴 **Absence from this register is not evidence of non-compliance, and for most of these firms it is not evidence of anything.** Fourteen of the sixteen absent tracked firms are a **category error**: foundations are not crypto-asset *service providers*; non-custodial wallet software sits outside MiCA's CASP definition; Tether is a token *issuer* under Titles III–IV and would not appear here in full compliance. **This chapter does not print them as absences.** Only Binance and HTX clear the bar of being EU-facing service providers whose absence is legible at all — and Binance's has a published explanation in the firm's own June 2026 announcement that it would cease providing crypto-asset services in EU markets, while **HTX's absence has no published explanation and this chapter does not supply one.**
+
+The admissible finding is narrower and more useful than a list of absentees: **the cohort's two most marketing-active strata operate outside the register that Article 68's marketing-communications obligations attach to.** That is an observation about where the regime bites, not an allegation about anyone.
+
+*Excluded from every count that would change if it resolved: `Push Virtual Assets Ireland Limited`, commercial name "Push / Aave Push", CBI/Ireland, notified 12/11/2025. The regulator-supplied commercial name names Aave; the legal name and the `push.co` domain establish no corporate link to the tracked entity from this file alone. It remains **AMBIGUOUS**.*
+
+## The register cannot see the promotional estate
+
+`ae_website_platform` is the register's field for the trading-platform estate, distinct from the corporate site in `ae_website` — the one column that is *about* the promotional surface. It is populated in **47 of 329 rows**: four are the literal string `n/a`, three are column-bleed artifacts this corpus itself documented, leaving **40 real values, of which 2 record a surface differing from the firm's corporate website.** In the other 38 the firm supplied its corporate URL twice.
+
+**The register that MiCA's marketing obligations attach to can say who is authorised and where they may operate, and almost nothing about where they publish.**
+
+🔴 *Admissible as a statement about the register. **Inadmissible as a statement about any entity in it.** The field's completion rules are not published in the file, no firm is named against this finding, and three of the 47 populated values are a parsing artifact this corpus documented itself. An empty column measures the instrument, not the subject.*
+
+## The EU enforcement null is a reporting artefact, not a thin sample
+
+Sixty-three days after the deadline, no EU national competent authority has published a named marketing-side enforcement action against an authorised CASP. The null has been tested daily since 1 July, at six NCAs' own publication indexes rather than through search engines, and against the EU's own consolidated register across four publication cycles. The obvious reply is *give it time.* The register's composition closes that reply.
+
+ESMA's register of non-compliant entities held 167 rows at capture. **165 — 98.8% — are Italian, filed by CONSOB. Italy has authorised 9 of 324 CASPs, 2.8%. Germany, which has authorised more than any other member state (70 of 324, 21.6%), appears zero times.** Twenty-seven authorities grant MiCA authorisations; **three** — CONSOB, the AFM and the National Bank of Slovakia — have ever notified a non-compliant entity. This is not a thin early sample of a maturing regime. It is one authority's reporting practice, and not the practice of the authority licensing the most firms.
+
+⚠ **Two limits ship in the same paragraph or the sentence reads stronger than the data bears. First, this is a *notification* asymmetry as much as an enforcement one** — the register is fed by NCAs, a zero can mean no action, or action not notified, or a different cadence, and **these files cannot separate those. Second, the register could not express a marketing-communications action even if one existed:** `ae_reason`, defined in ESMA's own field file as an entity-level free-text "Non compliancy reason", is `None` in **166 of 167 rows**. The one populated cell is the AFM's, on MEXC Global — *"provides crypto-asset services in the Netherlands without the required MiCAR license … in breach of section 59 MiCAR."* Article 59 is the authorisation requirement. **Not Article 66, not Article 68.** *(Disclosure: the adjacent `ae_infrigment` column, `No` on 167 of 167, is defined by ESMA as an Article 17 case against a **national authority**, not a listed entity, and is not used here.)*
+
+**Three structural facts stop the null reading as inattention.** ESMA's own Sanctions and Enforcement page enumerates six entity classes over which it holds direct sanctioning power and **CASPs are not among them**, so any marketing-side MiCA action must originate nationally. In France the AMF has **deliberately declined to set an aggressive shutdown deadline** for unlicensed exchanges, on the record, for a stated consumer-protection reason. And across six jurisdictions swept at source, every published post-deadline instrument is a **perimeter** action against an unauthorised entity — most sharply in Italy, where CONSOB holds an explicit power under art. 36, comma 2-*quaterdecies* TUF to order removal of advertising campaigns run over telematic networks, publishes weekly, and across twenty-one weeks issued nothing but site-blocking orders. That power is itself perimeter-scoped by statute: it reaches advertising by a person who is *not authorised*.
+
+**And the gap is not guidance.** Chapter 1 sets out the AFM's two-point series; the instrument it does not carry is ESMA's own **11 July 2025** Dos/Don'ts table for CASP marketing, which names as a DON'T that *"The CASP's regulatory status is used as a promotional tool"* — thirteen months before the licence became this market's leading promotional claim. The AFM's post-review instruments were supervisory letters and cross-border referrals, and neither is public. So the honest formulation is not that regulators are doing nothing:
+
+> **The post-deadline supervisory response to crypto marketing is running through non-public channels — supervisory letters, cross-border referrals, perimeter warnings — and not through named, published conduct cases against authorised firms.**
+
+*Two scope corrections belong with that sentence. It is **EU-scoped**: Dubai's VARA has published named, dated, fined marketing actions throughout the window, including The Open Network Foundation, 24 July 2025, whose sole stated reason is "Breaches of the VARA Marketing Regulations". And it is **MiCA-era-scoped**: Spain enforced crypto advertising before MiCA existed, under CNMV Circular 1/2022, in 2023.*
+
+## The one live marketing-side action is not in the EU, and the defendant structure is the finding
+
+**FCA v Huobi Global S.A. & Others**, Chancery Division, claim issued **21 October 2025**. Steve Smart, the FCA's joint executive director of enforcement and market oversight: *"This is the first time we've taken enforcement action against a crypto firm illegally marketing their products to UK consumers."*
+
+Five defendants are named; four are PERSONS UNKNOWN, defined by what they do. **The fourth is defined purely as a marketing function**, verbatim from the sealed order:
+
+> **"(4) PERSONS UNKNOWN (who are the persons currently in control of promotions on behalf of the HTX Exchange on any of the following social media platforms and/or messenger services: X, Facebook, Instagram, Telegram, TikTok, YouTube, Discord, Medium and/or LinkedIn)"**
+
+The fifth extends that class forward, to whoever *"on or before 31 October 2028 … become controllers on behalf of the HTX Exchange of accounts"* on the same nine platforms. Every other regulator document in this corpus addresses the firm; this one addresses whoever is holding the social accounts, and pre-emptively binds their successors for three years.
+
+**The marketing function is not a compliance stakeholder in that document. It is a defendant class.**
+
+By the Consent Order of Master Marsh dated **24 August 2026**, proceedings are stayed **until 8 September 2026** for settlement talks — seven days after this report ships. ⚠ *The stay is scoped "as between the Claimant and the First Defendant" only; defendants 2–5, including the promotions-controllers class, are not party to it, so do not write "the case is paused" without that qualification. Nothing here predicts an outcome, and the FCA's allegations are its pleaded case, attributed and untested at trial.*
+
+🔴 **Two public facts sit next to each other and nothing connects them.** HTX does not appear in ESMA's register of authorised CASPs, and HTX is the defendant in the UK's first enforcement action against a crypto exchange over marketing. **No causal or explanatory link is drawn.** This is the FCA under s.21 FSMA on a claim issued eight months before the MiCA deadline, not an EU NCA under MiCA. **The EU null is untouched and stands.**
+
+## Compliance status as the offer itself
+
+While the conduct standard went unenforced, the licence became inventory. Within days of 1 July, **six MiCA-licensed firms were running dated, quantified, EEA-geofenced campaigns aimed at the users Binance's exit had stranded** — OKX at 8% on transfers and deposits (€20,000 cap, rewards over 52 weeks), Coinbase at 5% before 13 July across named markets, Kraken with a €1M prize draw, Bitpanda with €25 in BTC plus 3% transfer cashback, and, outside the tracked cohort, Bitvavo and Gate at up to 10%. Four are tracked Tier-1s, licensed across at least four different NCAs: the dynamic is jurisdiction-diverse, not concentrated in one friendly regulator.
+
+**The positioning is the licence.** Kraken's landing page: *"Most exchanges aren't licensed after July 1. Kraken is."* Its institutional post of 23 June sells the same asset to the compliance officer rather than the consumer, framing an unauthorised venue as *"a live compliance gap that reaches CCO sign-off, LP reporting, and audit defensibility."* And a weekly column on OKX's own `/learn/` estate, bylined by **Erald Ghoos, CEO of OKX Europe**, argues on 4 August that *"OKX Europe holds three separate authorisations: a MiCA CASP licence, MiFID II authorisation, and a Payment Institution licence."* `[VERIFY: the MiFID II and Payment Institution limbs are the firm's own assertion; only the MFSA CASP authorisation of 27/01/2025 is corroborated by the register capture held here.]` **This is the pattern ESMA placed in the DON'T column thirteen months earlier** — though that DON'T is narrower than the headline: status used as a promotional tool **in connection with unregulated activities**, and a failure to distinguish which products the authorisation covers. **This chapter records that firms made regulatory-status claims in promotional communications. It does not rule on whether any satisfies Article 66 or Article 68.**
+
+**Then the campaigns closed, and did not stop.** OKX's and Kraken's offers both had a stated end date of 31 July 2026. On 1 August both were serving in the present tense with working CTAs; on 2 August the pattern replicated at Bitpanda, three of three; on 5 August **seven owned surfaces across two firms were still live** — and the neglect explanation died on a timestamp. `https://www.okx.com/en-eu/learn/okx-europe-deposit-bonus-mica-deadline` read **"Published on Jun 12, 2026 · Updated on Aug 05, 2026"** while still opening *"The EU's MiCA deadline lands on 1 July 2026, and OKX is making it worth your while to move before then."* Someone touched that page and did not retire the offer. So the finding is not that pages were left up: **promotional surfaces are not wired to the operational state of the business.** The cleanest instance is outside the cohort — BitMart's own cessation notice, announcing it had stopped accepting registrations from 26 July 2026, served a UTM-tagged *"Earn up to $14,000 in rewards — [Register now]"* on the same page.
+
+Three artefacts sit inside that pattern, tabulated below and none of them a breach allegation. **A campaign shipped as N surfaces is torn down across fewer than N** — OKX's was identified across at least 31 owned surfaces spanning 15 locales, four were fetched at day five, all four were live, and the corpus can state a floor for the denominator but not its value. **The MiCA marketing-communications statement was applied per template, not per communication:** the campaign-terms page carries, verbatim, *"This crypto-asset marketing communication has not been approved by any competent authority in any Member State."*, while the two `/learn/` surfaces carrying the identical offer and CTAs carry a generic no-investment-advice disclaimer instead. Whether a `/learn/` article is a marketing communication under MiCA is a legal question this chapter does not answer; **the asymmetry itself is the observation.** And **substantive terms diverged across one firm's own estate** — Kraken's €1,000,000 draw begins 19 June on two surfaces and 22 June on the third, with the enrolment condition stated on the first two and not the third, and **the divergent surface is the selling one.**
+
+⚠ **The caveat governing every teardown read: all fetches originate outside the EEA, and an authenticated EEA visitor may be served a closed state.** `[VERIFY: EEA-egress re-read — the single item standing between this finding and an unqualified print.]` What is known is that across two surfaces and two days OKX's geo-layer detected the non-EEA origin, announced it in a banner, and served the full EEA-only campaign anyway: **on the evidence held, the geofence is a notice and not a gate.** Against all of which the record holds one contrasting positive: Bitpanda's 25 September 2025 brand campaign self-labels **"This Promotion"** — Article 66(2)'s requirement that advertisements be identified as such — and warns that *"the invested amount may be lost completely"*. *That is the blog post about the campaign; the TV, out-of-home, social and creator executions were never verified, and it is not a statement that Bitpanda's campaign is compliant.*
+
+## The gate that fired before any regulator did
+
+On **1 July 2026**, the day after France's transitional period expired, an advertising platform withdrew paid distribution from every French crypto firm that had not converted its AMF DASP registration into a MiCA CASP authorisation — and published the change that day, having announced it fifteen months earlier.
+
+Google's EU crypto advertising policy, effective 23 April 2025 across all 27 member states, requires advertisers of exchanges and software wallets to *"Be licensed as a Crypto-Asset Service Provider (CASP) under the Markets in Crypto-Assets (MiCA) regulation by a relevant national competent authority"*, to comply with *"any national-level restrictions or requirements beyond MiCA"*, and to be certified by Google. It keys its schedule to **Article 143(3) of Regulation (EU) 2023/1114**, member state by member state: **Finland until 30 June 2025, Germany until 30 December 2025, France until 30 June 2026.** All three executed. In **August 2026** the rule extended to Iceland, Liechtenstein and Norway, completing the EEA — an expansion of permitted territory, not a restriction. The remedy is account suspension with at least seven days' warning.
+
+**A private platform has a demonstrated record of executing MiCA's transitional deadlines on the date they fall. No NCA in this corpus does.**
+
+🔴 **This is not enforcement and must never share a sentence with enforcement without the distinction being explicit.** Google is not a regulator, its rule is contractual, its remedy commercial. **It gates the advertiser, not the ad** — nothing in it tests whether a communication is fair, clear and not misleading, and an authorised CASP running a materially misleading advertisement passes without friction. A stated policy is also a claim, not a measurement: whether Google enforces its own rule is unmeasured. *One platform of at least seven has been read at source; Meta, X, TikTok, the App Store, Google Play, Reddit and LinkedIn have never been swept.* `[VERIFY: Google's standing Cryptocurrencies and related products policy was linked by all three captures and not fetched; it may carry risk-warning requirements bearing on the credential/conduct distinction.]`
+
+The division of labour nobody designed: **the credential is gated, and the conduct is not.**
+
+## The exposure-surface scorecard
+
+Public-page observations only — quoted text, register field, capture date. No cell asserts a breach.
+
+| Firm (Stratum 1 unless noted) | Register entity · NCA · home state · notified | States¹ | Own-estate copy held² | What the capture records — quoted, dated | Live after its stated close? |
+|---|---|---:|---|---|---|
+| **OKX** | OKX Europe Limited · MFSA · MT · 27/01/2025 | 29 | **Yes** — ≥31 surfaces identified, 4 fetched | *"receives an 8% bonus (up to €20,000 in USDC)"*; page **"Updated on Aug 05, 2026"** with offer intact; MiCA marketing-comms statement on the terms surface, **absent** on both `/learn/` surfaces carrying the same offer | **Yes — day 5, 05-08-2026** |
+| **Kraken** | Payward Europe Solutions Ltd · CBI · IE · 25/06/2025 | 30 | **Yes** — 3 owned surfaces | *"Most exchanges aren't licensed after July 1. Kraken is."*; *"Lottery closes July 31"*; **two stated start dates (19 vs 22 June)**; enrolment condition on two surfaces of three | **Yes — day 5, 05-08-2026** |
+| **Kraken** (2nd entity) | Payward Global Solutions Ltd · CBI · IE · 25/06/2025 | **2** (CY, IE) | — | **Not a narrower licence for the firm** — 30 states held via the entity above | n/a |
+| **Coinbase** | Coinbase Luxembourg S.A. · CSSF · LU · 20/06/2025 | 30 | **No deadline-keyed EU capture campaign located** (02-08-2026) | Register defect at source: `ae_website` reads `https.//coinbase.com` | n/a |
+| **Bitpanda** | Bitpanda GmbH · Austrian FMA · AT · 09/04/2025 | 30 | **Yes** — 2 artefacts | *"Offer valid until 31st July 23:59"*, per-entity AT/EU/CH vs DE terms; and (25-09-2025) a brand campaign self-labelling **"This Promotion"**, warning *"the invested amount may be lost completely"* | **Yes — day 2, 02-08-2026; not re-read after** |
+| **Bitpanda** (2nd entity) | Bitpanda Asset Management GmbH · BaFin · DE · 24/01/2025 | 30 | Named in the DE terms block of the same page | Two entities, two NCAs, two reward currencies, disclosed on one page | — |
+| **Bitpanda** (3rd entity) | BP23 CA Limited · MFSA · MT · 27/01/2025 | **blank³** | — | — | — |
+| **Bitstamp** | Bitstamp Europe S.A. · CSSF · LU · 15/05/2025 | 30 | **Not swept²** | — | — |
+| **Bybit** | Bybit EU GmbH · Austrian FMA · AT · 28/05/2025 | 29 | **Not swept²** | Brand-vs-entity split on the record: Bybit Global limited EEA access from 1 July; Bybit EU remains authorised | — |
+| **KuCoin** | KuCoin EU Exchange GmbH · Austrian FMA · AT · 27/11/2025 | 29 | **Not swept²** | — | — |
+| **Crypto.com** | Foris DAX MT Limited · MFSA · MT · 27/01/2025 | 29 | **Not swept²** | — | — |
+| **Gemini** | Gemini Intergalactic EU Ltd · MFSA · MT · 21/08/2025 | 29 | **Not swept²** | Withdrew from the UK, EU and Australia 05-02-2026 — a structural withdrawal, not silence | — |
+| **Relai** (Stratum 4) | RELAI EU SASU · AMF · FR · 23/10/2025 | 26 | **Not swept²** | Register defect at source: `ae_website` reads ` 75012 Paris` (column bleed) | — |
+| **Binance** | **No occurrence in any field of any row** | — | — | Announced June 2026 it would cease providing crypto-asset services in EU markets; EU onboarding and new orders suspended 01-07-2026 | — |
+| **HTX** | **No occurrence of "HTX" or "Huobi" in any field of any row** | — | — | **No published explanation.** Separately, with nothing inferred: defendant in FCA v Huobi Global S.A. & Others, claim issued 21-10-2025 | — |
+
+¹ `ac_serviceCode_cou`, register as at **2026-08-17**, Greece normalised. Per-entity, never per-firm.  ² "Not swept" is a statement about this corpus's own-channel sweep, **not about the firm**; no claim is made that these firms published nothing.  ³ One of five blank passport cells in 329 rows — a register completeness defect, **not a firm confined to no market**.
+
+**Four columns the research framework specified that this record cannot fill**, stated so no reader mistakes an omission for a finding.
+
+1. **KOL / influencer-disclosure status — unfillable at every firm.** This corpus examines no creator post, affiliate disclosure or paid-partnership label for any tracked firm. Bitpanda's 2025 campaign names creator partners; **their disclosures were never captured.** BaFin has committed to *"a random market screening of selected German-speaking finfluencers on … YouTube and Instagram"* and ESMA has told finfluencers to label paid partnerships *"Not in tiny text. Not just hashtags."* This report holds the regulators' posture on the channel and **none of the cohort's output in it.**
+2. **Regulatory-comms hire status — unfillable.** No job posting in the entire class-1 corpus names "MiCA", "regulated marketing communications" or "marketing compliance". The methodology forbids Theme 4 from drawing absence claims from class 1's *reach*: five tracked firms (Aave, Binance, Bybit, HTX, KuCoin) are missing from that dataset because their careers infrastructure is unreachable by the scan, not because they posted nothing. **The absence of the seat cannot be asserted and is not.**
+3. **Cost-disclosure prominence — unfillable at cohort scale.** The AFM's testable standard is that cost policies sit *"one click away from the homepage, or two clicks if using a drop-down menu"*. Any reader can test any CASP against it in a minute. **This corpus did not.**
+4. **Risk-language status outside the campaign panel — unfillable.** Disclosure observations exist for three tracked firms' campaign surfaces and nowhere else. Whether the AFM's 33 examined CASPs overlap this cohort is **unknown**; the AFM names none. `[VERIFY]`
+
+`[VERIFY: Chapter 1's "quiet copy" paragraph forward-references an audit sweep finding "live, quotable instances across dozens of firms" — unqualified "maximum safety" heroes, three-digit APY promotions, disclaimers that fail to render. **No such sweep exists in this corpus** and no observation in it matches those three examples. Either the sweep runs before ship, or that sentence narrows to the three firms whose public copy was actually captured.]`
+
+**One operator named the mechanism from inside the seat, before any of this.** Coinbase's CMO Catherine Ferdon, describing firms sitting *"at the nexus of two industries that don't exactly give people the warm and fuzzies"* under *"constant regulatory scrutiny … evolving in different ways across hundreds of geographies"*, said there is *"really strong gravitational pull towards being beige where I'm sitting."* That was 9 April 2026 — **pre-deadline**, and it must not be printed as a post-deadline statement. `[VERIFY: third-party machine transcript; check against the episode audio.]` The pull she describes is not where this chapter's exposure sits. None of what the scorecard records is beige. All of it is what a marketing organisation looks like when the compliance layer is global configuration and the campaign layer is regional content, and the two do not read each other.
+
+---
+
+*Closing absence read: MiCA's marketing regime is anchored to a register with a field for the trading-platform estate, and two firms out of three hundred and twenty-nine use it to say anything their corporate website does not already say. The regime can see who may market and in which countries. It cannot see where they publish. The sharpest illustration of that gap sits in another jurisdiction's courtroom: when the FCA went looking for the people running HTX's promotions, it could not name them, so it defined them by function — "the persons currently in control of promotions" — and enumerated the nine platforms it expected to find them on. Nine platform names, in a High Court claim form, doing the work no register in Europe is built to do.*
+
+---
+
+---
+
+# Chapter 6 — Layoffs and the next twelve months
+
+
+> **Three corrections against Chapter 1's framing. All three narrow the claim.**
+>
+> **(1) The headline null is false as Chapter 1 stated it.** Chapter 1 reported that across the layoff record "not one announcement names marketing as the affected function." The record has grown from thirteen rows to **twenty-six**, and **two name marketing** — Gnosis (2026-07-17) and MANTRA (2026-01-14), both **perimeter**. The tracker-scoped claim is retired; the cohort-scoped claim — *no tracked firm's 2026 contraction names marketing* — holds across all seven tracked rows and is the version used here.
+>
+> **(2) The AI-rationale narrative is thinner in the primary record than in the coverage of it.** Graded against what each firm actually said, **nine of twenty-six rows carry an AI framing and five carry a verbatim firm statement.** One of the nine is anonymously sourced, one is this corpus's own inference from the word "automation," and a tenth row is labelled `Y-ADJACENT` and barred from the count.
+>
+> **(3) The consumer-exchange / infrastructure split, deferred to this chapter, fails when tested.** Across all twenty-six rows it **breaks in both directions on Grade-A evidence**, surviving only inside the seven tracked rows at n=4 against n=3, with one of the four resting on an anonymous source.
+
+---
+
+On the evidence in this corpus, 2026 was not the year crypto marketing was cut. It was the year crypto marketing was *not mentioned*.
+
+Twenty-six public workforce contractions at crypto and crypto-adjacent firms sit in this report's layoff tracker, spanning 14 January to 11 August 2026 — seven inside the tracked Stratum 1–4 cohort, nineteen at the perimeter. **Not one of the seven tracked rows names a function at all.** Where a function is named anywhere in the record it is named at the perimeter, in a document the firm did not write for that purpose.
+
+## The claim that broke, and exactly how far it broke
+
+**Gnosis (perimeter, 2026-07-17).** The firm's Q2-2026 quarterly report, on its own forum, records a workforce reduction after a review of its consumer-facing Gnosis App; a governance reply three days later gives the figure, firm-stated and team-scoped: *"The App and Circles teams went from 28 to 14."* **The report does not name marketing anywhere** — it has a Marketing section, and that section describes ongoing activity, not cuts. The marketing-naming rests entirely on a separate post from the firm's own X account inviting companies hiring across "engineering, product, design, **marketing**, developer relations and customer relations" to make contact about affected former employees: a hiring-referral offer listing functions, relayed verbatim by two outlets and never captured first-party. It establishes that marketing staff were among those who left. **It does not establish how many, what share, or that marketing was hit disproportionately.**
+
+**MANTRA (perimeter, 2026-01-14)** is stronger, and is the tracker's strongest function-level statement. Reporting the chief executive's own announcement post, the capturing outlet states: *"The decision impacts teams across the organization, with functions like business development, marketing, and HR affected more than others, according to the post."* Marketing is named inside a **disproportionately-affected set**. The firm disclosed neither headcount nor percentage — the CEO said "an unspecified number" — and the rationale is the April-2025 token collapse, a prolonged downturn and competition. AI is not mentioned anywhere in the capture.
+
+Two of twenty-six rows name marketing. **Both are perimeter. Zero are tracked.** Anyone using this record must say which scope they mean, because the difference is the whole finding.
+
+## The 2026 contraction record
+
+**Rule for reading the figure column: only figures the firm itself stated appear in it.** Outlet arithmetic, anonymous sourcing and derived headcounts are excluded and listed beneath. A range stays a range; an undisclosed number stays undisclosed.
+
+### Tracked cohort (Stratum 1–4) — 7 rows at 6 firms
+
+| Firm | Announced | Firm-stated figure | Stated rationale | AI framing (grade) |
+|---|---|---|---|---|
+| **Polygon Labs** (Jan round) | 2026-01-16 | — *none* | Acquisition-integration rebalancing; *"not to reduce the size of the company"* | **No** |
+| **Gemini** | 2026-02-05 | **−25%** (A — SEC 8-K EX-99.1) | AI; exit from UK, EU and Australia; focus | **Yes (A)** — firm-stated, SEC-filed |
+| **Crypto.com** | 2026-03 | — *none* | *"enterprise-wide AI"* integration (CEO) | **Yes (A)** — CEO verbatim |
+| **OP Labs (Optimism)** | 2026-03-12 | **20 roles** (B — relayed) | *"This is not about finances"*; narrow focus | **No** |
+| **Coinbase** | 2026-05-05 | **−14%** (B — Armstrong memo) | AI-native pods; management capped at five layers | **Yes (B)** — memo, no verbatim in-row |
+| **Kraken (Payward)** | 2026-05-15 | — *none* | AI efficiency — **no on-record firm statement** | **Yes (D)** — anonymous source only |
+| **Polygon Labs** | 2026-07-16 | — *none* | Payments repositioning; Coinme integration | **No** |
+
+### Perimeter — 19 rows
+
+| Firm | Announced | Firm-stated figure | Stated rationale | AI framing (grade) |
+|---|---|---|---|---|
+| **MANTRA** | 2026-01-14 | — *none* ("unspecified number") | Token collapse, downturn, competition · **names marketing** | **No** |
+| **Block, Inc.** | 2026-02-26 | **"over 10,000" → "just under 6,000"**; *"nearly 4,000 jobs"* (B) | *"smaller," "flatter,"* AI-first | **Yes (A)** |
+| **Messari** | 2026-03-16 | — *none* | *"AI-first"* institutional pivot | **Yes (B)** |
+| **Algorand Foundation** | 2026-03-18 | **−25%** (A — own X post) | Macro environment + crypto downturn | **No** |
+| **MARA Holdings** | 2026-04-02 *(reported)* | **−15%** (firm-stated verbatim) | *"energy and digital infrastructure"* repositioning | **Y-ADJACENT — barred** |
+| **Dune Analytics** | 2026-05-14 | **−25%** (A — CEO verbatim) | Refocus on core data products; explicit AI-product link | **Yes (A)** |
+| **Robinhood** | 2026-06-16 | **−10%** (B — firm's own note) | Flatten management layers; product velocity — **AI framing declined** | **No** |
+| **Ethereum Foundation** | 2026-06-23 | — *none* | Mandate + treasury-policy reorganisation | **No** |
+| **BitGo** | 2026-06-25 | — *none* | Five core areas incl. *"AI-powered infrastructure"* | **Yes (A)** |
+| **MVMT Labs** | 2026-07-15 `[DATE-VERIFY]` | n/a — **Chapter 11 filing** | Token-treasury collapse | **No** |
+| **Exodus Movement** | 2026-07-17 | **−25%** (A — SEC Ex. 99.1) | Card-issuance / stablecoin payments pivot; expense discipline | **No** |
+| **Gnosis** | 2026-07-17 | **App + Circles teams 28 → 14** (A — team-scoped) | Consumer-app review · **names marketing** (X post only) | **No** |
+| **BitMEX** | 2026-07-23 | n/a — **full wind-down** | *"internal strategic assessment"*; competition, regulatory pressure | **No** |
+| **BitMart** | 2026-07-26 | n/a — **full wind-down** | *"operating conditions, market environment, future strategic direction"* | **No** |
+| **Uphold** | 2026-07-27 | — *none* | Shift to enterprise / bank-facing business — **explicitly non-AI** | **No** |
+| **Luno** | 2026-07-28 | — *none* (CEO declined the number) | *"automation and other operational improvements"* | **Yes (E)** — our inference |
+| **FalconX** | 2026-08-03 | — *none* (firm had not confirmed) | Market slump; derivatives + European pivot | **No** |
+| **Pump.fun** | 2026-04 / 2026-07 *(alleged)* | — *none* | *"grew too quickly"* (co-founder) | **No** |
+| **Bitwise** | 2026-08-11 `[VERIFY]` | **−14%, team trimmed to around 155** (B — CEO email) | Prolonged digital-asset price decline | **No** |
+
+**Figures deliberately excluded, and why.** Crypto.com's ~180 is The Block's arithmetic against a previously disclosed base, and the outlet says so; the −12% is its headline, with no firm quote behind the number. Gemini's propagated "200 jobs" is arithmetically inconsistent with the firm's own disclosure, and the "−30% YTD" was struck as never firm-stated. Algorand's 40–50 estimates were refused — the outlet records that the figure was not shared. MARA's 40 is an outlet computing 15% against a stale base. Polygon's January "−30%" is **disputed by the firm on the record** and must not be printed. Block's "40%" appears only in an outlet headline, unattributed in the body, and is arithmetically a *floor* rather than a point estimate. Bitwise's "about 25 cut" is a delta this corpus derived; the firm-stated form is *"to around 155."* Kraken's ~150 and −5%, Uphold's 85 (which includes contractors), the Ethereum Foundation's 54 and BitGo's −15% are outlet figures with no firm quote. Robinhood is filed perimeter although it has owned a Stratum-1 tracked firm since June 2025; the label is contested in the corpus and deliberately left uncorrected, because no evidence either way shows the cuts touched that subsidiary or any marketing function.
+
+## The year's dominant explanation is, measurably, partly the press's
+
+Nine of twenty-six rows carry an AI framing. **Five carry a verbatim statement from the firm itself:** Gemini, in an SEC-filed 8-K exhibit subtitled *"A message from our founders on AI, prediction markets, and focus"*; Crypto.com (*"We are joining the list of companies integrating enterprise-wide AI"*); Block (Dorsey's note to staff); BitGo, where *"AI-powered infrastructure"* is the chief executive's own phrase rather than a reporter's gloss; and Dune, which draws an explicit line from an AI product feature to the headcount decision.
+
+Of the remaining four, **two reach us relayed through a reporter** (Coinbase's Armstrong memo; Messari's incoming CEO); **one rests on an anonymous source the company has never corroborated** — Kraken, where Bloomberg attributes the AI rationale to "a person familiar with the matter who was not authorized to speak publicly," and where the firm has made no on-record statement of rationale at all; and **one is this corpus's own inference** — Luno, whose chief executive said *"automation,"* where neither the firm nor the capturing outlet says "AI" anywhere.
+
+A tenth row, MARA, is labelled `Y-ADJACENT` and **graded down deliberately**: the firm's own words are a *"strategic evolution from a pure-play Bitcoin miner into an energy and digital infrastructure company,"* while "AI" and "HPC" are the outlets' framing and the CEO's AI language attaches to a bitcoin sale one paragraph up the page. **MARA must not be printed as a firm that named AI as its layoff rationale.** Adjacency is not attribution.
+
+**The sentence this report may print:** *of twenty-six public crypto workforce reductions recorded in 2026, nine are framed around AI, and five carry a verbatim statement from the firm itself.* **The sentence it may not print is "35% of 2026 crypto layoffs cite AI"** — ungraded, that number treats an SEC filing and an unnamed source as the same evidence.
+
+Graded the same way, the figure columns produce a finding of their own. **Fourteen rows carry a headcount and exactly one is firm-stated with a verbatim quote in hand** — Gnosis's, scoped to two teams at a perimeter firm. Sixteen carry a percentage; four are firm-stated verbatim, and two of those four are filings to a securities regulator rather than press statements. Three rows were found carrying a headcount that turned out to be a journalist dividing a percentage into a stale base. **In this cycle's layoff reporting, the percentage is usually the firm's and the headcount is usually the journalist's** — so no aggregate headcount sentence is available from this record, and none appears in this report.
+
+## The firms that refused the frame
+
+Four contractions are not merely non-AI. They are firms that were offered the AI explanation and publicly declined it.
+
+**Robinhood** is the clearest, and the tracker's binary column cannot hold it: the row's own citation is titled *"Robinhood's note on 10% layoffs shows blaming AI isn't cutting it"*, the stated rationale is flattening management layers and accelerating product velocity, and the chief executive **explicitly declined the AI-blame framing**. That is a materially different datum from a rationale that merely happens not to be AI.
+
+**OP Labs** went further, and first. On 12 March — four days before the Coinbase cut was announced — twenty roles went, and the chief executive said what it was not: *"This is not about finances. OP Labs is well capitalized with years of runway."* The cut was to *"narrow our focus"* and *"do fewer things … exceptionally well."* **Uphold** framed its July cut as reallocation toward a bank-facing enterprise business, explicitly non-AI, with no offices closed and the consumer roadmap retained through end-2026. **Exodus** filed its rationale with the SEC: realigning cost structure to a full-stack card-issuance and stablecoin-payments platform, with named acquisition integrations and *"expense discipline in light of current market conditions."*
+
+**Where a firm has a concrete strategic story, it tells that story instead** — and the concrete story recurs as a payments or stablecoin pivot: Polygon in July, Exodus a day later, Uphold ten days after that. AI framing may be what firms reach for in the absence of a specific narrative. That corollary is a reading, not a finding, and is offered as one.
+
+## The hypothesis Chapter 1 deferred, tested and rejected
+
+Chapter 1 proposed that AI framing appears at consumer exchanges and focus-narrowing framing at infrastructure and protocol firms, and said this chapter would test it. The tracker was six rows deep then. It is twenty-six now.
+
+**Inside the tracked cohort the split survives arithmetically and weakly.** All four tracked consumer exchanges that cut in 2026 reached for AI — Gemini, Crypto.com, Coinbase, Kraken — and none of the three tracked infrastructure rows did: OP Labs, and Polygon Labs twice. But one of the four is Kraken, whose AI framing the firm has never said, so the honest count is **three firm-attributed against four claimed, on an n of seven.**
+
+**Across the full record it fails in both directions, and the failures are better-evidenced than the pattern.** The infrastructure half breaks three times over, at firms whose AI framing is their own words: **BitGo**, custody and infrastructure, naming *"AI-powered infrastructure"* as one of five core areas; **Dune Analytics**, data infrastructure, with an explicit AI-product-to-headcount link; and **Messari**, research and data, restructuring toward an *"AI-first"* institutional model. The consumer half breaks at **Uphold**, the record's first consumer-side non-AI rationale, and at **Robinhood**, which refused the frame. A tempting substitute — AI framing as an early-2026 phenomenon and market framing as a late-2026 one — also fails: Messari is AI-framed in March beside the non-AI OP Labs cut of 12 March, and Luno is AI-framed on 28 July among six non-AI July rows.
+
+**What survives is only the weaker, honest statement: AI framing is present across the whole 2026 window and has been the minority framing since mid-July.** Chapter 1's split is a hypothesis that was tested and did not hold, not a finding this report carries forward.
+
+## Three contractions in July that were not layoffs
+
+July's cluster contains eight rows, and three are a different object. **BitMEX** communicated a full wind-down to users on 23 July, exchange activities ceasing 23 September. **BitMart** published an orderly cessation notice on 26 July. **MVMT Labs** filed for Chapter 11; the corpus verifies the event and not the day, carrying 15 July with a `[DATE-VERIFY]` against a captured source that dates the announcement "late July."
+
+**A wind-down is not a layoff round and must not be counted as one** — a firm that ceases to exist produces no marketing function to observe, for a documented structural reason, which is the distinction Chapter 1 drew for a firm that has withdrawn from a market. Two carry marketing-side detail. BitMEX lost its chief executive, chief financial officer and **head of growth** in late June, backfilled internally amid reported sale exploration; the growth-leadership exit precedes the shutdown. BitMart's cessation notice, captured first-party a week after publication, was still serving a live, UTM-tagged, growth-attributed acquisition offer — *"Earn up to $14,000 in rewards"* with a working registration button — on the same page, below text stating that registrations had stopped: **a promotional surface contradicting its own firm's wind-down announcement, inside one document.**
+
+Scale, with its limits: a captured trade report citing a third-party dataset records that *"Over 100 crypto projects have shut down, filed for bankruptcy or gone permanently dark in 2026"*, naming four closures in one late-July week — BitMEX, BitMart, Movement Labs and Storj Labs. **This corpus holds three of the four.** Project deaths and layoff events are different objects and must never be divided by one another; **this report states no recall percentage and no industry total.**
+
+## The other half of the question: where hiring went
+
+Theme 5 asks about hiring direction too, and here the instrument's limits are as much the finding as the data. An audit of all twenty-seven tracked firms against the daily applicant-tracking-system scan separates four statuses previously collapsed into one, and **only the last licenses an absence claim**:
+
+- **NOT-IN-FEED (4)** — OKX, Securitize, Relai, Rabby: absent from the scanner's upstream company list, so never scanned and never erroring. **Nothing whatsoever may be said about their hiring.**
+- **IN-FEED-FLOW-LOSS (2)** — Arbitrum, Trust Wallet: qualifying marketing roles seen on five dated occasions in-window, none reaching the corpus, because the sync writes only roles open at the moment of a run and did not exist before 26 June 2026. **Class 1 is a flow register that has been read as a stock register.**
+- **IN-FEED-BROKEN-SLUG (1)** — Sui, whose board identifier carries a URL-encoded space and returns no rows *and no error*. **A failure that 404s is safe because the instrument reports it; one that returns empty is indistinguishable from absence.**
+- **IN-FEED-TRUE-ABSENCE (4)** — Aptos, **Ledger**, Polygon, Tether: scanned without error, zero roles passing the marketing and seniority filter. Absence in the methodology's intended sense — the instrument looked and found nothing.
+
+**Ledger is the standout datum.** Its board was scanned cleanly on every run, at the identifier read off the firm's own site footer, and produced no qualifying marketing role — while the same firm, in the same window, held an **NBA jersey-patch partnership** with the San Antonio Spurs (announced 25 June 2025, three-year, global, still live in the global footer of every ledger.com page via a June-2026 asset), a **30-second national US television spot on ESPN and ABC** plus Nippon TV reach in Japan through an X Games sponsorship published 24 July 2026, a self-declared in-house content unit called *"Ledger Studio,"* and a named **Executive Vice President, Marketing and Communications** quoted on the firm's own site. **Marketing-visible and not hiring marketing, in the same window.**
+
+That claim clears both of Chapter 1's standing conditions and one more: the firm's own published channels were read — the sponsorship estate above was found on ledger.com's blog and footer, not through media surfaces — and the instrument fails loudly rather than silently here. The window is then bounded honestly. The scanner's memory reaches back only to **28 April 2026**, so the defensible statement covers roughly the final four months of the capture window, **not** the twelve the methodology advertises. `[VERIFY: the class-1 backfill queue is PENDING on every row; no ATS re-query has been run, so nothing before 2026-04-28 is evidenced either way.]`
+
+**Polygon Labs is the coherent pair** — two contraction rows and zero qualifying requisitions on a cleanly scanned board is not a contradiction; classes 1 and 5 agree. **Tether's zero rests on a single-firm adapter never validated against a known-good board**, and that caveat must travel with it. `[VERIFY: the recruitee adapter, before Tether's absence is treated as strong.]`
+
+What the cohort did post is small enough to list: **twelve URL-verified marketing or growth requisitions at eight of twenty-seven tracked firms** — two Director, Paid Marketing roles at Kraken (23 July), a Predictions Partnerships Marketing Lead at Gemini (29 July), a Creative Director at Coinbase, a Head of Brand Creative at Phantom, a ConsenSys Product Marketing Lead, two Ava Labs director seats, three institutional-growth seats at Solana, and **OP Labs' Marketing Executive in New York, posted 21 May — seventy days after that firm cut about a fifth of its staff.** A firm that contracts hard and then hires into marketing is not a firm that decided marketing was the problem. State the sequence; assert no causation.
+
+One further signal belongs here rather than in Theme 2. The senior layer of the largest US crypto exchange's marketing function did not adopt AI so much as **leave to work at AI companies** — six senior marketers moved from Coinbase to OpenAI between November 2024 and December 2025, and a seventh to Anthropic in about April 2026, per one outlet's reading of public profiles. Coinbase's on-record reply carries the only firm-attributed marketing-team headcount this corpus holds for any tracked firm — *"The marketing team at Coinbase is over 150 people"* — stated 23 April 2026, **twelve days before the firm announced a 14% company-wide reduction.** It is a floor, not a current figure. `[VERIFY: each role-and-date pair there is one outlet's reading of LinkedIn profiles, and the dates are start dates at destination employers, not departure dates from Coinbase.]` (The window's closing-day ratio — two open marketing or growth roles across the whole cohort against twenty-five at four AI labs outside it — is NorthPoint's own scan against its own tracked list, belongs to Theme 2, and must carry its denominator: one day later a single timed-out board moved it to 24:1.)
+
+## What the next twelve months look like, on this record
+
+**The function is not being cut; it is being restructured under a rationale that does not mention it.** Seven tracked contractions, no function named in any of them, and — where firms describe what survives — a repeated pattern of a named new operating unit standing up beside the reduction: AI-native pods at Coinbase, a "natively AI growth engine" described at Kraken four days after its cut, a dedicated institutional layer at the Ethereum Foundation. Three instances is a shape, not a trend.
+
+**The clearest single picture of the next twelve months sits in one perimeter firm's own quarterly document.** Gnosis halved two teams, listed marketing among the functions its departing staff worked in, and in the same report wrote that *"We embedded AI across the marketing and comms function"* — naming the affected output (short-form video and social content), the metric direction (posting cadence up) and the constraint (*"while guarding quality"*) — then set a Q3 plan to move from consumer acquisition toward generating marketing-qualified leads from *"larger wallets and FinTechs."* A smaller team, AI inside the production stack, and a pivot from B2C to B2B demand generation, published in a routine governance document rather than a press release. **The corpus has no evidence that the cut and the AI adoption are causally linked and does not imply it.** What it has is the co-occurrence, dated, in one firm's own words — the closest thing in this record to a picture of the job as it will be advertised in 2027.
+
+---
+
+*Closing absence-read: the most informative fact in this chapter is a category error waiting to happen. Twenty-six firms contracted and none of the seven tracked ones said the word "marketing" — so the function reads, in the public record, as untouched. It is not untouched; it is unnamed. A cost programme that does not name the function it changes leaves no artefact a regulator, an analyst or a candidate can read, and the two places in this record where marketing does get named are a governance forum reply and a hiring-referral post on X — documents written for other purposes, by firms nobody was watching. The silence in the layoff announcements is not evidence that marketing survived 2026 intact. It is evidence that the announcements were not written to tell you.*
+
+---
+
+---
+
+# Chapter 7 — What the visible record says about the invisible
+
+
+---
+
+## Six instruments, one blind spot
+
+This report was built from six classes of public evidence, and it is worth stating plainly what happened when they were pointed at the marketing function.
+
+**ESMA's authorised-CASP register** can say who may market crypto-asset services in Europe and in how many member states. Its field for the trading-platform estate — the surface where marketing actually happens — is populated in forty rows of three hundred and twenty-nine, and differs from the corporate website in two (Chapter 5, as at the 2026-08-17 capture).
+
+**The applicant-tracking scan** watched twenty-seven firms for twelve months and captured twelve qualifying marketing requisitions, none of whose job-description bodies were ever read (Chapters 2 and 3). Five of the cohort's firms were never reachable at all; the panel that records this is a fact about the scanner, never about them.
+
+**The eighteen-agency panel** found that fourteen of eighteen crypto-native agencies publicly claim no firm in this cohort, while the two largest brand campaigns in the window ran through agencies the panel is structurally unable to see (Chapter 4, as of 2026-06-15).
+
+**The layoff record** holds twenty-six contractions in which no tracked firm names a function at all (Chapter 6).
+
+**The operator-statement class** is drawn around individuals with titles, and therefore cannot see a firm's own published account of its marketing function — which is how the single most specific description of AI inside a marketing team in this entire corpus arrived from a perimeter firm's quarterly report to its token holders, and had to be filed under a class name that did not previously exist (Chapters 2 and 3).
+
+**And the firms' own estates** are the weakest instrument of the six. The cohort's most disclosure-obliged member runs a press page that is a logo-download portal and an investor feed that last built in September 2022; a second Tier-1's leadership page has not moved in twenty-eight months (Chapter 2).
+
+Read together, that is not six independent gaps. It is one finding arriving six times. **Every instrument available to a regulator, an analyst, an investor or a candidate was built to see something adjacent to the marketing function — authorisation, headcount, vendors, hiring, executive titles — and not one was built to see the function itself.** The marketing function in crypto in 2026 is simultaneously the industry's most heavily resourced public activity and its least documented one.
+
+## The gap between the two clocks
+
+Chapter 1 opened on two clocks: a regulatory clock that started on 1 July and is accumulating a file, and an organisational clock that is mid-restructure. The six chapters since have measured the distance between them, and the distance is the report's central finding.
+
+**On the regulatory side the direction of travel is not ambiguous.** The instruments in motion are registers, thematic reviews, channel-surveillance commitments and perimeter warnings — pre-enforcement by construction (Chapter 1). The Dutch supervisor published operational guidance in January 2025, waited fifteen months, re-tested the market and found the same defects (Chapter 1). The United Kingdom's regime took roughly twenty-eight months from rulebook to first named case against a major exchange, and that case is live: proceedings stayed by consent until 8 September 2026, seven days after this report's original ship date (Chapter 5). Private gatekeepers moved before public ones — an advertising platform now requires MiCA/CASP certification for EU and EEA crypto ads, which is a compliance gate that fires on a marketing team's media buy before any regulator opens a file (Chapter 5).
+
+**On the organisational side the function is not staffed to receive any of that.** Two Tier-1 CMO seats went vacant in the deadline month itself and neither firm has publicly named a permanent successor; a third firm's marketing seat cannot be established from any public source (Chapter 2). No requisition anywhere in the twelve-month record names MiCA, regulated marketing communications, or marketing compliance in its title (Chapter 2). No senior marketing operator at any tracked firm has a publicly indexed statement about the marketing-compliance surface at all — the sharpest instance being the interim CMO of the firm that withdrew from the European Union giving a long interview on the future of crypto marketing seventeen days after the deadline without mentioning MiCA, the EU or the exit once (Chapter 2).
+
+**The two clocks are not merely out of step. They are being read by different people.** The compliance surface has become the marketing message — licensed firms ran named campaigns to capture users stranded by a competitor's regulatory retreat, and a licence is now the offer rather than the footnote (Chapters 1 and 5). But the seat that would own the resulting promotional obligations is, at the firms with the largest exposure, vacant, interim, or invisible.
+
+## What the record does not permit us to say
+
+A closing chapter is where a report is most tempted to round its findings up, so this one states its refusals first.
+
+**We cannot say that the marketing function was cut in 2026.** No tracked firm's contraction names it. The two rows in the entire record that name marketing are perimeter firms, and both name it in a document written for another purpose — a governance forum reply and a hiring-referral post (Chapter 6). Silence in a layoff announcement is not evidence that a function survived; it is evidence that the announcement was not written to tell you.
+
+**We cannot say that firms have or have not adopted AI in their marketing stacks.** The confirmation side of that comparison does not exist in this corpus, and the claim side is unevenly evidenced: of twenty-six contractions, nine carry an AI framing and five carry a firm's verbatim words, with one reaching the public only through an anonymous source and one being this corpus's own inference from the word "automation" (Chapter 3). Two firms refused the framing outright. **A narrative that firms are pushed into and pulled out of is itself a marketing artefact**, and that — not any adoption rate — is what this report can defend.
+
+**We cannot name any firm as non-compliant.** Absence from a register is not evidence of non-compliance, and for fourteen of the sixteen tracked firms absent from ESMA's CASP register the absence is a category error rather than a finding (Chapter 5). Nothing in this report infers intent from silence.
+
+**And we cannot say the enforcement null means what it appears to mean.** It is at least as much a notification artefact as an enforcement one: ESMA's non-compliance register is 98.8% Italian while Italy has authorised 2.8% of the EU's CASPs, Germany appears zero times having authorised more than any other member state, and the register's reason field is empty in 166 of 167 rows — so it could not express a marketing-communications action even if one existed (Chapter 5).
+
+## What follows, and for whom
+
+**For the firms.** Everything published in this window is being published into a period every European supervisor has explicitly framed as post-deadline, and the promotional artefacts of a filing period are the evidence file of the cases that follow it. The Dutch sequence is the cheapest available forecast: guidance, a year of quiet, a re-test, and then the sentence a regulator uses immediately before it stops writing letters. The operational implication is narrow and unglamorous — the obligations attach to marketing communications, and at the firms with the widest passporting there is currently no named public owner of them.
+
+**For the marketing function itself.** The most consequential fact in this report is not the enforcement null or the vacant seats. It is that a function which publishes continuously publishes nothing about itself. That is a choice with a cost that is now measurable: when the FCA went looking for the people running one exchange's promotions, it could not name them, so it defined them by function — *"the persons currently in control of promotions"* — and enumerated the nine platforms it expected to find them on, binding successors to 31 October 2028 (Chapter 5). **In the only live marketing-side action in this record, the marketing function is not a compliance stakeholder. It is a defendant class.** A function that leaves no public account of who owns what will have that account written for it, by someone else, in a claim form.
+
+**For anyone reading this record after us.** The most reusable thing this project produced is not a conclusion. It is a discipline: that absence in a dataset is a claim about the instrument until proven otherwise; that a figure must be reported as its primary states it and graded by how the firm actually said it; that a citation index certifies existence and dating and *not* that a source supports the sentence citing it; and that the confirming direction — the finding that closes an open question — is the unguarded one. Every one of those rules exists in this report because it was learned by getting something wrong first, in public, in the run records that ship alongside it. A report about an industry that documents its marketing function badly has an obligation to document its own method well.
+
+---
+
+*Closing absence-read: the question this report set out to answer was how crypto's marketing function is organised in its first regulated year. The honest answer is that the public record cannot say — and that the inability is not a limitation of the research but the most reliable finding in it. Six independent instruments, built by regulators, by platforms, by the trade press and by the firms themselves, were pointed at the function for twelve months. They returned a register that cannot see where firms publish, a hiring feed with twelve rows, an agency panel looking at the wrong segment, twenty-six contraction announcements that name no function, a press page full of logos, and one unusually candid quarterly report from a company nobody was watching. The marketing function spent 2026 visible everywhere and accounted for nowhere. In a regime built entirely on disclosure, that is not a neutral state. It is a position, and it is the one the industry chose.*
+
+---
+
+---
+
+# Methodology
+
+> **Public-source synthesis, not interview-based research.** The corpus is built from primary sources anyone can independently verify. No interviewees, no anonymous quotes, no off-the-record reads. The visibility filter — what the firm has shipped publicly — is itself the analysis.
+
+## Source corpus design
+
+The corpus is anchored to six source classes, gathered continuously between now and ship date.
+
+### 1. Job postings, by jurisdiction, by month
+- **Capture window:** rolling 12 months ending August 31, 2026.
+- **Firms tracked:** see `./tracked-firms.md` (**27 named firms** across exchanges, L1/L2 foundations, wallets, CASP-licensed firms; the "~30" of the report's framing language is the target, not the count).
+- **Sources:** firm careers pages, LinkedIn job postings, web3.career, CryptoJobsList.
+- **What we extract:** seniority, function (brand / growth / PMM / community / agency-mgmt / regulatory-comms), geography, posting date, time-to-fill, JD-stated AI-tooling requirements.
+- **Storage:** `./corpus/job-postings/` — one CSV per firm per month.
+
+#### ⚠ What `_absence.csv` does and does not mean (recorded 2026-08-30)
+
+`corpus/job-postings/_absence.csv` lists tracked firms the scan **could not reach**. It is a record of **instrument reach**, not of firm behaviour, and the two must never be conflated:
+
+| Statement | Supported by `_absence.csv`? |
+|---|---|
+| "The scanner had no API route to this firm's ATS on this date." | 🟢 **Yes.** This is exactly what the file records. |
+| "This firm posted no marketing roles." | 🔴 **No.** Never. Binance, Bybit, HTX and KuCoin run proprietary ATSs; Aave's Lever board 404s. Their postings are *unobserved*, not absent. |
+| "This firm is publicly silent on the marketing function." | 🔴 **No.** That is a class-3/4 claim and needs class-3/4 evidence. |
+
+Two further limits, both recorded against real incidents rather than in the abstract:
+
+1. **The panel has never contained an absence in the second sense.** Every firm that has ever appeared in it is there because of a proprietary ATS or an HTTP error — i.e. because of *our* reach. As of 2026-08-30 its membership has been the same five firms (Aave, Binance ×2, Bybit, HTX, KuCoin) on every run since the cohort expansion.
+
+   ⚠ **Post-window drift, recorded 2026-09-02.** The shipped panel is, and stays, those five firms as of `2026-08-31`. On the first full post-window run the **live** instrument read **six** — Gemini joined on a greenhouse `read operation timed out`. That is a change in *our reach* two days after the window closed, and it is **not** in the shipped exhibit and **not** a finding about Gemini. Anyone re-running `daily-corpus-sync.py` today will see six in the banner and five in the file; the difference is the window freeze working as designed (`scripts/README.md` § class-1 capture-window freeze). It is also the sharpest illustration of this section's own rule: **the panel's membership is a fact about the scanner, and it moves when nothing about any firm has moved.**
+2. **The file's `as_of` column is written from the sync's run clock, not from the upstream `scan_date`.** On 2026-08-29 the upstream ATS scan was frozen and `_absence.csv` still rolled its `as_of` to `2026-08-29` — asserting an observation that no 2026-08-29 scan produced. The feed-health guard refused the *absence claim* that day, but the file itself was not corrected. **Generalised rule: any corpus file carrying a date must date itself from the artifact observed, not from the run that wrote it.** Read `as_of` against `_feed-fingerprint.json`, which records the true `scanned_at_utc` and `scan_date` per run.
+
+   🟢 **Patched 2026-09-02.** The run-clock `as_of` is no longer *corrected* after the fact — post-window it is never written. `daily-corpus-sync.py` now carries `CAPTURE_WINDOW_END = "2026-08-31"`; after that date the class-1 corpus files (`<firm>.csv`, `_absence.csv`, `_chrome-queue.csv`) are frozen and only `_feed-fingerprint.json` — an instrument log, not a corpus claim — keeps recording. The narrower in-window form of this defect (a file dating itself from the run rather than the artifact **while the window is open**) is **unfixed** and stands as written above.
+
+Therefore Themes 1 and 4 draw absence claims **only** from classes 3 and 4 (what a firm has and has not said publicly), never from class 1's reach. `findings/theme-4-mica-exposure-surface.md` was written to this constraint deliberately.
+
+### 2. Agency case studies and press releases
+- **Agencies tracked:** Coinbound, Lunar Strategy, MarketAcross, Outset PR, RZLT, ICODA, NinjaPromo, Blockwiz, Bond Finance, Crowdcreate, GuerrillaBuzz, TokenMinds, Single Grain, Flexe.io, Blue Manakin, Majinx, X10, Serotonin (the existing competitor-intelligence panel of 18).
+- **Cross-reference:** which firms each agency publicly claims as a client; map overlap (firms with multiple agencies, agencies with multiple competing firms in same vertical).
+- **Storage:** `./corpus/agency-claims/` — JSON file per agency with claimed-clients array; cross-reference matrix in `./corpus/agency-overlap-matrix.csv`.
+
+### 3. Regulator filings and statements
+- **Primary documents:** ESMA Statement on the end of transitional periods (April 17, 2026), MiCA Regulation (EU) 2023/1114, Commission Delegated Regulation on marketing communications, MAS guidelines, VARA marketing-comms guidance, FCA financial promotion rules.
+- **Public regulator-action register:** every public marketing-side enforcement case in Q2 2026 (ESMA, BaFin, AMF, CONSOB, AFM, CySEC).
+- **Storage:** `./corpus/regulator-filings/` — primary-source records + extraction notes.
+
+### 4. Conference recordings, podcast transcripts, public LinkedIn posts
+- **Captured:** any public statement by a senior marketing operator (CMO / VP Marketing / Head of Brand / Head of Growth at a tracked firm) on a podcast, conference stage, LinkedIn post, X thread, or media interview.
+- **Initial podcast inventory:** Coinbound podcast (Episode 84+), Lunar Strategy podcast, Real Vision Crypto, Bankless, On the Margin, The Defiant Podcast, Onchain Growth Club, Crypto Curious.
+- **Storage:** `./corpus/operator-statements/` — one markdown file per source with verbatim relevant quote + URL + speaker + date + role at time of statement.
+
+### 5. Layoff announcements and earnings disclosures
+- **Capture:** every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, plus any new ones through August), with the firm's stated rationale and independent press analysis. **Marketing-specific impact is recorded only where a public source names it** — most 2026 crypto cuts are company-wide, and the tracker must not be read as a count of marketing-team contractions.
+- **Storage:** `./corpus/layoff-tracker/2026-layoff-tracker.csv` — firm, date_announced, headcount_change, headcount_grade, percentage, percentage_grade, source_url, ai_cover_narrative, ai_cover_grade, notes.
+
+### 6. NorthPoint competitor-intelligence pipeline (⚠ last refreshed 2026-06-15)
+- **Source:** `./competitor-intelligence/trend-data.json`, `./competitor-intelligence/action-flags.json`, daily HTML snapshots in `./competitor-intelligence/YYYY-MM-DD.html` from April 8, 2026 onward.
+- **What it gives the report:** longitudinal signal — what shifted, when, in which direction. Most one-shot research projects do not have an 18-month panel of agency-side content gravity. This one does.
+
+## Automated daily feeds (added 2026-06-26)
+
+Source classes 1 (job postings) and 2 (agency claims) are produced **deterministically from NorthPoint's existing daily data feeds**, not from web search — web search cannot reliably date-stamp ATS postings or agency claims. `scripts/daily-corpus-sync.py` consumes:
+
+- **`open-positions.json`** — daily ATS API scan (greenhouse/ashby/lever/breezy/workable), URL-verified and dated → per-firm CSVs in `corpus/job-postings/`, mapped to the Stratum 1–4 cohort, dedup by source URL. Proprietary-ATS firms with no API coverage are logged in `corpus/job-postings/_absence.csv` (absence = data).
+- **`trend-data.json`** — 18-agency panel with `recentClientsNamed`, **`lastUpdated` 2026-06-15 and unchanged since; the class-2 outputs have been byte-identical on every run after that date** → `corpus/agency-overlap-matrix.csv` (firm × agency, overlap-flagged) + dated `corpus/agency-claims/<agency>.csv` snapshots.
+
+Classes 3 (regulator), 4 (operator statements), and 5 (layoffs) remain web-search/fetch driven, verified against primary sources. The run is **daily**; the sync script is idempotent. See `scripts/README.md`.
+
+## Corpus coverage rules
+
+- **If a thing is not publicly visible, it does not go in the report.** No private knowledge, no hearsay, no "an operator told me." Either there is a citation, or the claim is omitted.
+- **Every claim is anchored to at least one primary source.** Synthesis claims (i.e., aggregating across the corpus) are anchored to the underlying source records the synthesis derives from.
+- **Sources older than December 2024 are excluded** unless they remain materially relevant (e.g., MiCA Regulation (EU) 2023/1114 itself).
+- **Where a firm has shipped no public signal on a theme, that absence is itself a finding.** The MiCA-readiness theme in particular hinges on what firms have publicly said versus what they have publicly avoided saying.
+
+## Synthesis approach
+
+- Themes coded continuously as corpus grows. Working notes in `./findings/` (one file per theme).
+- Mid-cycle structural review at end of June (corpus snapshot, theme outline lock).
+- Phase 3 synthesis (August): write the report, design pass, regulator-readability pass, internal review.
+
+## Why no interviews
+
+Three reasons make a public-source synthesis structurally stronger than an interview-based one for this report:
+
+1. **Verifiability.** Every claim is independently checkable by a reader who disagrees. An anonymised quote is not.
+2. **Visibility-as-analysis.** What is publicly visible about a firm's marketing function is precisely what the regulator can verify. The report's read is therefore the same read a regulator would do — which is the only read that matters in Q3 enforcement.
+3. **Velocity.** Public-source research compounds and updates cleanly. Interview research is captive to scheduling, anonymisation politics, and quote-clearance loops. Ships faster, holds longer.
+
+## What the report is NOT
+
+- Not a vendor comparison.
+- Not a "best agency of 2026" award.
+- Not a benchmarking exercise where NorthPoint is the benchmark-setter.
+- Not interview-based; no anonymised quotes appear anywhere in the report.
+- NorthPoint's commercial offering appears in the appendix, in one paragraph, with one link.
+
+## Inbound nominations
+
+External nominations of public signals to add to the corpus arrive via `hello@northpoint.fi`. The corpus is updated **daily** (see `./corpus/weekly-runs/` for the dated run records); nominations are read on the next daily run. Tracked in `./inbound-nominations.md` (created when first nomination arrives). ⚠ **Known limit, recorded 2026-08-29:** the corpus-assembly loop has no mailbox access, so no nomination has ever been read by it. Nominations must be relayed into the repo by hand.
+
+---
+
+# Citation anchors, by chapter
+
+### Chapter 1 — Register first, cases later
+
+**Citation anchors used.**· jobs-feed scan_metadata (2026-07-23: 147 firms / 2,235 postings) · `[VERIFY]` ESMA non-compliant register count.
+
+> **Standing caution for the citation audit, added v0.2.** Three of this chapter's absence claims were, until 27 July, artefacts of a sweep that queried recent windows only: a tracked-firm layoff (12 Mar), an NCA marketing-side review (16 Apr) and an NCA marketing-channel programme (Feb) all sat publicly available and unfound for months. **No "no public signal" sentence should survive the audit unless a full-range (Sep-2025 → present) re-sweep of that source class has been run and logged.** Absence is a finding only once the instrument has demonstrated it can detect presence.
+>
+> **Extended v0.3 (2026-07-28).** The full-range re-sweep was run for classes 3 and 5 and returned **four** more items that had been publicly available for months, two of them layoffs at Tier-1 tracked exchanges. A fifth was found on a different axis entirely: **Bitpanda**, recorded as producing zero public marketing signal on four consecutive runs, had been running a four-language television and out-of-home brand campaign on **its own blog** since September 2025. The sweep had been reading interview and podcast surfaces and not reading firms' own newsrooms. **A second condition therefore attaches to every absence claim in this chapter: it must have been tested against the firm's own published channels, not only against third-party media.** An absence panel built from media surfaces measures media bookings, not marketing visibility.
+>
+> **A third distinction is now required.** Gemini left the EU on 5 February 2026. A firm that has withdrawn from a market produces no marketing signal in it for a documented structural reason, which is a different object from a firm that is present and quiet. The absence panel must separate withdrawal from reticence or it will read one as the other.
+
+---
+
+### Chapter 2 — The shape of the marketing function
+
+**Citation anchors used.****CLASS 4 — operator statements.** **Binance / Conlan exit + Chen interim** — CoinDesk, Ian Allison, published 2026-05-12 11:25 ET, publisher-modified 2026-05-19 10:18 ET (`https://www.coindesk.com/business/2026/05/12/binance-s-chief-marketing-officer-rachel-conlan-is-leaving-the-exchange`; corpus file `../corpus/operator-statements/binance-conlan-cmo-exit-primary-2026-08-31.md`). **Attribution:** the departure and the 15 June last day are publisher-stated; both quotations were supplied by Binance by email; the interim appointment is attributed to a Binance spokesperson. **🔴 Three limbs struck 2026-08-31 and barred from the report in any form: any claim about a search process; any superlative ranking Binance first among Tier-1 firms; any characterisation of the interim brief. The primary supports none of them.** · **Crypto.com / Kalifowitz exit** — CoinDesk, Ian Allison, ed. Nikhilesh De, 2026-05-05 13:48 UTC (`https://www.coindesk.com/business/2026/05/05/crypto-com-s-high-rolling-head-of-marketing-taps-out-after-almost-six-years`; `../corpus/operator-statements/cryptocom-kalifowitz-cmo-exit-primary-2026-08-11.md`). **Firm-attributed via spokesperson, not the firm's own estate. 🔴 No AI framing; no link to the March reduction.** ⚠ **Allison authored both this and the Binance item: Theme 1's senior-seat spine rests, in two of three cases, on one journalist at one outlet.** · **Binance / Eowyn Chen, interim CMO, 2026-07-18** (`article:modified_time` 2026-07-20) — CoinGape *Block of Fame*, Sneha Agrawal (`https://coingape.com/block-of-fame/opinion/crypto-marketings-next-job-isnt-hype-binance-interim-cmo-eowyn-chen/`; `../corpus/operator-statements/binance-chen-marketing-not-hype-2026-07.md`). **⚠ Near-primary: the vertical sells cover-story placement; usable for what Chen said, not as evidence of editorial selection.** · **Kraken / Mayur Gupta, CGMO, 2026-05-19** — Incrypted, Oleksandr Pishenin (`https://incrypted.com/en/krakens-chief-growth-officer-depth-interview/`; `../corpus/operator-statements/kraken-gupta-growth-operating-model-2026-05.md`); role corroboration `https://www.kraken.com/press/releases/kraken-appoints-mayur-gupta-as-cmo`. **⚠ Outlet runs a marketing-services/KOL arm; the page carries a Kraken affiliate referral link; placement type undeterminable. Pre-deadline statement.** · **Coinbase / Catherine Ferdon, CMO, 2026-04-09** — Adweek *Marketing Vanguard*, host Jenny Rooney; public partial transcript `https://podscan.fm/podcasts/marketing-vanguard/episodes/the-art-of-making-fintech-cool-with-catherine-ferdon-of-coinbase`; publisher surface `https://shows.acast.com/cmo-moves/episodes/the-art-of-making-fintech-cool-catherine-ferdon-coinbase` (**not independently fetched — provenance-blocked**); `../corpus/operator-statements/coinbase-ferdon-marketing-vanguard-2026-04.md`. **⚠ MACHINE-GENERATED TRANSCRIPT with ASR artefacts in the same text; `[VERIFY]` against audio. Pre-deadline.** · **OKX / Rafique role datum** — OKX's own estate, published 2022-12-06, page states *Updated on Apr 25, 2024* (`https://www.okx.com/en-us/learn/okx-new-cmo-haider-rafique`; **out of window, role baseline only**), against CoinDesk (`https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin` — **⚠ the URL slug reads 08-04 while every date field in the document reads 2026-08-07; the item carries an `ai-boost` co-byline and an AI-assistance disclosure**); `../corpus/operator-statements/okx-rafique-role-reclassification-2026-08-10.md`. **Class-4 refused on substance and entered as a role datum. 🔴 Not a demotion, removal or downgrade — no such claim is available.** · **Ledger / Ariel Wengroff, EVP Marketing & Communications, 2025-06-25** — the firm's own channel (`https://www.ledger.com/ledger-and-san-antonio-spurs-partnership`; `../corpus/operator-statements/ledger-wengroff-spurs-partnership-2025-06.md`).
+
+**NOT CLASS 4 — cited as what they are.** **Gnosis Ltd Q2 2026 quarterly report, Marketing section, published 2026-07-17 14:32 UTC** (`https://forum.gnosis.io/t/gnosis-ltd-quarterly-report-q2-2026/12391`; `../corpus/operator-statements/gnosis-q2-2026-quarterly-marketing-section-2026-07-17.md`). **🔴 PERIMETER FIRM, unattributed corporate text — explicitly NOT admissible as an operator statement.** · **Coinbase marketing-team size + senior attrition to AI labs** — CoinDesk, Ian Allison, published 2026-04-23 07:49, updated 07:55 (`https://www.coindesk.com/business/2026/04/23/openai-appears-to-be-poaching-coinbase-s-marketing-team`; `../findings/theme-1-marketing-function-attrition-coinbase-openai.md`). **"Over 150" is firm-attributed via an unnamed spokesperson — REFUSED under §4's role gate, usable as a firm-stated floor. ⚠ All personnel dates are destination start dates, not departure dates.**
+
+**CLASS 1 — job postings, all URL-verified, window frozen 2026-08-31** (`../corpus/job-postings/`): Solana Foundation ×3 — `https://jobs.solana.com/companies/solana-foundation-2/jobs/62610321-institutional-growth-lead-japan`, `https://jobs.solana.com/companies/solana-foundation-2/jobs/62537656-institutional-growth-lead-greater-china`, `https://jobs.solana.com/companies/solana-foundation-2/jobs/73253213-director-institutional-growth` (**board-relative dates, approximate**) · Ava Labs ×2 — `https://jobs.ashbyhq.com/ava-labs/18933fc5-b393-4f28-835e-d348bec283c3`, `https://jobs.ashbyhq.com/ava-labs/21304439-edbb-4477-aa45-aa6962e74eb3` · OP Labs — `https://jobs.ashbyhq.com/oplabs/02207060-bdcb-46f6-8195-8a6f2af959ec` · Phantom — `https://jobs.ashbyhq.com/phantom/815cacde-243b-4e59-87b1-d8536374a125` · Coinbase — `https://www.coinbase.com/careers/positions/8054862?gh_jid=8054862` · Kraken ×2 — `https://jobs.ashbyhq.com/kraken.com/5e07a439-ae65-4f08-bb5e-edff883d12bb`, `https://jobs.ashbyhq.com/kraken.com/f0b3a00e-57a5-47eb-9d4c-9b2c1a3d9345` · Gemini — `https://boards.greenhouse.io/embed/job_app?for=gemini&token=8091954&gh_jid=8091954` · MetaMask/ConsenSys — `https://consensys.io/open-roles/8048308?gh_jid=8048308` (**⚠ no first-party capture; rests on the feed's `url_verified` flag**). **Instrument records:** `_absence.csv` · `_absence-cohort-audit.csv` (2026-07-30, n=27) · `_backfill-queue.csv` (**9 constructed, unverified candidate URLs — must not be promoted**) · `_chrome-queue.csv` · `_feed-fingerprint.json` · `_coverage-expansion-and-first-absence-panel-exit-2026-08-25.md` · `_absence-panel-first-entry-arbitrum-2026-08-27.md` · `_ats-slug-collision-circle-2026-08-30.md`.
+
+**CLASS 5 — contractions referenced.** Coinbase −14% / ~700, 2026-05-05, **Armstrong memo not held first-party** (`https://fortune.com/2026/05/05/coinbase-layoffs-14-of-employees-ai-tech-ai-job-anxiety-crypto/`) · OP Labs, 20 roles, 2026-03-12 (`https://www.coindesk.com/business/2026/03/12/ethereum-layer-2-developer-op-labs-cuts-roles-to-narrow-focus`) · Gemini −25% firm-stated + UK/EU/AU exit, 2026-02-05, SEC 8-K EX-99.1 (`https://www.sec.gov/Archives/edgar/data/2055592/000205559226000008/a8kblogpostfeb52026.htm`; **🔴 do not print −30% or a headcount — both struck in tracker row 2**) · Crypto.com −12%, 2026-03 (`https://www.coindesk.com/business/2026/03/19/crypto-com-cuts-12-of-staff-as-it-integrates-ai-into-internal-processes`). **Standing tracker finding: of 26 rows, no tracked-cohort firm names marketing as an affected function.**
+
+**INSTRUMENT + METHOD ANCHORS.** Firm-estate test — `../findings/theme-1-firm-estate-instrument-coinbase-2026-08-16.md` (`coinbase.com/press`; `investor.coinbase.com/news/default.aspx`; IR RSS `lastBuildDate` September 2022) · the stale-article instrument — `../corpus/operator-statements/_stale-article-as-current-signal-instrument-2026-08-20.md` (the 12 Aug 2020 "Crypto.com names new CMO" false positive) · absence-panel discipline — `../methodology.md` §1 · class-1 identity and `as_of` limits — `../findings/appendix-scope-of-the-citation-index.md` §2 · Bitpanda own-channel campaign, 25 Sep 2025 (`blog.bitpanda.com/en/experience-our-new-brand-campaign-now`; `../corpus/marketing-campaigns/bitpanda-when-crypto-then-bitpanda-2025-09.md`) · struck Theme-1 limbs and the four unsourced sport-sponsorship incidents — `../corpus/operator-statements/sport-sponsorship-reset-2026-05.md` §§1, 4, 5, 6, 7.
+
+**OPEN `[VERIFY]` TAGS.** (1) Bybit / Helen Liu, 2026-04-30 — no URL and no stated role held anywhere in this corpus; **not citable as a marketing-seat turnover**. (2) The July-2025 Crypto.com Global VP of Growth and Media appointment — no URL held; recorded only in the 2026-09-02 run record; **refused twice, and not a succession**. (3) Ferdon's two quotations — automated transcript; check against episode audio. (4) Any individual named in the Coinbase→AI-labs attrition record — one outlet's reading of public profiles; roles and dates unconfirmed, and every date is a destination start date.
+
+> **Standing caution for the citation audit.** This chapter's succession null, its class-4 compliance-silence null, and its statement that no tracked firm's own estate carries a dated record of a 2026 marketing-leadership change are **press- and search-visibility claims, labelled deliberately**. They cannot be upgraded to firm-disclosure claims, because the firm-estate test on the cohort's most disclosure-rich member found no enumerable announcement index to test them against. And anyone re-running the class-1 scan today will see a **six**-firm absence panel where this chapter's frozen exhibit shows five: Gemini joined on a post-window socket timeout on 2026-09-02. That is a change in our reach, not a finding about a firm — the sharpest available illustration of this chapter's first rule.
+
+---
+
+### Chapter 3 — AI in the stack: claimed versus confirmed
+
+**Citation anchors used.**(`../findings/appendix-scope-of-the-citation-index.md` §3; post-window drift to 24:1 recorded in `../findings/longitudinal-2026-06.md`, 2026-09-02 entry, item 3).
+
+> **Standing cautions for this chapter.**
+> **(1)** Every "no AI-tooling requirement" statement in this chapter is a statement about **unread JD bodies**, never about the postings' contents. **No sentence may imply a firm's JDs do not require AI tooling.** The correct claim is that the corpus cannot say.
+> **(2)** The `ai_cover` grading pass audited only the `Y` rows. **The sixteen `N` rows have never been checked for the reverse error.** Any AI-cover count printed from this corpus is quality-graded and count-unaudited, and must say so.
+> **(3)** Gnosis is **perimeter**, n=1, and a DAO-funded company reporting to token holders has disclosure incentives no Tier-1 exchange shares. **That asymmetry is the interesting part and it is also the limit** — the firms this corpus can see best are the firms obliged to publish.
+
+---
+
+### Chapter 4 — The agency stack
+
+**Citation anchors used.**(repo-wide sweep of `../corpus/`; sponsorship-reset incidents §1, §6 and §7 excluded as uncited per `../corpus/operator-statements/sport-sponsorship-reset-2026-05.md`).
+
+> **Standing corrections carried into the citation audit.** **(1)** `tracked-firms.md` annotates KuCoin with a "Three-agency overlap (RZLT + Blockwiz + MarketAcross)" and HTX with a "NinjaPromo agency relationship". **Neither is supported by the 2026-06-15 panel** — KuCoin is claimed by Blockwiz alone; NinjaPromo's only named claims are TRON and Polymath, and HTX appears in no agency's claim list. Both annotations predate the panel snapshot and neither is printed in this chapter. **(2)** `sport-sponsorship-reset-2026-05.md` §Synthesis states that "MarketAcross holds PR retainers at Binance and Crypto.com simultaneously" The panel records a MarketAcross **claim** on Binance, Polygon and Solana; **Crypto.com appears in no agency's claim list**, and "retainer" upgrades a public claim into a confirmed commercial relationship. **Not printed.** **(3)** The report's May planning note anticipated a "three agencies on one firm" essay citing Bybit, KuCoin and Sui. **The data does not support it** — the maximum is two, at Sui alone. **(4)** Per `methodology.md` §2 and the standing corpus rule, an agency's public client claim is a claim, not a confirmed relationship; the tension between agency claims and firm-side evidence is itself the finding, and no claim in this chapter is upgraded.
+
+---
+
+### Chapter 5 — MiCA and regulated-marketing readiness
+
+**Citation anchors used.**— third-party machine transcript, `[VERIFY]` against audio.
+
+> **Standing cautions for the citation audit.**
+> **1. Register scope.** Every register figure is scoped to its capture date and says so. The 08-25 capture returned 335 rows, was never persisted to disk, and its six net-new rows remain unread. **No figure here may be silently restated against a later register state.**
+> **2. Absence discipline — three different objects, none interchangeable.** *Absence from the CASP register* is evidence only for an entity providing crypto-asset services to EU clients. *Absence from this corpus's own-channel sweep* is a fact about the sweep. *Absence from the job-postings dataset* is a fact about the scanner's reach and is not used by this chapter at all.
+> **3. Two things this chapter deliberately does not explain.** HTX's absence from the EU register, and the relationship (if any) between Push Virtual Assets Ireland Limited and the tracked Aave entity. Both are open; neither is closed by an adjacent fact.
+
+---
+
+### Chapter 6 — Layoffs and the next twelve months
+
+**Citation anchors used.**(`../findings/appendix-scope-of-the-citation-index.md` §3; `../findings/longitudinal-2026-06.md` 2026-09-01 and 2026-09-02 entries) · `[VERIFY]` recruitee adapter (Tether) · `[VERIFY]` Bitwise date_announced (three candidates: 08-07 event / 08-11 slug / 08-12 prose) · `[VERIFY]` MVMT Labs filing day.
+
+> **Standing caution for the citation audit.** This chapter's absence claims are held to the conditions Chapter 1 set and one class-1 condition beyond them. **(i)** The firm's own published channels must have been read, not only third-party media — the Ledger claim exists only because that sweep was run on ledger.com itself. **(ii)** A full-range re-sweep must have been logged for the source class. **(iii)** The instrument must have been shown to fail *loudly* rather than silently for that firm — Sui is excluded from every absence statement in this chapter for exactly this reason. **(iv)** **No class-1 absence claim may be scoped to more than the window the scanner can evidence.** The published methodology advertises a rolling twelve months; the scanner's recoverable memory begins **2026-04-28**, the daily sync did not exist before **2026-06-26**, and the backfill that would close the gap has never been run. Every hiring-absence sentence in this chapter is scoped accordingly, and any that is not is an error.
+>
+> **A second caution, specific to this chapter's own instrument.** The citation index certifies that a source exists and that its date is consistent. **It does not certify that a source supports the sentence citing it.** One claim in this report was read for content on the day before publication; the source existed, was correctly dated, and contradicted three of the claim's four limbs, which were cut. The same content-check has been run on **1 of 26 layoff rows**. A reader is entitled to know the difference between the guarantee this corpus can make and the one it cannot.
+
+---
+
+### Chapter 7 — What the visible record says about the invisible
+
+**Citation anchors used.**This chapter introduces no new primary sources. Every claim above is a restatement of a finding established and anchored in Chapters 1–6, and each carries that chapter's citation and its attached limits:
+
+- **Two clocks; the register-first, cases-later window; the AFM January-2025 → April-2026 sequence; the FCA's ~28-month rulebook-to-case lag; the perimeter squeeze and the structural exits** — Chapter 1 (`00-opening-register-first-cases-later.md`).
+- **The four vacant, interim or unestablishable senior seats; the succession null and its press-and-search-visibility label; the firm-estate instrument test; the twelve requisitions and their shape; no title naming MiCA or marketing compliance; no operator statement on the marketing-compliance surface; the "beige" hinge** — Chapter 2 (`01-shape-of-the-function.md`). ⚠ Carries `[VERIFY]` on the Ferdon transcript, on Bybit/Helen Liu (uncited), and on the July-2025 Crypto.com appointment.
+- **The empty confirmation side; the 9-of-26 / 5-firm-stated AI split; the A–E grading ladder; the two explicit refusals; the third evidence class** — Chapter 3 (`02-ai-in-the-stack.md`). ⚠ The `Y`-row grading pass is one-sided; the sixteen `N` rows are unaudited for the reverse error.
+- **Fourteen of eighteen agencies claiming no cohort firm; the single overlap; the campaigns outside the panel's frame; zero named agency-relationship endings corpus-wide** — Chapter 4 (`03-agency-stack.md`), all figures as of **2026-06-15**.
+- **The 10.7% post-deadline authorisation rate and the pre-deadline surge; the domestic-only German entrant cohort; the two-population register; `ae_website_platform` at 40 real values and 2 differing; the notification asymmetry and the empty `ae_reason`; FCA v Huobi Global S.A. & Others and the promotions-defendant class; the advertising-platform certification gate; the capture campaigns** — Chapter 5 (`04-mica-readiness.md`), all register figures **as at the 2026-08-17 capture**; the 2026-08-25 capture's six net-new rows are unread and covered by no figure.
+- **Twenty-six contractions; no tracked row naming a function; the two perimeter rows that name marketing and exactly how far each goes; the failure of the consumer/infrastructure split under test; the four-status class-1 audit; the Ledger true-absence datum; the three contractions-by-closure** — Chapter 6 (`05-next-twelve-months.md`).
+- **The scope of what the citation index certifies, and the two known class-1 limits** — `appendix-scope-of-the-citation-index.md`.
+
+> **Standing caution for the citation audit.** This chapter's authority is entirely derivative: if a finding is narrowed, re-scoped or cut anywhere in Chapters 1–6 during the citation audit, **the corresponding sentence here must be narrowed in the same pass, and this chapter must be re-read last.** Two claims above are known to be time-sensitive rather than stable: the FCA stay expires **8 September 2026**, and the succession null holds only until either firm names a permanent CMO. Both must be re-checked on the day the report is published, and the report should state the date on which each was last true.

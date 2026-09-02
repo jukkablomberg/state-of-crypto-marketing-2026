@@ -5,9 +5,9 @@
 **Started:** 2026-05-03
 **Pivoted to public-source synthesis:** 2026-05-04
 **Target ship date:** September 1, 2026 (Q3)
-**Current phase:** Phase 1 — Corpus assembly (May–June: build the public-source corpus across 30 tracked firms × 6 source classes)
-**Phase 2 starts:** July 1 — synthesis (cluster findings by theme, draft each section)
-**Phase 3 starts:** August 15 — design + regulator-readability pass + ship
+**Current phase (updated 2026-09-02):** **Phase 3 — citation audit, bundle, publish.** All seven chapters are drafted and the report is assembled at `report/state-of-crypto-marketing-2026.md` (21,740 words ≈ 19.8pp against a 25pp budget). Units 8 of 11 done; units 9–11 are the citation audit and the publish bundle. **Publishes 15 September 2026.**
+
+**Phase history, stated honestly rather than tidied.** Phase 1 (corpus assembly) ran 2026-05-05 → 2026-08-31 and produced the corpus this report is built from. **Phase 2 (synthesis) did not run at all between 23 July and 1 September**: the synthesis prompt approved on 07-29 never reached the scheduled task, so 34 further daily runs collected corpus while chapters 2–7 went unwritten, and the advertised 1 September date passed with one chapter in existence. The full account is `../POST-MORTEM-2026-09-02.md`; the public re-date is `../PUBLIC-REDATE-2026-09-02.md`. Chapters 2–7 were drafted on 2026-09-02. This line stayed wrong for eight weeks and is part of why nobody noticed — a phase field that nothing updates is not a status, it is decoration.
 
 ---
 
