@@ -91,3 +91,28 @@ surfaces; Bitwise's date (three candidates); and the recruitee adapter behind Te
 **And the standing distinction the audit exists to close:** the provenance gate certifies that a source
 exists and is correctly dated. It does not certify that a source supports the sentence citing it. That
 check has been run on **1 of 26** layoff rows. Units 9–10 are where that number moves.
+
+## 🔴 Pre-existing exposure found by the end-of-session scan — surfaced, deliberately NOT patched
+
+The loop's hard gate says *"nothing into the public repo that references the sales pipeline, prospects or
+outreach."* The seven chapters and the assembled report are clean — scanned for pipeline, prospect,
+outreach, cold-email, pricing and do-not-contact language, and for Ron Pruett / Boston Associates: **zero
+hits in `findings/` and `report/`.**
+
+**The tooling is not clean, and has not been since the sync script was written.** `scripts/daily-corpus-sync.py`
+and `scripts/README.md` document their input paths verbatim in the public repo:
+
+- `../northpoint/sales-funnel/prospects/open-positions.json` (docstring, `--sales` default, README table)
+- `../northpoint/sales-funnel/competitor-intelligence/trend-data.json` (README table)
+
+No prospect *data* is exposed — these are paths, not rows — but they state publicly that this report's
+class-1 and class-2 feeds are produced by a sales funnel's prospect scanner, which is the association the
+gate exists to prevent. It is already pushed and has been public for as long as the scripts have.
+
+**Not patched in this session, on purpose.** `daily-corpus-sync.py` carries `CAPTURE_WINDOW_END` and the
+class-1 window freeze; its path defaults are functional, and changing them to satisfy a naming concern
+risks breaking the frozen-window behaviour the report's integrity now depends on, on the day the report
+was finished. The safe fix is small and belongs to a session that can test it: take the feed root from an
+environment variable or a required argument, and genericise the README's two table rows to "the daily ATS
+scan feed" and "the 18-agency panel feed". **Recommend doing it before the 09-15 publish, since publishing
+is what will send readers to this repo.** Jukka's call; one needs-jukka row's worth of decision, no more.
