@@ -27,7 +27,7 @@ Of 328 authorised CASPs carrying a notification date as at **2026-08-17**, **35 
 
 Of the 35: **14 German**, **12 of those 14 cooperative or regional retail banks** (Volksbank, Raiffeisenbank, VR-Bank, Spar- und Kreditbank), **0 tracked-cohort firms** — checked programmatically against every Stratum 1–4 name.
 
-And on the passporting column: **23 of 35 (65.7%) post-deadline entrants are single-market, against 34.1% of the 293 pre-deadline firms — and all 14 German entrants took a domestic-only authorisation.**
+And on the passporting column: **23 of 35 (65.7%) post-deadline entrants are single-market, against 33.8% of the 293 pre-deadline firms — and all 14 German entrants took a domestic-only authorisation.**
 
 → `corpus/regulator-filings/esma-casps-post-deadline-authorisation-rate-2026-08-27.md` (composition)
 → `corpus/regulator-filings/esma-register-field-inventory-and-passporting-breadth-2026-08-28.md` §3 (breadth)
