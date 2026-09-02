@@ -116,3 +116,93 @@ was finished. The safe fix is small and belongs to a session that can test it: t
 environment variable or a required argument, and genericise the README's two table rows to "the daily ATS
 scan feed" and "the 18-agency panel feed". **Recommend doing it before the 09-15 publish, since publishing
 is what will send readers to this repo.** Jukka's call; one needs-jukka row's worth of decision, no more.
+
+---
+
+# SECOND PASS, same day — units 9, 10 and 11. **KPI: 11 of 11.**
+
+## Unit 9–10a — the citation CONTENT audit
+
+The provenance gate proves a printed URL exists in a corpus record. It cannot prove a source **supports the
+sentence citing it**, and the appendix admitted that check stood at **1 of 26 layoff rows**. Four parallel
+audits ran it against the live sources.
+
+**318 claims adjudicated — 254 SUPPORTED · 30 PARTIAL · 25 CONTRADICTED · 9 NOT OPENED.**
+Layoff-record content coverage: **1 of 26 → 24 of 26** (Kraken left unopened behind its paywall by design;
+Messari not reached). Adjudications: `findings/_audit-*-content-check-2026-09-02.md`.
+
+**Not one quotation in the report was a misquote.** Every firm-stated quote checked out verbatim. What failed,
+failed in one direction: **the report overstated its own negatives, and anchored two true quotes to the wrong
+document.** All 25 corrections narrow a claim.
+
+The four worth remembering:
+
+1. **The BaFin anchor, in three chapters.** The finfluencer-screening quote is real, exact, and on the *Risks in
+   Focus 2026* chapter page — but was anchored only to the press release, which contains neither passage. **A
+   compliance reader following that footnote would conclude we fabricated it.** Anchor split; substance untouched.
+   This is the defect class a provenance gate structurally cannot catch: URL resolves, date right, regulator
+   right, document family right, sentence not in it.
+2. **The AMF "thirty-eight entries in 2026 alone" — CUT.** The register publishes no such count; the figure
+   traced to a search-engine summary, and `amf-warning-list-sweep-2026-07.md` **expressly barred it from the
+   report**. It reached the assembled draft anyway. A bar written into a corpus file does not enforce itself.
+3. **Ferdon — cut to paraphrase in three chapters.** No publisher-issued transcript of that episode exists: the
+   Acast surface was fetched (the "provenance-blocked" note was stale) and carries none and links to none. A
+   machine-transcribed quotation attributed to a named executive at a tracked firm is the highest-consequence
+   quotation type in this report. Substance kept, wording withdrawn.
+4. **Chapter 6 overstated three refusals.** Robinhood never "explicitly declined" the AI framing — it never
+   mentioned AI, and the avoidance is the reporter's inference. Uphold was called "explicitly non-AI" twice;
+   **AI appears nowhere in that article.** Luno's "automation" is the outlet's paraphrase, not the CEO's word.
+   Each correction makes the underlying grade *stronger*, because the inference chain is longer than stated.
+
+Arithmetic repaired: Germany 70 → **73** of 324 (21.6% → 22.5%); a **third** source defect in the register parse
+(a row delimiting fourteen member states with the letter "I" instead of a pipe) moves the pre-deadline comparator
+34.1% → **33.8%** and widens the chapter's central contrast; ESMA non-compliance register 157 → **167** at source;
+six non-AI July rows → seven; headcounts 14 → 13; percentages 16 → 17; firm-stated percentages 4 → 5; "nine of
+twelve" US postings → **eight**; OP Labs' "about a fifth" re-attributed to The Block, which the firm never
+confirmed and CoinDesk records asking for.
+
+**The two time-sensitive claims were checked and HOLD.** The CMO succession null stands — and the documented trap
+re-fired during the check and was re-caught (a "Crypto.com names new CMO" hit, document-dated **12 August 2020**,
+announcing Kalifowitz himself). The FCA v Huobi stay was still in force. ⚠ **It expires 8 September, one week
+BEFORE publication**, so Chapter 7's sentence was rewritten to stay true on the day and the standing caution now
+lists it for a publication-morning re-check.
+
+**The six previously-unread ESMA rows were read.** The live register is byte-identical to the 2026-08-25 capture,
+and all six are German cooperative or regional banks holding domestic-only authorisations, touching no tracked
+firm. **Branch A held**: every figure stays scoped "as at 2026-08-17". The gap is now measured rather than merely
+disclosed, and it moves nothing except to strengthen the argument.
+
+## A silent assembly defect, found by building the bundle
+
+`assemble_report.py` split each chapter's citation block on `\n\*\*Citation anchors used[^\n]*\*\*`. On a one-line
+anchor block full of `**bold**` spans that pattern is **greedy** — it consumed to the last `**` on the line, and
+the split discarded it. **The assembled report was carrying 29 of the chapters' 82 URLs.** Roughly 53 citations
+were being deleted from the report, silently, by the tool whose docstring promises it prints everything it drops.
+
+Fixed with a lookahead split, and the assembler now carries a **citation guard**: it counts citation strings in
+the chapters and in the output and fails the build if the report cites less than its chapters. Currently
+**260 in, 260 through.** An instrument that could not detect its own worst failure mode now can.
+
+## Units 10–11 — the bundle
+
+`../publish-bundle/` (project level, outside the public repo — private until Jukka publishes):
+
+- **`report.html`** — self-contained: no external CSS, JS, fonts or images. Print-styled. **175 live citation
+  links.** The linkifier handles all three citation shapes in this report, including the one the audit created
+  by upgrading bare citations to full URLs inside code spans — missing that shape produced 2 links in a report
+  carrying 260 citations, and the first build shipped exactly that before it was caught.
+- **`report.pdf`** — 43 pages, A4, headless-browser render. Sits inside the **40-page** figure both public
+  surfaces promise. Three layout defects were found by rendering pages and reading them: markdown emphasis
+  swallowed into a href on the cover; `page-break-inside:avoid` on tables taller than a page, which skipped a
+  whole page and then broke the table anyway (now: repeating header rows, atomic rows); and long URLs
+  overflowing the two-column back matter.
+- **`PUBLISH.md`** — the runbook, including the three checks to run on the morning of 15 September.
+
+**PUBLISH row filed** in `queues/needs-jukka.md` (144 words, linter-clean; the queue's 4 open findings are
+pre-existing and elsewhere).
+
+## What is left
+
+Nothing this system can do. **Publishing is Jukka's act, on 15 September.** The date deliberately does not move
+earlier: three public surfaces carry it, and beating a re-dated promise spends the credibility the honest
+re-date bought.
