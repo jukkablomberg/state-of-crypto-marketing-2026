@@ -6,7 +6,7 @@
 
 ---
 
-## Four seats, one month
+## Four seats examined, three vacant — in one month
 
 Between May and June 2026 the top marketing seat at three of the eleven Stratum-1 exchanges named in `tracked-firms.md` became vacant, interim, or unestablishable from any public source — and both vacancies fell in June, the MiCA transitional period's final month.
 
@@ -26,7 +26,7 @@ Between May and June 2026 the top marketing seat at three of the eleven Stratum-
 
 Inside seventy-four days, three of the largest exchanges in the world publicly described marketing as something other than a promotion engine — **two organisationally, one editorially, and the difference should not be flattened.**
 
-**Coinbase (Brian Armstrong, CEO memo, 5 May 2026)** named **"AI-native pods"** as the new operating unit, capped management at five layers below the CEO and put every leader in an IC seat, alongside a fourteen-percent reduction of roughly 700 roles. ⚠ **The memo is not held first-party**; the anchor is Fortune's contemporaneous report, and **it names no affected function at all** — engineering, design and product appear only in the description of what an AI-native pod's agents might cover, not as functions cut. **No source names marketing either** — a ruling re-verified four times in the cycle's final week against a retrieval layer that kept trying to insert it, most recently on 2 September, when the summariser attributed to a non-existent Coinbase CEO a sentence belonging to LinkedIn.
+**Coinbase (Brian Armstrong, CEO memo, 5 May 2026)** named **"AI-native pods"** as the new operating unit, capped management at five layers below the CEO and cut what the memo's reporter renders as "pure managers" in favour of "player-coaches" who are also strong individual contributors, alongside a fourteen-percent reduction of roughly 700 roles. ⚠ **The memo is not held first-party**; the anchor is Fortune's contemporaneous report, and **it names no affected function at all** — engineering, design and product appear only in the description of what an AI-native pod's agents might cover, not as functions cut. **No source names marketing either** — a ruling re-verified four times in the cycle's final week against a retrieval layer that kept trying to insert it, most recently on 2 September, when the summariser attributed to a non-existent Coinbase CEO a sentence belonging to LinkedIn.
 
 **Kraken (Mayur Gupta, Chief Growth & Marketing Officer, 19 May 2026)** described the same move from inside the function and treated his own title as its trailing indicator: *"Most CMO jobs are top-of-funnel jobs… That leads to a fragmented growth model that is oriented towards inputs and not outcomes."* Against that, marketing, product, design and engineering *"have to work as one system pushing towards a common set of outcomes"*, with *"no silos. Full accountability across the journey."* Then the line Theme 1 turns on — **"The title is almost the least interesting part. The operating model is what actually changed."** The destination is a **"natively AI growth engine"** in which *"engineers are designing product ideas, marketers are shipping products."* The title moved too: CMO to CGMO.
 
@@ -57,9 +57,9 @@ One absence sits against it, drawn from class 4 where it belongs: **no senior ma
 | Solana Foundation | 2 | Institutional Growth Lead — Japan | Lead / growth | Japan | 2025-12-26 ~ |
 | Solana Foundation | 2 | Institutional Growth Lead — Greater China | Lead / growth | Hong Kong | 2025-12-26 ~ |
 | Solana Foundation | 2 | Director, Institutional Growth | Director / growth | New York, NY | 2026-03-26 ~ |
-| Ava Labs | 2 | Director of Social Media | Director / comms-PR | Brooklyn, NY | 2026-05-18 |
+| Ava Labs | 2 | Director of Social Media | Director / regulatory-comms/PR | Brooklyn, NY | 2026-05-18 |
 | OP Labs (Optimism) | 2 | Marketing Executive | **IC** / marketing | New York | 2026-05-21 |
-| Ava Labs | 2 | Director of Communications | Director / comms-PR | Remote (USA) | 2026-06-09 |
+| Ava Labs | 2 | Director of Communications | Director / regulatory-comms/PR | Remote (USA) | 2026-06-09 |
 | Phantom | 3 | Head of Brand Creative | Head of / brand | Remote — US | 2026-07-01 |
 | Coinbase | 1 | Creative Director | Director / brand | Remote — Canada | 2026-07-17 |
 | Kraken | 1 | Director, Paid Marketing | Director / marketing | United States | 2026-07-23 |
