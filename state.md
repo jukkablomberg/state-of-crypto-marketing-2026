@@ -5,7 +5,9 @@
 **Started:** 2026-05-03
 **Pivoted to public-source synthesis:** 2026-05-04
 **Target ship date:** September 1, 2026 (Q3)
-**Current phase (updated 2026-09-04):** **Phase 3 — FROZEN BUNDLE, awaiting publication.** The 09-04 loop run made no change to any chapter, the report or the bundle: post-window check clean (six classes at zero, feed HEALTHY, three drop-everything zeroes), the re-date side duty confirmed already applied and closed, next scheduled change the **09-08 FCA v Huobi check**. The line below stands unedited.
+**Current phase (updated 2026-09-05):** **Phase 3 — FROZEN BUNDLE, awaiting publication.** The 09-05 loop run made no change to any chapter, the report or the bundle. System-map verifier exit 0 clean. Post-window check: six classes at zero, three drop-everything zeroes — and the **jobs feed went STALE (38.3 h, delta +0), so the `scan_metadata` cross-check guard refused the class-1 absence claim and none was written.** No report consequence: the class-1 window closed 2026-08-31 and the absence exhibit is frozen at that date. Next scheduled change is the **09-08 FCA v Huobi check**.
+
+**Phase line as set 2026-09-04:** **Phase 3 — FROZEN BUNDLE, awaiting publication.** The 09-04 loop run made no change to any chapter, the report or the bundle: post-window check clean (six classes at zero, feed HEALTHY, three drop-everything zeroes), the re-date side duty confirmed already applied and closed, next scheduled change the **09-08 FCA v Huobi check**. The line below stands unedited.
 
 **Phase line as set 2026-09-03:** **Phase 3 — FROZEN BUNDLE, awaiting publication.** All 11 of 11 units are done. The 2026-09-03 loop run took the cadence's bounded second-pass audit: the 30 PARTIAL and 9 NOT-OPENED adjudications from the 09-02 content audit were re-opened and closed, ten narrowings applied, and both bundle artefacts rebuilt (`report.html` 176 live links; `report.pdf` 44pp). The provenance gate stands at 250 URLs / 0 untraced and the report at 23,070 words ≈ 21.0pp of a 25pp budget. **No further edits to chapters, report or bundle except the 09-08 FCA v Huobi check. Publishes 15 September 2026 — Jukka's act.**
 
