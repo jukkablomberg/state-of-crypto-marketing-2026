@@ -177,6 +177,14 @@
       "scan_date": "2026-09-04",
       "age_hours": 62.3,
       "delta_vs_prior_date": 0
+    },
+    {
+      "observed_date": "2026-09-07",
+      "fingerprint": 3458,
+      "scanned_at_utc": "2026-09-06T21:46:06Z",
+      "scan_date": "2026-09-07",
+      "age_hours": 14.4,
+      "delta_vs_prior_date": 6
     }
   ]
 }
