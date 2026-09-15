@@ -1,173 +1,76 @@
 # State of Crypto Marketing 2026
 
-> An operator-grade public-source synthesis of how senior crypto marketing leaders run the function in 2026.
-> Built from the public record, citation by citation. Publishes **September 15, 2026** (first announced for September 1; the capture window closed August 31).
+> A public-source read of how crypto marketing was actually run in the twelve months to 31 August 2026 — who may market, who does the work, what was shipped, where the talent went, and what nobody discloses.
+> Built from the public record, citation by citation. **Publishes 24 September 2026.**
 
-This repository is the live corpus and methodology for the report. Every claim in the published report will be anchored to a primary source you can independently verify from this repo.
-
-**Author:** [Jukka Blomberg](https://www.linkedin.com/in/jukkab/) — ex-CMO at international crypto exchanges, founder of [NorthPoint](https://northpoint.fi).
-**License:** MIT (corpus, methodology, framework). The report itself publishes under the same license on Sep 15, 2026.
-**Cycle-opener essay:** [northpoint.fi/resources/writing/state-of-crypto-marketing-2026](https://northpoint.fi/resources/writing/state-of-crypto-marketing-2026)
-
----
-
-## Why this exists
-
-The crypto marketing category has plenty of agency-side reports — vendor comparisons, "best of" lists, awards-shop benchmarks. None of them read the function from the operator's seat, and none of them survive a regulator's reading.
-
-This report does both. It is built from public sources only — job postings, agency case studies, regulator filings, conference recordings, podcast transcripts, layoff disclosures, and 18 months of NorthPoint's own competitor-intelligence panel (18 agencies; last refreshed 2026-06-15). **Nothing in the report comes from off-the-record interviews or anonymised quotes.** If a thing is not publicly visible, it does not go in.
-
-That choice is deliberate. The visibility filter — what each firm has shipped publicly — is itself the analysis. It is also the same read a regulator can do, which is the only read that matters in Q3 enforcement.
+**Author:** [Jukka Blomberg](https://www.linkedin.com/in/jukkab/) — ex-CMO at two international crypto exchanges, founder of [NorthPoint](https://northpoint.fi).
+**Publisher:** NorthPoint Research · *State of the Market* · No. 1.
+**License:** MIT — corpus, canonical dataset, methodology, and the report itself.
+**Report page:** [northpoint.fi/state-of-crypto-marketing-2026](https://northpoint.fi/state-of-crypto-marketing-2026) (the PDF, the HTML edition and the two-page summary go live there on 24 September; the same three files land in `report/` here the same morning).
 
 ---
 
-## What publishes on September 15, 2026
+## What the report says
 
-A 40-page report — *State of Crypto Marketing 2026. Built from the public record.* — covering five themes:
+Seven pages, four chapters, five exhibits, then an appendix with the method, the four canonical tables and every source.
 
-1. **The shape of the marketing function.** Split-IC patterns, gate-stack visibility, who owns what across the 27 named firms in the cohort.
-2. **AI in the stack.** Claimed adoption vs. JD-confirmed adoption.
-3. **The agency overlap matrix.** What three agencies on one firm tells you about the gate-stack vacancy.
-4. **MiCA readiness — exposure surface by firm.** Which Tier-1 firms have a publicly visible MiCA-marketing-comms seat. Which do not.
-5. **The 2026 layoff cycle and what it hit first.** Where marketing got cut and where it didn't.
+1. **Regulation rewrote crypto marketing.** Two of 27 tracked firms — Binance and HTX — lost the right to acquire EEA customers on 1 July 2026. Around the deadline six licensed exchanges ran dated, quantified capture offers at the stranded users, and the licence became the offer: *“Most exchanges aren't licensed after July 1. Kraken is.”* Google had already turned the ESMA register into an inventory flag.
+2. **AI and the marketing function.** Six senior Coinbase marketers went to OpenAI and a seventh to Anthropic. On the window's last day: 2 open marketing or growth roles across 27 crypto firms, 25 at four AI labs. Nine of 26 contraction rows carry an AI frame; five in the firm's own words. A measurable part of the AI-layoff narrative is the press's, not the firms'.
+3. **The agency stack.** Seven of the ten tracked firms any agency names are claimed by two or more agencies at once — KuCoin by three. Claims on the agencies' own surfaces; not one firm-side statement about any of them is on the record.
+4. **Nobody will say who runs marketing.** One firm in 27 has stated a marketing team size, none a budget. Binance states more than 1,500 compliance staff and more than $300 million a year of compliance spend. Two Tier-1 CMO seats vacated in June with no permanent successor named.
 
-Plus a regulator-readable appendix with the full citation index.
-
-A companion PDF + interactive HTML version goes live on northpoint.fi the same day.
+Every figure is derived from one frozen dataset (`corpus/_canonical/`), carries its denominator, and reconciles to the appendix tables. Absence is recorded as absence and never promoted to intent. Agency claims are claims. Figures a firm did not itself state are not printed as facts.
 
 ---
 
-## Methodology — six source classes
-
-The corpus is anchored to six source classes, gathered continuously between now and ship date.
-
-### 1. Job postings, by jurisdiction, by month
-- Capture window: rolling 12 months ending August 31, 2026.
-- Sources: firm careers pages, LinkedIn, web3.career, CryptoJobsList.
-- Extracted: seniority, function (brand / growth / PMM / community / agency-mgmt / regulatory-comms), geography, posting date, time-to-fill, JD-stated AI-tooling requirements.
-- Storage: `corpus/job-postings/` — one CSV per firm per month.
-
-### 2. Agency case studies and press releases
-- Eighteen agencies tracked (see comparison panel below).
-- Cross-reference matrix: which firms each agency publicly claims, and where claims overlap or contradict the firm's own postings.
-- Storage: `corpus/agency-claims/` — JSON per agency; matrix in `corpus/agency-overlap-matrix.csv`.
-
-### 3. Regulator filings and statements
-- Primary documents: ESMA Statement on the end of transitional periods (April 17, 2026), MiCA Regulation (EU) 2023/1114, Commission Delegated Regulation on marketing communications, MAS guidelines, VARA marketing-comms guidance, FCA financial promotion rules.
-- Public regulator-action register: every public marketing-side enforcement case in Q2 2026 (ESMA, BaFin, AMF, CONSOB, AFM, CySEC).
-- Storage: `corpus/regulator-filings/` — primary-source records + extraction notes.
-
-### 4. Conference recordings, podcast transcripts, public LinkedIn posts
-- Captured: any public statement by a senior marketing operator (CMO / VP Marketing / Head of Brand / Head of Growth at a tracked firm).
-- Initial podcast inventory: Coinbound, Lunar Strategy, Real Vision Crypto, Bankless, On the Margin, The Defiant, Onchain Growth Club, Crypto Curious.
-- Storage: `corpus/operator-statements/` — markdown per source with verbatim quote + URL + speaker + date + role at time of statement.
-
-### 5. Layoff announcements and earnings disclosures
-- Capture: every public 2026 workforce contraction at a tracked or perimeter firm (Crypto.com -12%, Gemini -25% firm-stated/SEC-filed, Algorand -25% firm-stated, Block Inc., Coinbase -14%, plus any new ones through August), with the firm's stated rationale, independent press analysis, and marketing-specific impact **where the firm or press states it**. Most 2026 crypto cuts are company-wide; the tracker records marketing-specific impact only where a public source names it.
-- Storage: `corpus/layoff-tracker/2026-layoff-tracker.csv`.
-
-### 6. NorthPoint competitor-intelligence panel
-- Source: an 18-month longitudinal panel of agency-side content gravity across 18 agencies.
-- **Last refreshed 2026-06-15.** The panel is *designed* to refresh daily and did so through mid-June; it has not moved since. The report uses it for longitudinal shape up to that date and makes no claim about agency-side activity after it.
-- What it gives the report: longitudinal signal — what shifted, when, in which direction.
-
-### Coverage rules
-- If a thing is not publicly visible, it does not go in.
-- Every claim is anchored to at least one primary source. Synthesis claims (aggregating across the corpus) cite the underlying source records.
-- Sources older than December 2024 are excluded unless they remain materially relevant (e.g., MiCA Regulation itself).
-- Where a firm has shipped no public signal on a theme, **that absence is itself a finding.**
-
----
-
-## Tracked firms — substantive synthesis cohort (27 named)
-
-### Tier-1 exchanges
-Binance · OKX · Bybit · KuCoin · Coinbase · Kraken · Crypto.com · Gemini · Bitstamp · Bitpanda · HTX
-
-### L1 / L2 foundations
-Sui Foundation · Aptos · Solana Foundation · Aave · Polygon · Optimism Foundation · Arbitrum Foundation · Ava Labs
-
-### Wallets / consumer crypto
-MetaMask / ConsenSys · Phantom · Ledger · Trust Wallet · Rabby
-
-### CASP-licensed (non-exchange)
-Securitize · Tether · plus additional CASP-licensed asset managers, custodians, and agentic-commerce protocols (resolved during corpus build, May–June)
-
-### Comparison panel — 18 agencies (tracked from outside; not the analysis subject)
-Coinbound · Lunar Strategy · MarketAcross · Outset PR · RZLT · ICODA · NinjaPromo · Blockwiz · Bond Finance · Crowdcreate · GuerrillaBuzz · TokenMinds · Single Grain · Flexe.io · Blue Manakin · Majinx · X10 · Serotonin
-
-Selection criterion: a firm enters the cohort if it (1) operates a regulated or about-to-be-regulated crypto-marketing function at meaningful scale, and (2) has shipped enough public signal in the last 12 months to support multi-theme synthesis. Firms that meet (1) but produce minimal public signal are flagged in a separate **absence panel** — their lack of public signal is itself a data point under Theme 4 and Theme 1.
-
----
-
-## What this report is NOT
-
-- Not a vendor comparison.
-- Not a "best agency of 2026" award.
-- Not a benchmarking exercise where NorthPoint is the benchmark-setter.
-- Not interview-based. No anonymised quotes appear anywhere in the report.
-- NorthPoint's commercial offering appears in the appendix, in one paragraph, with one link.
-
----
-
-## Open call — nominate a public signal
-
-If you know of a public signal that should be in the corpus — a job posting, a podcast appearance, a regulator filing, a layoff disclosure, a case study — send it to **hello@northpoint.fi**.
-
-Inbound nominations are read on the next daily corpus run and evaluated against the corpus coverage rules above. If a nomination fits, it enters the corpus and the contributor is acknowledged by name in the report's appendix on Sep 15 (unless the contributor requests otherwise).
-
-We are particularly interested in:
-- Public marketing-side enforcement cases under MiCA, MAS, VARA, FCA in 2026.
-- Public statements by a CMO / VP Marketing / Head of Brand at any tracked firm on the post-MiCA marketing-comms surface.
-- Layoff disclosures that name marketing/growth as the affected function.
-- CASP-licensed asset managers, custodians, or agentic-commerce protocols that should be in Stratum 4.
-
----
-
-## Cycle phases
-
-| Phase | Window | Output |
-|---|---|---|
-| **1 — Corpus assembly** | May–June 2026 | Public-source corpus across 27 named tracked firms × 6 source classes |
-| **2 — Theme synthesis** | July 2026 | Each of the five themes drafted against the citation-anchored corpus |
-| **3 — Ship** | August 15 – September 15, 2026 | Synthesis (Sep 3–13), citation audit, design pass, regulator-readability pass, publish |
-
-Note (2026-09-02): the report was first announced for September 1, 2026. Synthesis started late; the corpus window closed on August 31 as planned and the report publishes on September 15, 2026. Dated run records in `corpus/weekly-runs/` are unchanged.
-
-Weekly drip essays publish at [northpoint.fi/resources](https://northpoint.fi/resources) and the corpus updates here daily — see `corpus/weekly-runs/` for the dated run records.
-
----
-
-## Repository layout (as it builds out)
+## What is in this repository
 
 ```
 corpus/
-  job-postings/           # CSV per firm per month
-  agency-claims/          # JSON per agency
-  agency-overlap-matrix.csv
-  regulator-filings/      # primary-source records + extraction notes
-  operator-statements/    # markdown per public statement
-  layoff-tracker/         # tracker CSV + adjudication records
-findings/                 # working notes, one file per theme
-methodology.md            # this document, versioned
-tracked-firms.md          # the substantive synthesis cohort
-research-framework.md     # five themes × per-theme evidence inputs
-LICENSE
-README.md
+  _canonical/             # the five files every figure in the report derives from (frozen 2026-09-10)
+  layoff-tracker/         # the 26-row contraction tracker + adjudication and provenance records
+  job-postings/           # daily ATS scan extracts, the absence panel, cohort audits
+  agency-claims/          # per-agency claim records; agency-overlap-matrix.csv
+  regulator-filings/      # ESMA / NCA / FCA / Google records with extraction notes; ESMA register snapshots
+  marketing-campaigns/    # the capture campaigns, page captures, lapse checkpoints
+  operator-statements/    # verbatim public statements by named marketing executives
+  ad-platform-gates/      # Google Ads CASP policy captures
+  weekly-runs/            # dated run records — what was captured when, and what was rejected
+findings/                 # the longitudinal jobs read and the fact sheets the chapters lean on
+methodology.md            # source classes, coverage rules, limits
+tracked-firms.md          # the 27-firm cohort and the 18-agency panel, with selection criteria
+research-framework.md     # the five-theme framework the corpus was gathered under (May 2026) — historical
+report/                   # added on 24 September: report.pdf · report.html · summary.pdf
 ```
+
+The canonical files are the contract: `AGENCIES.md` · `EEA-MARKETING-ELIGIBILITY.md` · `QUOTES-BANK.md` · `TEAM-SIZE-AND-BUDGET.md` · `NUMBERS-THAT-SELL.md`. Where a number in the report and a number in a corpus note disagree, the canonical file wins, and a correction is made there with a dated note — never by patching the report.
 
 ---
 
-## License
+## Method, in brief
 
-MIT — for the corpus, methodology, framework, and the report itself on Sep 15, 2026. Cite as:
+- **Public sources only.** No interviews, no anonymous quotes of our own, no off-the-record reads. If a thing is not publicly visible it is not in the report.
+- **Population.** 27 named firms — 11 exchanges, 8 L1/L2 foundations, 5 wallets, 3 licensed non-exchanges — plus an 18-agency comparison panel. Selection criteria in `tracked-firms.md`.
+- **Window.** Rolling twelve months to 31 August 2026. Sources older than December 2024 excluded unless materially relevant.
+- **Six source classes.** Job postings · agency case studies · regulator filings and registers · operator statements · contraction disclosures · NorthPoint's competitor-intelligence panel (last refreshed 15 June 2026).
+- **Limits, stated where they bite.** The job scan cannot reach five tracked firms' careers systems. The agency panel sees crypto-native agencies only. One advertising platform of at least seven was read at source. Every campaign page was fetched from outside the EEA.
 
-> Blomberg, Jukka. *State of Crypto Marketing 2026. Built from the public record.* NorthPoint, September 15, 2026. https://northpoint.fi/resources/writing/state-of-crypto-marketing-2026
+Full text: `methodology.md`.
+
+---
+
+## Corrections
+
+The report says what the corpus can show and stops. If you find a figure that does not survive its own source, open an issue naming the canonical file and the line, or write to **hello@northpoint.fi**. Corrections are made in the canonical file with a dated note and the report is rebuilt from it.
+
+---
+
+## How to cite
+
+> Blomberg, Jukka. *State of Crypto Marketing 2026. Built from the public record.* NorthPoint Research, State of the Market No. 1, 24 September 2026. https://northpoint.fi/state-of-crypto-marketing-2026
 
 ---
 
 ## Contact
 
-- Email: [hello@northpoint.fi](mailto:hello@northpoint.fi) (nominations) · [jukka@northpoint.fi](mailto:jukka@northpoint.fi) (direct)
-- Web: [northpoint.fi](https://northpoint.fi)
-- LinkedIn: [linkedin.com/in/jukkab](https://www.linkedin.com/in/jukkab/)
+- [jukka@northpoint.fi](mailto:jukka@northpoint.fi) · [northpoint.fi](https://northpoint.fi) · [linkedin.com/in/jukkab](https://www.linkedin.com/in/jukkab/)

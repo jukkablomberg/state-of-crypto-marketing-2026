@@ -96,7 +96,7 @@ check has been run on **1 of 26** layoff rows. Units 9–10 are where that numbe
 
 The loop's hard gate says *"nothing into the public repo that references the sales pipeline, prospects or
 outreach."* The seven chapters and the assembled report are clean — scanned for pipeline, prospect,
-outreach, cold-email, pricing and do-not-contact language, and for Ron Pruett / Boston Associates: **zero
+outreach, cold-email, pricing and do-not-contact language, and for a named private contact: **zero
 hits in `findings/` and `report/`.**
 
 **The tooling is not clean, and has not been since the sync script was written.** `scripts/daily-corpus-sync.py`

@@ -86,9 +86,11 @@ running a materially misleading ad passes without friction. ⚠ Two limits: Goog
 contractual; and **whether it enforces its own rule is entirely unmeasured.**
 
 **The segmentation nobody talks about — one licence name, two populations.** Of 324 rows carrying a passport list:
-**132 (40.7%) authorised for 29–30 states**, 17 more for 26–28 → **149 (46.0%) at 26–30**, against **123 (38.0%)
-authorised for exactly one state.** Median 10, mean 15.0 — **and the mean describes nobody**: only 69 of 324 sit
-between 2 and 28. Roughly four in ten licensed CASPs can run a continental campaign; roughly four in ten can run
+**132 (40.7%) authorised for 29–30 states**, 17 more for 26–28 → **149 (46.0%) at 26–30**, against **124 (38.3%)
+authorised for exactly one state.** Median 10, mean 15.0 — **and the mean describes nobody**: only 68 of 324 sit
+between 2 and 28. *(Correction 2026-09-15: this line previously typed 123 / 38.0% / 69 — a transcription slip. The
+snapshot (md5 above, Greece EL/GR folded) yields 124 / 38.3% / 68, as the 2026-08-28 register note and the report's
+build assertion both compute. 132, 17 and 149 were already correct.)* Roughly four in ten licensed CASPs can run a continental campaign; roughly four in ten can run
 only a domestic one.
 
 **The tracked cohort is drawn almost entirely from the top mode — 11 of 13 entities at 26–30.** That is a scope

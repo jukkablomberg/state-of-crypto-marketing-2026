@@ -48,8 +48,8 @@ forbids are listed at the bottom so nobody reaches for them.
 | **0** | Permanent successors publicly named at either, as at window close |
 | **26 / 25 / 23 / 25** | Contraction **rows** / organisations / actual layoff rounds / rows adjudicable on the AI field. **Four numbers, four uses, never interchangeable** |
 | **0 of 7** | Tracked-cohort contraction announcements naming marketing as the affected function |
-| **9 / 5 / 1 / 1** | Contractions framed as AI / carrying a firm's **verbatim** words / an outlet's inference from "automation" / anonymously sourced |
-| **12** | Job descriptions mentioning AI across 27 firms and 12 months |
+| **9 / 5 / 1 / 1** | Contractions framed as AI / carrying a firm's **verbatim** words / **this tracker's** inference from "automation" (Luno — neither firm nor outlet said "AI"; corrected 2026-09-15, was "an outlet's inference") / anonymously sourced |
+| ~~**12**~~ | ~~Job descriptions mentioning AI across 27 firms and 12 months~~ — **WITHDRAWN 2026-09-15: the JD bodies were never read (`findings/02`, 09-10 audit); the label is unsupportable and the report does not print it** |
 | **70** | Days between OP Labs cutting ~20 roles and posting a Marketing Executive requisition |
 | **5** | Tracked firms whose careers infrastructure the scan cannot reach — Aave, Binance, Bybit, HTX, KuCoin. **Absence of coverage, not absence of hiring** |
 

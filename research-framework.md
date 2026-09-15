@@ -1,5 +1,7 @@
 # State of Crypto Marketing 2026 — Research Framework
 
+> **Historical (note added 2026-09-15).** This is the five-theme framework the corpus was gathered under from May 2026. The published report (24 September 2026) is organised as four chapters — regulation, AI and the function, the agency stack, the disclosure void — and every figure in it derives from `corpus/_canonical/`, not from this framework. Kept so a reader can see what the capture was looking for.
+
 > **Replaces the prior interview-guide.md (deprecated 2026-05-04 — see `interview-guide.md` for the deprecation note).** This framework defines the questions the report answers and the public-source evidence types that answer each one. Each theme below has explicit data inputs from the methodology corpus and explicit synthesis outputs in `./findings/`.
 
 ---
@@ -100,4 +102,4 @@ Each theme produces:
 2. A 5-7 page narrative synthesis citation-anchored to the underlying corpus.
 3. A "what the visible record tells us about the invisible" closing read — what the public absence in each theme implies for firms heading into Q3 enforcement.
 
-The five themes plus an opening framing chapter and a closing implications chapter compose the 40-page report.
+The five themes plus an opening framing chapter and a closing implications chapter composed the report as originally planned; see the note at the top of this file for the published structure.

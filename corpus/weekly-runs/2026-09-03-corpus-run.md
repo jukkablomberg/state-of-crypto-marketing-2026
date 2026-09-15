@@ -102,7 +102,7 @@ README lines from `PUBLIC-REDATE-2026-09-02.md` are already applied: `repo/READM
 **September 15, 2026**" with the dated note. Left alone.
 
 **Public-repo gate re-checked** on everything this run touched: zero references to the sales pipeline, prospects,
-outreach, pricing, or Ron Pruett / Boston Associates in `findings/` or `report/`. ⚠ The **pre-existing** exposure
+outreach, pricing, or a named private contact in `findings/` or `report/`. ⚠ The **pre-existing** exposure
 flagged on 09-02 is unchanged and still recommended for a fix before publish: `scripts/daily-corpus-sync.py` and
 `scripts/README.md` document their input paths verbatim, and those paths name a sales funnel's prospect scanner. No
 prospect data is exposed — paths, not rows — and it has been public since the scripts were written. Deliberately
