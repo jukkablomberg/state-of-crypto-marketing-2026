@@ -136,3 +136,30 @@ Bit Digital (board seat/board)→Bit Digital · Mojito (spinout)→Mojito.
   agency, 5 football clubs + TV/OOH) and **Holographik** (Sui's brand system). Neither is in the 18. **The panel is
   a crypto-native-agency panel, not a crypto-marketing-agency panel** — state that limit wherever the table appears.
 - **Anything after 2026-06-15.** The panel is a five-month time series that stops there.
+
+---
+
+## ADDENDUM 2026-09-15 — the 18 agencies, public facts as read on 15 September 2026
+
+Own site, LinkedIn About page, Clutch, Crunchbase, DesignRush; headcount is the agency's own statement first, directory brackets labelled. **No agency publishes revenue.** "Claims, of the 27" = which of the report's 27 companies the agency named as a client on its own site that day (logo walls count, as in the panel). Compared with the 18 May–15 June panel capture: OKX claimed by 4 (Coinbound, Blockwiz, Lunar Strategy, X10), KuCoin by 4 (MarketAcross, Blockwiz, RZLT, Crowdcreate), HTX by 3 (NinjaPromo, Blockwiz, ICODA), Sui by 3 (Coinbound, MarketAcross, RZLT), Polygon 2, Optimism 2. Exhibit 4 in the report keeps the dated panel; Chapter 3 states the September re-read in one sentence.
+
+| Agency | HQ | Founded | Headcount | Ownership, funding | Claims, of the 27 | Services, pricing |
+|---|---|---|---|---|---|---|
+| Coinbound | New York | 2018 | “45+” (own site); Clutch 50–249 | Founder Ty Smith; part of holding company Nowbound; acquired Coinscribble | OKX, Sui, MetaMask | Influencer, PR, social, paid, fractional CMO. Quote only; Clutch min. $10k |
+| MarketAcross | Tel Aviv | 2013/14 | ≈37 (directory); Crunchbase 11–50 | Founders Elad Mor, Nadav Dakner (also Chainwire); makes venture investments | Binance, Bybit, KuCoin, Crypto.com, Sui, Solana, Polygon, Ava Labs, ConsenSys (logo wall) | Blockchain PR, comms, SEO, events. “Results-based retainer”; no price |
+| NinjaPromo | London / New York (+10 offices) | 2017 | “300+ specialists” (own site); Crunchbase 101–250 | Founders Paul Lipen, Slava Kasperovich; ≈$0.4m seed (Heartwood) | HTX | Subscription marketing. Published: $4,000–$12,800/mo tiers; enterprise to $100k/mo |
+| Single Grain | Los Angeles | 2009 (Eric Siu owner since 2014) | Clutch 10–49 | Eric Siu; “7-figure agency” (own words) | — | SEO, paid media, CRO, “AI growth”. Quote only; Clutch min. $10k |
+| Blockwiz | Toronto | 2019 | “70” (own Medium page); “75 full-time” (directory) | Founder Dev Sharma | KuCoin, Bybit, OKX (as OKEx), HTX (as Huobi) — third-party listing; own site unreachable | Influencer, community, paid, content. No price |
+| TokenMinds | Singapore | 2016/17 | “30+” (own site) | Founders Rob Eijgenraam, Anchor Chan | — | Web3 + AI development, tokenisation, marketing/PR. No price |
+| RZLT | Zagreb (listings also say London) | 2018 | “35+ across 10 countries” (own site); Clutch 10–49 | Founder Luka Ciganek | Sui, Optimism, KuCoin | “AI-native” GTM, social, paid, community, DevRel. Clutch min. $5k, $50–99/h |
+| Outset PR | registered St Vincent & the Grenadines | 2022 | ≈30 named on own site; Crunchbase 11–50 | Founder Mike Ermolaev (ex-ChangeNOW) | — | Data-driven crypto PR. Projects under $10k (directory) |
+| Bond Finance | Poole, UK | 2017 | “14+” (own site); team page lists 7 | Founder Toby Cutler | — | Web3 GTM, community, investor attraction. Clutch min. $5k, $50–99/h |
+| Lunar Strategy | Lisbon | 2019 | “30+” (own site); LinkedIn 41 | Founders Tim and Jack Haldorsson; acquired by Turtle (DeFi), Jul 2026 | OKX | GTM, social, community, KOL, PR, events. Budget tiers from $15–25k |
+| ICODA | Wrocław / Bellevue, WA (Global Digital Consulting LLC) | 2017 | LinkedIn 35; Clutch 10–49 | CEO Vlad Pivnev | HTX (as Huobi Global) | Full-stack crypto, iGaming, AI marketing; listings; market making. Clutch min. $10k, $25–49/h |
+| Serotonin | Remote, US (Serotonin Inc.) | 2020 | “global team of 90 across 15 countries” (LinkedIn); “100” (CEO, Apr 2025) | Founder/CEO Amanda Cassatt; spun out Mojito ($20m raised); makes investments | Aptos, Arbitrum, Optimism, Polygon | GTM platform: marketing, strategy, recruiting, legal. Directory min. $10–25k, $250/h |
+| Crowdcreate | Irvine, CA (Crowdcreate LLC) | 2014 | LinkedIn 28; Clutch 10–49 | Founders Jeffrey Maganis, Ivan Kan | KuCoin | Growth, SEO, influencer, investor outreach, PR. No price |
+| GuerrillaBuzz | Tel Aviv | 2017 | LinkedIn 7; Crunchbase 1–10 — “boutique on purpose” | Founders Asaf Fybish, Yuval Halevi | — | Blockchain PR, SEO, Reddit, AI-search optimisation. No price |
+| Blue Manakin | Madrid (entity registered in Mexico) | 2021 | 9 named on own site; LinkedIn 5 | Founders Luca Zollino, Oliver Cuello Núñez | — | Spanish/LatAm crypto marketing, community, listings. No price |
+| X10 Agency | not stated on own site (directories: Albuquerque) | 2016 (directories) | “20+” (directories); no LinkedIn page | CEO Sergey Baloyan | OKX (NFT marketplace) | KOL, community, PR, Asia packages, listings, market making. Directory min. $1–10k |
+| Flexe.io | Dubai (IFZA) | 2018 | “up to 50” (own site); LinkedIn 14 | Founder Alexander Tikhonov | — | KOL/YouTube/TikTok, PR, paid, listings. Published: campaigns from $4,000 to $300,000 |
+| Majinx | Kyiv / Austin / Murcia | 2021 | “45” (CEO, Oct 2023); LinkedIn 4 | Founder Ruslan Lynnyk; now Majinx Capital (fund) + Majinx Labs (agency; site down 15 Sep 2026) | — | Fundraising + marketing for early-stage web3. No price |

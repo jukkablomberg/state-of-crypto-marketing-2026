@@ -85,3 +85,43 @@ kind is admitted anywhere in the report.**
 ⚠ **Structural note that belongs in the report.** The seven private Tier-1 exchanges have **no compulsory
 disclosure surface at all.** And the job-posting CSVs carry only date/title/jurisdiction/seniority/URL — **they can
 never yield a team size or a budget** without capturing posting body text.
+
+---
+
+## ADDENDUM 2026-09-15 — the disclosure record, researched (supersedes the "1 of 27 / 0 of 27" line above)
+
+**Why.** Jukka's read of v5/v6 (2026-09-15): the table was thin because the rule "firm-stated, inside the window" hid public filings and out-of-window statements that any reader can find (Crypto.com CEO, 19 Mar 2025: $700m; Coinbase 10-K). Researched the same day from primary sources — SEC filings, company posts, governance forums, transparency reports. Press-only figures are labelled. † = outside the window (1 Sep 2025 – 31 Aug 2026).
+
+**Counts (any company-stated or filed figure, any date):** marketing spend figure — **6 of 27** (Coinbase, Gemini, Securitize filed; Crypto.com, Kraken, OKX executive statements †); marketing team size — **4 of 27** (Coinbase, Arbitrum Foundation, HTX "dozens", Solana Foundation 2023 †); **never a number on either — 18 of 27.** Funding envelopes that merely include marketing (Aave $25m grant, Arbitrum ecosystem growth, Relai Series A) are shown, not counted. Inside the window and audited: 3 (the SEC filers). The report prints 18 of 27 as the hero and the three filers' figures.
+
+**Not found after searching (say so, do not invent):** OKX marketing team size — the "50–100 people" Rafique line could not be sourced across nine interviews (Blockworks, Adweek, CoinDesk, Marketing Brew, Campaign ×2, MarketingReport, The Drum 403); a source URL turns it into a row.
+
+| Company | Marketing team size | Marketing spend | Total headcount | Revenue | Sources |
+|---|---|---|---|---|---|
+| Coinbase | “over 150 people” — spokesperson, 23 Apr 2026 | $1.06bn “sales and marketing” FY2025 (15% of net revenue); $654m FY2024; $240m Q2 2026 — 10-K/10-Q | 4,951 (31 Dec 2025) | $7.18bn total revenue FY2025 | https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm |
+| Gemini | — | $97.1m FY2025 (+330%; $52m acquisition and brand); $8.8m Q2 2026 after cost cuts — 10-K/10-Q | ≈650 (31 Dec 2025), then up to 200 cut | $179.6m FY2025 | https://www.sec.gov/Archives/edgar/data/2055592/000205559226000026/gemi-20251231.htm |
+| Crypto.com | — | “user acquisition, user incentives and branding cost us about $700m” for 2024 — CEO on X, 19 Mar 2025 † | — (≈12% cut announced Mar 2026, base not stated) | $1.5bn 2024 — CEO on X † | https://x.com/kris/status/1902234808207765625 |
+| Kraken | — | paid marketing “$10m to $50m” to an undisclosed nine-figure sum — CMO, Apr 2025 † | ≈3,000 — press, May 2026 | $2.2bn adjusted revenue FY2025 | https://www.thetwentyminutevc.com/mayur-gupta; https://blog.kraken.com/news/kraken-2025-financials |
+| OKX | — | ≈$100m a year on partnerships “for the last three years” — CMO via Digiday, Jul 2024 † | ≈5,000 — press estimate, Mar 2026 | ≈$1.5bn 2024 — press estimate | https://digiday.com/marketing/crypto-marketers-eye-a-new-window-of-opportunity-but-are-keeping-a-lid-on-media-budgets/ |
+| Binance | — | — (declined to disclose partnership spend, Jul 2024 †). Compliance: >1,500 staff, >$300m a year | >5,000 — Yi He, Jan 2025 † | — | https://www.coindesk.com/policy/2026/07/03/binance-says-mica-should-be-judged-by-who-it-licenses-not-who-it-excludes; https://digiday.com/marketing/crypto-marketers-eye-a-new-window-of-opportunity-but-are-keeping-a-lid-on-media-budgets/; https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Bybit | — | — | ≈1,600 — CEO, Sep 2024 † | — | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| KuCoin | — | — | >1,000 — company, Jul 2022 † | — | — |
+| HTX | Marketing Center grew “from two people to dozens” — interviewer to its head, Mar 2026 | — | — | — | https://www.techflowpost.com/en-US/article/30832 |
+| Bitstamp | — | not separable: parent Robinhood reports $399m marketing FY2025 consolidated | — | ≈$95m net revenue, twelve months to Apr 2025 † | https://www.sec.gov/Archives/edgar/data/1783879/000178387926000023/hood-20251231.htm |
+| Bitpanda | — | — | — | €371m adjusted revenue FY2025 | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Arbitrum Foundation | 17 of 44 staff in “Marketing & community” (31 Dec 2025) | $33.5m + 38m ARB “ecosystem growth” 2025; marketing not itemised | 44 (31 Dec 2025) | $23.5m DAO gross profit 2025 | https://docs.arbitrum.foundation/assets/files/ArbitrumFoundationTransparencyReport2025-3ac117dd3203dbe7bca401cf951f0c14.pdf |
+| Aave Labs | —; ≈40% of ≈90 staff in BD, marketing, ops, legal, compliance (Mar 2026) | $25m DAO grant + milestone grants covering “marketing … and growth” among other things (Apr 2026) | ≈90 (Mar 2026) | — | https://governance.aave.com/t/arfc-aave-will-win-framework/24352 |
+| Securitize | — | advertising $1.50m FY2025 (2.4% of revenue); $0.65m FY2024 — prospectus | 194 + 67 contractors (31 Dec 2025) | $62.2m FY2025 | https://www.sec.gov/Archives/edgar/data/2094496/000162828026054866/securitizeholdings-424b3.htm |
+| Solana Foundation | communications and marketing “only five members” — Nov 2023 † | “tens of millions” in grants a year — CPO, Mar 2026; no marketing line | — | — | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Optimism | — | ≈150m OP committed in Year 4 (May 2025–Apr 2026), −35%; no marketing line | OP Labs 82 after Mar 2026 cut | — | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Polygon | — | 35m POL community grants, Season 2 (2025) † | Polygon Labs “nearly 200” — Jan 2026 | — | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Tether | — | — | ≈300 — press, Feb 2026 | >$10bn net profit 2025 — company | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| Ledger | — | — | “700-plus” — Dec 2024 † | press only (2025 figures conflict) | — |
+| Phantom | — | — | “100+” — company site | — | https://www.financemagnates.com/cryptocurrency/bitpandas-profit-falls-75-firm-blames-pre-ipo-spending-push/ |
+| MetaMask / ConsenSys | — | — | — (7% cut of “47 roles”, Jul 2025 †) | — | — |
+| Sui Foundation | — | — | — | — | — |
+| Aptos Foundation | — | — | — | — | — |
+| Ava Labs | — | — | — | — | — |
+| Trust Wallet | — | — | — | revenue “+150% year-over-year” 2025, no figure | — |
+| Rabby | — | — | — | — | — |
+| Relai | — | $12m Series A “to accelerate product development and marketing” (Dec 2024 †) | — | — | — |

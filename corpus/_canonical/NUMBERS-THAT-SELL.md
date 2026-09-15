@@ -69,3 +69,9 @@ Crypto.com **~180** · Bybit **$150M** Red Bull *(unsourced)* · Polygon **−30
 Ledger **"1 in 3 NBA fans"** · **>7,254 job cuts across 47 companies** *(aggregator arithmetic against an unstated
 base — non-admitted seven times)* · any claim that marketing is the industry's "most heavily resourced" activity
 *(no spend figure is admitted anywhere)*.
+
+---
+
+## CORRECTION 2026-09-15 — team size and budget
+
+The "1 of 27 team size / 0 of 27 budget" line above was true under the rule *firm-stated, inside the window* — and misleading, because it hid audited SEC filings and dated executive statements any reader can find. Researched 2026-09-15 (`TEAM-SIZE-AND-BUDGET.md` § ADDENDUM). **Print instead:** **18 of 27** have never put a number on their marketing (no headcount, no budget, any date); **6 of 27** have stated or filed a marketing spend figure (3 filed under audit: Coinbase $1.06bn FY2025 = 15% of net revenue; Gemini $97.1m FY2025; Securitize $1.50m advertising FY2025; 3 executive statements out of window: Crypto.com $700m for 2024; Kraken $10m→$50m→nine figures; OKX ≈$100m/yr partnerships); **4 of 27** a team size (Coinbase 150+; Arbitrum Foundation 17 of 44; HTX "dozens"; Solana Foundation 5 in 2023). Binance's >1,500 / >$300m compliance comparison stands. The old line is not to be printed again.
