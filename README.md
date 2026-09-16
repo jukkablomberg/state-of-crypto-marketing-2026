@@ -6,18 +6,20 @@
 **Author:** [Jukka Blomberg](https://www.linkedin.com/in/jukkab/) — ex-CMO at two international crypto exchanges, founder of [NorthPoint](https://northpoint.fi).
 **Publisher:** NorthPoint Research · *State of the Market* · No. 1.
 **License:** MIT — corpus, canonical dataset, methodology, and the report itself.
-**Report page:** [northpoint.fi/state-of-crypto-marketing-2026](https://northpoint.fi/state-of-crypto-marketing-2026) (the PDF, the HTML edition and the two-page summary go live there on 24 September; the same three files land in `report/` here the same morning).
+**Report page:** [northpoint.fi/state-of-crypto-marketing-2026](https://northpoint.fi/state-of-crypto-marketing-2026) (the PDF, the HTML edition and the one-page summary go live there on 24 September; the same three files land in `report/` here the same morning).
 
 ---
 
 ## What the report says
 
-Seven pages, four chapters, five exhibits, then an appendix with the method, the four canonical tables and every source.
+Nineteen pages: a one-page summary, a contents page, four chapters on seven pages with nine exhibits — the ESMA licence field, two real campaign executions, the six capture offers in their own terms, the Coinbase-to-AI moves, the agency claims matrix, an agency buyer's table, the disclosed marketing money — then an appendix with the four canonical tables and every source.
 
-1. **Regulation rewrote crypto marketing.** Two of 27 tracked firms — Binance and HTX — lost the right to acquire EEA customers on 1 July 2026. Around the deadline six licensed exchanges ran dated, quantified capture offers at the stranded users, and the licence became the offer: *“Most exchanges aren't licensed after July 1. Kraken is.”* Google had already turned the ESMA register into an inventory flag.
-2. **AI and the marketing function.** Six senior Coinbase marketers went to OpenAI and a seventh to Anthropic. On the window's last day: 2 open marketing or growth roles across 27 crypto firms, 25 at four AI labs. Nine of 26 contraction rows carry an AI frame; five in the firm's own words. A measurable part of the AI-layoff narrative is the press's, not the firms'.
-3. **The agency stack.** Seven of the ten tracked firms any agency names are claimed by two or more agencies at once — KuCoin by three. Claims on the agencies' own surfaces; not one firm-side statement about any of them is on the record.
+1. **Regulation rewrote crypto marketing.** Two of 27 tracked firms — Binance and HTX — lost the right to acquire EEA customers on 1 July 2026. Around the deadline six licensed exchanges — four of them in the cohort — ran dated, quantified capture offers at the stranded users, and the licence became the offer: *“Most exchanges aren't licensed after July 1. Kraken is.”* Google had already made a MiCA authorisation a condition of advertising an exchange or software wallet in the EU (23 April 2025), extended to the whole EEA and hardware wallets in August 2026.
+2. **AI and the marketing function.** Seven Coinbase marketers, including its CMO, went to OpenAI and Anthropic. The job boards the daily scan can read show few open marketing roles at the 27 and many at the AI labs — but the largest exchanges' boards cannot be read, so the report prints no count (the raw scan and its absence panel are in `corpus/job-postings/`). Nine of 26 contraction rows carry an AI frame; five in the firm's own words. A measurable part of the AI-layoff narrative is the press's, not the firms'.
+3. **The agency stack.** Seven of the ten tracked firms any agency names are named by two or more agencies — KuCoin by three. Claims on the agencies' own surfaces; not one firm-side statement about any of them is on the record.
 4. **Nobody will say who runs marketing.** Eighteen of 27 companies have never put a number on their marketing — not a headcount, not a budget. The three that do file it with the SEC because they must (Coinbase: $1.06 billion in 2025). Binance publishes its compliance headcount and spend, and nothing about marketing. Two of the largest exchanges lost their CMO in June with no permanent successor named.
+
+**Editions.** The published edition (v9, 16 September 2026) prints the agency panel as 17: one agency captured in the 18-agency panel is omitted from the report at the author's discretion; it named none of the 27 and no count changes. The dataset here keeps all 18. The report's `CLAIM-LEDGER.md` (published with it in `report/`) records, for every headline, the passage relied on and the wording allowed.
 
 Every figure is derived from one frozen dataset (`corpus/_canonical/`), carries its denominator, and reconciles to the appendix tables. Absence is recorded as absence and never promoted to intent. Agency claims are claims. Figures a firm did not itself state are not printed as facts.
 
